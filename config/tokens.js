@@ -6,7 +6,7 @@ const package = require(`${process.env.PWD}/package.json`);
 
 module.exports = {
   version: package.version,
-  cdn: `"https://cdn.jsdelivr.net/gh/CityOfNewYork/growingupnyc-patterns-development@master/dist/"`,
+  cdn: `"https://cdn.jsdelivr.net/gh/NYCOpportunity/growingupnyc-patterns@${package.version}/dist/"`,
   output: '"./src/config/_tokens.scss"',
   'fonts': {
     'system': [
