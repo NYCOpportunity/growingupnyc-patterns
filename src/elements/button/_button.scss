@@ -1,0 +1,195 @@
+/**
+ * Button
+ */
+
+@import 'config/fonts';
+@import 'config/colors';
+@import 'config/transitions';
+@import 'scss/functions/font-size';
+@import 'scss/functions/rem-calc';
+
+
+// Common styles across buttons
+%button-base {
+  border: 2px solid $color-text-invert;
+  border-radius: rem-calc(25);
+  display: inline-block;
+  font-family: $font-family-display;
+  @include font-size-regular;
+  font-weight: $font-weight-extrablack;
+  line-height: 1;
+  min-width: rem-calc(125);
+  padding: rem-calc(14 30);
+  text-align: center;
+  text-decoration: none;
+  transition: $button-transition;
+
+	@media screen and (min-width: $screen-mobile) {
+    min-width: rem-calc(150);
+  }
+}
+
+// Primary button - Solid color initially and turns ghosty on hover
+.button--primary {
+  @extend %button-base;
+  background: $color-text-invert;
+  color: $color-text;
+  letter-spacing: 1px;
+
+  &:focus {
+    background: transparent;
+    color: $color-text-invert;
+  }
+
+  &:hover {
+    background: transparent;
+    color: $color-text-invert !important;
+  }
+
+  &--blue {
+    color: $color-secondary;
+  }
+}
+
+// Outlined Button - Ghosty initially and turns solid on hover
+.button--outline {
+  @extend %button-base;
+  background: transparent;
+  letter-spacing: 1px;
+
+  &--gray {
+    border-color: $color-text;
+    color: $color-text !important;
+    opacity: .7;
+
+    &:focus {
+      color: $color-text !important;
+      opacity: 1;
+    }
+
+    &:hover {
+      color: $color-text !important;
+      opacity: 1;
+    }
+  }
+
+  &--white {
+    border-color: $color-text-invert;
+    color: $color-text-invert !important;
+
+    &:focus {
+      background: $color-text-invert;
+      color: $color-primary !important;
+    }
+
+    &:hover {
+      background: $color-text-invert;
+      color: $color-primary !important;
+    }
+  }
+
+}
+
+// Pill button - Used primarily for tags
+.button--pill {
+  @extend %button-base;
+  background: $color-primary;
+  border: 0;
+  border-radius: rem-calc(15);
+  color: $color-text-invert;
+  font-size: $font-size-xx-small !important;
+  margin: rem-calc(0 2 4 0);
+  min-width: 0 !important;
+  padding: 10px 17px;
+
+  &:focus {
+    background: $color-secondary;
+    color: $color-text-invert !important;
+  }
+
+  &:hover {
+    background: $color-secondary;
+    color: $color-text-invert !important;
+  }
+}
+
+.button--pill--alt {
+  background: $color-secondary;
+
+  &:focus {
+    background: $color-blue-dark;
+  }
+
+  &:hover {
+    background: $color-blue-dark;
+  }
+}
+
+.button--pill--es {
+  background: $color-purple;
+
+  &:focus {
+    background: $color-purple-dark;
+  }
+
+  &:hover {
+    background: $color-purple-dark;
+  }
+}
+
+// Simple Button
+// Basic blue button used for links within a detail page
+.button--simple {
+  @extend %button-base;
+  background: $color-primary;
+  border: none;
+  color: $color-text-invert;
+
+  &:focus {
+    background: $color-secondary;
+    color: $color-text-invert;
+    outline: none;
+  }
+
+  &:hover {
+    background: $color-secondary;
+    color: $color-text-invert;
+    outline: none;
+  }
+}
+
+.button--simple--alt {
+  background: $color-secondary;
+
+  &:focus {
+    background: $color-blue-dark;
+  }
+
+  &:hover {
+    background: $color-blue-dark;
+  }
+}
+
+// Size Variations
+
+// Full-width
+.button--full-width {
+  width: 100%;
+}
+
+// Text-only button
+// Button styled to look like a text link.
+// Can also be used with an SVG icon for an icon-only button
+.button--text {
+  color: $color-primary;
+  min-height: 0;
+
+  &:focus {
+    color: $color-secondary;
+    outline: none;
+  }
+
+  &:hover {
+    color: $color-secondary;
+  }
+}

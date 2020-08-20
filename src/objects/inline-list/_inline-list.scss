@@ -1,0 +1,33 @@
+/**
+ * Inline-list
+ */
+
+@import 'config/media';
+
+.o-inline {
+  display: block;
+}
+
+ul.o-inline,
+ol.o-inline {
+  list-style: none;
+}
+
+// Inline list item
+.o-inline__item {
+  display: inline-block;
+  margin-left: rem-calc(12);
+  margin-right: -4px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+	@media screen and (min-width: $screen-mobile) {
+    margin-left: rem-calc(16);
+  }
+
+	@media screen and (min-width: $screen-desktop) {
+    margin-left: rem-calc(56);
+  }
+}

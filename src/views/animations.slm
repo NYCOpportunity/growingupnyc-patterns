@@ -1,0 +1,24 @@
+= extend('/slm/layouts/default')
+
+- title = 'Animations'
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm');
+= partial('/slm/partials/content-header.mixin.slm');
+= partial('/slm/partials/section.mixin.slm');
+
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
+= content('main')
+  = mixin('content-header', title);
+  div
+    = mixin('section', 'Animations', 'utilities/animations/animations');
+
+= content('script')
+  javascript:
+    gunyc.animations();
+
+

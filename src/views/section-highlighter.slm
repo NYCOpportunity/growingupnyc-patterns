@@ -1,0 +1,24 @@
+= extend('/slm/layouts/default')
+
+- title = 'Reveal'
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm');
+= partial('/slm/partials/content-header.mixin.slm');
+= partial('/slm/partials/section.mixin.slm');
+
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
+= content('main')
+  = mixin('content-header', title);
+  div
+    = mixin('section', 'Section Highlighter', 'utilities/section-highlighter/section-highlighter');
+
+
+= content('script')
+  javascript:
+    var sectionHighlighter = gunyc.sectionHighlighter();
+    var sticky = gunyc.sticky();

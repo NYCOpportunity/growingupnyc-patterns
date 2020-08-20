@@ -1,0 +1,1 @@
+The Reveal Utility allows the user to limit the number of common elements on a page with the use of a button as a trigger. The user can specify the number of elements in a container to show. The rest of the elements will remain hidden until the trigger has been activated.

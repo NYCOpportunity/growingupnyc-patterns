@@ -1,0 +1,16 @@
+/**
+ * Font
+ */
+
+// Declarations
+.font-sans--primary {
+  font-family: map-get(map-get($tokens, 'fonts'), 'display-sans');
+}
+
+.font-sans--secondary {
+  font-family: map-get(map-get($tokens, 'fonts'), 'text-sans');
+}
+
+.font-icons {
+  font-family: map-get(map-get($tokens, 'fonts'), 'icons');
+}

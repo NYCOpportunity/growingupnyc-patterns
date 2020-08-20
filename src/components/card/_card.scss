@@ -1,0 +1,194 @@
+/**
+ * Card
+ */
+
+@import 'config/media';
+@import 'config/colors';
+@import 'config/stickers';
+@import 'scss/functions/font-size';
+@import 'scss/functions/rem-calc';
+
+.c-card {
+  background: $color-background;
+  display: flex;
+  flex-flow: column;
+  padding: rem-calc(25 ($sticker-size-mobile / 2) + 10 25 21);
+  position: relative;
+
+  @if ($language == 'ar') or ($language == 'ur') {
+    margin-left: rem-calc($sticker-size-mobile / 2);
+  }
+  @else {
+    margin-right: rem-calc($sticker-size-mobile / 2);
+  }
+
+  @media screen and (min-width: $screen-desktop) {
+
+    @if ($language == 'ar') or ($language == 'ur') {
+      margin-left: rem-calc($sticker-size / 2);
+      padding-left: rem-calc(($sticker-size / 2) + 10);
+    }
+    @else {
+      padding-right: rem-calc(($sticker-size / 2) + 10);
+      margin-right: rem-calc($sticker-size / 2);
+    }
+  }
+}
+
+.c-card--hero {
+  background-position: top center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding-top: percentage(266/760);
+}
+
+// Content Card Sticker
+// Badge holding card icon or short descriptor
+.c-card__sticker {
+  order: 1;
+  position: absolute;
+  top: rem-calc(10);
+
+   @if ($language == 'ar') or ($language == 'ur') {
+    left: rem-calc(-$sticker-size-mobile / 2);
+    }
+    @else {
+      right: rem-calc(-$sticker-size-mobile / 2);
+    }
+
+  .event-day {
+    display: block;
+  }
+
+  @media screen and (min-width: $screen-desktop) {
+
+     @if ($language == 'ar') or ($language == 'ur') {
+      left: rem-calc(-$sticker-size / 2);
+    }
+    @else {
+      right: rem-calc(-$sticker-size / 2);
+    }
+  }
+}
+
+// Content Card Title
+.c-card__title {
+  font-family: $font-family-display;
+  font-size: rem-calc(22);
+  font-weight: $font-weight-extrablack;
+  line-height: 1.2;
+  margin: rem-calc(0 0 12);
+  order: 3;
+  text-decoration: underline;
+
+  @media screen and (min-width: $screen-mobile) {
+    font-size: 1.65rem;
+  }
+
+  @media screen and (min-width: 425px) {
+    font-size: 1.875rem;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+}
+
+// Content Card Tags
+// Pill-style display of categories or other metadata.
+.c-card__tags {
+  margin: rem-calc(0 0 10);
+  order: 5;
+}
+
+// Content Card Subtitle
+// Displayed below the title on most variations,
+// above the title when c-card--subtitle-first variation is used.
+// Strongly emphasized text is displayed in a darker color.
+.c-card__subtitle {
+  color: $color-text-weak;
+  font-family: $font-family-display;
+  font-weight: $font-weight-extrablack;
+  @include font-size(15);
+  letter-spacing: .5px;
+  margin: rem-calc(0 0 10);
+  order: 4;
+
+  .icon--xsmall {
+    position: relative;
+    top: rem-calc(3);
+    vertical-align: top;
+  }
+
+  p + p {
+    margin-top: 0;
+  }
+}
+
+.c-card__subtitle strong {
+  color: $color-text;
+  font-weight: inherit;
+}
+
+.c-card--subtitle-first .c-card__subtitle {
+  order: 2;
+}
+
+// Content Card Body
+// Body text within the card
+.c-card__body {
+  @include font-size-small;
+  margin: rem-calc(0 0 12);
+  order: 6;
+}
+
+// Content Card Link
+.c-card__link {
+  color: $color-text-weak;
+  margin: rem-calc(0 0 16);
+  @include font-size(14);
+  order: 7;
+
+  a {
+    color: inherit;
+
+    &:focus {
+      color: $color-text;
+    }
+  }
+}
+
+.c-card__cta-divider {
+  order: 8;
+  margin: rem-calc(24 0);
+}
+
+// Content Card Link
+//
+.c-card__cta {
+  font-family: $font-family-display;
+  font-weight: $font-weight-extrablack;
+  @include font-size(18);
+  order: 9;
+
+  color: inherit;
+
+  &:focus {
+    color: $color-text;
+  }
+}
+
+// Content Card Label
+.c-card__label {
+  background: $color-background;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 $color-shadow;
+  color: $color-gray-dark;
+  font-family: $font-family-display;
+  @include font-size-x-small;
+  font-weight: $font-weight-extrablack;
+  padding: rem-calc(10);
+  position: absolute;
+  top: rem-calc(-16);
+}

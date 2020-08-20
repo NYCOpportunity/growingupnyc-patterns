@@ -1,0 +1,18 @@
+= extend('/slm/layouts/default')
+
+- title = 'Colors'
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm');
+= partial('/slm/partials/content-header.mixin.slm');
+= partial('/slm/partials/section.mixin.slm');
+
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
+= content('main')
+  = mixin('content-header', title);
+  = mixin('section', 'Color', 'utilities/color/color', 'gutter', this.tokens['colors'], false);
+  = mixin('section', 'Color Milestones', 'utilities/color/color--milestones', false);

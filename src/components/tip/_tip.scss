@@ -1,0 +1,65 @@
+/**
+ * Tip
+ */
+ 
+@import 'config/colors';
+@import 'config/fonts';
+@import 'config/stickers';
+@import 'scss/functions/rem-calc';
+
+.c-tip {
+  // @include row;
+  background: $color-primary;
+  color: $color-text-invert;
+  padding-top: rem-calc($sticker-size-mobile / 2);
+  position: relative;
+  margin-top: rem-calc(($sticker-size-mobile / 2) + $horizontal-gutter);
+
+	@media screen and (min-width: $screen-desktop) {
+    padding-top: rem-calc($sticker-size / 2);
+    margin-top: rem-calc(($sticker-size / 2) + $horizontal-gutter);
+  }
+
+  a {
+    color: inherit;
+
+    &:focus {
+      color: $color-gray-light;
+    }
+  }
+}
+
+// Tip Sticker
+.c-tip__sticker {
+  margin-left: rem-calc($sticker-size-mobile / -2);
+  position: absolute;
+  left: 50%;
+  top: rem-calc($sticker-size-mobile / -2);
+
+	@media screen and (min-width: $screen-desktop) {
+    margin-left: rem-calc($sticker-size / -2);
+    top: rem-calc($sticker-size / -2);
+  }
+}
+
+// Tip Content
+.c-tip__content {
+  font-family: $font-family-display;
+}
+
+// Tip Footer
+.c-tip__footer {
+  @include font-size-small;
+  margin-top: 1em;
+
+  p + p {
+    margin-top: 0;
+  }
+}
+
+// Tip Link
+.c-tip__link {
+  &:focus {
+    color: $color-gray-light;
+  }
+}

@@ -1,0 +1,32 @@
+doctype html
+html lang='en'
+  = content('head');
+
+  body
+    div class="o-offcanvas js-offcanvas" id="offcanvas-patterns"
+      = partial('../partials/nav-offcanvas.slm');
+
+      div class='o-offcanvas__main js-offcanvas__main'
+        = partial('../partials/nav.slm');
+        main class="pt-12 mobile:pt-20 tablet:pt-32"
+          div class=''
+            = content('main');
+
+    = partial('../partials/footer.slm');
+
+    script src='scripts/growingup-nyc.js'
+
+    javascript:
+      var gunyc = new GUNYC();
+      gunyc.navigation({sideSelector: 'down'});
+      gunyc.icons();
+      gunyc.accordion();
+      gunyc.newsletter();
+      gunyc.formEffect();
+
+
+    = content('script');
+
+    / The reload script. This is reserved for development only.
+    - if this.process.env.NODE_ENV == 'development'
+      script src='/reload/reload.js'

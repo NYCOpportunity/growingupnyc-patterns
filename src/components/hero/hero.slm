@@ -1,0 +1,8 @@
+/ Hero
+
+div class="c-hero bg-color-blue-light"
+  div class="o-container js-parallax-text"
+    h1 class="c-hero__title" 
+      = 'Programs'
+    p class="c-hero__tagline"
+      = 'Discover over 70 easy-to-read education, health, and recreation programs, benefits, and resources in NYC.'

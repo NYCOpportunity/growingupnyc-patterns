@@ -1,0 +1,18 @@
+= extend('/slm/layouts/default')
+
+- title = 'Accordion'
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm');
+= partial('/slm/partials/content-header.mixin.slm');
+= partial('/slm/partials/section-2-col.mixin.slm');
+
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
+= content('main')
+  = mixin('content-header', title);
+  = mixin('section-2-col', 'Accordion', 'objects/accordion/accordion');
+

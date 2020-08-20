@@ -1,0 +1,19 @@
+doctype html
+html lang='en'
+  = content('head');
+
+  body
+    div 
+      div 
+				= content('main');
+
+    / = partial('/partials/footer.slm');
+    
+    script src='scripts/growingup-nyc.js'
+
+    javascript:
+      var gunyc = new GUNYC();
+      gunyc.accordion();
+      gunyc.icons();
+
+    = content('script');

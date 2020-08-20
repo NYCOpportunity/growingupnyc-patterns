@@ -1,0 +1,19 @@
+= extend('/slm/layouts/default')
+
+- title = 'Input'
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm');
+= partial('/slm/partials/content-header.mixin.slm');
+= partial('/slm/partials/section.mixin.slm');
+
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
+= content('main')
+  = mixin('content-header', title);
+  = mixin('section', 'Input', 'elements/input/input');
+  = mixin('section', 'Input Search', 'elements/input/input-search');
+  = mixin('section', 'Input Share', 'elements/input/input-share');

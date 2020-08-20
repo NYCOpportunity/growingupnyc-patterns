@@ -1,0 +1,18 @@
+/**
+ * Divider
+ */
+
+@import 'config/colors';
+@import 'scss/functions/rem-calc';
+
+.divider {
+  background: $color-gray-light;
+  border-radius: 6.5px;
+  height: 2px;
+  overflow: visible; // Internet Explorer 11-, Edge 12+
+}
+
+.divider-light {
+  border-top: 2px solid $color-white;
+  padding-top: rem-calc(30);
+}

@@ -1,0 +1,20 @@
+= extend('/slm/layouts/default')
+
+- title = 'Lists'
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm');
+= partial('/slm/partials/content-header.mixin.slm');
+= partial('/slm/partials/section.mixin.slm');
+
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
+= content('main')
+  = mixin('content-header', title);
+  div
+    = mixin('section', 'Lists', 'elements/lists/lists');
+    = mixin('section', 'Unordred List', 'elements/lists/lists-unordered--check');
+

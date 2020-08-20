@@ -1,0 +1,98 @@
+/ Layout
+= extend('/slm/layouts/default');
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm');
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
+= content('main');
+  div class="layout--row desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-full ml-auto mr-auto px-10"
+    h2 class="text-center"
+      = "GROWINGUP NYC Patterns Library"
+    div class="my-16"
+      p class="inline"
+        = "The Patterns of Growing Up NYC are a shared vocabulary between the code, design, and user interface (UI) of "
+      p class="inline"
+        a class="inline bg-color-blue-light px-2 text-color-white" href='https://growingupnyc.cityofnewyork.us/'
+          = "GROWINGUP NYC."
+      p = "Growing Up NYC supports the cognitive, social-emotional, and physical development of all New York City children by shaping City policies, agency practices and program development."
+    div class="text-center my-16"
+      a class="button--primary bg-color-blue text-color-white js-offcanvas" href='#patterns' data-js="offcanvas-patterns"
+        = "Browse the Patterns"
+    div class="px-5 py-5 border-solid border border-color-gray rounded-md list-unordered--check"
+      h3 class="mb-8 pl-8"
+        = "Features"
+      ul
+        li
+          = "Multi-lingual stylesheets with right-to-left and left-to-right reading orientations."
+        li
+          = "Mobile-first stylesheets with support for modern browsers back to Internet Explorer 11."
+        li
+          = "Module-based design patterns with CSS and JavaScript included for each pattern."
+        li
+          = "Tailwindcss integration."
+    div class="py-10"
+      h3 class="my-8"
+        = "Instalation"
+      div class="my8"
+        p = "The Patterns are available as an NPM package and can be installed with the following command."
+      div class="border-solid border border-color-gray rounded-md py-4 px-6 bg-color-gray-light mt-8 mb-8 flex justify-between"
+        p id="npm-install"
+          = "npm install @nycopportunity/guny-patterns"
+        button id="copy-text" class="hover:text-color-gray-dark"
+          = "Copy"
+      div class="mt-8 mb-8"
+        p = "All of the source code is publicly available and can also be integrated via cdn. See the intallation docs for more details and usage."
+      div class="text-center mt-8 mb-8"
+        a class="button--primary bg-color-blue text-color-white js-offcanvas" href='#patterns' data-js="offcanvas-patterns"
+          = "Get Started"
+  div class="px-10 py-10  bg-color-gray-light"
+    div class="tablet:w-8/12 w-full ml-auto mr-auto tablet:flex tablet:flex-col"
+      div class=""
+        h3 class="my-8"
+          = "Links"
+      div class="tablet:flex tablet:flex-wrap"
+        div class="my-8 pr-5 tablet:w-1/2 "
+          div
+            h3 class="c-card__title"
+              a class="my-4" href='typography'
+                = "Typography"
+            p = "The Typography Pattern reference."
+        div class="my-8 pr-5 tablet:w-1/2 "
+          div
+            h3 class="c-card__title"
+              a class="my-4" href='color'
+                = "Color"
+            p = "The Color Pattern reference."
+        div class="my-8 pr-5 tablet:w-1/2 "
+          div
+            h3 class="c-card__title"
+              a class="my-4" href='button'
+                = "Button"
+            p = "The Button Pattern set reference."
+        div class="my-8 pr-5 tablet:w-1/2 "
+          div
+            h3 class="c-card__title"
+              a class="my-4" href='icons'
+                = "Icons"
+            p = "The Icon Pattern set reference."
+
+= content('script')
+  javascript:
+    function copy(event) {
+      var text = document.getElementById("npm-install").innerText;
+      var elem = document.createElement("textarea");
+      document.body.appendChild(elem);
+      elem.value = text;
+      elem.select();
+      document.execCommand("copy");
+      document.body.removeChild(elem);
+    }
+    document.querySelector("#copy-text").addEventListener("click", copy);
+
+
+
+

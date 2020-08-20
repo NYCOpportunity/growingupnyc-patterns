@@ -1,0 +1,32 @@
+//
+// tokens
+//
+
+// Dependencies
+@import 'config/media';
+
+// Declarations
+
+$outer-gutter: map-get(map-get($tokens, 'dimensions'), 'outer-gutter');
+$outer-gutter-small: map-get(map-get($tokens, 'dimensions'), 'outer-gutter-small');
+$outer-gutter-large: map-get(map-get($tokens, 'dimensions'), 'outer-gutter-large');
+$horizontal-gutter: map-get(map-get($tokens, 'dimensions'), 'horizontal-gutter');
+
+
+@mixin layout-inner-left-edge {
+  left: $outer-gutter;
+
+  // @include grid-media($bp-small) {
+  //   left: $outer-gutter-small;
+  // }
+  @media screen and (min-width: $screen-mobile) {
+    left: $outer-gutter-small;
+  }
+  
+  // @include grid-media($bp-large) {
+  // 	left: $outer-gutter-large;
+  // }
+  @media screen and (min-width: $screen-desktop) {
+    left: $outer-gutter-large;
+  }
+}

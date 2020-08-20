@@ -1,0 +1,59 @@
+/**
+ * Content
+ */
+
+@import 'config/tokens';
+
+// Declarations
+.o-content-container {
+  padding: rem-calc(40 $outer-gutter 35);
+
+	@media screen and (min-width: $screen-mobile) {
+    padding: rem-calc(35 $outer-gutter-small 40);
+  }
+
+	@media screen and (min-width: $screen-tablet) {
+    padding-left: rem-calc($outer-gutter-medium);
+    padding-right: rem-calc($outer-gutter-medium);
+  }
+
+	@media screen and (min-width: $screen-desktop) {
+    padding: rem-calc($outer-gutter-large);
+    padding: 2.9rem;
+  }
+}
+
+// Content container with reduced padding
+.o-content-container--compact {
+  padding-left: rem-calc($outer-gutter-small);
+  padding-right: rem-calc($outer-gutter-small);
+
+	@media screen and (min-width: $screen-tablet) {
+    padding-left: rem-calc($outer-gutter-medium);
+    padding-right: rem-calc($outer-gutter-medium);
+  }
+
+	@media screen and (min-width: $screen-desktop) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+.o-content-container--text {
+	@media screen and (min-width: $screen-desktop) {
+    width: flex-grid(7, 8) + flex-gutter(8);
+  }
+
+}
+
+.o-content-static--left {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+}

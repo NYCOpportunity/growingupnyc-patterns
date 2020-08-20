@@ -1,0 +1,40 @@
+/**
+ * Color
+ */
+
+@import 'config/colors';
+
+// Primary
+.bg--primary,
+.hover\:bg--primary:hover {
+  background-color: $color-primary !important;
+}
+
+.text--primary {
+  color: $color-primary;
+}
+
+.border--primary {
+  border-color: $color-primary;
+}
+
+// Primary
+.bg--secondary,
+.hover\:bg--secondary:hover {
+
+  background-color: $color-secondary !important;
+}
+
+.text--secondary {
+  color: $color-secondary;
+}
+
+.border--secondary {
+  border-color: $color-secondary;
+}
+
+// Brain Building
+.bg-color-brain-building-tip,
+.hover\:bg-color-brain-building-tip:hover {
+  background-color: $color-secondary;
+}

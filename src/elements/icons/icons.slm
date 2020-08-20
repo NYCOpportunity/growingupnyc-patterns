@@ -1,0 +1,9 @@
+/
+/ Icons
+
+- if (typeof value !== 'undefined')
+  p
+    = value
+  div class="sticker"
+    svg class="icon--large" role="img"
+      use xlink:href="#${value}"

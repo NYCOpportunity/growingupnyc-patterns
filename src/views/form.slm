@@ -1,0 +1,23 @@
+= extend('/slm/layouts/default')
+
+- title = 'Form'
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm');
+= partial('/slm/partials/content-header.mixin.slm');
+= partial('/slm/partials/section.mixin.slm');
+
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
+= content('main')
+  = mixin('content-header', title);
+  div
+    = mixin('section', 'Form', 'components/form/form');
+    = mixin('section', 'Contact Form', 'components/form/form-contact');
+
+= content('script')
+  javascript:
+    gunyc.form();

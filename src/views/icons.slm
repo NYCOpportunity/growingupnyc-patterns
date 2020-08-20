@@ -1,0 +1,17 @@
+= extend('/slm/layouts/default')
+
+- title = 'Icons'
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm');
+= partial('/slm/partials/content-header.mixin.slm');
+= partial('/slm/partials/section-icon.mixin.slm');
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
+= content('main')
+  = mixin('content-header', title);
+  div
+    = mixin('section', 'Icons', 'elements/icons/icons', 'gutter', this.tokens['icons']);

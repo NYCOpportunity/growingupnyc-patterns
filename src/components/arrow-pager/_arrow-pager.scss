@@ -1,0 +1,38 @@
+/**
+ * Arrow-pager
+ */
+
+@import 'config/colors';
+@import 'config/fonts';
+@import 'config/media';
+@import 'scss/functions/font-size';
+
+.c-arrow-pager {
+  font-family: $font-family-display;
+  font-weight: $font-weight-extrablack;
+  @include font-size-x-large;
+  padding-top: 10px;
+  margin: 0 0 35px;
+  text-align: center;
+
+	@media screen and (min-width: $screen-desktop) {
+    padding-top: 0;
+  }
+}
+
+.c-arrow-pager__arrow {
+  color: $color-gray-mid;
+  text-decoration: none;
+
+	@if ($language == 'ar') or ($language == 'ur') {
+		svg {
+			transform: rotate(180deg);
+		}
+  }
+  
+  &:hover {
+    svg {
+			fill: $color-primary;
+		}
+  }
+}

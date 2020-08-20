@@ -1,0 +1,36 @@
+/**
+ * Form-effects
+ */
+
+.signup-form__label {
+  bottom: rem-calc(10);
+}
+
+.is-filled .signup-form__label {
+  bottom: 100%;
+}
+
+.signup-form__label {
+  bottom: 100%;
+  transform: translate3d(0, #{rem-calc(37)}, 0);
+  transition: transform 250ms ease-in-out;
+}
+
+.is-filled .signup-form__label {
+  transform: translate3d(0, 0, 0);
+}
+
+
+.is-filled .signup-form__label-content {
+  color: $color-text-invert;
+  font-family: $font-family-display;
+  @include font-size-x-small;
+  font-weight: $font-weight-extrablack;
+  text-transform: uppercase;
+}
+
+.is-filled .signup-form__label-content {
+  color: transparent;
+  overflow: visible;
+  transform: translate3d(0, 100%, 0);
+}

@@ -1,0 +1,278 @@
+/**
+ * Offcanvas
+ */
+
+// Dependencies
+@import 'config/tokens';
+@import 'config/colors';
+@import 'config/media';
+
+/**
+* Variables
+*/
+$z-index-offcanvas-side: map-get(map-get($tokens, 'z-index'), 'z-index-offcanvas-side');
+$z-index-offcanvas-main: map-get(map-get($tokens, 'z-index'), 'z-index-offcanvas-main');
+$z-index-offcanvas-overlay: map-get(map-get($tokens, 'z-index'), 'z-index-offcanvas-overlay');
+$width-offcanvas-side: map-get(map-get($tokens, 'widths'), 'width-offcanvas-side');
+$width-offcanvas-side-large: map-get(map-get($tokens, 'widths'), 'width-offcanvas-side-large');
+
+/**
+* Declarations
+*/
+.o-offcanvas {
+  min-height: 100%;
+  z-index: 1;
+
+  &.is-open-down {
+    min-height: auto;
+  }
+}
+
+.o-offcanvas__heading {
+  @media screen and (min-width: $screen-mobile) {
+    display: none !important;
+  }
+}
+
+.o-offcanvas__side {
+  background: $color-background;
+  width: $width-offcanvas-side;
+
+  max-height: 100%;
+  overflow: hidden;
+  padding-top: 50px;
+  position: absolute;
+  top: 0;
+  transition: all .5s;
+  visibility: hidden;
+  z-index: 1;
+
+  &:after {
+      background: rgba(0, 0, 0, .4);
+      content: '';
+      height: 100%;
+      opacity: 1;
+      position: absolute;
+      // right: 0;
+      top: 0;
+      transition: opacity .5s;
+      width: 100%;
+  }
+  @media screen and (min-width: $screen-desktop) {
+    padding-top: 60px;
+    width: $width-offcanvas-side-large;
+  }
+}
+
+.o-offcanvas__side-left {
+  left: 0;
+  &:after {
+    left: 0;
+  }
+
+  @media screen and (min-width: $screen-mobile) {
+    float: left;
+    height: 100%;
+  }
+}
+.o-offcanvas__side-right {
+  right: 0;
+  &:after {
+    right: 0;
+  }
+
+  @media screen and (min-width: $screen-mobile) {
+    float: right;
+    height: 100%;
+  }
+}
+.o-offcanvas__side-down {
+  top: 0;
+  &:after {
+    top: 0;
+  }
+
+  @media screen and (min-width: $screen-mobile) {
+    height: auto;
+  }
+}
+
+.is-open-right .o-offcanvas__side  {
+  overflow: auto;
+  transition: transform .5s;
+  visibility: visible;
+}
+.is-open-left .o-offcanvas__side  {
+  overflow: auto;
+  transition: transform .5s;
+  visibility: visible;
+}
+.is-open-down .o-offcanvas__side  {
+  overflow: auto;
+  transition: transform .5s;
+  visibility: visible;
+  width: 100%;
+
+  @media screen and (min-width: $screen-desktop) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.is-open-right .o-offcanvas__side {
+    z-index: 1;
+
+  &:after {
+    height: 0;
+    opacity: 0;
+    transition: opacity .5s, width .1s .5s, height .1s .5s;
+    width: 0;
+  }
+}
+.is-open-left .o-offcanvas__side {
+    z-index: 1;
+
+  &:after {
+    height: 0;
+    opacity: 0;
+    transition: opacity .5s, width .1s .5s, height .1s .5s;
+    width: 0;
+  }
+}
+.is-open-down .o-offcanvas__side {
+    z-index: 1;
+    max-height: 75%;
+
+  &:after {
+    height: 0;
+    opacity: 0;
+    transition: opacity .5s, width .1s .5s, height .1s .5s;
+    width: 0;
+  }
+}
+
+
+/**
+* OffCanvas Close
+*/
+.o-offcanvas__close {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+}
+
+
+/**
+* OffCanvas Main Direction
+*/
+.o-offcanvas__main-left {
+  left: 0;
+  transition: left .5s;
+}
+
+.o-offcanvas__main-left {
+  background: $color-background !important;
+  backface-visibility: hidden;
+  height: 100%;
+  position: relative;
+  z-index: $z-index-offcanvas-main;
+  left: 0;
+  transition: left .5s;
+}
+.o-offcanvas__main-right {
+  background: $color-background !important;
+  backface-visibility: hidden;
+  height: 100%;
+  position: relative;
+  z-index: $z-index-offcanvas-main;
+  right: 0;
+  transition: right .5s;
+}
+.o-offcanvas__main-down {
+  background: $color-background !important;
+  backface-visibility: hidden;
+  height: 100%;
+  position: relative;
+  z-index: $z-index-offcanvas-main;
+  top: 0;
+  transition: top .5s;
+}
+
+.is-open-right .o-offcanvas__main {
+  position: fixed;
+  right: $width-offcanvas-side;
+  width: 100%;
+
+  @media screen and (min-width: $screen-desktop) {
+    right: $width-offcanvas-side-large;
+  }
+
+}
+.is-open-left .o-offcanvas__main {
+  position: fixed;
+  left: $width-offcanvas-side;
+  width: 100%;
+
+  @media screen and (min-width: $screen-desktop) {
+    left: $width-offcanvas-side-large;
+  }
+
+}
+.is-open-down .o-offcanvas__main {
+  position: fixed;
+  top: 55%;
+  width: 100%;
+
+  @media screen and (min-width: $screen-desktop) {
+    top: 55%;
+  }
+
+}
+.c-footer-down {
+  position: fixed;
+  top: 75%;
+  width: 100%;
+
+  @media screen and (min-width: $screen-desktop) {
+    top: 75%;
+  }
+
+}
+
+/**
+* OffCanvas Overlay
+*/
+.o-offcanvas__overlay {
+  background: rgba(0, 0, 0, .4);
+  display: block;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: opacity .5s, width .1s .5s, height .1s .5s;
+  width: 0;
+}
+
+.is-open-right .o-offcanvas__overlay {
+  height: 100%;
+  opacity: 1;
+  transition: opacity .5s;
+  width: 100%;
+  z-index: $z-index-offcanvas-overlay;
+}
+
+.is-open-left .o-offcanvas__overlay {
+  height: 100%;
+  opacity: 1;
+  transition: opacity .5s;
+  width: 100%;
+  z-index: $z-index-offcanvas-overlay;
+}
+.is-open-down .o-offcanvas__overlay {
+  height: 100%;
+  opacity: 1;
+  transition: opacity .5s;
+  width: 100%;
+  z-index: $z-index-offcanvas-overlay;
+}

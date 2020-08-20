@@ -1,0 +1,21 @@
+= extend('/slm/layouts/default')
+
+- title = 'Layouts'
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm');
+= partial('/slm/partials/content-header.mixin.slm');
+= partial('/slm/partials/section.mixin.slm');
+
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
+= content('main')
+  = mixin('content-header', title);
+  / = mixin('section', 'Layout', 'elements/layouts/layouts');
+  = mixin('section', 'Row', 'elements/layouts/layouts--row');
+  = mixin('section', 'One Column', 'elements/layouts/layouts--one-column');
+  = mixin('section', 'Two Columns', 'elements/layouts/layouts--two-columns');
+  = mixin('section', 'Three Columns', 'elements/layouts/layouts--three-columns');

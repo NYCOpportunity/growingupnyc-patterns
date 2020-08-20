@@ -1,0 +1,19 @@
+= extend('/slm/layouts/default')
+
+- title = 'Background Image'
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm');
+= partial('/slm/partials/content-header.mixin.slm');
+= partial('/slm/partials/section.mixin.slm');
+
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
+= content('main')
+  = mixin('content-header', title);
+  = mixin('section', 'Background Gradients', 'utilities/background-image/background-image--gradient');
+  = mixin('section', 'Background Splatter', 'utilities/background-image/background-image--splatter');
+  

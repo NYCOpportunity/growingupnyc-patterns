@@ -1,0 +1,138 @@
+/**
+ * Icons
+ */
+
+@import 'config/media';
+@import 'scss/functions/rem-calc';
+
+/**
+ * Logos
+ */
+
+.icon--logo {
+  height: rem-calc(85);
+  width: rem-calc(157);
+
+	@media screen and (min-width: $screen-desktop) {
+
+    height: rem-calc(85);
+    width: rem-calc(150);
+  }
+}
+
+.icon--google {
+  height: 1.6125rem;
+  width: 8.375rem;
+
+	@media screen and (min-width: $screen-desktop) {
+
+    height: 1.6125rem;
+    width: 8.375rem;
+  }
+}
+
+.icon--logo-guny {
+  height: rem-calc(87);
+  width: rem-calc(118);
+
+	@media screen and (min-width: $screen-desktop) {
+    height: rem-calc(87);
+    width: rem-calc(120);
+  }
+}
+
+.icon--logo-cc {
+  height: rem-calc(85);
+
+	@media screen and (min-width: $screen-desktop) {
+    height: rem-calc(85);
+  }
+}
+
+.icon--vroom {
+  height: rem-calc(30.6);
+  width: rem-calc(128);
+
+	@media screen and (min-width: $screen-desktop) {
+    height: rem-calc(36);
+    width: rem-calc(110);
+  }
+}
+
+.icon--nyc {
+  height: rem-calc(21);
+  margin: rem-calc(0 3);
+  position: relative;
+  top: rem-calc(-3);
+  width: rem-calc(63);
+}
+
+/**
+ * Icons Sizes
+ */
+
+.icon--xxsmall {
+  height: rem-calc(13);
+  position: relative;
+  top: rem-calc(3);
+  width: rem-calc(13);
+  vertical-align: top;
+
+	@media screen and (min-width: $screen-mobile) {
+    height: rem-calc(15);
+    width: rem-calc(15);
+  }
+}
+
+.icon--xsmall {
+  height: 1em;
+  width: 1em;
+  vertical-align: center;
+}
+
+.icon--small {
+  height: rem-calc(22);
+  width: rem-calc(22);
+}
+
+.icon--medium {
+  height: rem-calc(37);
+  width: rem-calc(37);
+
+	@media screen and (min-width: $screen-tablet) {
+    height: rem-calc(35);
+    width: rem-calc(35);
+  }
+}
+
+.icon--large {
+  height: rem-calc(37);
+  width: rem-calc(37);
+
+	@media screen and (min-width: $screen-desktop) {
+    height: rem-calc(50);
+    width: rem-calc(50);
+  }
+}
+
+/**
+ * Carets - Align the caret next to text
+ */
+.icon--caret {
+  @extend .icon--small;
+  margin-top: rem-calc(-3);
+}
+
+.icon--caret--small {
+  width: rem-calc(16);
+  height: rem-calc(16);
+
+  @extend .icon--small;
+  margin-top: rem-calc(-1.4);
+}
+
+.icon--caret--xxsmall {
+  @extend .icon--xxsmall;
+  margin-top: rem-calc(-3);
+  margin-right: rem-calc(-4);
+}

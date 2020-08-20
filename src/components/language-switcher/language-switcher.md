@@ -1,0 +1,1 @@
+The Language Switcher component allows visitors to choose the language in which they navigate the application. On Growing Up NYC, the list of available languages are defined by using the WordPress plugin, WPML.

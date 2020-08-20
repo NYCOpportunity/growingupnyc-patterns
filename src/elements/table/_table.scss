@@ -1,0 +1,49 @@
+/**
+ * Table
+ */
+
+@import 'config/fonts';
+
+.table {
+  table {
+    font-size: rem-calc(16px);
+    margin-bottom: rem-calc(40px);
+    max-width: 100%;
+    text-align: right;
+
+		@media screen and (min-width: $screen-tablet) {
+      font-size: rem-calc(18px);
+	  }
+  }
+
+  thead {
+    border-bottom: 1px solid $color-dark-gray-dark;
+    color: $color-blue-mid;
+
+    tr {
+      background-color: transparent;
+    }
+  }
+
+  tbody {
+    tr {
+      &:nth-child(odd) {
+        background-color: $color-blue-lightest;
+      }
+    }
+  }
+
+  th {
+    vertical-align: top;
+  }
+
+  th,
+  td {
+    padding: rem-calc(10px);
+    word-break: normal;
+
+		@media screen and (min-width: $screen-tablet) {
+      padding: rem-calc(10px 40px);
+	  }
+  }
+}

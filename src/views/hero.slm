@@ -1,0 +1,22 @@
+= extend('/slm/layouts/default')
+
+- title = 'Hero'
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm');
+= partial('/slm/partials/content-header.mixin.slm');
+= partial('/slm/partials/section.mixin.slm');
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
+= content('main')
+  = mixin('content-header', title);
+  div
+    = mixin('section', 'Hero', 'components/hero/hero');
+    = mixin('section', 'Hero Light', 'components/hero/hero-light');
+  
+  javascript:
+    let url = document.location.href;
+    document.querySelector('.c-hero').style.background = 'url(' + url.substring(0, url.lastIndexOf('/')) + '/images/splatter.svg)';

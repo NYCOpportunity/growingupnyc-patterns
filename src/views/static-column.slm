@@ -1,0 +1,21 @@
+= extend('/slm/layouts/default')
+
+- title = 'Static Column'
+
+/ Partials
+= partial('/slm/partials/head.mixin.slm');
+= partial('/slm/partials/content-header.mixin.slm');
+= partial('/slm/partials/section.mixin.slm');
+
+
+/ Content blocks
+= content('head');
+  = mixin('head');
+
+= content('main')
+  = mixin('content-header', title);
+  = mixin('section', 'Static Column', 'objects/static-column/static-column');
+
+= content('script')
+  javascript:
+   var staticColumn = gunyc.staticColumn();
