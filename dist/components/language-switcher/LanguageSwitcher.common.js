@@ -6,7 +6,7 @@ var LanguageSwitcher = function LanguageSwitcher() {
     selector: LanguageSwitcher.selector,
     target: LanguageSwitcher.target,
     currentLanguage: LanguageSwitcher.currentLanguage,
-    languageSwitcherWrapper: LanguageSwitcher.LanguageSwitcherWrapper,
+    languageSwitcherWrapper: LanguageSwitcher.languageSwitcherWrapper,
     logoWrapper: LanguageSwitcher.logoWrapper,
     googleTranslateLogo: LanguageSwitcher.googleTranslateLogo
   };
@@ -15,7 +15,6 @@ var LanguageSwitcher = function LanguageSwitcher() {
   var logoWrapper = document.querySelector("." + this._settings.logoWrapper);
   var body = document.querySelector("body");
   var allLanguages = document.querySelectorAll(".wpml-ls-item");
-  var offanvas = document.querySelector(".o-offcanvas__main");
   var googleTranslateLogo = document.querySelector("." + this._settings.googleTranslateLogo);
   var isLanguageSwitcherOpen = false; // Media Query
 

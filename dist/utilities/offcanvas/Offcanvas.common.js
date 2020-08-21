@@ -944,7 +944,7 @@ var Offcanvas = function Offcanvas(settings) {
   };
   var nav = document.querySelector("." + this._settings.nav);
   var mainOff = document.querySelector("." + this._settings.mainOff);
-  var footer = document.querySelector('.c-footer'); // Depending on the argument passed toggle element class
+  var footer = document.querySelector('.o-footer'); // Depending on the argument passed toggle element class
 
   var openClass = "";
 
@@ -1031,7 +1031,7 @@ Offcanvas.prototype._toggle = function _toggle(openClass, nav, mainOff, footer) 
       } else if (openClass === 'is-open-down') {
         nav.classList.toggle("o-offcanvas__side-down");
         console.log('is-open-down');
-        footer.classList.toggle("c-footer-down");
+        footer.classList.toggle("o-footer-down");
       } else {
         nav.classList.toggle("o-offcanvas__side-right");
         console.log('reset to 0');

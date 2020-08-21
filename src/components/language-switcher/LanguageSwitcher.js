@@ -10,7 +10,7 @@ class LanguageSwitcher {
       selector: LanguageSwitcher.selector,
       target: LanguageSwitcher.target,
       currentLanguage: LanguageSwitcher.currentLanguage,
-      languageSwitcherWrapper: LanguageSwitcher.LanguageSwitcherWrapper,
+      languageSwitcherWrapper: LanguageSwitcher.languageSwitcherWrapper,
       logoWrapper: LanguageSwitcher.logoWrapper,
       googleTranslateLogo: LanguageSwitcher.googleTranslateLogo
     };
@@ -20,7 +20,6 @@ class LanguageSwitcher {
     const logoWrapper = document.querySelector(`.${this._settings.logoWrapper}`);
     let body = document.querySelector("body");
     const allLanguages = document.querySelectorAll(".wpml-ls-item");
-    const offanvas = document.querySelector(".o-offcanvas__main")
     const googleTranslateLogo = document.querySelector(`.${this._settings.googleTranslateLogo}`)
     let isLanguageSwitcherOpen = false;
     // Media Query
