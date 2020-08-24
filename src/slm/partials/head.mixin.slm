@@ -1,4 +1,4 @@
-= mixin('head', 'title = Growing Up NYC Patterns');
+= mixin('head', 'title = Growing Up NYC Patterns', 'location=""');
   head
     meta charset='utf-8'
     meta http-equiv='X-UA-Compatible' content='IE=edge'

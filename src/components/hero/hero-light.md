@@ -1,0 +1,1 @@
+The Hero Light component is an introductory header with a blank background. On Growing Up NYC, this component is used on the Events Detail Page.

@@ -10,7 +10,7 @@ class LanguageSwitcher {
       selector: LanguageSwitcher.selector,
       target: LanguageSwitcher.target,
       currentLanguage: LanguageSwitcher.currentLanguage,
-      languageSwitcherWrapper: LanguageSwitcher.LanguageSwitcherWrapper,
+      languageSwitcherWrapper: LanguageSwitcher.anguageSwitcherWrapper,
       logoWrapper: LanguageSwitcher.logoWrapper,
       googleTranslateLogo: LanguageSwitcher.googleTranslateLogo
     };

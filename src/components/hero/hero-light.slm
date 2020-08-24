@@ -1,5 +1,5 @@
 / Hero Light
 div class="c-hero--light"
-  div class="o-container js-parallax-text"
+  div class="o-container"
     h1 class="c-hero__title" 
       = 'Study Hour'

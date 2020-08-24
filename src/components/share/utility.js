@@ -1,8 +1,6 @@
 /* eslint-env browser */
 'use strict';
 
-// import _ from 'underscore';
-
 /**
  * Collection of utility functions.
  */

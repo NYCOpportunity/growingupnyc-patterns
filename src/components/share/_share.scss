@@ -75,7 +75,16 @@
   }
 }
 
-//Recaptcha
+.sms-form__label {
+  bottom: 100%;
+  transform: translate3d(0, #{rem-calc(35)}, 0);
+  transition: transform 250ms ease-in-out;
+}
+
+.is-filled .sms-form__label {
+  transform: translate3d(0, 0, 0);
+}
+
 .recaptcha-js {
   background: $color-purple;
 
@@ -84,7 +93,6 @@
   }
 }
 
-//Succes
 .g-recaptcha,
 .error-message,
 .c-validation {
