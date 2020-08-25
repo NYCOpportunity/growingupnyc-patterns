@@ -128,21 +128,9 @@ var LanguageSwitcher = function LanguageSwitcher() {
 
 
     if (!isLanguageSwitcherOpen) {
-      if (isMobile.matches) {
-        googleTranslateLogo.style.removeProperty('visibility');
-        googleTranslateLogo.style.display = "none";
-      } else {
-        googleTranslateLogo.style.removeProperty('display');
-        googleTranslateLogo.style.visibility = "hidden";
-      }
+      googleTranslateLogo.style.display = "none";
     } else {
-      if (isMobile.matches) {
-        googleTranslateLogo.style.removeProperty('visibility');
-        googleTranslateLogo.style.display = "";
-      } else {
-        googleTranslateLogo.style.removeProperty('display');
-        googleTranslateLogo.style.visibility = "visible";
-      }
+      googleTranslateLogo.style.display = "";
     }
 
     if (languageSwitcherWrapper.classList.contains("mobile-languages-switcher")) {
@@ -159,6 +147,10 @@ LanguageSwitcher.prototype._toggle = function _toggle(allLanguages, googleTransl
     item.style.display = "";
   });
   googleTranslateLogo.style.display = "";
+
+  if (window.location.pathname.indexOf('events') === -1) {
+    googleTranslateLogo.style.display = "none";
+  }
 }; // Hide language list
 
 

@@ -16,6 +16,13 @@
   @if ($language=='ar') or ($language=='ur') {
     text-align: left;
   }
+
+  @media screen and (min-width: $screen-tablet) {
+    width: 75%;
+    text-align: right;
+    margin-left: auto;
+    // margin-right: 0;
+  }
 }
 
 .wpml-ls-legacy-list-horizontal {
