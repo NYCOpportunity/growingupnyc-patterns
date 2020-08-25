@@ -127,4 +127,5 @@
 = content('script')
   javascript:
    gunyc.navigation({sideSelector: 'right'});
-   var languageSwitcher = gunyc.languageSwitcher();
+   // Pass an argument true to display google translate logo on 'translate' button click
+   var languageSwitcher = gunyc.languageSwitcher(true);

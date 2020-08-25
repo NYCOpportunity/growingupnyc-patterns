@@ -5,7 +5,7 @@ class LanguageSwitcher {
   /**
    * @constructor
    */
-  constructor() {
+  constructor(library = false) {
     this._settings = {
       selector: LanguageSwitcher.selector,
       target: LanguageSwitcher.target,
@@ -13,6 +13,7 @@ class LanguageSwitcher {
       languageSwitcherWrapper: LanguageSwitcher.languageSwitcherWrapper,
       logoWrapper: LanguageSwitcher.logoWrapper,
       googleTranslateLogo: LanguageSwitcher.googleTranslateLogo
+
     };
 
     const languagesDiv = document.querySelector(`.${this._settings.target}`)
@@ -22,6 +23,7 @@ class LanguageSwitcher {
     const allLanguages = document.querySelectorAll(".wpml-ls-item");
     const googleTranslateLogo = document.querySelector(`.${this._settings.googleTranslateLogo}`)
     let isLanguageSwitcherOpen = false;
+    const isLibrary = library
     // Media Query
     let isMobile = LanguageSwitcher.checkScreenSize();
 
@@ -75,7 +77,7 @@ class LanguageSwitcher {
     // On click (Translate Link) reveal language list
     aTag.addEventListener('click', (e) => {
       isLanguageSwitcherOpen = true;
-      this._toggle(allLanguages, googleTranslateLogo, isMobile);
+      this._toggle(allLanguages, googleTranslateLogo, isMobile, isLibrary);
       li.style.display = "none";
       // on mobile"mobile-languages-switcher" class will reposition and style the language switcher
       languageSwitcherWrapper.classList.toggle("mobile-languages-switcher");
@@ -150,13 +152,16 @@ class LanguageSwitcher {
   }
 
   // Unhide language list
-  _toggle(allLanguages, googleTranslateLogo, isMobile) {
+  _toggle(allLanguages, googleTranslateLogo, isMobile, isLibrary) {
     allLanguages.forEach(item => {
       item.style.display = ""
     })
     googleTranslateLogo.style.display = "";
-    if (window.location.pathname.indexOf('events') === -1) {
-      googleTranslateLogo.style.display = "none";
+    // if the function is being called from the core check the page and render the google translate logo conditionally
+    if (!isLibrary) {
+      if (window.location.pathname.indexOf('events') === -1) {
+        googleTranslateLogo.style.display = "none";
+      }
     }
   }
 
@@ -233,5 +238,6 @@ LanguageSwitcher.currentLanguage = "wpml-ls-current-language"
 LanguageSwitcher.languageSwitcherWrapper = "c-language-switcher-wrapper"
 LanguageSwitcher.logoWrapper = "o-navigation__logo-wrapper"
 LanguageSwitcher.googleTranslateLogo = "google-translate-logo"
+LanguageSwitcher.library = false
 
 export default LanguageSwitcher;

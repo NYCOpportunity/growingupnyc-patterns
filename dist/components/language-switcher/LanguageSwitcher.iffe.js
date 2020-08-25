@@ -1,8 +1,9 @@
 var LanguageSwitcher = (function () {
   'use strict';
 
-  var LanguageSwitcher = function LanguageSwitcher() {
+  var LanguageSwitcher = function LanguageSwitcher(library) {
     var this$1 = this;
+    if (library === void 0) library = false;
     this._settings = {
       selector: LanguageSwitcher.selector,
       target: LanguageSwitcher.target,
@@ -17,7 +18,8 @@ var LanguageSwitcher = (function () {
     var body = document.querySelector("body");
     var allLanguages = document.querySelectorAll(".wpml-ls-item");
     var googleTranslateLogo = document.querySelector("." + this._settings.googleTranslateLogo);
-    var isLanguageSwitcherOpen = false; // Media Query
+    var isLanguageSwitcherOpen = false;
+    var isLibrary = library; // Media Query
 
     var isMobile = LanguageSwitcher.checkScreenSize(); // Gotchas --
 
@@ -70,7 +72,7 @@ var LanguageSwitcher = (function () {
     aTag.addEventListener('click', function (e) {
       isLanguageSwitcherOpen = true;
 
-      this$1._toggle(allLanguages, googleTranslateLogo, isMobile);
+      this$1._toggle(allLanguages, googleTranslateLogo, isMobile, isLibrary);
 
       li.style.display = "none"; // on mobile"mobile-languages-switcher" class will reposition and style the language switcher
 
@@ -143,14 +145,16 @@ var LanguageSwitcher = (function () {
   }; // Unhide language list
 
 
-  LanguageSwitcher.prototype._toggle = function _toggle(allLanguages, googleTranslateLogo, isMobile) {
+  LanguageSwitcher.prototype._toggle = function _toggle(allLanguages, googleTranslateLogo, isMobile, isLibrary) {
     allLanguages.forEach(function (item) {
       item.style.display = "";
     });
-    googleTranslateLogo.style.display = "";
+    googleTranslateLogo.style.display = ""; // if the function is being called from the core check the page and render the google translate logo conditionally
 
-    if (window.location.pathname.indexOf('events') === -1) {
-      googleTranslateLogo.style.display = "none";
+    if (!isLibrary) {
+      if (window.location.pathname.indexOf('events') === -1) {
+        googleTranslateLogo.style.display = "none";
+      }
     }
   }; // Hide language list
 
@@ -230,6 +234,7 @@ var LanguageSwitcher = (function () {
   LanguageSwitcher.languageSwitcherWrapper = "c-language-switcher-wrapper";
   LanguageSwitcher.logoWrapper = "o-navigation__logo-wrapper";
   LanguageSwitcher.googleTranslateLogo = "google-translate-logo";
+  LanguageSwitcher.library = false;
 
   return LanguageSwitcher;
 
