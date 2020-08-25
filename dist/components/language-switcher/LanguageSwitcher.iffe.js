@@ -28,9 +28,11 @@ var LanguageSwitcher = (function () {
 
     if (!languageSwitcherWrapper) {
       logoWrapper.style.marginTop = "2rem";
-    } // add 'Translate' title and hide all languages
-    // Crated a list element and append an anchor tag with the string 'Translate'
-    // Span element
+    }
+    /* Add 'Translate' title and hide all languages
+       Create a list element and append an anchor tag with the string 'Translate'
+       Span element
+     */
 
 
     var span = document.createElement("span");
@@ -124,7 +126,6 @@ var LanguageSwitcher = (function () {
     }); // Onresize check screen size and apply all the changes
 
     window.addEventListener("resize", function () {
-      console.log('isLanguageSwitcherOpen:', isLanguageSwitcherOpen);
       isMobile = LanguageSwitcher.checkScreenSize();
 
       if (!isMobile.matches) {

@@ -34,9 +34,10 @@ class LanguageSwitcher {
       logoWrapper.style.marginTop = "2rem";
     }
 
-    // add 'Translate' title and hide all languages
-    // Crated a list element and append an anchor tag with the string 'Translate'
-    // Span element
+    /* Add 'Translate' title and hide all languages
+       Create a list element and append an anchor tag with the string 'Translate'
+       Span element
+     */
     const span = document.createElement("span");
     if (document.querySelector("[data-js='translate']")) {
       span.classList.add("wpml-ls-native");
@@ -131,7 +132,6 @@ class LanguageSwitcher {
 
     // Onresize check screen size and apply all the changes
     window.addEventListener("resize", function () {
-      console.log('isLanguageSwitcherOpen:', isLanguageSwitcherOpen)
       isMobile = LanguageSwitcher.checkScreenSize();
       if (!isMobile.matches) {
         LanguageSwitcher.removeCloseIconTitle(liTag, closeIconLi, isMobile);

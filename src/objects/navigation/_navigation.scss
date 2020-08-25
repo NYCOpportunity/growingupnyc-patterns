@@ -31,10 +31,10 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
   height: auto;
   position: relative;
   z-index: $z-index-header;
-  height: rem-calc($height-banner-large);
+  // height: rem-calc($height-banner-large);
 
   @media screen and (min-width: $screen-tablet) {
-    height: rem-calc($height-banner-large);
+    // height: rem-calc($height-banner-large);
   }
 }
 
@@ -51,7 +51,7 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
   padding: 0 5px 6px;
   position: absolute;
   // top: rem-calc(-35);
-  top: -2.5875rem;
+  // top: -2.5875rem;
   width: rem-calc($width-banner-logo);
 
   @media screen and (min-width: $screen-mobile) {
@@ -63,13 +63,13 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
     height: rem-calc($height-banner-logo-large);
     padding: 0 16px 15px 14px;
     width: rem-calc($width-banner-logo-large);
-    top: -4.375rem;
+    // top: -4.375rem;
   }
 
 
   @media screen and (min-width: $screen-desktop) {
     // top: rem-calc(-38px);
-    top: -4.375rem;
+    // top: -4.375rem;
   }
 }
 
@@ -120,7 +120,8 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
 	@if ($language == 'ar') or ($language == 'ur') {
     float: left;
   } @else {
-    float: right;
+    // float: right;
+    text-align: right;
 	}
 
   li {
@@ -148,7 +149,8 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
 
   @media screen and (min-width: $screen-tablet) {
     padding-top: rem-calc(20px);
-    padding-bottom: 0;
+    padding-bottom: rem-calc(20px);
+    // padding-bottom: 0;
 
     li {
       margin-right: 0;
