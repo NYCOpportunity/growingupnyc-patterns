@@ -1,6 +1,7 @@
 /**
  * Language-switcher
  */
+ @import 'config/tokens';
 
 @import 'config/cdn';
 @import 'config/colors';
@@ -115,10 +116,11 @@
     width: 100%;
     overflow: scroll;
     z-index: 99;
+    left: 0;
 
-    .o-container {
-      padding: 0;
-    }
+    // .o-container {
+    //   padding: 0;
+    // }
 
     .wpml-ls-item {
       display: block !important;
@@ -126,10 +128,17 @@
       padding: 1rem 0 !important;
       margin: 0 !important;
     }
-    .o-container {
+    // .o-container {
+      // padding: 0;
+
       .wpml-ls-legacy-list-horizontal {
         width: 100%;
-        padding: 0 1rem;
+        padding-left: rem-calc($outer-gutter);
+        padding-right: rem-calc($outer-gutter);
+
+        @media screen and (min-width: $screen-tablet) {
+          padding: 0;
+        }
 
         .pick-a-language {
           font-size: .6875rem;
@@ -223,7 +232,7 @@
         }
       }
     }
-  }
+  // }
 }
 
 .google-translate-logo {

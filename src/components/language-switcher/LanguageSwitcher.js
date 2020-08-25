@@ -30,9 +30,9 @@ class LanguageSwitcher {
       languagesDiv.classList.add("desktop:w-full");
     }
     // On mobile and language swithcer is open add 2rem marginTop to logo wrapper to stay inline
-    if (!languageSwitcherWrapper) {
-      logoWrapper.style.marginTop = "2rem";
-    }
+    // if (!languageSwitcherWrapper) {
+    //   logoWrapper.style.marginTop = "2rem";
+    // }
 
     /* Add 'Translate' title and hide all languages
        Create a list element and append an anchor tag with the string 'Translate'
@@ -83,7 +83,7 @@ class LanguageSwitcher {
       // on mobile"mobile-languages-switcher" class will reposition and style the language switcher
       languageSwitcherWrapper.classList.toggle("mobile-languages-switcher");
       // Adjusting logo postion on pages without language switcher
-      logoWrapper.classList.add("ls-logo");
+      // logoWrapper.classList.add("ls-logo");
       LanguageSwitcher.addCloseIconTitle(liTag, closeIconLi, isMobile)
 
       // On mobile change body element overflow to hidden
