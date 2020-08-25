@@ -23,11 +23,7 @@ var LanguageSwitcher = (function () {
 
     if (languagesDiv) {
       languagesDiv.classList.add("desktop:w-full");
-    } // On mobile and language swithcer is open add 2rem marginTop to logo wrapper to stay inline
-    // if (!languageSwitcherWrapper) {
-    // logoWrapper.style.marginTop = "2rem";
-    // }
-
+    }
     /* Add 'Translate' title and hide all languages
        Create a list element and append an anchor tag with the string 'Translate'
        Span element
@@ -163,12 +159,7 @@ var LanguageSwitcher = (function () {
     allLanguages.forEach(function (item) {
       item.style.display = "";
     });
-
-    if (isMobile.matches) {
-      googleTranslateLogo.style.display = "";
-    } else {
-      googleTranslateLogo.style.visibility = "visible";
-    }
+    googleTranslateLogo.style.display = "";
   }; // Hide language list
 
 
@@ -178,12 +169,7 @@ var LanguageSwitcher = (function () {
         item.style.display = "none";
       }
     });
-
-    if (isMobile.matches) {
-      googleTranslateLogo.style.display = "none";
-    } else {
-      googleTranslateLogo.style.visibility = "hidden";
-    }
+    googleTranslateLogo.style.display = "none";
   }; // Media query
 
 
