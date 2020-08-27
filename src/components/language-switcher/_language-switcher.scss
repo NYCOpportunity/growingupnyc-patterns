@@ -14,7 +14,8 @@
   justify-content: flex-end;
 
   @if ($language=='ar') or ($language=='ur') {
-    text-align: left;
+    width: 75%;
+    margin-left:0; margin-right:auto;
   }
 
   @media screen and (min-width: $screen-tablet) {
