@@ -87,7 +87,7 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  padding-top: 5px;
+  padding-top: 6px;
   svg {
     display: inline-block;
     height: 15px;
@@ -132,66 +132,37 @@
       justify-content: flex-end;
       flex-direction: column;
 
+      ul {
+        li {
+          a {
+            padding: 0;
+
+            @if ($language=='ar') or ($language=='ur') {
+              text-align: right;
+            } @else {
+              text-align: left;
+            }
+
+          }
+        }
+      }
+
       .pick-language-close-wrapper {
         padding: 2rem 0 1rem 0;
       }
 
-      .language-list-button-wrapper {
+      .wpml-ls-legacy-list-horizontal {
+        width: 100%;
+        padding: 0;
 
-        .c-language-switcher__horizontal {
-          width: 100%;
+        // @media screen and (min-width: $screen-tablet) {
+        // }
 
-          @media screen and (min-width: $screen-tablet) {
-            padding: 0;
-          }
-
-
-          ul {
-            li {
-              a {
-                padding: 0;
-
-                @if ($language=='ar') or ($language=='ur') {
-                  text-align: right;
-                } @else {
-                  text-align: left;
-                }
-
-              }
-            }
-          }
-
-          // Close lnaguage switcher icon
-          .ls-close-link {
-            &:before {
-              content: "";
-              -webkit-mask: url("#{$cdn}svg/icon-close.svg") no-repeat 50% 50%;
-              mask: url("#{$cdn}svg/icon-close.svg") no-repeat 50% 50%;
-              display: inline-block;
-              height: 25px;
-              width: 32px;
-              margin-bottom: -8px;
-              background-color: $color-gray;
-
-              @if ($language=='ar') or ($language=='ur') {
-                width: 30px;
-              }
-
-              @else {
-                width: 22px;
-              }
-            }
-
-            &:hover:before {
-              background-color: $color-primary;
-            }
-          }
-
-          .wpml-ls-item-ht {
-            border: none;
-          }
+        .wpml-ls-item-ht {
+          border: none;
         }
       }
+
     }
 
 

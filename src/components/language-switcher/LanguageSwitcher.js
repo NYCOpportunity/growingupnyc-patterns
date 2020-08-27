@@ -12,28 +12,25 @@ class LanguageSwitcher {
       currentLanguage: LanguageSwitcher.currentLanguage,
       languageSwitcherWrapper: LanguageSwitcher.languageSwitcherWrapper,
       logoWrapper: LanguageSwitcher.logoWrapper,
-      googleTranslateLogo: LanguageSwitcher.googleTranslateLogo
+      googleTranslateLogo: LanguageSwitcher.googleTranslateLogo,
+      translateButton: LanguageSwitcher.translateButton,
+      pickAlanguage: LanguageSwitcher.pickAlanguage,
+      closeMobileLanguageMenu: LanguageSwitcher.closeMobileLanguageMenu,
 
     };
 
-    const languagesDiv = document.querySelector(`.${this._settings.target}`)
     const languageSwitcherWrapper = document.querySelector(`.${this._settings.languageSwitcherWrapper}`);
     const logoWrapper = document.querySelector(`.${this._settings.logoWrapper}`);
     let body = document.querySelector("body");
     const allLanguages = document.querySelectorAll(".wpml-ls-item");
     const googleTranslateLogo = document.querySelector(`.${this._settings.googleTranslateLogo}`)
-    const translateButton = document.querySelector("[data-js='js-translate']")
-    const pickAlanguage = document.querySelector("[data-js='js-pick-a-language']")
-    const closeMobileLanguageMenu = document.querySelector("[data-js='close-mobile-language-menu']")
+    const translateButton = document.querySelector(this._settings.translateButton)
+    const pickAlanguage = document.querySelector(this._settings.pickAlanguage)
+    const closeMobileLanguageMenu = document.querySelector(this._settings.closeMobileLanguageMenu)
     let isLanguageSwitcherOpen = false;
 
     // Media Query
     let isMobile = LanguageSwitcher.checkScreenSize();
-
-    // Gotchas --
-    if (languagesDiv) {
-      languagesDiv.classList.add("desktop:w-full");
-    }
 
     // Hide all languages and google translate logo
     this._hideAllLanguages(allLanguages, googleTranslateLogo, isMobile, closeMobileLanguageMenu, pickAlanguage );
@@ -178,6 +175,8 @@ LanguageSwitcher.currentLanguage = "wpml-ls-current-language"
 LanguageSwitcher.languageSwitcherWrapper = "c-language-switcher-wrapper"
 LanguageSwitcher.logoWrapper = "o-navigation__logo-wrapper"
 LanguageSwitcher.googleTranslateLogo = "google-translate-logo"
-LanguageSwitcher.library = false
+LanguageSwitcher.translateButton = "[data-js='js-translate']"
+LanguageSwitcher.pickAlanguage = "[data-js='js-pick-a-language']"
+LanguageSwitcher.closeMobileLanguageMenu = "[data-js='close-mobile-language-menu']"
 
 export default LanguageSwitcher;

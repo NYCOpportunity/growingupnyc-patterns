@@ -8,25 +8,22 @@ var LanguageSwitcher = function LanguageSwitcher() {
     currentLanguage: LanguageSwitcher.currentLanguage,
     languageSwitcherWrapper: LanguageSwitcher.languageSwitcherWrapper,
     logoWrapper: LanguageSwitcher.logoWrapper,
-    googleTranslateLogo: LanguageSwitcher.googleTranslateLogo
+    googleTranslateLogo: LanguageSwitcher.googleTranslateLogo,
+    translateButton: LanguageSwitcher.translateButton,
+    pickAlanguage: LanguageSwitcher.pickAlanguage,
+    closeMobileLanguageMenu: LanguageSwitcher.closeMobileLanguageMenu
   };
-  var languagesDiv = document.querySelector("." + this._settings.target);
   var languageSwitcherWrapper = document.querySelector("." + this._settings.languageSwitcherWrapper);
   var logoWrapper = document.querySelector("." + this._settings.logoWrapper);
   var body = document.querySelector("body");
   var allLanguages = document.querySelectorAll(".wpml-ls-item");
   var googleTranslateLogo = document.querySelector("." + this._settings.googleTranslateLogo);
-  var translateButton = document.querySelector("[data-js='js-translate']");
-  var pickAlanguage = document.querySelector("[data-js='js-pick-a-language']");
-  var closeMobileLanguageMenu = document.querySelector("[data-js='close-mobile-language-menu']");
+  var translateButton = document.querySelector(this._settings.translateButton);
+  var pickAlanguage = document.querySelector(this._settings.pickAlanguage);
+  var closeMobileLanguageMenu = document.querySelector(this._settings.closeMobileLanguageMenu);
   var isLanguageSwitcherOpen = false; // Media Query
 
-  var isMobile = LanguageSwitcher.checkScreenSize(); // Gotchas --
-
-  if (languagesDiv) {
-    languagesDiv.classList.add("desktop:w-full");
-  } // Hide all languages and google translate logo
-
+  var isMobile = LanguageSwitcher.checkScreenSize(); // Hide all languages and google translate logo
 
   this._hideAllLanguages(allLanguages, googleTranslateLogo, isMobile, closeMobileLanguageMenu, pickAlanguage); //On click (Translate Link) reveal language list
 
@@ -170,6 +167,8 @@ LanguageSwitcher.currentLanguage = "wpml-ls-current-language";
 LanguageSwitcher.languageSwitcherWrapper = "c-language-switcher-wrapper";
 LanguageSwitcher.logoWrapper = "o-navigation__logo-wrapper";
 LanguageSwitcher.googleTranslateLogo = "google-translate-logo";
-LanguageSwitcher.library = false;
+LanguageSwitcher.translateButton = "[data-js='js-translate']";
+LanguageSwitcher.pickAlanguage = "[data-js='js-pick-a-language']";
+LanguageSwitcher.closeMobileLanguageMenu = "[data-js='close-mobile-language-menu']";
 
 module.exports = LanguageSwitcher;
