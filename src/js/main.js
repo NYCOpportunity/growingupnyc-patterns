@@ -82,8 +82,8 @@ class main {
     return new Reveal(elNumber);
   }
 
-	languageSwitcher(library) {
-    return new LanguageSwitcher(library);
+	languageSwitcher() {
+    return new LanguageSwitcher();
   }
 
 	// offCanvas() {

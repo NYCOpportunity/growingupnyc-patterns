@@ -8,7 +8,7 @@
 @import 'scss/functions/rem-calc';
 
 .c-language__switcher {
-  text-align: right;
+  // text-align: right;
   z-index: 1;
   display: flex;
   justify-content: flex-end;
@@ -19,43 +19,12 @@
 
   @media screen and (min-width: $screen-tablet) {
     width: 75%;
-    text-align: right;
-    margin-left: auto;
-    // margin-right: 0;
+    margin-left:auto; margin-right:0;
   }
 }
 
 .wpml-ls-legacy-list-horizontal {
   padding: 7px 0 0;
-
-  .wpml-ls-item-button {
-    .title-tag {
-      padding-top: 0;
-
-      &:before {
-        content: "";
-        -webkit-mask: url("#{$cdn}svg/icon-translate.svg")  no-repeat 50% 50%;
-        mask: url("#{$cdn}svg/icon-translate.svg")  no-repeat 50% 50%;
-        display: inline-block;
-        height: 15px;
-        width: 22px;
-        margin-bottom: -3px;
-        background-color: $color-gray;
-
-        @if ($language=='ar') or ($language=='ur') {
-          width: 30px;
-        }
-
-        @else {
-          width: 22px;
-        }
-      }
-
-      &:hover:before {
-        background-color: $color-primary;
-      }
-    }
-  }
 
   ul {
     list-style: none;
@@ -111,9 +80,37 @@
   }
 }
 
+.translate-title {
+  font-size: .6875rem;
+  color: #999;
+  // padding: 5px 8px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding-top: 13px;
+  svg {
+    display: inline-block;
+    height: 15px;
+    width: 22px;
+    margin-bottom: 0px;
+  }
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+
+
 // mobile-languages-switcher class is added to the language switcher div on lnguage switcher click
 @media screen and (max-width: $screen-tablet) {
 
+  .title-tag {
+    font-size: .6875rem;
+    color: #999;
+    // padding: 5px 0;
+
+  }
   // mobile-languages-switcher class is added to the language switcher div on lnguage switcher click
   .mobile-languages-switcher {
     position: fixed;
@@ -125,9 +122,78 @@
     z-index: 99;
     left: 0;
 
-    // .o-container {
-    //   padding: 0;
-    // }
+    padding-left: rem-calc($outer-gutter);
+    padding-right: rem-calc($outer-gutter);
+
+    .c-language__switcher {
+      // text-align: right;
+      z-index: 1;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+
+      .pick-language-close-wrapper {
+        padding: 2rem 0 1rem 0;
+      }
+
+      .language-list-button-wrapper {
+
+        .c-language-switcher__horizontal {
+          width: 100%;
+
+          @media screen and (min-width: $screen-tablet) {
+            padding: 0;
+          }
+
+
+          ul {
+            li {
+              a {
+                padding: 0;
+
+                @if ($language=='ar') or ($language=='ur') {
+                  text-align: right;
+                } @else {
+                  text-align: left;
+                }
+
+              }
+            }
+          }
+
+          // Close lnaguage switcher icon
+          .ls-close-link {
+            &:before {
+              content: "";
+              -webkit-mask: url("#{$cdn}svg/icon-close.svg") no-repeat 50% 50%;
+              mask: url("#{$cdn}svg/icon-close.svg") no-repeat 50% 50%;
+              display: inline-block;
+              height: 25px;
+              width: 32px;
+              margin-bottom: -8px;
+              background-color: $color-gray;
+
+              @if ($language=='ar') or ($language=='ur') {
+                width: 30px;
+              }
+
+              @else {
+                width: 22px;
+              }
+            }
+
+            &:hover:before {
+              background-color: $color-primary;
+            }
+          }
+
+          .wpml-ls-item-ht {
+            border: none;
+          }
+        }
+      }
+    }
+
 
     .wpml-ls-item {
       display: block !important;
@@ -135,121 +201,27 @@
       padding: 1rem 0 !important;
       margin: 0 !important;
     }
-    // .o-container {
-      // padding: 0;
 
-      .wpml-ls-legacy-list-horizontal {
-        width: 100%;
-        padding-left: rem-calc($outer-gutter);
-        padding-right: rem-calc($outer-gutter);
-
-        @media screen and (min-width: $screen-tablet) {
-          padding: 0;
-        }
-
-        .pick-a-language {
-          font-size: .6875rem;
-          color: #999;
-          text-decoration: none;
-        }
-
-        ul {
-          li {
-            &:first-child {
-              border: none;
-              width: 50%;
-              display: inline-block !important;
-
-              @if ($language=='ar') or ($language=='ur') {
-                text-align: right;
-              }
-
-              @else {
-                text-align: left;
-              }
-            }
-
-            &:nth-child(2) {
-              border: none;
-              width: 50%;
-              display: inline-block !important;
-
-              @if ($language=='ar') or ($language=='ur') {
-                text-align: left;
-              }
-
-              @else {
-                text-align: right;
-              }
-
-              a {
-                @if ($language=='ar') or ($language=='ur') {
-                  text-align: left;
-                }
-
-                @else {
-                  text-align: right;
-                }
-
-              }
-            }
-
-            a {
-              padding: 0;
-
-              @if ($language=='ar') or ($language=='ur') {
-                text-align: right;
-              }
-
-              @else {
-                text-align: left;
-              }
-            }
-          }
-        }
-
-        // Close lnaguage switcher icon
-        .ls-close-link {
-          &:before {
-            content: "";
-            -webkit-mask: url("#{$cdn}svg/icon-close.svg") no-repeat 50% 50%;
-            mask: url("#{$cdn}svg/icon-close.svg") no-repeat 50% 50%;
-            display: inline-block;
-            height: 25px;
-            width: 32px;
-            margin-bottom: -8px;
-            background-color: $color-gray;
-
-            @if ($language=='ar') or ($language=='ur') {
-              width: 30px;
-            }
-
-            @else {
-              width: 22px;
-            }
-          }
-
-          &:hover:before {
-            background-color: $color-primary;
-          }
-        }
-
-        .wpml-ls-item-ht {
-          border: none;
-        }
-      }
-    }
-  // }
+  }
 }
 
 .google-translate-logo {
   text-align: center;
+  display: flex;
+  justify-content: center;
 
   @media screen and (min-width: $screen-tablet) {
+    justify-content: flex-end;
     text-align: right;
 
     @if ($language=='ar') or ($language=='ur') {
       text-align: left;
     }
    }
+}
+
+.pick-a-language {
+  font-size: .6875rem;
+  color: #999;
+  text-decoration: none;
 }
