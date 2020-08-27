@@ -24,7 +24,7 @@
 }
 
 .wpml-ls-legacy-list-horizontal {
-  padding: 7px 0 0;
+  width: 100%;
 
   ul {
     list-style: none;
@@ -87,7 +87,7 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  padding-top: 13px;
+  padding-top: 5px;
   svg {
     display: inline-block;
     height: 15px;
