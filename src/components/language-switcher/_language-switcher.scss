@@ -14,13 +14,17 @@
   justify-content: flex-end;
 
   @if ($language=='ar') or ($language=='ur') {
-    width: 75%;
-    margin-left:0; margin-right:auto;
+    text-align: left;
   }
 
   @media screen and (min-width: $screen-tablet) {
     width: 75%;
     margin-left:auto; margin-right:0;
+
+    @if ($language=='ar') or ($language=='ur') {
+      margin-left:0; margin-right:auto;
+    }
+
   }
 }
 
