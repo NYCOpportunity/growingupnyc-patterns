@@ -31,6 +31,11 @@
   }
 }
 
+.c-hero-cover {
+  background-image: linear-gradient(rgba(0, 85, 184, .2), rgba(0, 85, 184, .2));
+  background-size: cover;
+}
+
 .c-hero--light {
   color: $color-text;
   text-align: left;
