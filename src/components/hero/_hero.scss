@@ -71,6 +71,16 @@
   }
 }
 
+.c-hero--medium {
+  @media screen and (min-width: $screen-tablet) {
+    padding: rem-calc(165 40 80);
+  }
+
+  @media screen and (min-width: $screen-desktop-large) {
+    padding: rem-calc(227 80 80);
+  }
+}
+
 .c-hero--long-text {
   text-align: left;
 }

@@ -87,6 +87,7 @@ a.bg-baby--secondary {
 button.bg-toddler--primary,
 a.bg-toddler--primary {
   transition: background-color 250ms linear;
+  &:hover,
   &:focus,
   &.is-active {
     background-color: $color-toddler-secondary !important;
@@ -156,6 +157,7 @@ a.bg-toddler--secondary {
 button.bg-pre-schooler--primary,
 a.bg-pre-schooler--primary {
   transition: background-color 250ms linear;
+  &:hover,
   &:focus,
   &.is-active {
     background-color: $color-pre-schooler-secondary !important;
