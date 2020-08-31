@@ -237,6 +237,7 @@ module.exports = {
     'icon-recurring',
     'icon-search',
     'icon-sms',
+    'icon-star',
     'icon-summer-guides',
     'icon-teen',
     'icon-toddler',
