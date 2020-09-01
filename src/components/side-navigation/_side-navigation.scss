@@ -10,6 +10,11 @@ $indicator-size: 10px;
 
 .c-nav-list {
   display: block;
+  width: 100%;
+  z-index: -1;
+	@media screen and (min-width: $screen-desktop) {
+    width: rem-calc(341) !important;
+  }
 }
 
 // Navigation List Item

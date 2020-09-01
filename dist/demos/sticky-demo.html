@@ -13,15 +13,15 @@
   <div>
     <div></div>
   </div>
-  <header class="c-banner py-24 bg-color-gray-dark">
-    <div class=" bg-color-gray-dark"></div>
+  <header class="c-banner py-24 bg-color-gray-light">
+    <h1>Sticky Demo</h1>
   </header>
   <main id="main" role="main">
-    <article class="o-container js-sticky-container flex flex-wrap">
-      <div class="o-article-sidebar large:w-4/12">
+    <div class="o-container desktop:flex">
+      <article class="o-article-sidebar desktop:w-4/12"
+        data-js="sticky-container">
         <div class="o-content-container--compact u-shift-up">
-          <ol class="c-nav-list js-sticky js-section-set o-sticky-nav"
-            data-js="sticky">
+          <ol class="c-nav-list js-section-set o-sticky-nav" data-js="sticky">
             <li class="c-nav-list__item"><a
                 class="scroll js-section c-nav-list__link"
                 data-section="section-events" href="#section-events">Events<svg
@@ -44,8 +44,8 @@
                 </svg></a></li>
           </ol>
         </div>
-      </div>
-      <div class="o-article js-sticky-article large:w-8/12">
+      </article>
+      <div class="o-article desktop:w-8/12">
         <section class="c-block-list o-content-container pt-12"
           id="section-events">
           <h2>Events</h2>
@@ -65,18 +65,6 @@
               curious reader, “Its ‘words’ loosely approximate the frequency
               with which letters occur in English, which is why at a glance it
               looks pretty real.”</p>
-            <p>The placeholder text, beginning with the line “Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit”, looks like Latin because
-              in its youth, centuries ago, it was Latin.</p>
-            <p>Until recently, the prevailing view assumed lorem ipsum was born
-              as a nonsense text. “It's not Latin, though it looks like it, and
-              it actually says nothing,” Before &amp; After magazine answered a
-              curious reader, “Its ‘words’ loosely approximate the frequency
-              with which letters occur in English, which is why at a glance it
-              looks pretty real.”</p>
-            <p>The placeholder text, beginning with the line “Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit”, looks like Latin because
-              in its youth, centuries ago, it was Latin.</p>
           </div>
         </section>
         <section class="c-block-list o-content-container pt-12"
@@ -98,18 +86,6 @@
               curious reader, “Its ‘words’ loosely approximate the frequency
               with which letters occur in English, which is why at a glance it
               looks pretty real.”</p>
-            <p>The placeholder text, beginning with the line “Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit”, looks like Latin because
-              in its youth, centuries ago, it was Latin.</p>
-            <p>Until recently, the prevailing view assumed lorem ipsum was born
-              as a nonsense text. “It's not Latin, though it looks like it, and
-              it actually says nothing,” Before &amp; After magazine answered a
-              curious reader, “Its ‘words’ loosely approximate the frequency
-              with which letters occur in English, which is why at a glance it
-              looks pretty real.”</p>
-            <p>The placeholder text, beginning with the line “Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit”, looks like Latin because
-              in its youth, centuries ago, it was Latin.</p>
           </div>
         </section>
         <section class="c-block-list o-content-container pt-12"
@@ -131,26 +107,14 @@
               curious reader, “Its ‘words’ loosely approximate the frequency
               with which letters occur in English, which is why at a glance it
               looks pretty real.”</p>
-            <p>The placeholder text, beginning with the line “Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit”, looks like Latin because
-              in its youth, centuries ago, it was Latin.</p>
-            <p>Until recently, the prevailing view assumed lorem ipsum was born
-              as a nonsense text. “It's not Latin, though it looks like it, and
-              it actually says nothing,” Before &amp; After magazine answered a
-              curious reader, “Its ‘words’ loosely approximate the frequency
-              with which letters occur in English, which is why at a glance it
-              looks pretty real.”</p>
-            <p>The placeholder text, beginning with the line “Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit”, looks like Latin because
-              in its youth, centuries ago, it was Latin.</p>
           </div>
         </section>
       </div>
-    </article>
+    </div>
   </main>
-  <footer class="c-footer py-48 bg-color-gray-dark">
-    <div class="my-4 text-center m-auto"><a class="text-color-white"
-        href="/sticky">Back to Sticky</a></div>
+  <footer class="bg-color-blue-light p-20" data-js="sticky-end">
+    <div class="p-20"></div>
+    <div class="p-20"></div>
   </footer>
   <script src="../../scripts/growingup-nyc.js"></script>
   <script type="text/javascript">

@@ -1,170 +1,99 @@
 'use strict';
 
-/**
- * Static column module
- * Similar to the general sticky module but used specifically when one column
- * of a two-column layout is meant to be sticky
- * @module modules/StickyVanilla
- * @see modules/stickyNav
- */
+import '../functions/foreach';
 
-import forEach from 'lodash/forEach';
-// import throttle from 'lodash/throttle';
-// import debounce from 'lodash/debounce';
-
-class StickyVanilla {
-  constructor(mediaQuery) {
-    let screen = mediaQuery || StickyVanilla.mediaQuery
+class Sticky {
+  constructor() {
 
     this._settings = {
-        selector: StickyVanilla.selector,
-        footer: StickyVanilla.footer,
-        stickyContainer: StickyVanilla.stickyContainer
-      };
+      selector: Sticky.selector,
+      end: Sticky.end,
+      container: Sticky.container,
+    };
 
-    const stickyContent = document.querySelectorAll(`.${this._settings.selector}`);
-    const footer = document.querySelector(`.${this._settings.footer}`);
-    const stickyContainer = document.querySelector(`.${this._settings.stickyContainer}`);
+    const stickyContent = document.querySelectorAll(this._settings.selector);
+    const stickyEnd = document.querySelector(this._settings.end);
 
-    let isSticky = false; // Whether the sidebar is sticky at this exact moment in time
-
-    let desktop = window.matchMedia(screen);
-    let isDesk = desktop.matches;
-    if (isDesk) {
-      StickyVanilla.updateDimensions(stickyContainer, stickyContent);
-    }
-
-    window.addEventListener("resize", function () {
-			isDesk = desktop.matches;
-      if(isDesk) {
-        StickyVanilla.updateDimensions(stickyContainer, stickyContent);
-      } else {
-        StickyVanilla.resetWidth(stickyContent)
-      }
+    Sticky.assignStickyFeature(stickyContent, stickyEnd);
+    window.addEventListener('scroll', function () {
+      Sticky.snapToStickyEnd(stickyEnd, stickyContent);
     });
-
-      /**
-       * Calculates the window position and sets the appropriate class on the element
-       * @param {object} stickyContentElem - DOM node that should be stickied
-       */
-      this.assignStickyFeature(stickyContent, footer, isSticky);
-      this.snapToFooter(footer, stickyContent);
-      // StickyVanilla.resize(stickyContainer, stickyContent)
+  }
 }
 
 /**
- * Calles the function StickyVanilla.calcWindowPos and passes arguments to determin when to apply or remove sticky class
- * @param {elements} stickyContent elements with the class 'js-sticky'
- * @param {*} footer footer element with class name 'c-footer__reached'
- * @param {boolean} isSticky boolean
+ * Determines stickiness of content
+ * @param {elements} stickyContent content to stay sticky
+ * @param {*} stickyEnd element marking end of sticky
  */
-assignStickyFeature(stickyContent, footer, isSticky) {
+Sticky.assignStickyFeature = function(stickyContent, stickyEnd) {
+
   if (stickyContent) {
-    forEach(stickyContent, function(stickyContentElem) {
-      StickyVanilla.calcWindowPos(stickyContentElem, isSticky);
-      /**
-      * Add event listener for 'scroll'.
-      * @function
-      * @param {object} event - The event object
-      */
-      window.addEventListener('scroll', function() {
-        StickyVanilla.calcWindowPos(stickyContentElem, footer);
+    stickyContent.forEach(function (stickyContentElem) {
+      Sticky.toggleSticky(stickyContentElem);
+      
+      window.addEventListener('scroll', function () {
+        Sticky.toggleSticky(stickyContentElem, stickyEnd);
       }, false);
-
-      /**
-      * Add event listener for 'resize'.
-      * @function
-      * @param {object} event - The event object
-      */
-      window.addEventListener('resize', function() {
-        StickyVanilla.calcWindowPos(stickyContentElem, footer);
+     
+      window.addEventListener('resize', function () {
+        Sticky.toggleSticky(stickyContentElem, stickyEnd);
       }, false);
     });
   }
 }
 
 /**
- * When footer is scrolled up tp the screen a 'stuck' class will be added to the sticky container and will be forced to stuck with the footer
- * @param {element} footer footer element
- * @param {element} stickyContent elements with the class 'js-sticky'
+ * Applies stuck class when the sticky reaches the element marking the end
+ * @param {element} stickyEnd element marking end of sticky
+ * @param {element} stickyContent sticky content
  */
-snapToFooter(footer, stickyContent) {
-    window.addEventListener('scroll', function() {
-      var position = footer.getBoundingClientRect();
+Sticky.snapToStickyEnd = function(stickyEnd, stickyContent) {
 
-      // checking whether fully visible
-      if(position.top >= 0 && position.bottom <= window.innerHeight) {
-        // console.log('Element is fully visible in screen ');
-        forEach(stickyContent, function(stickyContentElem) {
-          stickyContentElem.classList.add(StickyVanilla.StuckClass);
-        });
-      }
+  var position = stickyEnd.getBoundingClientRect();
 
-      forEach(stickyContent, function(stickyContentElem) {
-        var positionSticky = stickyContentElem.getBoundingClientRect();
-        if (positionSticky.top >= 0) {
-          stickyContentElem.classList.remove(StickyVanilla.StuckClass);
-        };
-      })
+  // TODO: dynamically update the denominator
+  const main = document.querySelector('main').offsetHeight / 2;
+
+  if (position.top >= 0 && position.bottom <= main) {
+    stickyContent.forEach(function (stickyContentElem) {
+      stickyContentElem.classList.add(Sticky.StuckClass);
     });
+  } 
+  else {
+    stickyContent.forEach(function (stickyContentElem) {
+      var positionSticky = stickyContentElem.getBoundingClientRect();
+      if (positionSticky.top >= 0) {
+        stickyContentElem.classList.remove(Sticky.StuckClass);
+      };
+    })
   }
+
 }
 
 /**
- * On screen resize the sticky nav element width will be adjusted with the width of it's parent container
- * @param {element} stickyContainer
- * @param {element} stickyContent
- */
-StickyVanilla.updateDimensions = function(stickyContainer, stickyContent) {
-  let stickyContainerWidth = stickyContainer.clientWidth;
-
-  forEach(stickyContent, function(stickyContentElem) {
-    stickyContentElem.style.width = `${stickyContainerWidth}px`;
-   })
-}
-
-/**
- * On mobile the sticky nav element width with be left to span though full width of the screen size
- * @param {*} stickyContent element with class name 'js-sticky'
- */
-StickyVanilla.resetWidth = function(stickyContent) {
-  forEach(stickyContent, function(stickyContentElem) {
-    stickyContentElem.style.width = "";
-   })
-}
-
-/**
- * When the sticky nav reaches the top of the screen stikcy class will be added
+ * Toggles the sticky class
  * @param {element} stickyContentElem
- * @param {boolean} isSticky
  */
 
-StickyVanilla.calcWindowPos = function(stickyContentElem, isSticky) {
-  const articleContent = document.querySelector('.js-sticky-article');
+Sticky.toggleSticky = function(stickyContentElem) {
 
   let elemTop = stickyContentElem.parentElement.getBoundingClientRect().top;
 
-  // Sets element to position absolute if not scrolled to yet.
-  // Absolutely positioning only when necessary and not by default prevents flickering
-  // when removing the "is-bottom" class on Chrome
   if (elemTop > 0) {
-    stickyContentElem.classList.remove(StickyVanilla.StickyClass);
-    articleContent.classList.remove(StickyVanilla.AddLeftMargin);
+    stickyContentElem.classList.remove(Sticky.StickyClass);
   } else {
-    isSticky = true;
-    stickyContentElem.classList.add(StickyVanilla.StickyClass);
-    articleContent.classList.add(StickyVanilla.AddLeftMargin);
+    stickyContentElem.classList.add(Sticky.StickyClass);
   }
 }
 
+/**
+ * Defaults
+ */
+Sticky.selector = '[data-js=sticky]';
+Sticky.end = '[data-js=sticky-end]';
+Sticky.container = '[data-js=sticky-container]';
+Sticky.StickyClass = 'is-sticky';
+Sticky.StuckClass = 'is-stuck';
 
-StickyVanilla.selector = 'js-sticky';
-StickyVanilla.footer = 'c-footer__reached';
-StickyVanilla.stickyContainer = 'o-article-sidebar';
-StickyVanilla.StickyClass = 'is-sticky';
-StickyVanilla.StuckClass = 'is-stuck';
-StickyVanilla.AddLeftMargin = 'o-article--shift';
-StickyVanilla.mediaQuery = '(min-width: 1024px)';
-
-
-export default StickyVanilla;
+export default Sticky;
