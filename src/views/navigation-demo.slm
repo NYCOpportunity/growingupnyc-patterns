@@ -46,9 +46,75 @@
     div class='o-offcanvas__main mb-40'
       header class='o-navigation'
         div class='o-container'
-          a href="#" class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu mt-8"
+          a href="#" class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu"
             span class="o-navigation__logo"
               = 'Growing Up NYC'
+          div class="c-language-switcher-wrapper"
+            div class="c-language__switcher"
+              div class="pick-language-close-wrapper inline-block flex justify-between"
+                span class="text-left pick-a-language" data-js='js-pick-a-language'
+                  = "Pick a language"
+                button class="button--text close-language-switcher" data-js='close-mobile-language-menu'
+                    svg class="icon--small" role="img"
+                      title = 'Close'
+                      use xlink:href="#icon-close"
+              div class="language-list-button-wrapper flex"
+                div class="c-language-switcher__horizontal wpml-ls-legacy-list-horizontal"
+                  ul
+                    li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-en wpml-ls-first-item wpml-ls-item-legacy-list-horizontal"
+                      a href="" title="English"
+                        span
+                          = 'English'
+                    li class=" wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-es wpml-ls-item-legacy-list-horizontal"
+                      a href="" title="Spanish"
+                        span
+                          = 'Spanish'
+                    li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-ar wpml-ls-item-legacy-list-horizontal"
+                      a class="wpml-ls-link" href="" title="Arabic"
+                        span
+                          = 'العربية'
+                    li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-zh-hant wpml-ls-item-legacy-list-horizontal"
+                      a class="wpml-ls-link" href="" title="Traditional Chinese"
+                        span
+                          = '繁體中文'
+                    li class="wpml-ls-current-language wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-fr wpml-ls-item-legacy-list-horizontal"
+                      a class="wpml-ls-link" href="" title="French"
+                        span
+                          = 'Français'
+                    li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-ko wpml-ls-item-legacy-list-horizontal"
+                      a class="wpml-ls-link" href="" title="Korean"
+                        span
+                          = '한국어'
+                    li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-pl wpml-ls-item-legacy-list-horizontal"
+                      a class="wpml-ls-link" href="" title="Polski"
+                        span
+                          = 'polski'
+                    li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-ru wpml-ls-item-legacy-list-horizontal"
+                      a class="wpml-ls-link" href="" title="Russian"
+                        span
+                          = 'Русский'
+                    li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-ur wpml-ls-item-legacy-list-horizontal"
+                      a class="wpml-ls-link" href="" title="Urdu"
+                        span
+                          = 'اردو '
+                    li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-bn wpml-ls-item-legacy-list-horizontal"
+                      a class="wpml-ls-link" href="" title="Bangla"
+                        span
+                          = 'Bangla'
+                    li class="wpml-ls-slot-top_widget wpml-ls-item wpml-ls-item-ht wpml-ls-item-legacy-list-horizontal"
+                      a class="wpml-ls-link" href="" title="Haitian Creole"
+                        span
+                          = 'Haitian Creole'
+                a class="translate-title" data-js='js-translate'
+                  svg class="" role="img"
+                    title = "Close Resources by Age"
+                    use xlink:href="#icon-translate"
+                  span class="desktop:self-end"
+                    = "Translate"
+            span class="google-translate-logo mb-5 tablet:mb-0"
+              svg class="icon--google" role="img"
+                title = "Close Resources by Age"
+                use xlink:href="#icon-google-translate"
           nav class='o-navigation__nav'
             ul class='o-inline'
               li class='o-inline__item'
@@ -75,3 +141,5 @@
 = content('script')
   javascript:
    gunyc.navigation({sideSelector: 'right'});
+   // Pass an argument true to display google translate logo on 'translate' button click
+   var languageSwitcher = gunyc.languageSwitcher();

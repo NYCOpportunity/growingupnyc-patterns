@@ -1072,7 +1072,7 @@ StickyVanilla.calcWindowPos = function (stickyContentElem, isSticky) {
 };
 
 StickyVanilla.selector = 'js-sticky';
-StickyVanilla.footer = 'c-footer__reached';
+StickyVanilla.footer = 'o-footer__reached';
 StickyVanilla.stickyContainer = 'o-article-sidebar';
 StickyVanilla.StickyClass = 'is-sticky';
 StickyVanilla.StuckClass = 'is-stuck';

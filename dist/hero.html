@@ -86,13 +86,13 @@
       </div>
     </nav>
     <div class="o-offcanvas__main js-offcanvas__main">
-      <header class="o-navigation p-12">
+      <header class="o-navigation px-12 py-8">
         <div class="o-container"><a
             class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu mt-1 mobile:h-16 desktop:h-20 shadow-none p-1"
             href="/growingupnyc-patterns-development"><span
               class="o-navigation__logo">Growing Up NYC</span></a>
           <nav class="o-navigation__nav">
-            <ul class="o-inline text-left -mt-8">
+            <ul class="inline-block -mt-8">
               <li class="o-inline__item"><a
                   class="o-navigation__nav-link js-offcanvas"
                   data-js="offcanvas-patterns" href="#patterns">Patterns</a>
@@ -125,7 +125,7 @@
                 <div>
                   <div>
                     <div class="c-hero bg-color-blue-light">
-                      <div class="o-container js-parallax-text">
+                      <div class="o-container">
                         <h1 class="c-hero__title">Programs</h1>
                         <p class="c-hero__tagline">Discover over 70 easy-to-read
                           education, health, and recreation programs, benefits,
@@ -136,7 +136,7 @@
                   <div
                     class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden">
                     <pre>&lt;div class=&quot;c-hero bg-color-blue-light&quot;&gt;
-  &lt;div class=&quot;o-container js-parallax-text&quot;&gt;
+  &lt;div class=&quot;o-container&quot;&gt;
     &lt;h1 class=&quot;c-hero__title&quot;&gt;Programs&lt;/h1&gt;
     &lt;p class=&quot;c-hero__tagline&quot;&gt;Discover over 70 easy-to-read education, health,
       and recreation programs, benefits, and resources in NYC.&lt;/p&gt;
@@ -152,13 +152,17 @@
                 <h1 class="type-h1 ">Hero Light</h1>
               </div>
               <div class="html-tag my-8">
-                <div></div>
+                <div>
+                  <p>The Hero Light component is an introductory header with a
+                    blank background. On Growing Up NYC, this component is used
+                    on the Events Detail Page.</p>
+                </div>
               </div>
               <div class="my-8 py-4">
                 <div>
                   <div>
                     <div class="c-hero--light">
-                      <div class="o-container js-parallax-text">
+                      <div class="o-container">
                         <h1 class="c-hero__title">Study Hour</h1>
                       </div>
                     </div>
@@ -166,7 +170,7 @@
                   <div
                     class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden">
                     <pre>&lt;div class=&quot;c-hero--light&quot;&gt;
-  &lt;div class=&quot;o-container js-parallax-text&quot;&gt;
+  &lt;div class=&quot;o-container&quot;&gt;
     &lt;h1 class=&quot;c-hero__title&quot;&gt;Study Hour&lt;/h1&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
@@ -284,6 +288,7 @@
     gunyc.newsletter();
     gunyc.formEffect();
   </script>
+  <script src="/reload/reload.js"></script>
 </body>
 
 </html>

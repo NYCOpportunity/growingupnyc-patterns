@@ -86,13 +86,13 @@
       </div>
     </nav>
     <div class="o-offcanvas__main js-offcanvas__main">
-      <header class="o-navigation p-12">
+      <header class="o-navigation px-12 py-8">
         <div class="o-container"><a
             class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu mt-1 mobile:h-16 desktop:h-20 shadow-none p-1"
             href="/growingupnyc-patterns-development"><span
               class="o-navigation__logo">Growing Up NYC</span></a>
           <nav class="o-navigation__nav">
-            <ul class="o-inline text-left -mt-8">
+            <ul class="inline-block -mt-8">
               <li class="o-inline__item"><a
                   class="o-navigation__nav-link js-offcanvas"
                   data-js="offcanvas-patterns" href="#patterns">Patterns</a>
@@ -106,14 +106,14 @@
         <div>
           <div
             class="layout--row desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-full ml-auto mr-auto px-10">
-            <h2 class="text-center">GROWINGUP NYC Patterns Library</h2>
+            <h2 class="text-center">Growing Up NYC Patterns Library</h2>
             <div class="my-16">
               <p class="inline">The Patterns of Growing Up NYC are a shared
                 vocabulary between the code, design, and user interface (UI) of
               </p>
               <p class="inline"><a
                   class="inline bg-color-blue-light px-2 text-color-white"
-                  href="https://growingupnyc.cityofnewyork.us/">GROWINGUP
+                  href="https://growingupnyc.cityofnewyork.us/">Growing Up
                   NYC.</a></p>
               <p>Growing Up NYC supports the cognitive, social-emotional, and
                 physical development of all New York City children by shaping
@@ -137,63 +137,17 @@
               </ul>
             </div>
             <div class="py-10">
-              <h3 class="my-8">Instalation</h3>
+              <h3 class="my-8">Getting Started</h3>
               <div class="my8">
                 <p>The Patterns are available as an NPM package and can be
-                  installed with the following command.</p>
+                  installed with the following command:</p>
               </div>
               <div
                 class="border-solid border border-color-gray rounded-md py-4 px-6 bg-color-gray-light mt-8 mb-8 flex justify-between">
-                <p id="npm-install">npm install @nycopportunity/guny-patterns
-                </p><button class="hover:text-color-gray-dark"
+                <p id="npm-install">npm install
+                  @nycopportunity/growingup-patterns</p><button
+                  class="hover:text-color-gray-dark"
                   id="copy-text">Copy</button>
-              </div>
-              <div class="mt-8 mb-8">
-                <p>All of the source code is publicly available and can also be
-                  integrated via cdn. See the intallation docs for more details
-                  and usage.</p>
-              </div>
-              <div class="text-center mt-8 mb-8"><a
-                  class="button--primary bg-color-blue text-color-white js-offcanvas"
-                  data-js="offcanvas-patterns" href="#patterns">Get Started</a>
-              </div>
-            </div>
-          </div>
-          <div class="px-10 py-10  bg-color-gray-light">
-            <div
-              class="tablet:w-8/12 w-full ml-auto mr-auto tablet:flex tablet:flex-col">
-              <div>
-                <h3 class="my-8">Links</h3>
-              </div>
-              <div class="tablet:flex tablet:flex-wrap">
-                <div class="my-8 pr-5 tablet:w-1/2 ">
-                  <div>
-                    <h3 class="c-card__title"><a class="my-4"
-                        href="typography">Typography</a></h3>
-                    <p>The Typography Pattern reference.</p>
-                  </div>
-                </div>
-                <div class="my-8 pr-5 tablet:w-1/2 ">
-                  <div>
-                    <h3 class="c-card__title"><a class="my-4"
-                        href="color">Color</a></h3>
-                    <p>The Color Pattern reference.</p>
-                  </div>
-                </div>
-                <div class="my-8 pr-5 tablet:w-1/2 ">
-                  <div>
-                    <h3 class="c-card__title"><a class="my-4"
-                        href="button">Button</a></h3>
-                    <p>The Button Pattern set reference.</p>
-                  </div>
-                </div>
-                <div class="my-8 pr-5 tablet:w-1/2 ">
-                  <div>
-                    <h3 class="c-card__title"><a class="my-4"
-                        href="icons">Icons</a></h3>
-                    <p>The Icon Pattern set reference.</p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -313,6 +267,7 @@
     }
     document.querySelector("#copy-text").addEventListener("click", copy);
   </script>
+  <script src="/reload/reload.js"></script>
 </body>
 
 </html>

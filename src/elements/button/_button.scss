@@ -125,6 +125,19 @@
   }
 }
 
+
+.button--pill--baby {
+  background: $color-baby-primary;
+
+  &:focus {
+    background: $color-baby-primary;
+  }
+
+  &:hover {
+    background: $color-baby-secondary;
+  }
+}
+
 .button--pill--es {
   background: $color-purple;
 

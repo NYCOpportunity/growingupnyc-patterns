@@ -1,3 +1,5 @@
+- this.styleLocation = ''
+
 doctype html
 html lang='en'
   = content('head');

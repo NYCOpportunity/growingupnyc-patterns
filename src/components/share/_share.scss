@@ -75,7 +75,16 @@
   }
 }
 
-//Recaptcha
+.sms-form__label {
+  bottom: 100%;
+  transform: translate3d(0, #{rem-calc(35)}, 0);
+  transition: transform 250ms ease-in-out;
+}
+
+.is-filled .sms-form__label {
+  transform: translate3d(0, 0, 0);
+}
+
 .recaptcha-js {
   background: $color-purple;
 
@@ -84,7 +93,6 @@
   }
 }
 
-//Succes
 .g-recaptcha,
 .error-message,
 .c-validation {
@@ -96,12 +104,20 @@
   margin-bottom: rem-calc(15);
 }
 
-.csstransforms3d .sms-form__label {
+.sms-form__label {
   bottom: 100%;
   transform: translate3d(0, #{rem-calc(35)}, 0);
   transition: transform 250ms ease-in-out;
 }
 
-.csstransforms3d .is-filled .sms-form__label {
+s.is-filled .sms-form__label {
   transform: translate3d(0, 0, 0);
+}
+
+.send_placeholder {
+  display: none;
+}
+
+.send__success {
+  display: none;
 }

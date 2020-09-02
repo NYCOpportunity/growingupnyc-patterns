@@ -5,7 +5,7 @@
 @import 'scss/functions/splatter';
 @import 'config/colors';
 @import 'config/media';
-
+@import 'scss/functions/rem-calc';
 
 .c-side-hero__image {
   background: $color-primary center center no-repeat;

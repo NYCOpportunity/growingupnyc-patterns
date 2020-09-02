@@ -17,3 +17,7 @@
   div
     = mixin('section', title, 'objects/navigation/navigation');
 
+
+= content('script')
+  javascript:
+    var languageSwitcher = gunyc.languageSwitcher(true);
