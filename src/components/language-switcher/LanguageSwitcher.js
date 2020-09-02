@@ -37,6 +37,9 @@ class LanguageSwitcher {
      * Update the location of the list on mobile or desktop
      */
     LanguageSwitcher.mobileSwitcher();
+    window.addEventListener('resize', (e) => {
+      LanguageSwitcher.mobileSwitcher();
+    })
 
   }
 }

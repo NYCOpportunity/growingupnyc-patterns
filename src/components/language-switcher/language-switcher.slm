@@ -11,40 +11,41 @@ div class="c-language-switcher"
           svg class="icon--small" role="img"
             title = 'Close'
             use xlink:href="#icon-close"
-    ul
-      li class="language-option-en"
-        a href="" title="English"
-          span = 'English'
-      li class="language-option-es"
-        a href="" title="Spanish"
-          span = 'Spanish'
-      li class="language-option-ar"
-        a href="" title="Arabic"
-          span = 'العربية'
-      li class="language-option-zh-hant"
-        a href="" title="Traditional Chinese"
-          span = '繁體中文'
-      li class="language-option-fr"
-        a href="" title="French"
-          span = 'Français'
-      li class="language-option-ko"
-        a href="" title="Korean"
-          span = '한국어'
-      li class="language-option-pl"
-        a href="" title="Polski"
-          span = 'polski'
-      li class="language-option-ru"
-        a href="" title="Russian"
-          span = 'Русский'
-      li class="language-option-ur"
-        a href="" title="Urdu"
-          span = 'اردو '
-      li class="language-option-bn"
-        a href="" title="Bangla"
-          span = 'Bangla'
-      li class="language-option-ht"
-        a href="" title="Haitian Creole"
-          span = 'Haitian Creole'
+    div class="wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-legacy-list-horizontal"
+      ul
+        li class="language-option-en"
+          a href="" title="English"
+            span = 'English'
+        li class="language-option-es"
+          a href="" title="Spanish"
+            span = 'Spanish'
+        li class="language-option-ar"
+          a href="" title="Arabic"
+            span = 'العربية'
+        li class="language-option-zh-hant"
+          a href="" title="Traditional Chinese"
+            span = '繁體中文'
+        li class="language-option-fr"
+          a href="" title="French"
+            span = 'Français'
+        li class="language-option-ko"
+          a href="" title="Korean"
+            span = '한국어'
+        li class="language-option-pl"
+          a href="" title="Polski"
+            span = 'polski'
+        li class="language-option-ru"
+          a href="" title="Russian"
+            span = 'Русский'
+        li class="language-option-ur"
+          a href="" title="Urdu"
+            span = 'اردو '
+        li class="language-option-bn"
+          a href="" title="Bangla"
+            span = 'Bangla'
+        li class="language-option-ht"
+          a href="" title="Haitian Creole"
+            span = 'Haitian Creole'
   a class="c-language-switcher__translate" data-js='translate'
     svg class="" role="img"
       title = "Google Translate"
