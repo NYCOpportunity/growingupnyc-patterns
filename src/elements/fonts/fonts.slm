@@ -1,0 +1,7 @@
+/ Fonts
+
+div
+  p class="font-display"
+    = "Resource for families with children."
+  p class="font-text"
+    = "Resource for families with children."

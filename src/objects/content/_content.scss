@@ -57,3 +57,20 @@
   top: 0;
   width: 50%;
 }
+
+.o-content-container--header {
+  padding: 20px;
+  &--age {
+    background: url(#{$cdn}images/age-splatter.svg) center center no-repeat;
+    background-size: contain;
+  }
+
+  &--tip {
+    background: url(#{$cdn}images/tip-splatter.svg) center center no-repeat;
+    background-size: contain;
+  }
+}
+
+.o-content-container--header h2 {
+  text-align: center;
+}

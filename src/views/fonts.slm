@@ -16,3 +16,8 @@
   div
     = mixin('section', 'Font Sans, Primary', 'utilities/font/font-sans--primary');
     = mixin('section', 'Font Sans, Secondary', 'utilities/font/font-sans--secondary');
+    = mixin('section', 'Default', 'elements/fonts/fonts');
+    = mixin('section', 'Arabic', 'elements/fonts/fonts-ar');
+    = mixin('section', 'Russian', 'elements/fonts/fonts-ru');
+    = mixin('section', 'Traditional Chinese', 'elements/fonts/fonts-zh-hant');
+    = mixin('section', 'Urdu', 'elements/fonts/fonts-ur');

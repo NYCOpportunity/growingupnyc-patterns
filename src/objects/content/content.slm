@@ -4,3 +4,11 @@
 div class="o-content-container c-block-list"
   h2
     = 'Other Child Care Programs'
+
+section class="o-content-container--compact u-top-spacing"
+  div class="o-content-container--header o-content-container--header--age"
+    h2 = 'Related Age Guides'
+
+section class="o-content-container--p-0 u-top-spacing"
+  div class="o-content-container--header o-content-container--header--tip"
+    h2 = 'More Tips Like This'

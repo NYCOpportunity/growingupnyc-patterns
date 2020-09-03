@@ -1,0 +1,5 @@
+div
+  p class="font-display-zh-hant"
+    = "有孩子的家庭的資源。"
+  p class="font-text-zh-hant"
+    = "有孩子的家庭的資源。"

@@ -1,0 +1,5 @@
+div
+  p class="font-display-ar"
+    = "مورد للعائلات التي لديها أطفال."
+  p class="font-text-ar"
+    = "مورد للعائلات التي لديها أطفال."

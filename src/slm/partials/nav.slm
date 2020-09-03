@@ -1,6 +1,8 @@
+- url = "https://nycopportunity.github.io/growingupnyc-patterns/"
+
 header class='o-navigation px-12 py-8'
   div class='o-container'
-    a href="/growingupnyc-patterns-development" class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu mt-1 mobile:h-16 desktop:h-20 shadow-none p-1"
+    a href="${url}" class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu mt-1 mobile:h-16 desktop:h-20 shadow-none p-1"
       span class="o-navigation__logo"
         = 'Growing Up NYC'
     nav class='o-navigation__nav'

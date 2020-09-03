@@ -1,0 +1,52 @@
+/*
+ * Fonts
+ */
+
+// Typekit
+@import url("https://use.typekit.net/wty8eeo.css");
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.font-display {
+  font-family: "museo-sans-rounded", sans-serif;
+}
+.font-text {
+  font-family: "open-sans", sans-serif;
+}
+
+// Arabic
+.font-display-ar {
+  font-family: 'El Messiri', sans-serif;
+}
+.font-text-ar {
+  font-family: 'Markazi Text', serif;
+}
+
+// Russian
+.font-display-ru {
+  font-family:  "Nunito", sans-serif;
+}
+.font-text-ru {
+  font-family: "open-sans", sans-serif;
+}
+
+// Urdu
+.font-display-ur {
+  font-family: 'El Messiri', sans-serif;
+}
+.font-text-ur {
+  font-family: 'Markazi Text', serif;
+}
+
+// Traditional Chinese
+.font-display-zh-hant {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.font-text-zh-hant {
+  font-family: 'source-han-sans-traditional', sans-serif;
+}
