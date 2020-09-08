@@ -118,7 +118,7 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
   padding-bottom: rem-calc(6px);
 
 	@if ($language == 'ar') or ($language == 'ur') {
-    float: left;
+    text-align: left;
   } @else {
     // float: right;
     text-align: right;
