@@ -190,6 +190,10 @@
     margin-top: rem-calc(15);
   }
 
+  @media screen and (min-width: $screen-tablet) {
+    font-size: rem-calc($font-size-large);
+  }
+
   @media screen and (min-width: $screen-desktop) {
     margin-right:0;
   }
