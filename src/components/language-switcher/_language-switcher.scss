@@ -19,7 +19,7 @@
   @media screen and (min-width: $screen-tablet) {
 
     @if ($language=='ar') or ($language=='ur') {
-      margin-left: 0; 
+      margin-left: 0;
       margin-right: auto;
     }
 
@@ -49,7 +49,7 @@
       border-bottom: 0.5px solid $color-gray;
       padding: 1rem 0 !important;
       margin: 0 !important;
-      
+
       a {
         padding: 0;
         font-size: rem-calc(11);
@@ -72,7 +72,7 @@
         display: block;
         a {
           color: $color-primary;
-  
+
           &:before {
             content: "";
             -webkit-mask: url('#{$cdn}svg/icon-check.svg') no-repeat 50% 50%;
@@ -83,11 +83,11 @@
             background-color: $color-primary;
             position: relative;
             top: .125rem;
-  
+
             @if ($language=='ar') or ($language=='ur') {
               margin-left: .1875rem;
             }
-  
+
             @else {
               margin-right: .1875rem;
             }
@@ -129,6 +129,10 @@
     text-align: right;
     background: transparent;
 
+    @if ($language=='ar') or ($language=='ur') {
+      text-align: left;
+    }
+
     .c-language-switcher-controller {
       display: none !important;
     }
@@ -155,11 +159,11 @@
         &.current-language,
         .wpml-ls-current-language {
           display: inline-block;
-          
+
         }
       }
     }
-    
+
     .wpml-ls-legacy-list-horizontal {
       .wpml-ls-item {
         display: inline-block;
@@ -167,7 +171,7 @@
         padding: 0 !important;
       }
     }
-    
+
   }
 }
 
@@ -197,5 +201,5 @@
 .c-language-switcher-logo {
   display: flex;
   text-align: right;
-  justify-content: right;
+  justify-content: flex-end;
 }

@@ -38,3 +38,16 @@
 .hover\:bg-color-brain-building-tip:hover {
   background-color: $color-secondary;
 }
+
+// Active classes
+.active\:border-color-orange-dark {
+  &.is-active {
+    border-color: $color-orange-dark;
+  }
+}
+
+.active\:border-color-blue-dark {
+  &.is-active {
+    border-color: $color-blue-dark;
+  }
+}
