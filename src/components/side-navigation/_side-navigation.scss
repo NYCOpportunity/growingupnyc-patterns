@@ -111,6 +111,60 @@ $indicator-size: 10px;
   }
 }
 
+
+.c-nav-list__link--summer {
+  @extend .c-nav-list__link;
+  background-color: $color-orange;
+
+  &:hover {
+    background-color: $color-orange-dark;
+  }
+
+  &:focus,
+  &.is-active {
+    background-color: $color-orange-dark;
+    border-left-color: $color-orange-dark;
+    border-color: $color-orange-dark;
+  }
+
+  @media screen and (min-width: $screen-desktop) {
+    &:hover,
+    &:focus,
+      &.is-active {
+        &:after {
+          border-left-color: $color-orange-dark;
+        }
+      }
+  }
+}
+
+.c-nav-list__link--afterschool {
+  @extend .c-nav-list__link;
+  background-color: $color-blue;
+
+  &:hover {
+    background-color: $color-blue-light;
+  }
+
+  &:focus,
+  &.is-active {
+    background-color: $color-blue-light;
+    border-left-color: $color-blue-light;
+    border-color: $color-blue-light;
+  }
+
+  @media screen and (min-width: $screen-desktop) {
+    &:hover,
+    &:focus,
+      &.is-active {
+        &:after {
+          border-left-color: $color-blue-light;
+        }
+      }
+  }
+}
+
+
 .u-shift-up {
   margin-top: -40px;
 }

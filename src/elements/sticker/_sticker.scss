@@ -48,7 +48,7 @@ a.sticker {
   }
 }
 
-.no-touchevents a.sticker {
+.sticker {
   &:hover {
     background: $color-secondary;
     color: $color-white;
