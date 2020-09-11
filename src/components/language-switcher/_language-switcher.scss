@@ -75,8 +75,8 @@
 
           &:before {
             content: "";
-            -webkit-mask: url('#{$cdn}svg/icon-check.svg') no-repeat 50% 50%;
-            mask: url('#{$cdn}svg/icon-check.svg') no-repeat 50% 50%;
+            -webkit-mask: url('#{$cdn}#{$path-to-icons}icon-check.svg') no-repeat 50% 50%;
+            mask: url('#{$cdn}#{$path-to-icons}icon-check.svg') no-repeat 50% 50%;
             display: inline-block;
             width: 10px;
             height: 10px;

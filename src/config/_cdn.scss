@@ -1,4 +1,5 @@
 @import 'tokens';
 
-// $cdn: '../' !default;
-$cdn: map-get($tokens, 'cdn');
+$cdn: map-get($tokens, 'cdn') !default;
+$path-to-icons: 'svg/' !default;
+$path-to-images: 'images/' !default;

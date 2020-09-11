@@ -40,10 +40,5 @@
     color: darken($color-white, 15%);
   }
 
-  .no-touchevents & {
-    &:hover {
-      color: darken($color-white, 15%);
-    }
-  }
 }
 

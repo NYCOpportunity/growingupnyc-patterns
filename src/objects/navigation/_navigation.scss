@@ -92,7 +92,7 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
 
 // Banner Logo
 .o-navigation__logo {
-  background-image: url('#{$cdn}images/logo-color@150px.png');
+  background-image: url('#{$cdn}#{$path-to-images}logo-color@150px.png');
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: contain;
@@ -108,7 +108,7 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
   image-rendering: -webkit-optimize-contrast; // Chrome
   image-rendering: optimizequality; // FF
   @include retina {
-    background-image: url('#{$cdn}images/logo-color@300px.png');
+    background-image: url('#{$cdn}#{$path-to-images}logo-color@300px.png');
   }
 }
 

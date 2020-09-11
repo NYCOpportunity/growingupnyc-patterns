@@ -65,7 +65,7 @@ a.bg-baby--secondary {
 }
 
 .gradient-baby {
-  background-image: url('#{$cdn}images/gradient-baby.png');
+  background-image: url('#{$cdn}#{$path-to-images}gradient-baby.png');
 }
 
 /**
@@ -134,7 +134,7 @@ a.bg-toddler--secondary {
 }
 
 .gradient-toddler {
-	background-image: url('#{$cdn}images/gradient-toddler.png');
+	background-image: url('#{$cdn}#{$path-to-images}gradient-toddler.png');
 }
 
 
@@ -211,7 +211,7 @@ a.bg-pre-schooler--secondary {
 }
 
 .gradient-pre-schooler {
-	background-image: url('#{$cdn}images/gradient-pre-schooler.png');
+	background-image: url('#{$cdn}#{$path-to-images}gradient-pre-schooler.png');
 }
 
 /**
@@ -285,7 +285,7 @@ a.bg-grade-schooler--secondary {
 }
 
 .gradient-grade-schooler {
-	background-image: url('#{$cdn}images/gradient-grade-schooler.png');
+	background-image: url('#{$cdn}#{$path-to-images}gradient-grade-schooler.png');
 }
 
 // Pre Teen
@@ -346,7 +346,7 @@ a.bg-pre-teen--secondary {
 }
 
 .gradient-pre-teen {
-	background-image: url('#{$cdn}images/gradient-pre-teen.png');
+	background-image: url('#{$cdn}#{$path-to-images}gradient-pre-teen.png');
 }
 
 // Teen
@@ -407,7 +407,7 @@ a.bg-teen--secondary {
 }
 
 .teen-gradient {
-	background-image: url('#{$cdn}images/gradient-teen.png');
+	background-image: url('#{$cdn}#{$path-to-images}gradient-teen.png');
 }
 
 // Young Adult
@@ -468,5 +468,5 @@ a.bg-young-adult--secondary {
 }
 
 .young-adult-gradient {
-	background-image: url('#{$cdn}images/gradient-young-adult.png');
+	background-image: url('#{$cdn}#{$path-to-images}gradient-young-adult.png');
 }
