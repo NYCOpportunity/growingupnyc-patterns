@@ -51,3 +51,19 @@
     border-color: $color-blue-dark;
   }
 }
+
+/**
+ * Fills
+ */
+
+.fill-color-black {
+  fill: $color-black;
+}
+
+.fill-color-white {
+  fill: $color-white;
+}
+
+.fill-color-vroom {
+  fill: $color-orange-vroom;
+}

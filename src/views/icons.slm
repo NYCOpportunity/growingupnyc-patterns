@@ -15,3 +15,4 @@
   = mixin('content-header', title);
   div
     = mixin('section', 'Icons', 'elements/icons/icons', 'gutter', this.tokens['icons']);
+    = mixin('section', 'Logos', 'elements/icons/icons', 'gutter', this.tokens['logos']);
