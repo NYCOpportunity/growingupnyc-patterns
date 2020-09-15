@@ -11,10 +11,12 @@ class LanguageSwitcher {
     };
 
     /**
-     * Update the active language 
+     * Update the active language
      */
     const options = document.querySelector(this._settings.options).querySelector('ul');
-    LanguageSwitcher.setCurrentLang(options)
+    if (options) {
+      LanguageSwitcher.setCurrentLang(options)
+    }
 
 
     /**
@@ -59,7 +61,7 @@ LanguageSwitcher.mobileSwitcher = function () {
  * Applies the current-language class based on the document lang attribute
  */
 LanguageSwitcher.setCurrentLang = function(options ){
-  
+
   // remove the current-language class if it exists
   options.querySelectorAll('li').forEach(li => {
     li.classList.remove(LanguageSwitcher.activeClass)
