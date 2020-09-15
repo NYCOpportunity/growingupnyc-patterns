@@ -21,6 +21,10 @@ div class="o-content-container c-block-list c-block-list--shade"
             strong = 'EarlyLearn NYC Child Care'
           p = 'NYC Department of Education'
 
+
+        div class="c-card__body"
+          = 'Early child care and education services for up to 10 hours a day.'
+
         div class="c-card__tags"
           a href="#" class="button--pill"
            = 'Child Care'
@@ -31,8 +35,6 @@ div class="o-content-container c-block-list c-block-list--shade"
           a href="#" class="button--pill button--pill--alt"
            = 'Pre-School'
 
-        div class="c-card__body"
-          = 'Early child care and education services for up to 10 hours a day.'
     div class="c-block-list__item"
       div class="c-card"
         a href="#"
@@ -48,6 +50,9 @@ div class="o-content-container c-block-list c-block-list--shade"
             strong = 'EarlyLearn NYC Head Start'
           p = 'NYC Department of Education'
 
+        div class="c-card__body"
+          = 'Early child care and education services for up to 10 hours a day.'
+
         div class="c-card__tags"
           a href="#" class="button--pill"
            = 'Child Care'
@@ -55,6 +60,3 @@ div class="o-content-container c-block-list c-block-list--shade"
            = 'Toddler'
           a href="#" class="button--pill button--pill--alt"
            = 'Pre-School'
-
-        div class="c-card__body"
-          = 'Early child care and education services for up to 10 hours a day.'
