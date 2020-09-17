@@ -100,10 +100,20 @@
 
 // Hero Title
 .c-hero__title {
-  @include font-size-xxx-large;
   line-height: 1;
   padding-top: rem-calc(($sticker-size-mobile / 2) + 3);
   z-index: 1;
+
+  @if ($language == 'bn') {
+    font-size: rem-calc(60);
+  } @else {
+    @include font-size-xxx-large;
+  }
+
+  @if ($language == 'ar') or ($language == 'ur') {
+    text-align: right;
+  }
+
 }
 
 .c-hero__title,
