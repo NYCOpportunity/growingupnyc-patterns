@@ -126,8 +126,9 @@
   }
 }
 
-.flexbox .c-hero__title,
-.flexbox .c-hero__title--long {
+.c-hero__title,
+.c-hero__title--long {
+  margin-bottom: 1rem;
 
   @media screen and (min-width: $screen-tablet) {
     display: flex;

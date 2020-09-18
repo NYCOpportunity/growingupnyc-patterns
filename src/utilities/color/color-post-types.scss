@@ -7,6 +7,15 @@ After School
     stop-color: $color-blue-dark;
   }
   .stop2 {
-    stop-color: $color-blue-light;
+    stop-color: $color-blue;
+  }
+}
+
+.svg-summer {
+  .stop1 {
+    stop-color: $color-orange-dark;
+  }
+  .stop2 {
+    stop-color: $color-orange;
   }
 }
