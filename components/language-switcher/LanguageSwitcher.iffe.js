@@ -8,14 +8,18 @@ var LanguageSwitcher = (function () {
       options: LanguageSwitcher.options
     };
     /**
-     * Update the active language 
+     * Update the active language
      */
 
     var options = document.querySelector(this._settings.options).querySelector('ul');
-    LanguageSwitcher.setCurrentLang(options);
+
+    if (options) {
+      LanguageSwitcher.setCurrentLang(options);
+    }
     /**
      * Listen for user to open the options for languages
      */
+
 
     var trigger = document.querySelector(this._settings.selector);
     trigger.addEventListener('click', function (e) {
