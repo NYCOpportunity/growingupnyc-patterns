@@ -40,6 +40,10 @@
     position: absolute;
     width: 100%;
     text-align: left;
+
+    @if ($language == 'ar') or ($language == 'ur') {
+      text-align: right;
+    }
   }
 }
 

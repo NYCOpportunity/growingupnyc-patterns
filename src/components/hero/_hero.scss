@@ -41,6 +41,10 @@
   text-align: left;
   padding: percentage(57/375) 0 rem-calc(65);
 
+  @if ($language == 'ar') or ($language == 'ur') {
+    text-align: right;
+  }
+
   @media screen and (min-width: $screen-tablet) {
     padding: rem-calc(100 ($outer-gutter-medium - $outer-gutter-small) 36);
   }
@@ -231,6 +235,12 @@
     }
   }
 
+}
+
+.c-hero__tags {
+  @if ($language == 'ar') or ($language == 'ur') {
+    text-align: right;
+  }
 }
 
 // Hero Frill
