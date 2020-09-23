@@ -2,7 +2,7 @@
 /**
  * Tip
  */
- 
+
 @import 'config/colors';
 @import 'config/fonts';
 @import 'scss/functions/rem-calc';
@@ -32,7 +32,12 @@
   font-family: $font-family-display;
   font-size: rem-calc(22);
   font-weight: 900;
-  margin-left: rem-calc(12);
+
+  @if ($language == 'ar') or ($language == 'ur') {
+    margin-right: rem-calc(12);
+  } @else {
+    margin-left: rem-calc(12);
+  }
 }
 
 .c-tip-card__content {

@@ -121,6 +121,10 @@
 .icon--caret {
   @extend .icon--small;
   margin-top: rem-calc(-3);
+
+  @if ($language == 'ar') or ($language == 'ur') {
+    transform: scaleX(-1);
+  }
 }
 
 .icon--caret--small {
