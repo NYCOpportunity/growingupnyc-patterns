@@ -8,9 +8,9 @@
 @import 'scss/functions/font-size';
 @import 'scss/functions/rem-calc';
 
-.sticker {  
+.sticker {
+  display: flex !important;
   align-items: center;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   background: $color-primary;
@@ -23,7 +23,7 @@
   white-space: nowrap;
   width: rem-calc($sticker-size-mobile);
   line-height: 1.2;
-  
+
 	@media screen and (min-width: $screen-desktop) {
     border-radius: rem-calc($sticker-size);
     height: rem-calc($sticker-size);

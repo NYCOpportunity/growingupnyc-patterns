@@ -161,6 +161,7 @@
     line-height: rem-calc(65);
     position: static;
     width: rem-calc(65);
+    flex-shrink: 0;
 
     @if ($language == 'ar') or ($language == 'ur') {
       margin-left: rem-calc(20);
@@ -170,11 +171,6 @@
   }
 }
 
-.flexbox .c-hero__sticker {
-  @media screen and (min-width: $screen-tablet) {
-    flex-shrink: 0;
-  }
-}
 
 // Hero Tagline
 .c-hero__tagline {
