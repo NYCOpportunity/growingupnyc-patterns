@@ -18,6 +18,7 @@ module.exports = {
         { 'spinner': 'Spinner' },
         { 'sticker': 'Sticker' },
         { 'table': 'Table' },
+        { 'alert-in-body': 'Alert In Body' },
       ]
     },
     {

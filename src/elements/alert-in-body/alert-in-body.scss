@@ -1,0 +1,11 @@
+.alert-in-body {
+  background: rgba(255, 220, 84, 0.75);
+  padding: 1.75rem 1rem;
+
+  @media(min-width:700px) {
+    padding: 1.75rem 2.5rem;
+  }
+  @media(min-width:1200px) {
+    padding: 1.75rem 5rem;
+  }
+}
