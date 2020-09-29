@@ -3,6 +3,8 @@
  */
 
 @import 'config/colors';
+@import 'config/tokens';
+@import 'config/svg-fill';
 
 // Primary
 .bg--primary,
@@ -56,14 +58,14 @@
  * Fills
  */
 
-.fill-color-black {
-  fill: $color-black;
-}
+// Generates fill classes from the list of colors in the colors map at tokens.scss
+ .fill {
+   @include svg-fill;
+ }
 
-.fill-color-white {
-  fill: $color-white;
-}
 
 .fill-color-vroom {
   fill: $color-orange-vroom;
 }
+
+
