@@ -1,3 +1,3 @@
 **Source:** `src/components/back-to-top/back-to-top`
 
-Specs about the Back-to-top components.
+When the user clicks on the button, scroll to the top of the document.
