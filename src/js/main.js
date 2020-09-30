@@ -23,6 +23,7 @@ import FormEffect from '../utilities/form-effects/FormEffects'
 import Reveal from '../utilities/reveal/Reveal'
 import Newsletter from '../objects/newsletter/Newsletter'
 import Share from '../components/share/Share'
+import BackToTop from '../components/back-to-top/BackToTop'
 
 // Utilities
 import SectionHighlighter from '../utilities/section-highlighter/SectionHighlighter';
@@ -84,6 +85,10 @@ class main {
 
 	languageSwitcher() {
     return new LanguageSwitcher();
+  }
+
+	backToTop() {
+    return new BackToTop();
   }
 
 	// offCanvas() {
