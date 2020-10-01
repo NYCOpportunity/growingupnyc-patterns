@@ -70,16 +70,13 @@ assignStickyFeature(stickyContent) {
 	// Absolutely positioning only when necessary and not by default prevents flickering
 	// when removing the "is-bottom" class on Chrome
 	if (elemTop > 0) {
-    stickyContentElem.classList.add(StaticColumn.notStickyClass);
-    console.log("true")
+		stickyContentElem.classList.add(StaticColumn.notStickyClass);
 	} else {
-    stickyContentElem.classList.remove(StaticColumn.notStickyClass);
+		stickyContentElem.classList.remove(StaticColumn.notStickyClass);
 	}
 	if (isPastBottom) {
-    console.log("bottom-true")
 		stickyContentElem.classList.add(StaticColumn.bottomClass);
 	} else {
-    console.log("bottom-false")
 		stickyContentElem.classList.remove(StaticColumn.bottomClass);
 	}
 }
