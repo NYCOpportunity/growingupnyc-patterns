@@ -391,5 +391,22 @@ module.exports = [{
         strict: rollup.strict
       }
     ]
-  }
+  },
+  {
+    input: './src/components/back-to-top/BackToTop.js',
+    plugins: rollup.dist,
+    output: [{
+        name: 'BackToTop',
+        file: `./dist/components/back-to-top/BackToTop.iffe.js`,
+        format: 'iife',
+        strict: rollup.strict
+      },
+      {
+        name: 'BackToTop',
+        file: `./dist/components/back-to-top/BackToTop.common.js`,
+        format: 'cjs',
+        strict: rollup.strict
+      }
+    ]
+  },
 ];
