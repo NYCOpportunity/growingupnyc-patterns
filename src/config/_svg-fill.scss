@@ -1,0 +1,11 @@
+@import 'config/tokens';
+
+
+@mixin svg-fill {
+  @each $name, $hex in $colors {
+    &-#{$name} {
+      fill: $hex;
+    }
+  }
+}
+
