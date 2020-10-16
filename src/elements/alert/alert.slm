@@ -1,0 +1,5 @@
+/ Alert-in-body
+
+div class='alert'
+  div class="o-container"
+    = "Because of the ongoing pandemic, Fall 2020 will look a little different this year. Stay tuned for updates to the After School Guide, and to learn more about support for COVID-19 impacts visit our Coronavirus Updates page."
