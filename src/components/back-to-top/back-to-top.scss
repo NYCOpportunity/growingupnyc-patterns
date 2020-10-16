@@ -3,14 +3,13 @@
   position: fixed;
   bottom: 20px;
   z-index: 99;
-  // font-size: 18px;
+  font-size: 14px;
   border: none;
   outline: none;
   color: white;
   cursor: pointer;
   padding: 10px;
   border-radius: 4px;
-  @include font-size-xx-small;
 
   @if ($language=='ar') or ($language=='ur') {
     left: 30px;
@@ -21,6 +20,10 @@
   @media screen and (min-width: $screen-tablet) {
     @include font-size-regular;
     padding: 15px;
-
   }
+}
+
+//back-to-top parent top padding
+.btt-padding {
+  padding-top: 100px;
 }
