@@ -27,6 +27,10 @@
   }
 }
 
+@mixin font-size-xx-small {
+  @include font-size($font-size-xx-small);
+}
+
 @mixin font-size-x-small {
   @include font-size($font-size-x-small);
 }
