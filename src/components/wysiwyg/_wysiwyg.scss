@@ -40,16 +40,30 @@
 
   ul {
     list-style: none;
-    padding-left: rem-calc(10);
+    @if ($language == 'ar') or ($language == 'ur') {
+      padding-right: rem-calc(10);
+    } @else {
+      padding-left: rem-calc(10);
+    }
 
 		@media screen and (min-width: $screen-desktop) {
-      padding-left: rem-calc(30);
+      @if ($language == 'ar') or ($language == 'ur') {
+        padding-right: rem-calc(30);
+      } @else {
+        padding-left: rem-calc(30);
+      }
 	  }
   }
 
   ul li {
-    padding: rem-calc(15 0 15 27);
-    text-indent: rem-calc(-19);
+
+    @if ($language == 'ar') or ($language == 'ur') {
+      padding: rem-calc(15 27 15 0);
+      text-indent: rem-calc(-19);
+    } @else {
+      padding: rem-calc(15 0 15 27);
+      text-indent: rem-calc(-19);
+    }
 
     &:before {
       content: url(/wp-content/themes/guny/assets/img/check.svg);
@@ -57,14 +71,25 @@
       margin-top: rem-calc(2);
       opacity: .2;
       vertical-align: middle;
+
+      @if ($language == 'ar') or ($language == 'ur') {
+        margin-left: rem-calc(8.8);
+      } @else {
+        margin-right: rem-calc(8.8);
+      }
     }
   }
 }
 
 .bullet {
   ul {
-    padding-left: rem-calc(24);
     margin-top: 0;
+
+    @if ($language == 'ar') or ($language == 'ur') {
+      padding-right: rem-calc(24);
+    } @else {
+      padding-left: rem-calc(24);
+    }
     li {
       padding-bottom: 0;
       &:before {
