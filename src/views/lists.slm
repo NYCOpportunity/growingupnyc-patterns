@@ -17,4 +17,5 @@
   div
     = mixin('section', 'Lists', 'elements/lists/lists');
     = mixin('section', 'Unordred List', 'elements/lists/lists-unordered--check');
+    = mixin('section', 'Ordred List', 'elements/lists/lists-ordered');
 
