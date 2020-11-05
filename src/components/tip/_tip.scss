@@ -1,7 +1,7 @@
 /**
  * Tip
  */
- 
+
 @import 'config/colors';
 @import 'config/fonts';
 @import 'config/stickers';
@@ -61,5 +61,27 @@
 .c-tip__link {
   &:focus {
     color: $color-gray-light;
+  }
+}
+
+//SMS
+.c-tip--sms {
+  text-align: center;
+
+  .c-tip__content {
+    text-align: center;
+  }
+}
+
+//Tips - Summer
+.c-tip--vivid-orange {
+  text-align: center;
+  &,
+  .c-tip__sticker {
+    background: $color-orange;
+  }
+
+  .c-tip__content {
+    text-align: center;
   }
 }
