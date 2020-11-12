@@ -56,5 +56,5 @@ footer class="o-footer"
                 svg class='checkbox__indicator'
                   use xlink:href='#icon-check'
                 = value.label
-        button type='submit' id='mc-embedded-subscribe' class='signup-form__button button--simple button--simple--alt'
+        button type='submit' id='mc-embedded-subscribe' class='signup-form__button button--outline button--outline--white'
           = 'Sign Up'

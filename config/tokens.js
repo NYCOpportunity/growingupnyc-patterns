@@ -88,7 +88,7 @@ module.exports = {
     'color-text-invert': 'color-white',
     'color-text-weak': 'color-gray',
     'color-text-link': 'color-blue-light',
-    'color-background-footer': 'color-blue-light',
+    'color-background-footer': 'color-blue',
     'color-error': 'color-pink',
   },
   'colors-baby': {

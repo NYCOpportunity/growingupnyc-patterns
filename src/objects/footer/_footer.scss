@@ -76,15 +76,17 @@
 .o-footer__link {
   color: $color-text-invert;
   font-family: $font-family-display;
-  font-weight: $font-weight-extrablack;
   text-decoration: none;
+  border-bottom: 1px solid $color-text-invert;
+  padding-bottom: 1px;
 
   &:focus {
     color: $color-secondary;
   }
 
   &:hover {
-    color: $color-secondary;
+    color: $color-gray-light;
+    border-bottom: 1px solid $color-gray-light;
   }
 }
 

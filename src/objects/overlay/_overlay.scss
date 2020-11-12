@@ -14,11 +14,11 @@ $transition-function: cubic-bezier(0, 1, .5, 1);
   width: 100%;
   z-index: 2;
 
-  opacity: 0;
+  display: none;
   pointer-events: none;
 
 	&.is-open {
-    opacity: 1;
+    display: block;
     pointer-events: auto;
   }
    @media screen and (min-width: $screen-tablet) {
