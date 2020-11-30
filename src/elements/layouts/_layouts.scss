@@ -3,6 +3,7 @@
  */
 @import 'config/tokens';
 @import 'config/layouts';
+@import 'config/colors';
 
 // Rows and Columns
 //
@@ -55,5 +56,34 @@
 
 // 3 Columns
 .layout--three-columns {
+  @extend %column-base-3;
+}
+
+// Core Import
+
+// Divider
+.o-col__divider + .o-col__divider {
+  border-top: 2px solid $color-white;
+  padding-top: rem-calc(30);
+}
+
+// Column Row
+.o-row {
+  margin-left: rem-calc(-20);
+  margin-right: rem-calc(-20);
+}
+
+// 1 Column
+.o-col-1 {
+  @extend %column-base;
+}
+
+// 2 Columns
+.o-col-2 {
+  @extend %column-base-2;
+}
+
+// 3 Columns
+.o-col-3 {
   @extend %column-base-3;
 }

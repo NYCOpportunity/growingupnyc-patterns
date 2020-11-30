@@ -110,9 +110,25 @@
   transition: transform 250ms ease-in-out;
 }
 
-s.is-filled .sms-form__label {
+.is-filled .sms-form__label {
   transform: translate3d(0, 0, 0);
 }
+
+.send_placeholder {
+  display: none;
+}
+
+.send__success {
+  display: none;
+}
+
+
+//Disclaimer Text
+.c-disclaimer-text {
+  font-size: rem-calc(11);
+  text-align: left;
+}
+
 
 .send_placeholder {
   display: none;

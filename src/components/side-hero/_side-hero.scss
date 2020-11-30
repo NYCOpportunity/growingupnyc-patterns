@@ -17,6 +17,24 @@
   }
 }
 
+.s-404 {
+  background-color: $color-background-shade;
+  .c-side-hero__content {
+    background-color: inherit;
+    color: $color-black;
+
+    &::after,
+    &::before {
+      display: none;
+    }
+
+    @media screen and (max-width: $screen-desktop) {
+      top: 0;
+      margin: rem-calc(30 0);
+    }
+  }
+}
+
 .c-side-hero__content {
   color: $color-white;
   padding: rem-calc(40 15);

@@ -119,32 +119,68 @@
 /**
  * Carets - Align the caret next to text
  */
-.icon--caret {
-  @extend .icon--small;
-  margin-top: rem-calc(-3);
+ .icon--caret {
+   @extend .icon--small;
+   margin-top: rem-calc(-3);
 
-  @if ($language == 'ar') or ($language == 'ur') {
-    transform: scaleX(-1);
+   @if ($language == 'ar') or ($language == 'ur') {
+     transform: scaleX(-1);
+    }
   }
-}
 
-.icon--caret--small {
-  width: rem-calc(16);
-  height: rem-calc(16);
+  .icon--caret--small {
+    width: rem-calc(16);
+    height: rem-calc(16);
 
-  @extend .icon--small;
-  margin-top: rem-calc(-1.4);
-}
+    @extend .icon--small;
+    margin-top: rem-calc(-1.4);
+  }
 
-.icon--caret--xsmall {
-  width: rem-calc(16);
-  height: rem-calc(8);
+  .icon--caret--xsmall {
+    width: rem-calc(16);
+    height: rem-calc(8);
 
-  margin-top: rem-calc(-1.4);
-}
+    margin-top: rem-calc(-1.4);
+  }
 
-.icon--caret--xxsmall {
-  @extend .icon--xxsmall;
-  margin-top: rem-calc(-3);
-  margin-right: rem-calc(-4);
-}
+  .icon--caret--xxsmall {
+    @extend .icon--xxsmall;
+    margin-top: rem-calc(-3);
+    margin-right: rem-calc(-4);
+  }
+
+  /**
+   * Logo Banner ---Brain Building logo styles
+   */
+
+   .logo-banner {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding: rem-calc(12);
+
+    @media screen and (min-width: $screen-desktop) {
+      height: 115px;
+      padding: rem-calc(24);
+    }
+
+    &--small {
+      a {
+        display: block;
+      }
+    }
+  }
+
+  .logo-banner__img {
+    display: inline-block;
+    height: 100%;
+  }
+
+  .logo-banner--small > .logo-banner__img {
+    max-height: 55px;
+    margin-top: 15px;
+  }
+
+  .logo-banner__link {
+    margin-top: 15px;
+  }

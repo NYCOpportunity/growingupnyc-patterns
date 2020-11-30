@@ -219,3 +219,10 @@
   border-radius: 3px;
   padding: rem-calc(5 0);
 }
+
+.c-list-box--quinary .c-list-box__subitem {
+  background: $color-background-shade;
+  color: $color-text;
+  padding: rem-calc(15 30 15 30);
+  margin-bottom: rem-calc(2);
+}
