@@ -3,6 +3,7 @@
  */
 @import 'config/tokens';
 @import 'config/layouts';
+@import 'config/colors';
 
 // Rows and Columns
 //
@@ -62,7 +63,7 @@
 
 // Divider
 .o-col__divider + .o-col__divider {
-  border-top: 2px solid $white;
+  border-top: 2px solid $color-white;
   padding-top: rem-calc(30);
 }
 
