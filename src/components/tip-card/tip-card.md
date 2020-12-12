@@ -1,1 +1,1 @@
-Brain buiding card found on sigle age guide page.
+Brain building card can be found on the single age guide pages and provides tip tailored to the specific age group.

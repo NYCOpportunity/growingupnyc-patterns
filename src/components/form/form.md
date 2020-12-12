@@ -1,1 +1,1 @@
-Newsletter signup form usually presented within Growing up NYC footer.
+Newsletter signup form can be found in the Growing up NYC footer.
