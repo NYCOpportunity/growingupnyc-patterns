@@ -1,44 +1,36 @@
 /**
- * Dependencies
- */
-
-// ...
-
-/**
  * Config
+ *
+ * @type {Object}
  */
 const sass = {
   sourceMapEmbed: true,
-  precision: 2,
   includePaths: [
-    './node_modules/nyco-patterns/src/',
-    './src',
-    './node_modules',
-    './node_modules/bourbon/core',
-    './node_modules/bourbon-neat/core',
-    './node_modules/@fortawesome/fontawesome-free/scss',
-    './node_modules/animate.scss',
+    `${process.env.PWD}/src/`,
+    `${process.env.PWD}/node_modules/`,
+    `${process.env.PWD}/animate.scss`
   ]
 };
 
-
-
-const modules = [
+/**
+ * Sass Export
+ *
+ * @type {Array}
+ */
+module.exports = [
   {
-    file: './src/scss/site-default.scss',
-    outDir: './dist/styles/',
+    file: `${process.env.PWD}/src/scss/site-default.scss`,
+    outDir: `${process.env.PWD}/dist/styles/`,
     outFile: 'site-default.css',
     sourceMapEmbed: sass.sourceMapEmbed,
-    precision: sass.precision,
     includePaths: sass.includePaths,
-    devModule: true
+    devModule: true // This needs to be set if we want the module to be compiled during development
   },
   {
     file: './src/scss/site-ar.scss',
     outDir: './dist/styles/',
     outFile: 'site-ar.css',
     sourceMapEmbed: sass.sourceMapEmbed,
-    precision: sass.precision,
     includePaths: sass.includePaths,
     devModule: true
   },
@@ -47,7 +39,6 @@ const modules = [
     outDir: './dist/styles/',
     outFile: 'site-ru.css',
     sourceMapEmbed: sass.sourceMapEmbed,
-    precision: sass.precision,
     includePaths: sass.includePaths,
     devModule: true
   },
@@ -56,7 +47,6 @@ const modules = [
     outDir: './dist/styles/',
     outFile: 'site-ko.css',
     sourceMapEmbed: sass.sourceMapEmbed,
-    precision: sass.precision,
     includePaths: sass.includePaths,
     devModule: true
   },
@@ -65,7 +55,6 @@ const modules = [
     outDir: './dist/styles/',
     outFile: 'site-ur.css',
     sourceMapEmbed: sass.sourceMapEmbed,
-    precision: sass.precision,
     includePaths: sass.includePaths,
     devModule: true
   },
@@ -74,26 +63,21 @@ const modules = [
     outDir: './dist/styles/',
     outFile: 'site-zh-hant.css',
     sourceMapEmbed: sass.sourceMapEmbed,
-    precision: sass.precision,
     includePaths: sass.includePaths,
     devModule: true
   },
   {
     file: './src/utilities/tailwind/_tailwind.scss',
     outDir: './dist/styles/',
-    outFile: 'tailwind.css',
-    precision: sass.precision,
-    includePaths: sass.includePaths,
-    // devModule: true
+    outFile: 'tailwindcss.css',
+    sourceMapEmbed: sass.sourceMapEmbed,
+    devModule: true
   },
   {
     file: './src/utilities/tailwind/_tailwind.scss',
     outDir: './dist/styles/',
-    outFile: '_tailwind.scss',
-    precision: sass.precision,
-    includePaths: sass.includePaths,
-    // devModule: true
-  },
+    outFile: '_tailwindcss.scss',
+    sourceMapEmbed: sass.sourceMapEmbed,
+    devModule: true
+  }
 ];
-
-module.exports = modules;

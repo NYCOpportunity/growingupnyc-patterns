@@ -36,7 +36,7 @@ Accordion.convertHeaderToButton = function($headerElem) {
   newHeaderElem.setAttribute('type', 'button');
   const $newHeaderElem = $(newHeaderElem);
   $newHeaderElem.html($headerElem.html());
-  $newHeaderElem.append('<svg class="o-accordion__caret icon" aria-hidden="true"><use xlink:href="#icon-caret-down"></use></svg>');
+  $newHeaderElem.append('<svg class="o-accordion__caret icon" aria-hidden="true"><use xlink:href="#pttrn-icon-caret-down"></use></svg>');
   return $newHeaderElem;
 }
 

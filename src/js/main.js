@@ -1,7 +1,7 @@
 'use strict';
 
 // Polyfills
-import '../../dist/scripts/polyfills';
+// import '../../dist/scripts/polyfills';
 import '../utilities/functions/foreach';
 
 // Elements
@@ -31,7 +31,7 @@ import SectionHighlighter from '../utilities/section-highlighter/SectionHighligh
 /**
  * NYCO Patterns Framework
  */
-import Icons from '../../node_modules/@nycopportunity/patterns-framework/src/utilities/icons/icons';
+import Icons from '@nycopportunity/pttrn-scripts/src/icons/icons';
 
 /**
  * The Main module

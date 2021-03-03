@@ -1,6 +1,6 @@
 'use strict';
 
-import forEach from 'lodash/forEach';
+// import forEach from 'lodash/forEach';
 
 if(window.NodeList && !NodeList.prototype.forEach) {
   NodeList.prototype.forEach = Array.prototype.forEach;
@@ -48,7 +48,7 @@ class Offcanvas {
     const offCanvas = document.querySelectorAll(`.${this._settings.offCanvas}`);
 
     if (offCanvas) {
-      forEach(offCanvas, function (offCanvasElem) {
+      offCanvas.forEach(function (offCanvasElem) {
         const offCanvasSide = offCanvasElem.querySelector('.js-offcanvas__side');
 
         /**
@@ -87,7 +87,7 @@ class Offcanvas {
     * Bind an event handler to toggle the openClass on/off on the target element
     * when the toggle element is clicked.
     */
-    forEach(toggleElems, function (toggleElem) {
+    toggleElems.forEach(function (toggleElem) {
       const targetElemSelector = Offcanvas.dataset(toggleElem, 'js');
 
       if (!targetElemSelector) return;

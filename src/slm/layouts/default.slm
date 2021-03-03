@@ -21,7 +21,7 @@ html lang='en'
     javascript:
       var gunyc = new GUNYC();
       gunyc.navigation({sideSelector: 'down'});
-      gunyc.icons();
+      gunyc.icons('svgs.svg');
       gunyc.accordion();
       gunyc.newsletter();
       gunyc.formEffect();
