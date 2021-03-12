@@ -1,0 +1,12 @@
+= extend('/slm/layouts/default')
+
+- title = 'Form'
+
+= content('main')
+  div
+    == this.include('components/form/form.slm');
+    == this.include('components/form/form-contact.slm');
+
+= content('script')
+  javascript:
+    MyPatterns.form();

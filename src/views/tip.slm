@@ -1,0 +1,8 @@
+= extend('/slm/layouts/default')
+
+- title = 'Tip'
+
+= content('main')
+  div
+    == this.include('components/tip/tip.slm');
+

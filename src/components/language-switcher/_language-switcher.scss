@@ -1,0 +1,215 @@
+/**
+ * Language-switcher
+ */
+ @import 'config/cdn';
+ @import 'config/colors';
+ @import 'scss/functions/rem-calc';
+
+ .c-language-switcher {
+   z-index: 1;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+
+   @if ($language=='ar') or ($language=='ur') {
+     text-align: left;
+   }
+
+   // desktop
+   @media screen and (min-width: $screen-tablet) {
+
+     @if ($language=='ar') or ($language=='ur') {
+       margin-left: 0;
+       margin-right: auto;
+     }
+
+   }
+ }
+
+ .c-language-switcher__content{
+   position: fixed;
+   bottom: 0;
+   @include font-size-regular;
+   color: $color-gray;
+   background-color: $color-white;
+   height: 50%;
+   width: 100%;
+   overflow: scroll;
+   z-index: 99;
+   left: 0;
+   padding-left: rem-calc($outer-gutter);
+   padding-right: rem-calc($outer-gutter);
+   box-shadow: 4px 0px 4px 0px rgba(50, 50, 50, 0.75);
+
+   ul {
+       list-style: none;
+     li {
+       display: block;
+       border-bottom: 0.5px solid $color-gray;
+       padding: 1rem 0 !important;
+       margin: 0 !important;
+
+       a {
+         padding: 0;
+         font-size: rem-calc(11);
+         color: $color-gray;
+         text-decoration: none;
+
+         &:hover {
+           color: $color-primary;
+         }
+
+         @if ($language=='ar') or ($language=='ur') {
+           text-align: right;
+         } @else {
+           text-align: left;
+         }
+       }
+       &.current-language,
+       .wpml-ls-current-language {
+         display: block;
+         a {
+           color: $color-primary;
+
+           &:before {
+             content: "";
+             -webkit-mask: url('#{$cdn}#{$path-to-icons}icon-check.svg') no-repeat 50% 50%;
+             mask: url('#{$cdn}#{$path-to-icons}icon-check.svg') no-repeat 50% 50%;
+             display: inline-block;
+             width: 10px;
+             height: 10px;
+             background-color: $color-primary;
+             position: relative;
+             top: .125rem;
+
+             @if ($language=='ar') or ($language=='ur') {
+               margin-left: .1875rem;
+             }
+
+             @else {
+               margin-right: .1875rem;
+             }
+           }
+         }
+       }
+     }
+   }
+
+   .wpml-ls-legacy-list-horizontal {
+       width: 100%;
+       padding: 0;
+
+       .wpml-ls-item-ht {
+         border: none;
+       }
+       .wpml-ls-item {
+       display: block;
+       border-bottom: 0.5px solid $color-gray;
+       padding: 1rem 0 !important;
+       margin: 0 !important;
+     }
+   }
+
+   .c-language-switcher-controller {
+     display: block;
+   }
+
+   // desktop
+   @media screen and (min-width: $screen-tablet) {
+     position: relative;
+     bottom: auto;
+     @include font-size-regular;
+     height: auto;
+     max-width: 65%;
+     overflow: unset;
+     z-index: 1;
+     box-shadow: none;
+     text-align: right;
+     background: transparent;
+
+     @if ($language=='ar') or ($language=='ur') {
+       text-align: left;
+     }
+
+     .c-language-switcher-controller {
+       display: none !important;
+     }
+
+     ul {
+       padding-top: 1rem !important;
+       li {
+         display: inline;
+         margin-right: rem-calc(5);
+         border: none;
+         padding: 0 !important;
+
+         a {
+           font-size: rem-calc(11);
+           color: $color-gray;
+           padding: 5px 8px;
+           text-decoration: none;
+
+           @if ($language=='ar') or ($language=='ur') {
+             font-size: rem-calc(15);
+           }
+
+           &:hover {
+             color: $color-primary;
+           }
+         }
+
+         &.current-language,
+         .wpml-ls-current-language {
+           display: inline-block;
+
+         }
+       }
+     }
+
+     .wpml-ls-legacy-list-horizontal {
+       .wpml-ls-item {
+         display: inline-block;
+         border: none;
+         padding: 0 !important;
+       }
+     }
+
+   }
+ }
+
+ .c-language-switcher__translate {
+   color: $color-gray;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   padding-top: 6px;
+
+
+   &:hover {
+     color: $color-primary;
+   }
+
+   @media screen and (min-width: $screen-tablet) {
+     padding-top: 1.45rem;
+
+     @if ($language=='ar') or ($language=='ur') {
+       font-size: rem-calc(14);
+       padding-bottom: 5px;
+     } @else {
+       font-size: rem-calc(11);
+     }
+   }
+
+   svg {
+     display: inline-block;
+     height: 15px;
+     width: 20px;
+     margin-bottom: 0px;
+   }
+ }
+
+ .c-language-switcher-logo {
+   display: flex;
+   text-align: right;
+   justify-content: flex-end;
+ }

@@ -1,0 +1,16 @@
+/
+/ Details-list
+
+dl class="c-details-list"
+  dt class="c-details-list__term"
+   = 'Date'
+  dd class="c-details-list__descr"
+   = 'August 20, 2020'
+  dt class="c-details-list__term"
+   = 'Location'
+  dd class="c-details-list__descr"
+   = 'Brooklyn, NY'
+  dt class="c-details-list__term"
+   = 'Cost'
+  dd class="c-details-list__descr"
+   = 'Free'

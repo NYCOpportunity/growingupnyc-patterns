@@ -1,0 +1,8 @@
+= extend('/slm/layouts/default')
+
+- title = 'Side Navigation'
+
+= content('main')
+  div
+    == this.include('components/side-navigation/side-navigation.slm');
+

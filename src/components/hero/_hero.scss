@@ -1,0 +1,307 @@
+/**
+ * Hero
+ * Traditional, top-of-the-page hero
+ */
+
+@import 'config/dimensions';
+@import 'config/stickers';
+@import 'config/fonts';
+@import 'scss/functions/rem-calc';
+@import 'scss/functions/font-size';
+@import 'scss/functions/strip-unit';
+
+.c-hero {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: $color-text-invert;
+  overflow: hidden;
+  padding-bottom: rem-calc(15);
+  position: relative;
+  text-align: center;
+
+  @media screen and (min-width: $screen-tablet) {
+    background-size: cover;
+    text-align: left;
+    padding: rem-calc(92 40 80);
+  }
+
+  @media screen and (max-width: $screen-mobile) {
+      background-size: cover;
+  }
+}
+
+.c-hero-cover {
+  background-image: linear-gradient(rgba(0, 85, 184, .2), rgba(0, 85, 184, .2));
+  background-size: cover;
+}
+
+.c-hero--light {
+  color: $color-text;
+  text-align: left;
+  padding: percentage(57/375) 0 rem-calc(65);
+
+  @if ($language == 'ar') or ($language == 'ur') {
+    text-align: right;
+  }
+
+  @media screen and (min-width: $screen-tablet) {
+    padding: rem-calc(100 ($outer-gutter-medium - $outer-gutter-small) 36);
+  }
+
+  @media screen and (min-width: $screen-desktop) {
+    padding: rem-calc(100 0 36);
+  }
+}
+
+.c-hero {
+  @media screen and (min-width: $screen-desktop-large) {
+    padding: rem-calc(113 80 60);
+  }
+}
+
+.c-hero--light {
+  padding: rem-calc(50 0 60);
+
+  @media screen and (min-width: $screen-tablet) {
+    padding: rem-calc(113 0 60);
+  }
+}
+
+.c-hero--large {
+  padding: percentage(126/375) 0 rem-calc(65);
+
+  @media screen and (min-width: $screen-tablet) {
+    padding: rem-calc(165 40 80);
+  }
+
+  @media screen and (min-width: $screen-desktop-large) {
+    padding: rem-calc(227 80 80);
+  }
+}
+
+.c-hero--medium {
+  @media screen and (min-width: $screen-tablet) {
+    padding: rem-calc(165 40 80);
+  }
+
+  @media screen and (min-width: $screen-desktop-large) {
+    padding: rem-calc(227 80 80);
+  }
+}
+
+.c-hero--long-text {
+  text-align: left;
+}
+
+.c-hero--bg-primary {
+  background: $color-primary;
+}
+
+.c-hero--bg-secondary {
+  background-color: $color-secondary;
+}
+
+// Hero Title
+.c-hero__title {
+  line-height: 1;
+  padding-top: rem-calc(($sticker-size-mobile / 2) + 3);
+  z-index: 1;
+
+  @if ($language == 'bn') {
+    font-size: rem-calc(60);
+  } @else {
+    @include font-size-xxx-large;
+  }
+
+  @if ($language == 'ar') or ($language == 'ur') {
+    text-align: right;
+  }
+
+}
+
+.c-hero__title,
+.c-hero__title--long {
+  position: relative;
+  padding-top: rem-calc(($sticker-size-mobile / 2) + 3);
+
+  @media screen and (min-width: $screen-tablet) {
+    padding-top: 0;
+  }
+}
+
+.c-hero__title,
+.c-hero__title--long {
+  margin-bottom: 1rem;
+
+  @media screen and (min-width: $screen-tablet) {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+}
+
+// Hero Sticker
+.c-hero__sticker {
+  background-color: $color-secondary;
+  box-shadow: 0 2px 4px 0 $color-shadow;
+  display: inline-block;
+  top: rem-calc($sticker-size-mobile / -2);
+  position: absolute;
+
+    @if ($language == 'ar') or ($language == 'ur') {
+      right: 0;
+    } @else {
+      left: 0;
+    }
+
+  @media screen and (min-width: $screen-tablet) {
+    box-shadow: none;
+    height: rem-calc(65);
+    line-height: rem-calc(65);
+    position: static;
+    width: rem-calc(65);
+    flex-shrink: 0;
+
+    @if ($language == 'ar') or ($language == 'ur') {
+      margin-left: rem-calc(20);
+    } @else {
+    margin-right: rem-calc(20);
+    }
+  }
+}
+
+
+// Hero Tagline
+.c-hero__tagline {
+  line-height: 1.2;
+  margin-top: rem-calc(10);
+  margin-bottom: rem-calc(15);
+  position: relative;
+  z-index: 1; // Set z-index for text to appear on top of bg image
+
+  @media screen and (min-width: $screen-tablet) {
+    font-size: rem-calc($font-size-x-large);
+    @if ($language == 'ar') or ($language == 'ur') {
+      text-align: right;
+    }
+  }
+
+  @media screen and (min-width: $screen-desktop) {
+    margin-right: 0;
+  }
+}
+
+.c-hero--long-text .c-hero__tagline {
+  font-size: rem-calc($font-size-large * $font-size-ratio);
+  line-height: 1.3;
+  margin-top: rem-calc(10);
+
+  + .c-hero__tagline {
+    margin-top: rem-calc(15);
+  }
+
+  @media screen and (min-width: $screen-tablet) {
+    font-size: rem-calc($font-size-large);
+  }
+
+  @media screen and (min-width: $screen-desktop) {
+    margin-right:0;
+  }
+}
+
+.c-hero--medium .c-hero__tagline {
+  padding-top: rem-calc(165);
+
+  h2 {
+    line-height: 1;
+    margin: rem-calc(0 0 6);
+  }
+
+  @media screen and (min-width: $screen-tablet) {
+    padding-top: 0;
+    line-height: 1.2;
+    margin-top: rem-calc(10);
+    margin-bottom: rem-calc(15);
+    position: relative;
+    z-index: 1;
+
+    h2 {
+      margin: rem-calc(0 0 20);
+      line-height: 1.3;
+    }
+  }
+
+}
+
+.c-hero__tags {
+  @if ($language == 'ar') or ($language == 'ur') {
+    text-align: right;
+  }
+}
+
+// Hero Frill
+.c-hero__frill {
+  height: auto;
+  position: absolute;
+  top: percentage(60/375);
+  width: percentage(140/375);
+
+    @if ($language == 'ar') or ($language == 'ur') {
+      left: percentage(-114/1440);
+      transform: scaleX(-1);
+    } @else {
+      right: percentage(-114/1440);
+    }
+
+  @media screen and (min-width: $screen-tablet) {
+    bottom: percentage(-87/480);
+    top: auto;
+    width: percentage(404/1440);
+
+  }
+
+  @media screen and (min-width: $screen-desktop-large) {
+    bottom: -87px;
+    width: 404px;
+
+    @if ($language == 'ar') or ($language == 'ur') {
+      left: -114px;
+      left: percentage(-114/1440);
+      transform: scaleX(-1);
+    } @else {
+      right: -114px;
+      right: percentage(-114/1440);
+    }
+  }
+}
+
+// Hero Full BG
+// Full background overlay added to the hero
+.c-hero__full-bg {
+  height: 100%;
+  left: 0;
+  min-width: 100%;
+  position: absolute;
+  top: 0;
+  width: auto;
+}
+
+// Hero Label
+.c-hero__label {
+  display: block;
+  font-family: $font-family-display;
+  font-weight: $font-weight-extrablack;
+  @include font-size(21,24);
+  margin-bottom: rem-calc(15);
+  text-align: center;
+}
+
+// Hero Search
+.c-hero__search {
+  padding-top: rem-calc(($sticker-size-mobile / 2) + 3);
+
+  @media screen and (min-width: $screen-tablet) {
+    padding-top: 0;
+  }
+}

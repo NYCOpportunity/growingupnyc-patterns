@@ -1,0 +1,24 @@
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  z-index: 99;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+
+  @if ($language=='ar') or ($language=='ur') {
+    left: 30px;
+  } @else {
+    right: 30px;
+  }
+
+  @media screen and (min-width: $screen-tablet) {
+    @include font-size-regular;
+    padding: 15px;
+  }
+}

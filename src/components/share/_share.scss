@@ -1,0 +1,123 @@
+/**
+ * Share
+ */
+
+@import 'config/colors';
+@import 'config/media';
+@import 'scss/functions/rem-calc';
+
+.form-container {
+  display: block;
+  justify-content: center;
+
+  @media screen and (min-width: $screen-mobile) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.sms-form-wrapper {
+  display: inline-block;
+  width: 100%;
+  max-width: 568px;
+
+  button {
+    margin-top: rem-calc(20);
+
+    @media screen and (min-width: $screen-tablet) {
+      margin-top: 0;
+    }
+  }
+
+  &--full {
+    max-width: 100%;
+    button {
+      margin-top: rem-calc(20);
+
+      @media screen and (min-width: $screen-tablet) {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.sms-form__input {
+  width: inherit;
+}
+
+.sms-form__input--long {
+  width: 100%;
+  text-align: left;
+  font-size: rem-calc(15);
+  margin-right: rem-calc(10) !important;
+
+  @media screen and (min-width: $screen-tablet) {
+    width: rem-calc(240);
+  }
+
+  @media screen and (min-width: $screen-desktop-large) {
+    width: rem-calc(352);
+  }
+}
+
+.sms-form__spinner {
+  width: rem-calc(34);
+  right: 8px;
+  top: 0;
+  position: absolute;
+}
+
+.sms-form__submit {
+  min-width: rem-calc(180);
+
+  @media screen and (min-width: $screen-desktop-large) {
+    min-width: rem-calc(194);
+  }
+}
+
+.sms-form__label {
+  bottom: 100%;
+  transform: translate3d(0, #{rem-calc(35)}, 0);
+  transition: transform 250ms ease-in-out;
+}
+
+.is-filled .sms-form__label {
+  transform: translate3d(0, 0, 0);
+}
+
+.recaptcha-js {
+  background: $color-purple;
+
+  .c-tip__sticker {
+    background: $color-purple;
+  }
+}
+
+.g-recaptcha,
+.error-message,
+.c-validation {
+  margin-top: rem-calc(15);
+}
+
+.g-recaptcha {
+  transform-origin: left top;
+  margin-bottom: rem-calc(15);
+}
+
+.sms-form__label {
+  bottom: 100%;
+  transform: translate3d(0, #{rem-calc(35)}, 0);
+  transition: transform 250ms ease-in-out;
+}
+
+s.is-filled .sms-form__label {
+  transform: translate3d(0, 0, 0);
+}
+
+.send_placeholder {
+  display: none;
+}
+
+.send__success {
+  display: none;
+}

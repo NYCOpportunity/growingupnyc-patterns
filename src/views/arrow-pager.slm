@@ -1,0 +1,11 @@
+= extend('/slm/layouts/default')
+
+- title = 'Arrow Pager'
+
+= content('main')
+  section class='bg-white p-4'
+    h1 
+      = title
+    div
+      == this.include('components/arrow-pager/arrow-pager.slm');
+

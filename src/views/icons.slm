@@ -1,0 +1,25 @@
+= extend('/slm/layouts/default')
+
+- title = 'Icons'
+
+= content('main')
+  section class='bg-white p-4'
+    h2 class='h4' 
+      = title
+
+    == this.include('elements/icons/icons.md');
+
+    div class='grid tablet:grid-cols-4 text-center'
+      - for (key in this.tokens['icons'])
+        - value = this.tokens['icons'][key];
+          == this.include('elements/icons/icons.slm');
+
+    h2 class='h4'
+      = 'Logos'
+    
+    div class='grid tablet:grid-cols-4 text-center'
+      - for (key in this.tokens['logos'])
+        - value = this.tokens['logos'][key];
+          == this.include('elements/icons/icons.slm');
+          
+= content('scripts')

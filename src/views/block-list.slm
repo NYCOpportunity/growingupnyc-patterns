@@ -1,0 +1,6 @@
+= extend('/slm/layouts/default')
+
+- title = 'Block List'
+
+= content('main')
+  == this.include('components/block-list/block-list');

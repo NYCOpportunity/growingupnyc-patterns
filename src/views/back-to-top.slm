@@ -1,0 +1,15 @@
+= extend('/slm/layouts/default')
+
+- title = 'Back To Top'
+
+
+= content('main')
+  section class='bg-white p-4'
+    h1 
+      = title
+    div
+      == this.include('components/back-to-top/back-to-top');
+
+= content('scripts')
+  javascript:
+    MyPatterns.backToTop()

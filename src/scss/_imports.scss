@@ -1,0 +1,43 @@
+@charset 'utf-8';
+
+/**
+ * Asset Paths and CDN
+ */
+
+/** Elements */
+@import 'elements/base/base';
+@import 'elements/icons/icons';
+
+/** Elements - end */
+
+/** Components */
+@import 'components/arrow-pager/arrow-pager';
+@import 'components/back-to-top/back-to-top';
+@import 'components/block-list/block-list';
+@import 'components/card/card';
+@import 'components/card/tip-card';
+@import 'components/card/age-guide-card';
+@import 'components/details-list/details-list';
+@import 'components/form/form';
+@import 'components/hero/hero';
+@import 'components/language-switcher/language-switcher';
+@import 'components/list-box/list-box';
+@import 'components/share/share';
+@import 'components/side-navigation/side-navigation';
+@import 'components/side-hero/side-hero';
+@import 'components/tout/tout';
+@import 'components/tip/tip';
+@import 'components/wysiwyg/wysiwyg';
+/** Components - end */
+
+/** Utilities */
+@import 'utilities/color/color';
+// @forward 'utilities/padding/padding';
+// @forward 'utilities/typography/typography';
+@import 'utilities/tailwindcss/tailwindcss'; // Uncomment this to use Tailwindcss
+/** Utilities - end */
+
+/**
+ * Base elements that need to be included after other patterns to take effect
+ */
+
