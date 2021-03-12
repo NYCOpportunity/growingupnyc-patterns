@@ -95,6 +95,37 @@ module.exports = {
     'color-background-footer': 'color-blue',
     'color-error': 'color-pink',
   },
+  'colors-baby': {
+    'primary': 'color-pink',
+    'secondary': 'color-pink-dark',
+  },
+  'colors-toddler': {
+    'primary': 'color-orange',
+    'secondary': 'color-orange-dark',
+    'tertiary': 'color-orange-light',
+  },
+  'colors-pre-schooler': {
+    'primary': 'color-green',
+    'secondary': 'color-green-dark',
+    'tertiary': 'color-green-light',
+  },
+  'colors-grade-schooler': {
+    'primary': 'color-light-green',
+    'secondary': 'color-light-green-dark',
+    'tertiary': 'color-light-green-light',
+  },
+  'colors-pre-teen': {
+    'primary': 'color-blue',
+    'secondary': 'color-blue-dark',
+  },
+  'colors-teen': {
+    'primary': 'color-purple',
+    'secondary': 'color-purple-dark',
+  },
+  'colors-young-adult': {
+    'primary': 'color-dark-gray',
+    'secondary': 'color-dark-gray-mid',
+  },
   'icons': [
     'icon-afterschool-guide',
     'icon-anytime-anywhere',
@@ -211,31 +242,8 @@ module.exports = {
     'outer-gutter-large': '40',
     'horizontal-gutter': '20px'
   },
-  // 'font': {
-  //   'body': 'system',
-  //   'pre': 'monospace'
-  // },
-  // 'font-weight': {
-  //   'body': 'normal',
-  //   'pre': 'normal'
-  // },
-  // 'font-style': {
-  //   'body': 'normal',
-  //   'pre': 'normal'
-  // },
-  // 'font-size': {
-  //   'body': '1em',
-  //   'pre': '0.9em'
-  // },
-  // 'line-height': {
-  //   'body': '1.2',
-  //   'pre': '1.5'
-  // },
-  // 'grid': '8px', // 8px grid system
-  // 'typography': {
-  //   'small': '16px',
-  //   'mobile': '18px',
-  //   'tablet': '20px',
-  //   'desktop': '22px'
-  // }
+  'transitions': {
+    'button-transition': 'all ease-in-out .15s',
+    'link-transition': 'all ease-in-out .15s'
+  },
 };

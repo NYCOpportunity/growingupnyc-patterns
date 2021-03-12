@@ -1,0 +1,4 @@
+@import 'config/tokens';
+
+$transitions: map-get($tokens, 'transitions');
+$button-transition: map-get($transitions, 'button-transition');

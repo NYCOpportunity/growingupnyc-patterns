@@ -1,0 +1,8 @@
+= extend('/slm/layouts/default')
+
+- title = 'Input'
+
+= content('main')
+  == this.include('elements/input/input.slm');
+  == this.include('elements/input/input-search.slm');
+  == this.include('elements/input/input-share.slm');

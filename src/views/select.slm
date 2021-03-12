@@ -1,0 +1,5 @@
+= extend('/slm/layouts/default')
+
+- title = 'Select'
+
+= content('main')

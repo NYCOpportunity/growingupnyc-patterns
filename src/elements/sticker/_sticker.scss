@@ -1,0 +1,55 @@
+/**
+ * Sticker
+ */
+
+@import 'config/tokens';
+@import 'config/fonts';
+@import 'config/stickers';
+@import 'scss/functions/font-size';
+@import 'scss/functions/rem-calc';
+
+.sticker {
+  display: flex !important;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: $color-secondary;
+  border-radius: rem-calc($sticker-size-mobile);
+  color: $color-white;
+  font-family: $font-family-display;
+  @include font-size(13, 11.375);
+  height: rem-calc($sticker-size-mobile);
+  text-align: center;
+  white-space: nowrap;
+  width: rem-calc($sticker-size-mobile);
+  line-height: 1.2;
+
+	@media screen and (min-width: $screen-desktop) {
+    border-radius: rem-calc($sticker-size);
+    height: rem-calc($sticker-size);
+    width: rem-calc($sticker-size);
+  }
+}
+
+.sticker--small {
+  background: $color-primary;
+  color: $color-white;
+  border-radius: rem-calc(50);
+  font-family: $font-family-display;
+  height: rem-calc(64);
+  width: rem-calc(64);
+}
+
+a .sticker {
+  text-decoration: none;
+  &:focus,
+  &:hover {
+    background: $color-secondary;
+    color: $color-white;
+  }
+}
+
+.event-day,
+.event-month-date {
+  display: block;
+}

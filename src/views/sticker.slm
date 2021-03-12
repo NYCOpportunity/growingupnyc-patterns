@@ -1,0 +1,8 @@
+= extend('/slm/layouts/default')
+
+- title = 'Sticker'
+
+= content('main')
+  div
+    == this.include('elements/sticker/sticker.slm');
+

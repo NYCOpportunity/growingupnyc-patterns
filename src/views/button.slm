@@ -1,0 +1,12 @@
+= extend('/slm/layouts/default')
+
+- title = 'Button'
+
+= content('main')
+  == this.include('elements/button/button--primary.slm');
+  == this.include('elements/button/button--pill.slm');
+  == this.include('elements/button/button--pill--alt.slm');
+  == this.include('elements/button/button--pill--es.slm');
+  == this.include('elements/button/button--simple.slm');
+  == this.include('elements/button/button--full-width.slm');
+  == this.include('elements/button/button--text.slm');

@@ -1,0 +1,13 @@
+= extend('/slm/layouts/default')
+
+- title = 'Font'
+
+= content('main')
+  div
+    == this.include('utilities/font/font-sans--primary.slm');
+    == this.include('utilities/font/font-sans--secondary.slm');
+    == this.include('elements/fonts/fonts.slm');
+    == this.include('elements/fonts/fonts-ar.slm');
+    == this.include('elements/fonts/fonts-ru.slm');
+    == this.include('elements/fonts/fonts-zh-hant.slm');
+    == this.include('elements/fonts/fonts-ur.slm');

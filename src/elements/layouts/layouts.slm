@@ -1,0 +1,15 @@
+/
+/ Layouts
+
+div class="layout--one-column bg-color-gray-light"
+  div class="p-4 bg-color-gray"
+div class="layout--two-columns bg-color-gray-light"
+  div class="p-4 bg-color-gray"
+div class="layout--two-columns bg-color-gray-light"
+  div class="p-4 bg-color-gray"
+div class="layout--three-columns bg-color-gray-light"
+  div class="p-4 bg-color-gray"
+div class="layout--three-columns bg-color-gray-light"
+  div class="p-4 bg-color-gray"
+div class="layout--three-columns bg-color-gray-light"
+  div class="p-4 bg-color-gray"

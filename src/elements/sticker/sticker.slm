@@ -1,0 +1,6 @@
+/
+/ Sticker
+
+div class="sticker"
+  svg class="icon--large" role="img" aria-hidden="true"
+    use xlink:href="#icon-cash-expenses"

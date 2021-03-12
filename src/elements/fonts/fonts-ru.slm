@@ -1,0 +1,5 @@
+div
+  p class="font-display-ru"
+    = "Ресурс для семей с детьми."
+  p class="font-text-ru"
+    = "Ресурс для семей с детьми."
