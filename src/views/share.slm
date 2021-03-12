@@ -1,7 +1,0 @@
-= extend('/slm/layouts/default')
-
-- title = 'Share'
-
-= content('main')
-  div
-    == mixin('components/share/share.slm');

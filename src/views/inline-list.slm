@@ -1,0 +1,6 @@
+= extend('/slm/layouts/default')
+
+- title = 'Inline-list'
+
+= content('main')
+  == this.include('objects/inline-list/inline-list.slm');

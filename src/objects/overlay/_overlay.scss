@@ -1,0 +1,27 @@
+/**
+ * Overlay
+ */
+
+// Local Variables
+$transition-function: cubic-bezier(0, 1, .5, 1);
+
+.o-overlay {
+  background: $color-gray-light;
+  box-shadow: $color-shadow 0 2px 4px 0;
+  left: 0;
+  padding: rem-calc(55 0 10);
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+
+  display: none;
+  pointer-events: none;
+
+	&.is-open {
+    display: block;
+    pointer-events: auto;
+  }
+   @media screen and (min-width: $screen-tablet) {
+    padding-top: rem-calc(110);
+  }
+}

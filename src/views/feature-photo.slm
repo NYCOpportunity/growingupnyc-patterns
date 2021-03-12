@@ -1,0 +1,6 @@
+= extend('/slm/layouts/default')
+
+- title = 'Feature Photo'
+
+= content('main')
+  == this.include('objects/feature-photo/feature-photo.slm');

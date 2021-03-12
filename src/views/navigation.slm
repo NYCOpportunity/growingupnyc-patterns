@@ -1,0 +1,12 @@
+= extend('/slm/layouts/default')
+
+- title = 'Navigation'
+
+= content('main')
+  div
+    == this.include('objects/navigation/navigation.slm');
+
+
+= content('script')
+  javascript:
+    MyPatterns.languageSwitcher(true);

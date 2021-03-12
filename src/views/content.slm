@@ -1,0 +1,6 @@
+= extend('/slm/layouts/default')
+
+- title = 'Content'
+
+= content('main')
+  == this.include('objects/content/content.slm');

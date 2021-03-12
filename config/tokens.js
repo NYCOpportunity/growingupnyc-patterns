@@ -246,4 +246,23 @@ module.exports = {
     'button-transition': 'all ease-in-out .15s',
     'link-transition': 'all ease-in-out .15s'
   },
+  'z-index': {
+    'z-index-offcanvas-side': '101',
+    'z-index-offcanvas-overlay': '100',
+    'z-index-offcanvas-main': '99',
+    'z-index-alert': '4',
+    'z-index-header': '3',
+    'z-index-search-overlay': '2',
+    'z-index-hero-title': '1',
+  },
+  'heights': {
+    'height-banner': '50',
+    'height-banner-large': '60',
+    'height-banner-logo': '60',
+  },
+  'widths': {
+    'width-banner-logo': '75px',
+    'width-offcanvas-side': '300px',
+    'width-offcanvas-side-large': '350px',
+  },
 };

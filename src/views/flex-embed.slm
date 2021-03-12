@@ -1,0 +1,6 @@
+= extend('/slm/layouts/default')
+
+- title = 'Flex Embed'
+
+= content('main')
+  == this.include('objects/flex-embed/flex-embed.slm');

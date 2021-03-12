@@ -1,0 +1,7 @@
+= extend('/slm/layouts/default')
+
+- title = 'Accordion'
+
+= content('main')
+  == this.include('objects/accordion/accordion.slm');
+

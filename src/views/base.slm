@@ -2,15 +2,5 @@
 
 - title = 'Base'
 
-/ Partials
-= partial('/slm/partials/head.mixin.slm');
-= partial('/slm/partials/content-header.mixin.slm');
-= partial('/slm/partials/section.mixin.slm');
-
-/ Content blocks
-= content('head');
-  = mixin('head');
-
 = content('main')
-  = mixin('content-header', title);
-  = mixin('section', 'Base', 'elements/base/base');
+  == this.include('elements/base/base.slm');

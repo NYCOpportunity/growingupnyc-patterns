@@ -1,0 +1,47 @@
+/**
+ * Article
+ */
+
+.o-article {
+  margin-left: -#{rem-calc($outer-gutter)};
+  margin-right: -#{rem-calc($outer-gutter)};
+
+	@media screen and (min-width: $screen-mobile) {
+    margin-left: -#{rem-calc($outer-gutter-small)};
+    margin-right: -#{rem-calc($outer-gutter-small)};
+	  }
+
+	@media screen and (min-width: $screen-desktop) {
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+    margin-right: 0;
+	  }
+}
+
+.o-article-sidebar {
+  margin-left: -#{rem-calc($outer-gutter)};
+  margin-right: -#{rem-calc($outer-gutter)};
+
+	@media screen and (min-width: $screen-mobile) {
+    margin-left: -#{rem-calc($outer-gutter-small)};
+    margin-right: -#{rem-calc($outer-gutter-small)};
+	}
+
+	@media screen and (min-width: $screen-desktop) {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+
+		@if ($language == 'ar') or ($language == 'ur') {
+		  margin-left: 3.125%;
+    } @else {
+		  margin-right: 3.125%;
+		}
+  }
+}
+
+.o-article--shift {
+	@media screen and (min-width: $screen-desktop) {
+  }
+}

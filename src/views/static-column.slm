@@ -1,0 +1,11 @@
+= extend('/slm/layouts/default')
+
+- title = 'Static Column'
+
+
+= content('main')
+  = mixin('objects/static-column/static-column.slm');
+
+= content('script')
+  javascript:
+    MyPatterns.staticColumn();

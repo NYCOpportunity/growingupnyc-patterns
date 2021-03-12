@@ -6,6 +6,7 @@
 
 /** Elements */
 @import 'elements/base/base';
+@import 'elements/alert/alert';
 @import 'elements/button/button';
 @import 'elements/checkbox/checkbox';
 @import 'elements/divider/divider';
@@ -13,11 +14,9 @@
 @import 'elements/icons/icons';
 @import 'elements/layouts/layouts';
 @import 'elements/lists/lists';
+@import 'elements/spinner/spinner';
 @import 'elements/sticker/sticker';
 @import 'elements/table/table';
-@import 'elements/spinner/spinner';
-@import 'elements/alert/alert';
-
 /** Elements - end */
 
 /** Components */
@@ -39,6 +38,20 @@
 @import 'components/tip/tip';
 @import 'components/wysiwyg/wysiwyg';
 /** Components - end */
+
+/** Objects */
+@import 'objects/accordion/accordion';
+@import 'objects/alert-banner/alert-banner';
+@import 'objects/article/article';
+@import 'objects/content/content';
+@import 'objects/feature-photo/feature-photo';
+@import 'objects/flex-embed/flex-embed';
+@import 'objects/footer/footer';
+@import 'objects/inline-list/inline-list';
+@import 'objects/overlay/overlay';
+@import 'objects/navigation/navigation';
+@import 'objects/static-column/static-column';
+/** Objects - end */
 
 /** Utilities */
 @import 'utilities/color/color';
