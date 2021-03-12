@@ -31,7 +31,7 @@ module.exports = [
     outFile: 'default-ar.css',
     sourceMapEmbed: sass.sourceMapEmbed,
     includePaths: sass.includePaths,
-    devModule: true // This needs to be set if we want the module to be compiled during development
+    devModule: false // This needs to be set if we want the module to be compiled during development
   },
   {
     file: `${process.env.PWD}/src/scss/default-bn.scss`,
@@ -39,7 +39,7 @@ module.exports = [
     outFile: 'default-bn.css',
     sourceMapEmbed: sass.sourceMapEmbed,
     includePaths: sass.includePaths,
-    devModule: true // This needs to be set if we want the module to be compiled during development
+    devModule: false // This needs to be set if we want the module to be compiled during development
   },
   {
     file: `${process.env.PWD}/src/scss/default-ko.scss`,
@@ -47,7 +47,7 @@ module.exports = [
     outFile: 'default-ko.css',
     sourceMapEmbed: sass.sourceMapEmbed,
     includePaths: sass.includePaths,
-    devModule: true // This needs to be set if we want the module to be compiled during development
+    devModule: false // This needs to be set if we want the module to be compiled during development
   },
   {
     file: `${process.env.PWD}/src/scss/default-ru.scss`,
@@ -55,7 +55,7 @@ module.exports = [
     outFile: 'default-ru.css',
     sourceMapEmbed: sass.sourceMapEmbed,
     includePaths: sass.includePaths,
-    devModule: true // This needs to be set if we want the module to be compiled during development
+    devModule: false // This needs to be set if we want the module to be compiled during development
   },
   {
     file: `${process.env.PWD}/src/scss/default-ur.scss`,
@@ -63,7 +63,7 @@ module.exports = [
     outFile: 'default-ur.css',
     sourceMapEmbed: sass.sourceMapEmbed,
     includePaths: sass.includePaths,
-    devModule: true // This needs to be set if we want the module to be compiled during development
+    devModule: false // This needs to be set if we want the module to be compiled during development
   },
   {
     file: `${process.env.PWD}/src/scss/default-zh-hant.scss`,
@@ -71,7 +71,7 @@ module.exports = [
     outFile: 'default-zh-hant.css',
     sourceMapEmbed: sass.sourceMapEmbed,
     includePaths: sass.includePaths,
-    devModule: true // This needs to be set if we want the module to be compiled during development
+    devModule: false // This needs to be set if we want the module to be compiled during development
   },
   {
     file: './src/utilities/tailwindcss/_tailwindcss.scss',
