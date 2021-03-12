@@ -1,0 +1,55 @@
+/**
+ * Background-image
+ */
+
+ @import 'config/cdn';
+
+// gradients
+.gradient-baby {
+  background-image: url(#{$cdn}#{$path-to-images}gradient-baby.png);
+}
+
+.gradient-toddler {
+	background-image: url(#{$cdn}#{$path-to-images}gradient-toddler.png);
+}
+
+.gradient-pre-schooler {
+	background-image: url(#{$cdn}#{$path-to-images}gradient-pre-schooler.png);
+}
+
+.gradient-grade-schooler {
+	background-image: url(#{$cdn}#{$path-to-images}gradient-grade-schooler.png);
+}
+
+.gradient-pre-teen {
+	background-image: url(#{$cdn}#{$path-to-images}gradient-pre-teen.png);
+}
+
+.gradient-teen {
+	background-image: url(#{$cdn}#{$path-to-images}gradient-teen.png);
+}
+
+.gradient-young-adult {
+	background-image: url(#{$cdn}#{$path-to-images}gradient-young-adult.png);
+}
+
+// splatter
+.splatter-orange {
+	background-image: url(#{$cdn}#{$path-to-images}splatter-orange.svg);
+}
+
+.splatter-blue {
+	background-image: url(#{$cdn}#{$path-to-images}splatter-blue.svg);
+}
+
+.bg-splatter-strong-blue {
+	background-image: url(#{$cdn}#{$path-to-images}splatter-strong-blue.svg);
+}
+
+.splatter-afterschool {
+  background-image: url(#{$cdn}#{$path-to-images}splatter-strong-blue.svg);
+}
+
+.splatter-summer {
+  background-image: url(#{$cdn}#{$path-to-images}splatter-orange.svg);
+}

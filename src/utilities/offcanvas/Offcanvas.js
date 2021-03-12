@@ -59,7 +59,6 @@ class Offcanvas {
         * @param {object} event - The event object
         */
         offCanvasElem.addEventListener('changeOpenState', function (event) {
-        console.log('event:', event)
 
           if (event.detail) {
             if (!(/^(?:a|select|input|button|textarea)$/i.test(offCanvasSide.tagName))) {
@@ -97,7 +96,6 @@ class Offcanvas {
       if (!targetElem) return;
 
       toggleElem.addEventListener('click', function (event) {
-				console.log('click event')
         let toggleEvent;
         let toggleClass = (toggleElem.dataset.toggleClass) ?
           toggleElem.dataset.toggleClass : openClass;
@@ -110,11 +108,9 @@ class Offcanvas {
           nav.classList.toggle("o-offcanvas__side-left")
         } else if (openClass === 'is-open-down'){
 					nav.classList.toggle("o-offcanvas__side-down")
-					console.log('is-open-down')
 					footer.classList.toggle("o-footer-down")
 				} else {
 					nav.classList.toggle("o-offcanvas__side-right")
-					console.log('reset to 0')
         }
 
         // Toggle custom class if it is set

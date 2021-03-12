@@ -1,0 +1,32 @@
+/**
+ * Sticky
+ */
+.o-sticky-nav {
+		transform: translate3d(0, 0, 0);
+		backface-visibility: hidden;
+}
+
+@media screen and (min-width: $screen-desktop) {
+	.o-sticky-nav {
+			width: 100%;
+
+		&.is-sticky {
+			position: fixed;
+			top: 20px;
+		}
+
+		&.is-stuck {
+			position: absolute;
+
+			@if ($language == 'ar') or ($language == 'ur') {
+				width: 318px;
+				top: auto;
+				bottom: 0px;
+			} @else {
+				width: 318px;
+				top: auto;
+				bottom: 0px;
+			}
+		}
+	}
+}

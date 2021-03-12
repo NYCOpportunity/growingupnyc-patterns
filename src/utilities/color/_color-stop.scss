@@ -1,0 +1,13 @@
+/**
+ * Colors
+ */
+
+@import 'config/colors';
+
+.stop-color-orange {
+  stop-color: $color-orange !important;
+}
+
+.stop-color-orange-mid {
+  stop-color: $color-orange-mid !important;
+}

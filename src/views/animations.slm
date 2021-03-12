@@ -1,0 +1,13 @@
+= extend('/slm/layouts/default')
+
+- title = 'Animations'
+
+= content('main')
+  div
+    == this.include('utilities/animations/animations.slm');
+
+= content('script')
+  javascript:
+    MyPatterns.animations();
+
+

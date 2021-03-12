@@ -1,0 +1,12 @@
+= extend('/slm/layouts/default')
+
+- title = 'Reveal'
+
+= content('main')
+  div
+    == this.include('utilities/reveal/reveal.slm');
+
+
+= content('script')
+  javascript:
+    MyPatterns.reveal(1);

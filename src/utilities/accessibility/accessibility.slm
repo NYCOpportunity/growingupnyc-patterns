@@ -1,0 +1,11 @@
+/
+/ Accessibility
+
+div class="p-4"
+  p = "Content that is visible to users with and without a screen reader"
+  p class="show-for-screen-reader" = "Content read by screen reader"
+
+div class="p-4"
+  p = "Tab to reveal the Skip to main content link"
+  a href="#main" class="show-for-keyboard"
+    = "Skip to main content"

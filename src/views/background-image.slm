@@ -1,0 +1,8 @@
+= extend('/slm/layouts/default')
+
+- title = 'Background Image'
+
+= content('main')
+  == this.include('utilities/background-image/background-image--gradient.slm');
+  == this.include('utilities/background-image/background-image--splatter.slm');
+  

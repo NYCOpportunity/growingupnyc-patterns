@@ -1,0 +1,11 @@
+= extend('/slm/layouts/default')
+
+- title = 'Typography'
+
+= content('main')
+  == this.include('utilities/typography/typography-h1.slm');
+  == this.include('utilities/typography/typography-h2.slm');
+  == this.include('utilities/typography/typography-h3.slm');
+  == this.include('utilities/typography/typography-h4.slm');
+  == this.include('utilities/typography/typography-h5.slm');
+  == this.include('utilities/typography/typography-h6.slm');

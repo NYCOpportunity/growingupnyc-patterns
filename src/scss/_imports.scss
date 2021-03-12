@@ -4,6 +4,8 @@
  * Asset Paths and CDN
  */
 
+// @import 'elements/fonts/fonts';
+
 /** Elements */
 @import 'elements/base/base';
 @import 'elements/alert/alert';
@@ -55,12 +57,15 @@
 
 /** Utilities */
 @import 'utilities/color/color';
-// @forward 'utilities/padding/padding';
-// @forward 'utilities/typography/typography';
-@import 'utilities/tailwindcss/tailwindcss'; // Uncomment this to use Tailwindcss
+@import 'utilities/accessibility/accessibility';
+@import 'utilities/animations/animations';
+@import 'utilities/background-image/background-image';
+@import 'utilities/color/color';
+@import 'utilities/color/color-milestones';
+@import 'utilities/font/font';
+@import 'utilities/form-effects/form-effects';
+@import 'utilities/offcanvas/offcanvas';
+@import 'utilities/tailwindcss/tailwindcss';
+@import 'utilities/typography/typography';
+@import 'utilities/sticky/sticky';
 /** Utilities - end */
-
-/**
- * Base elements that need to be included after other patterns to take effect
- */
-

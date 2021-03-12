@@ -1,0 +1,13 @@
+= extend('/slm/layouts/default')
+
+- title = 'Reveal'
+
+= content('main')
+  div
+    == this.include('utilities/section-highlighter/section-highlighter.slm');
+
+
+= content('script')
+  javascript:
+    MyPatterns.sectionHighlighter();
+    MyPatterns.sticky();

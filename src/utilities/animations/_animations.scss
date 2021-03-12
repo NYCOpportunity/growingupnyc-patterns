@@ -1,0 +1,21 @@
+/**
+ * Animations
+ */
+
+@import 'config/animate';
+@import 'animate.scss/vendor/assets/stylesheets/animate/fadeInUp';
+@import 'animate.scss/vendor/assets/stylesheets/animate/fadeIn';
+
+.animated {
+  @include animate();
+}
+
+// Rotating Text
+.rotating-text {
+  position: relative;
+}
+
+// Hide languages list
+.rotating-text__entry {
+  display: none;
+}

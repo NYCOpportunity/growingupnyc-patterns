@@ -57,8 +57,6 @@ class ShareForm {
     }
 
     let selected = this._el.querySelector('input[type="tel"]');
-			console.log(selected);
-
     $(`.${ShareForm.CssClass.SHOW_DISCLAIMER}`)
       .on('focus', () => {
         this._disclaimer(true);
