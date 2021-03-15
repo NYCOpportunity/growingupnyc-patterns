@@ -1,12 +1,21 @@
 'use strict';
 
 import Offcanvas from "../../utilities/offcanvas/Offcanvas";
+import Toggle from '@nycopportunity/pttrn-scripts/src/toggle/toggle';
 
 class Navigation {
   constructor(settings) {
+    if (settings.sideSelector == 'down'){
+      this.settings = new Toggle({
+        selector: settings.selector
+      });
+
+      return this;
+    }
+
     this._offcanvas = new Offcanvas({
       selector: (settings.selector) ? settings.selector : Navigation.selector,
-      sideSelector: (settings.sideSelector) ? settings.sideSelector : 'right',
+      sideSelector: (settings.sideSelector) ? settings.sideSelector : Navigation.sideSelector,
       namespace: (settings.namespace) ? settings.namespace : Navigation.namespace,
       inactiveClass: (settings.inactiveClass) ? settings.inactiveClass : Navigation.inactiveClass,
     });
@@ -15,22 +24,11 @@ class Navigation {
 }
 
 /**
- * The dom selector for the module
- * @type {String}
+ * Defaults
  */
-// Navigation.selector = '.js-offcanvas';
 Navigation.selector = '[data-js*="offcanvas"]';
-
-/**
- * The namespace for the components JS options
- * @type {String}
- */
+Navigation.sideSelector = 'right';
 Navigation.namespace = 'offcanvas-navigation';
-
-/**
- * The incactive class name
- * @type {String}
- */
 Navigation.inactiveClass = 'inactive';
 
 export default Navigation;

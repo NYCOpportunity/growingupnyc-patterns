@@ -1,0 +1,16 @@
+footer class='o-footer bg-blue text-white'
+  div class='m-4'
+    span class='block'
+      = 'Maintained by'
+    a href='https://nyc.gov/opportunity' class='o-navigation-logo h-auto text-white'
+      span class='sr-only' NYC Opportunity
+
+      svg class='icon--logo' aria-hidden='true'
+        use xlink:href='#logo-nycopportunity'
+
+    small class='block'
+      = '© City of New York, 2020 All Rights Reserved. NYC is a trademark and service mark of the City of New York.'
+    div
+      - let date = new Date();
+      - let opts = {year: 'numeric', month: 'long', day: 'numeric'};
+      p = `Last updated ${date.toLocaleDateString('en-US', opts)}`

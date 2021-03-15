@@ -5,10 +5,8 @@
   <meta charset="utf-8" />
   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <link href="svg/pttrn-a-perfect-heart-red.svg" rel="icon" type="image/svg+xml" />
   <title>@nycopportunity/growingup-patterns</title>
   <link href="styles/default.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css" rel="stylesheet" />
   <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
   <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function(event) {
@@ -23,50 +21,142 @@
   </script>
 </head>
 
-<body class="p-4">
-  <header class="ta-center p-4">
-    <h1>Welcome to
-      <br />@nycopportunity/growingup-patterns v1.0.0-14
-    </h1>
-    <p>Patterns library for Growing Up NYC.</p>
-    <br />
-  </header>
-  <main>
-    <div>
-      <ol class="list-order-no-style">
-        <li>Baby</li>
-        <li>Toddler</li>
-        <li>Pre-Schooler</li>
-      </ol>
-      <div class="list-unordered--check">
-        <ul>
-          <li>Children are 6-weeks to 4-years old</li>
-          <li>Meet income guidelines</li>
-          <li>Working and non-working families may be eligible</li>
-        </ul>
+<body>
+  <nav class="o-navigation">
+    <div class="flex items-center justify-between">
+      <div>
+        <a class="o-navigation-logo h-auto text-blue no-underline" href="/">
+          <span class="sr-only">Growing Up NYC</span>
+          <svg aria-hidden="true" class="icon--logo">
+            <use xlink:href="#logo-growingupnyc"></use>
+          </svg>
+        </a>
       </div>
-      <div class="list-unordered--check">
-        <ol>
-          <li>Children are 6-weeks to 4-years old</li>
-          <li>Meet income guidelines</li>
-          <li>Working and non-working families may be eligible</li>
-        </ol>
+      <div>
+        <span>v1.0.0-14</span>
+        <button aria-controls="toggle-patterns-nav" class="o-navigation__nav-link mr-4 text-blue" data-js="patterns-nav">
+          <span>Menu</span>
+        </button>
       </div>
     </div>
+  </nav>
+  <aside aria-hidden="true" class="o-navigation-mobile bg-blue-light text-white py-6 hidden" id="toggle-patterns-nav">
+    <div class="grid tablet:grid-cols-4">
+      <div class="text-center">
+        <h2 class="h6">elements</h2>
+        <a class="text-white block ml-0" href="alert">Alert</a>
+        <a class="text-white block ml-0" href="base">Base</a>
+        <a class="text-white block ml-0" href="button">Button</a>
+        <a class="text-white block ml-0" href="checkbox">Checkbox</a>
+        <a class="text-white block ml-0" href="divider">Divider</a>
+        <a class="text-white block ml-0" href="hero">Hero</a>
+        <a class="text-white block ml-0" href="icons">Icons</a>
+        <a class="text-white block ml-0" href="input">Input</a>
+        <a class="text-white block ml-0" href="layouts">Layouts</a>
+        <a class="text-white block ml-0" href="lists">Lists</a>
+        <a class="text-white block ml-0" href="spinner">Spinner</a>
+        <a class="text-white block ml-0" href="sticker">Sticker</a>
+        <a class="text-white block ml-0" href="table">Table</a>
+      </div>
+      <div class="text-center">
+        <h2 class="h6">components</h2>
+        <a class="text-white block ml-0" href="arrow-pager">Arrow pager</a>
+        <a class="text-white block ml-0" href="block-list">Block List</a>
+        <a class="text-white block ml-0" href="card">Card</a>
+        <a class="text-white block ml-0" href="details-list">Details List</a>
+        <a class="text-white block ml-0" href="footer">Footer</a>
+        <a class="text-white block ml-0" href="form">Form</a>
+        <a class="text-white block ml-0" href="hero">Hero</a>
+        <a class="text-white block ml-0" href="language-switcher">Language switcher</a>
+        <a class="text-white block ml-0" href="list-box">List Box</a>
+        <a class="text-white block ml-0" href="share">Share</a>
+        <a class="text-white block ml-0" href="side-hero">Side hero</a>
+        <a class="text-white block ml-0" href="side-navigation">Side Navigation</a>
+        <a class="text-white block ml-0" href="tip">Tip</a>
+        <a class="text-white block ml-0" href="tip-card">Tip Card</a>
+        <a class="text-white block ml-0" href="tout">Tout</a>
+      </div>
+      <div class="text-center">
+        <h2 class="h6">objects</h2>
+        <a class="text-white block ml-0" href="accordion">Accordion</a>
+        <a class="text-white block ml-0" href="alert-banner">Alert banner</a>
+        <a class="text-white block ml-0" href="article">Article</a>
+        <a class="text-white block ml-0" href="container">Container</a>
+        <a class="text-white block ml-0" href="content">Content</a>
+        <a class="text-white block ml-0" href="feature-photo">Feature photo</a>
+        <a class="text-white block ml-0" href="flex-embed">Flex embed</a>
+        <a class="text-white block ml-0" href="inline-list">Inline List</a>
+        <a class="text-white block ml-0" href="navigation">Navigation</a>
+        <a class="text-white block ml-0" href="newsletter">Newsletter</a>
+        <a class="text-white block ml-0" href="overlay">Overlay</a>
+        <a class="text-white block ml-0" href="search">Search</a>
+        <a class="text-white block ml-0" href="static-column">Static column</a>
+      </div>
+      <div class="text-center">
+        <h2 class="h6">utilities</h2>
+        <a class="text-white block ml-0" href="accessibility">Accessibility</a>
+        <a class="text-white block ml-0" href="animations">Animations</a>
+        <a class="text-white block ml-0" href="background-image">Background image</a>
+        <a class="text-white block ml-0" href="color">Color</a>
+        <a class="text-white block ml-0" href="fonts">Font</a>
+        <a class="text-white block ml-0" href="form-effects">Form Effects</a>
+        <a class="text-white block ml-0" href="offcanvas">Offcanvas</a>
+        <a class="text-white block ml-0" href="reveal">Reveal</a>
+        <a class="text-white block ml-0" href="section-highlighter">Section Highlighter</a>
+        <a class="text-white block ml-0" href="sticky">Sticky</a>
+        <a class="text-white block ml-0" href="tailwind">Tailwind</a>
+        <a class="text-white block ml-0" href="typography">Typography</a>
+      </div>
+    </div>
+  </aside>
+  <main>
+    <div>
+      <div>
+        <ol class="list-order-no-style">
+          <li>Baby</li>
+          <li>Toddler</li>
+          <li>Pre-Schooler</li>
+        </ol>
+        <div class="list-unordered--check">
+          <ul>
+            <li>Children are 6-weeks to 4-years old</li>
+            <li>Meet income guidelines</li>
+            <li>Working and non-working families may be eligible</li>
+          </ul>
+        </div>
+        <div class="list-unordered--check">
+          <ol>
+            <li>Children are 6-weeks to 4-years old</li>
+            <li>Meet income guidelines</li>
+            <li>Working and non-working families may be eligible</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <footer class="o-footer bg-blue text-white">
+      <div class="m-4">
+        <span class="block">Maintained by</span>
+        <a class="o-navigation-logo h-auto text-white" href="https://nyc.gov/opportunity">
+          <span class="sr-only">NYC Opportunity</span>
+          <svg aria-hidden="true" class="icon--logo">
+            <use xlink:href="#logo-nycopportunity"></use>
+          </svg>
+        </a>
+        <small class="block">© City of New York, 2020 All Rights Reserved. NYC is a trademark and service mark of the City of New York.</small>
+        <div>
+          <p>Last updated March 15, 2021</p>
+        </div>
+      </div>
+    </footer>
   </main>
-  <footer class="ta-center p-4">
-    <p>Last updated March 12, 2021</p>
-    <a href="https://commons.wikimedia.org/wiki/File:A_perfect_SVG_heart.svg">
-      <svg class="c-red" height="80" width="80">
-        <title id="svg-a-perfect-heart">A perfect SVG heart</title>
-        <use xlink:href="#pttrn-a-perfect-heart"></use>
-      </svg>
-    </a>
-  </footer>
   <script src="js/default.js"></script>
   <script type="text/javascript">
     var MyPatterns = new Default();
     MyPatterns.icons('svgs.svg');
+    MyPatterns.navigation({
+      selector: '[data-js*="patterns-nav"]',
+      sideSelector: 'down'
+    });
   </script>
   <script src="/reload/reload.js"></script>
 </body>

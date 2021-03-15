@@ -26,6 +26,7 @@ class Default {
     if (process.env.NODE_ENV != 'production')
       console.dir('@pttrn Development Mode'); // eslint-disable-line no-console
   }
+
   navigation(settings = false) {
     return (settings) ? new Navigation(settings) : new Navigation();
   }

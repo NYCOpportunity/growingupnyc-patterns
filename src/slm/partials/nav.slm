@@ -1,0 +1,24 @@
+
+nav class='o-navigation'
+  div class='flex items-center justify-between'
+    div
+      a href='/' class='o-navigation-logo h-auto text-blue no-underline'
+        span class='sr-only' Growing Up NYC
+
+        svg class='icon--logo' aria-hidden='true'
+          use xlink:href='#logo-growingupnyc'
+    div
+      span = `v${this.package.version}`
+
+      button class='o-navigation__nav-link mr-4 text-blue' data-js='patterns-nav' aria-controls='toggle-patterns-nav'
+        span class='' Menu
+
+aside aria-hidden="true" class='o-navigation-mobile bg-blue-light text-white py-6 hidden' id="toggle-patterns-nav"
+  div class="grid tablet:grid-cols-4"
+    - for (var key in this.patterns)
+      div class='text-center'
+        h2 class='h6' = key
+        - let pk = Object.keys(this.patterns[key])
+        - let pl = Object.values(this.patterns[key])
+        - for (var i=0; i < pk.length; i++)  
+          a class='text-white block ml-0' href=pk[i] = pl[i]

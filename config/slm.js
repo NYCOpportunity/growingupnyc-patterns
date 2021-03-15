@@ -6,6 +6,8 @@ const path = require('path');
 const package = require('../package.json');
 // const global = resolve('config/global');
 const tokens = require('./tokens');
+const patterns = require(`${process.env.PWD}/src/slm/data/nav`);
+
 
 
 /**
@@ -58,6 +60,7 @@ module.exports = {
   package: package,
   // global: global,
   tokens: tokens,
+  patterns: patterns,
   process: {
     env: {
       NODE_ENV: process.env.NODE_ENV

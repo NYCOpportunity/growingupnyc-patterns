@@ -190,6 +190,8 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
   font-weight: $font-weight-extrablack;
   position: relative;
   text-decoration: none;
+  background-color: transparent;
+  border: none;
 
   &:focus {
     color: $color-secondary;
@@ -198,6 +200,10 @@ $width-banner-logo-large: $width-banner-logo * 2.4;
   @media screen and (min-width: $screen-tablet) {
     font-size: rem-calc($font-size-small);
     letter-spacing: 1.1px;
+  }
+
+  span {
+    pointer-events: none;
   }
 }
 

@@ -5,13 +5,11 @@ html lang='en'
     meta http-equiv='X-UA-Compatible' content='IE=edge'
     meta name='viewport' content='width=device-width, initial-scale=1'
 
-    link rel='icon' type='image/svg+xml' href='svg/pttrn-a-perfect-heart-red.svg'
 
     title = this.package.name
 
     link rel='stylesheet' href='styles/default.css'
 
-    link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css'
     script src='//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js'
 
     javascript:
@@ -28,29 +26,24 @@ html lang='en'
           });
       });
 
-  body class='p-4'
-    header class='ta-center p-4'
-      h1
-        = 'Welcome to'
-        br
-        = `${this.package.name} v${this.package.version}`
+  body
+    = partial('/slm/partials/nav.slm');
 
-      p = `${this.package.description}.`
+    / header class='ta-center p-4'
+      / h1
+      /   = 'Welcome to'
+      /   br
+      /   = `${this.package.name} v${this.package.version}`
 
-      br
+      / p = `${this.package.description}.`
+
+      / br
 
     main
-      = content('main')
+      div
+        = content('main')
 
-    footer class='ta-center p-4'
-      - let date = new Date();
-      - let opts = {year: 'numeric', month: 'long', day: 'numeric'};
-      p = `Last updated ${date.toLocaleDateString('en-US', opts)}`
-
-      a href='https://commons.wikimedia.org/wiki/File:A_perfect_SVG_heart.svg'
-        svg class='c-red' width='80' height='80'
-          title id='svg-a-perfect-heart' A perfect SVG heart
-          use xlink:href='#pttrn-a-perfect-heart'
+      = partial('/slm/partials/footer.slm');
 
     script src='js/default.js'
 
@@ -58,6 +51,10 @@ html lang='en'
       var MyPatterns = new Default();
 
       MyPatterns.icons('svgs.svg');
+      MyPatterns.navigation({
+        selector: '[data-js*="patterns-nav"]', 
+        sideSelector: 'down'
+      });
 
 
     = content('scripts')

@@ -3,30 +3,39 @@
 - title = 'Welcome to the @pttrn framework!'
 
 = content('main')
-  / == this.include('../readme.md')
+  div class="layout--row desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-full ml-auto mr-auto px-10 my-12"
 
-  section class='bc-white p-4'
-  /   h2 Details Component
+    div class="pb-6"
+      == this.include('/slm/content/intro.md');
 
-  /   == this.include('components/details/details.md');
+    div class="border-solid border-2 border-blue rounded-md my-2"
+      div class="p-4"
+        h3 class=""
+          = "Features"
+        == this.include('/slm/content/features.md');
 
-  /   h3 Demonstration
-
-  /   == this.include('components/details/details.slm');
-
-  /   h3 Markup
-
-  /   pre class='p-4'
-  /     = this.include('components/details/details.slm');
-
-  / br
-
-  / section class='bc-white p-4'
-  /   h2 Now you can make your own!
-
-  /   p Run the CLI to create a new component.
-
-  /   pre class='p-4'
-  /     code $ npx pttrn make component ...
+    div class="pt-6"
+      h3 class=""
+        = "Getting Started"
+      div class=""
+        p = "The Patterns are available as an NPM package and can be installed with the following command:"
+      div 
+        div class="text-right"
+          button id="copy-text" class="button--pill bg-blue hover:bg-blue-light text-white"
+            = "Copy"
+        div class="border-solid border-2 border-blue rounded-md px-4"
+          pre id="npm-install"
+            = "npm install @nycopportunity/growingup-patterns"
 
 = content('scripts')
+  javascript:
+    function copy(event) {
+      var text = document.getElementById("npm-install").innerText;
+      var elem = document.createElement("textarea");
+      document.body.appendChild(elem);
+      elem.value = text;
+      elem.select();
+      document.execCommand("copy");
+      document.body.removeChild(elem);
+    }
+    document.querySelector("#copy-text").addEventListener("click", copy);

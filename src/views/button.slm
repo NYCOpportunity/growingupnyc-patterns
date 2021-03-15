@@ -3,10 +3,69 @@
 - title = 'Button'
 
 = content('main')
-  == this.include('elements/button/button--primary.slm');
-  == this.include('elements/button/button--pill.slm');
-  == this.include('elements/button/button--pill--alt.slm');
-  == this.include('elements/button/button--pill--es.slm');
-  == this.include('elements/button/button--simple.slm');
-  == this.include('elements/button/button--full-width.slm');
-  == this.include('elements/button/button--text.slm');
+
+  section class='p-4'
+    h2 class='h4' = 'Primary Button'
+
+    == this.include('elements/button/buttons.md');
+
+    h3 class='h5' = 'Demonstration'
+    div class='text-center'
+      == this.include('elements/button/button--primary.slm');
+
+    h3 class='h5' = 'Markup'
+    pre class='p-4'
+      = this.include('elements/button/button--primary.slm');
+
+  section class='p-4'
+    h2 class='h4' = 'Button Pill'
+
+    == this.include('elements/button/buttons.md');
+
+    h3 class='h5' = 'Demonstration'
+    div class='text-center'
+      == this.include('elements/button/button--pill.slm');
+
+    h3 class='h5' = 'Markup'
+    pre class='p-4'
+      = this.include('elements/button/button--pill.slm');
+
+  section class='p-4'
+    h2 class='h4' = 'Button Simple'
+
+    == this.include('elements/button/buttons.md');
+
+    h3 class='h5' = 'Demonstration'
+    div class='text-center'
+      == this.include('elements/button/button--simple.slm');
+
+    h3 class='h5' = 'Markup'
+    pre class='p-4'
+      = this.include('elements/button/button--simple.slm');
+  
+  section class='p-4'
+    h2 class='h4' = 'Button Full Width'
+
+    == this.include('elements/button/buttons.md');
+
+    h3 class='h5' = 'Demonstration'
+    div class='text-center'
+      == this.include('elements/button/button--full-width.slm');
+
+    h3 class='h5' = 'Markup'
+    pre class='p-4'
+      = this.include('elements/button/button--simple.slm');
+
+  section class='p-4'
+    h2 class='h4' = 'Button Text'
+
+    == this.include('elements/button/buttons.md');
+
+    h3 class='h5' = 'Demonstration'
+    div class='text-center'
+      == this.include('elements/button/button--text.slm');
+
+
+    h3 class='h5' = 'Markup'
+    pre class='p-4'
+      = this.include('elements/button/button--simple.slm');
