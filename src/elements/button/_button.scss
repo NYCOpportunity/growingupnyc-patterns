@@ -32,22 +32,13 @@
  // Primary button - Solid color initially and turns ghosty on hover
  .button--primary {
    @extend %button-base;
-   background: $color-text-invert;
-   color: $color-text;
+   background: $color-blue;
+   color: $color-white;
    letter-spacing: 1px;
 
-   &:focus {
-     background: transparent;
-     color: $color-text-invert;
-   }
-
+   &:focus,
    &:hover {
-     background: transparent;
-     color: $color-text-invert !important;
-   }
-
-   &--blue {
-     color: $color-secondary;
+     background: $color-blue-light;
    }
  }
 

@@ -1,12 +1,15 @@
 
-nav class='o-navigation'
+nav class='o-navigation bg-white sticky top-0'
   div class='flex items-center justify-between'
-    div
-      a href='/' class='o-navigation-logo h-auto text-blue no-underline'
-        span class='sr-only' Growing Up NYC
+    div class='flex'
+      a href="/" class="h-12 tablet:h-16 py-2"
+        span class="o-navigation__logo"
+          = 'Growing Up NYC'
+      / a href='/' class='o-navigation-logo h-auto text-blue no-underline'
+      /   span class='sr-only' Growing Up NYC
 
-        svg class='icon--logo' aria-hidden='true'
-          use xlink:href='#logo-growingupnyc'
+      /   svg class='icon--logo' aria-hidden='true'
+      /     use xlink:href='#logo-growingupnyc'
     div
       span = `v${this.package.version}`
 

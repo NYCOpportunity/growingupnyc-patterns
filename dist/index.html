@@ -22,14 +22,11 @@
 </head>
 
 <body>
-  <nav class="o-navigation">
+  <nav class="o-navigation bg-white sticky top-0">
     <div class="flex items-center justify-between">
-      <div>
-        <a class="o-navigation-logo h-auto text-blue no-underline" href="/">
-          <span class="sr-only">Growing Up NYC</span>
-          <svg aria-hidden="true" class="icon--logo">
-            <use xlink:href="#logo-growingupnyc"></use>
-          </svg>
+      <div class="flex">
+        <a class="h-12 tablet:h-16 py-2" href="/">
+          <span class="o-navigation__logo">Growing Up NYC</span>
         </a>
       </div>
       <div>
@@ -110,13 +107,13 @@
     </div>
   </aside>
   <main>
-    <div>
-      <div class="layout--row desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-full ml-auto mr-auto px-10 my-12">
+    <div class="flex justify-center">
+      <div class="p-6 w-full desktop:w-3/4">
         <div class="pb-6">
           <p>The Patterns Libray of Growing Up NYC contains a shared vocabulary between the code, design, and user interface (UI) of <a href="https://growingupnyc.cityofnewyork.us/">Growing Up NYC</a>.</p>
           <p>Growing Up NYC supports the cognitive, social, emotional, and physical development of all New York City children by shaping City policies, agency practices, and program development.</p>
-          <p class="text-center">
-            <a class="button--primary bg-blue hover:bg-blue-light text-white js-offcanvas" href='#patterns' data-js="offcanvas-patterns" />Browse the Patterns</a>
+          <p class="text-center pt-4">
+            <button class="button--primary bg-blue hover:bg-blue-light text-white js-offcanvas" data-js='patterns-nav' aria-controls='toggle-patterns-nav' />Browse the Patterns</button>
           </p>
         </div>
         <div class="border-solid border-2 border-blue rounded-md my-2">
@@ -155,10 +152,7 @@
             <use xlink:href="#logo-nycopportunity"></use>
           </svg>
         </a>
-        <small class="block">© City of New York, 2020 All Rights Reserved. NYC is a trademark and service mark of the City of New York.</small>
-        <div>
-          <p>Last updated March 15, 2021</p>
-        </div>
+        <small class="block">© City of New York, 2021 All Rights Reserved. NYC is a trademark and service mark of the City of New York.</small>
       </div>
     </footer>
   </main>
@@ -172,7 +166,9 @@
     });
   </script>
   <script type="text/javascript">
-    function copy(event) {
+    var copyEl = document.querySelector("#copy-text");
+    var curText = copyEl.innerText;
+    copyEl.addEventListener("click", function(event) {
       var text = document.getElementById("npm-install").innerText;
       var elem = document.createElement("textarea");
       document.body.appendChild(elem);
@@ -180,8 +176,11 @@
       elem.select();
       document.execCommand("copy");
       document.body.removeChild(elem);
-    }
-    document.querySelector("#copy-text").addEventListener("click", copy);
+      copyEl.innerText = 'Copied!'
+      setTimeout(function() {
+        copyEl.innerText = curText;
+      }, 3000);
+    });
   </script>
   <script src="/reload/reload.js"></script>
 </body>

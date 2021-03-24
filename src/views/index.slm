@@ -1,9 +1,7 @@
 = extend('/slm/layouts/default')
 
-- title = 'Welcome to the @pttrn framework!'
-
 = content('main')
-  div class="layout--row desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-full ml-auto mr-auto px-10 my-12"
+  div class="p-6 w-full desktop:w-3/4"
 
     div class="pb-6"
       == this.include('/slm/content/intro.md');
@@ -29,7 +27,9 @@
 
 = content('scripts')
   javascript:
-    function copy(event) {
+    var copyEl = document.querySelector("#copy-text");
+    var curText = copyEl.innerText;
+    copyEl.addEventListener("click", function(event) {
       var text = document.getElementById("npm-install").innerText;
       var elem = document.createElement("textarea");
       document.body.appendChild(elem);
@@ -37,5 +37,10 @@
       elem.select();
       document.execCommand("copy");
       document.body.removeChild(elem);
-    }
-    document.querySelector("#copy-text").addEventListener("click", copy);
+
+      copyEl.innerText = 'Copied!'
+
+      setTimeout(function() { 
+        copyEl.innerText = curText;
+      }, 3000);
+    });

@@ -40,7 +40,7 @@ html lang='en'
       / br
 
     main
-      div
+      div class='flex justify-center'
         = content('main')
 
       = partial('/slm/partials/footer.slm');
