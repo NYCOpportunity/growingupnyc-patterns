@@ -107,7 +107,7 @@
     </div>
   </aside>
   <main>
-    <div class="flex justify-center">
+    <div class="desktop:w-3/4 m-auto">
       <div class="c-language-switcher">
         <div class="c-language-switcher__content" data-js="ls-options">
           <div class="c-language-switcher-controller inline-block flex justify-between pt-6 pb-6">
@@ -210,6 +210,7 @@
   <script src="js/default.js"></script>
   <script type="text/javascript">
     var MyPatterns = new Default();
+    MyPatterns.copy();
     MyPatterns.icons('svgs.svg');
     MyPatterns.navigation({
       selector: '[data-js*="patterns-nav"]',

@@ -107,15 +107,20 @@
     </div>
   </aside>
   <main>
-    <div class="flex justify-center">
+    <div class="desktop:w-3/4 m-auto">
       <section class="p-4">
         <h2 class="h4">Primary Button</h2>
         <h3 class="h5">Demonstration</h3>
         <div class="text-center">
-          <button class="button--primary bg-color-blue hover:bg-color-blue-dark text-color-white">Primary</button>
+          <button class="button--primary">Primary</button>
         </div>
         <h3 class="h5">Markup</h3>
-        <pre class="p-4">&lt;button class=&quot;button--primary bg-color-blue hover:bg-color-blue-dark text-color-white&quot;&gt;Primary&lt;/button&gt;</pre>
+        <div class="text-right">
+          <button class="button--pill bg-blue hover:bg-blue-light text-white" data-js="copy-button--primary">Copy</button>
+        </div>
+        <div>
+          <pre class="mt-0" data-content="copy-button--primary">&lt;button class=&quot;button--primary&quot;&gt;Primary&lt;/button&gt;</pre>
+        </div>
       </section>
       <section class="p-4">
         <h2 class="h4">Button Pill</h2>
@@ -124,7 +129,10 @@
           <button class="button--pill">Child Care</button>
         </div>
         <h3 class="h5">Markup</h3>
-        <pre class="p-4">&lt;button class=&quot;button--pill&quot;&gt;Child Care&lt;/button&gt;</pre>
+        <div class="text-right">
+          <button class="button--pill bg-blue hover:bg-blue-light text-white" data-js="copy-button--pill">Copy</button>
+        </div>
+        <pre class="mt-0" data-content="copy-button--pill">&lt;button class=&quot;button--pill&quot;&gt;Child Care&lt;/button&gt;</pre>
       </section>
       <section class="p-4">
         <h2 class="h4">Button Simple</h2>
@@ -133,7 +141,10 @@
           <button class="button--simple button--simple--alt">Sign Up</button>
         </div>
         <h3 class="h5">Markup</h3>
-        <pre class="p-4">&lt;button class=&quot;button--simple button--simple--alt&quot;&gt;Sign Up&lt;/button&gt;</pre>
+        <div class="text-right">
+          <button class="button--pill bg-blue hover:bg-blue-light text-white" data-js="copy-button--simple">Copy</button>
+        </div>
+        <pre class="mt-0" data-content="copy-button--simple">&lt;button class=&quot;button--simple button--simple--alt&quot;&gt;Sign Up&lt;/button&gt;</pre>
       </section>
       <section class="p-4">
         <h2 class="h4">Button Full Width</h2>
@@ -144,7 +155,12 @@
           </div>
         </div>
         <h3 class="h5">Markup</h3>
-        <pre class="p-4">&lt;button class=&quot;button--simple button--simple--alt&quot;&gt;Sign Up&lt;/button&gt;</pre>
+        <div class="text-right">
+          <button class="button--pill bg-blue hover:bg-blue-light text-white" data-js="copy-button--full-width">Copy</button>
+        </div>
+        <pre class="mt-0" data-content="copy-button--full-width">&lt;div class=&quot;bg-color-pink&quot;&gt;
+  &lt;button class=&quot;button--full-width button--primary text-color-pink&quot;&gt;2 Months&lt;/button&gt;
+&lt;/div&gt;</pre>
       </section>
       <section class="p-4">
         <h2 class="h4">Button Text</h2>
@@ -158,7 +174,15 @@
           </button>
         </div>
         <h3 class="h5">Markup</h3>
-        <pre class="p-4">&lt;button class=&quot;button--simple button--simple--alt&quot;&gt;Sign Up&lt;/button&gt;</pre>
+        <div class="text-right">
+          <button class="button--pill bg-blue hover:bg-blue-light text-white" data-js="copy-button--text">Copy</button>
+        </div>
+        <pre class="mt-0" data-content="copy-button--text">&lt;button class=&quot;button--text&quot;&gt;
+  &lt;svg class=&quot;icon--small&quot;&gt;
+    &lt;title&gt;Close Resources by Age&lt;/title&gt;
+    &lt;use xlink:href=&quot;#icon-close&quot;&gt;&lt;/use&gt;
+  &lt;/svg&gt;
+&lt;/button&gt;</pre>
       </section>
     </div>
     <footer class="o-footer bg-blue text-white">
@@ -177,6 +201,7 @@
   <script src="js/default.js"></script>
   <script type="text/javascript">
     var MyPatterns = new Default();
+    MyPatterns.copy();
     MyPatterns.icons('svgs.svg');
     MyPatterns.navigation({
       selector: '[data-js*="patterns-nav"]',

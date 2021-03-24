@@ -107,7 +107,7 @@
     </div>
   </aside>
   <main>
-    <div class="flex justify-center">
+    <div class="desktop:w-3/4 m-auto">
       <h1 class="type-h1">The official NYC resource for Families.</h1>
       <h2 class="type-h2">The official NYC resource for Families.</h2>
       <h3 class="type-h3">The official NYC resource for Families.</h3>
@@ -131,6 +131,7 @@
   <script src="js/default.js"></script>
   <script type="text/javascript">
     var MyPatterns = new Default();
+    MyPatterns.copy();
     MyPatterns.icons('svgs.svg');
     MyPatterns.navigation({
       selector: '[data-js*="patterns-nav"]',

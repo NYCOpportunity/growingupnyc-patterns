@@ -107,13 +107,13 @@
     </div>
   </aside>
   <main>
-    <div class="flex justify-center">
-      <div class="p-6 w-full desktop:w-3/4">
+    <div class="desktop:w-3/4 m-auto">
+      <div class="py-6">
         <div class="pb-6">
           <p>The Patterns Libray of Growing Up NYC contains a shared vocabulary between the code, design, and user interface (UI) of <a href="https://growingupnyc.cityofnewyork.us/">Growing Up NYC</a>.</p>
           <p>Growing Up NYC supports the cognitive, social, emotional, and physical development of all New York City children by shaping City policies, agency practices, and program development.</p>
           <p class="text-center pt-4">
-            <button class="button--primary bg-blue hover:bg-blue-light text-white js-offcanvas" data-js='patterns-nav' aria-controls='toggle-patterns-nav' />Browse the Patterns</button>
+            <button class="button--primary js-offcanvas" data-js='patterns-nav' aria-controls='toggle-patterns-nav' />Browse the Patterns</button>
           </p>
         </div>
         <div class="border-solid border-2 border-blue rounded-md my-2">
@@ -134,10 +134,10 @@
           </div>
           <div>
             <div class="text-right">
-              <button class="button--pill bg-blue hover:bg-blue-light text-white" id="copy-text">Copy</button>
+              <button class="button--pill bg-blue hover:bg-blue-light text-white" data-js="copy-npm" id="copy-text">Copy</button>
             </div>
-            <div class="border-solid border-2 border-blue rounded-md px-4">
-              <pre id="npm-install">npm install @nycopportunity/growingup-patterns</pre>
+            <div>
+              <pre class="border-solid border-2 border-blue rounded-md mt-0" data-content="copy-npm" id="npm-install">npm install @nycopportunity/growingup-patterns</pre>
             </div>
           </div>
         </div>
@@ -159,27 +159,11 @@
   <script src="js/default.js"></script>
   <script type="text/javascript">
     var MyPatterns = new Default();
+    MyPatterns.copy();
     MyPatterns.icons('svgs.svg');
     MyPatterns.navigation({
       selector: '[data-js*="patterns-nav"]',
       sideSelector: 'down'
-    });
-  </script>
-  <script type="text/javascript">
-    var copyEl = document.querySelector("#copy-text");
-    var curText = copyEl.innerText;
-    copyEl.addEventListener("click", function(event) {
-      var text = document.getElementById("npm-install").innerText;
-      var elem = document.createElement("textarea");
-      document.body.appendChild(elem);
-      elem.value = text;
-      elem.select();
-      document.execCommand("copy");
-      document.body.removeChild(elem);
-      copyEl.innerText = 'Copied!'
-      setTimeout(function() {
-        copyEl.innerText = curText;
-      }, 3000);
     });
   </script>
   <script src="/reload/reload.js"></script>

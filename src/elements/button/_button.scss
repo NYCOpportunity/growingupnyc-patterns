@@ -33,12 +33,14 @@
  .button--primary {
    @extend %button-base;
    background: $color-blue;
+   border-color: $color-blue;
    color: $color-white;
    letter-spacing: 1px;
 
    &:focus,
    &:hover {
      background: $color-blue-light;
+     border-color: $color-blue-light;
    }
  }
 

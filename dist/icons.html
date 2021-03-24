@@ -107,7 +107,7 @@
     </div>
   </aside>
   <main>
-    <div class="flex justify-center">
+    <div class="desktop:w-3/4 m-auto">
       <section class="bg-white p-4">
         <h2 class="h4">Icons</h2>
         <p>These are collection of svg icons used throughout the website.</p>
@@ -652,6 +652,7 @@
   <script src="js/default.js"></script>
   <script type="text/javascript">
     var MyPatterns = new Default();
+    MyPatterns.copy();
     MyPatterns.icons('svgs.svg');
     MyPatterns.navigation({
       selector: '[data-js*="patterns-nav"]',

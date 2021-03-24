@@ -6,8 +6,8 @@
 
 .o-footer {
   position: relative;
-  background: $color-background-footer;
-  color: $color-text-invert;
+  background: $color-blue;
+  color: $color-white;
   padding: 60px 0;
 }
 
@@ -74,10 +74,10 @@
 }
 
 .o-footer__link {
-  color: $color-text-invert;
+  color: $color-white;
   font-family: $font-family-display;
   text-decoration: none;
-  border-bottom: 1px solid $color-text-invert;
+  border-bottom: 1px solid $color-white;
   padding-bottom: 1px;
 
   &:focus {

@@ -107,7 +107,7 @@
     </div>
   </aside>
   <main>
-    <div class="flex justify-center">
+    <div class="desktop:w-3/4 m-auto">
       <div class="c-card c-card--hero gradient-baby"></div>
       <div class="c-card c-card--hero gradient-toddler"></div>
       <div class="c-card c-card--hero gradient-pre-schooler"></div>
@@ -134,6 +134,7 @@
   <script src="js/default.js"></script>
   <script type="text/javascript">
     var MyPatterns = new Default();
+    MyPatterns.copy();
     MyPatterns.icons('svgs.svg');
     MyPatterns.navigation({
       selector: '[data-js*="patterns-nav"]',

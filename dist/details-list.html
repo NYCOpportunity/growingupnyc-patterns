@@ -107,7 +107,7 @@
     </div>
   </aside>
   <main>
-    <div class="flex justify-center">
+    <div class="desktop:w-3/4 m-auto">
       <dl class="c-details-list">
         <dt class="c-details-list__term">Date</dt>
         <dd class="c-details-list__descr">August 20, 2020</dd>
@@ -133,6 +133,7 @@
   <script src="js/default.js"></script>
   <script type="text/javascript">
     var MyPatterns = new Default();
+    MyPatterns.copy();
     MyPatterns.icons('svgs.svg');
     MyPatterns.navigation({
       selector: '[data-js*="patterns-nav"]',

@@ -107,7 +107,7 @@
     </div>
   </aside>
   <main>
-    <div class="flex justify-center"></div>
+    <div class="desktop:w-3/4 m-auto"></div>
     <footer class="o-footer bg-blue text-white">
       <div class="m-4">
         <span class="block">Maintained by</span>
@@ -124,6 +124,7 @@
   <script src="js/default.js"></script>
   <script type="text/javascript">
     var MyPatterns = new Default();
+    MyPatterns.copy();
     MyPatterns.icons('svgs.svg');
     MyPatterns.navigation({
       selector: '[data-js*="patterns-nav"]',

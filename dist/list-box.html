@@ -107,7 +107,7 @@
     </div>
   </aside>
   <main>
-    <div class="flex justify-center">
+    <div class="desktop:w-3/4 m-auto">
       <ol class="c-list-box c-list-box--primary" data-multiselectable="true">
         <li class="c-list-box__item">
           <h3 class="c-list-box__heading bg-color-pink" id="ages-heading-baby" tabindex="0">Baby<span class="c-list-box__subheading">0-11 months</span>
@@ -160,6 +160,7 @@
   <script src="js/default.js"></script>
   <script type="text/javascript">
     var MyPatterns = new Default();
+    MyPatterns.copy();
     MyPatterns.icons('svgs.svg');
     MyPatterns.navigation({
       selector: '[data-js*="patterns-nav"]',

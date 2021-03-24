@@ -40,7 +40,7 @@ html lang='en'
       / br
 
     main
-      div class='flex justify-center'
+      div class='desktop:w-3/4 m-auto'
         = content('main')
 
       = partial('/slm/partials/footer.slm');
@@ -50,6 +50,7 @@ html lang='en'
     javascript:
       var MyPatterns = new Default();
 
+      MyPatterns.copy();
       MyPatterns.icons('svgs.svg');
       MyPatterns.navigation({
         selector: '[data-js*="patterns-nav"]', 

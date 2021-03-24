@@ -107,7 +107,7 @@
     </div>
   </aside>
   <main>
-    <div class="flex justify-center">
+    <div class="desktop:w-3/4 m-auto">
       <div class="bg-color-blue-light p-10">
         <label class="checkbox" for="mce-group[3429]-3429-0">
           <input class="checkbox__field" id="mce-group[3429]-3429-0" name="group[3429][1]" required="" type="checkbox" value="1" />
@@ -133,6 +133,7 @@
   <script src="js/default.js"></script>
   <script type="text/javascript">
     var MyPatterns = new Default();
+    MyPatterns.copy();
     MyPatterns.icons('svgs.svg');
     MyPatterns.navigation({
       selector: '[data-js*="patterns-nav"]',

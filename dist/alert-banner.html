@@ -107,7 +107,7 @@
     </div>
   </aside>
   <main>
-    <div class="flex justify-center">
+    <div class="desktop:w-3/4 m-auto">
       <div>
         <div aria-describedby="dialog-desc-notification" aria-labelledby="dialog-title-notification" class="o-alert-banner hidden" data-alert="notification" data-js="alert-banner-notification" id="banner-notification" role="dialog">
           <div class="show-for-screen-reader" id="dialog-title-notification">Notification Banner</div>
@@ -139,6 +139,7 @@
   <script src="js/default.js"></script>
   <script type="text/javascript">
     var MyPatterns = new Default();
+    MyPatterns.copy();
     MyPatterns.icons('svgs.svg');
     MyPatterns.navigation({
       selector: '[data-js*="patterns-nav"]',

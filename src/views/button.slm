@@ -1,5 +1,7 @@
 = extend('/slm/layouts/default')
 
+= partial('/slm/mixins/copy.mixin.slm');
+
 - title = 'Button'
 
 = content('main')
@@ -14,8 +16,11 @@
       == this.include('elements/button/button--primary.slm');
 
     h3 class='h5' = 'Markup'
-    pre class='p-4'
-      = this.include('elements/button/button--primary.slm');
+    
+    = mixin('copy', 'copy-button--primary')
+    div
+      pre class='mt-0' data-content='copy-button--primary'
+        = this.include('elements/button/button--primary.slm');
 
   section class='p-4'
     h2 class='h4' = 'Button Pill'
@@ -27,7 +32,8 @@
       == this.include('elements/button/button--pill.slm');
 
     h3 class='h5' = 'Markup'
-    pre class='p-4'
+    = mixin('copy', 'copy-button--pill')
+    pre class='mt-0' data-content='copy-button--pill'
       = this.include('elements/button/button--pill.slm');
 
   section class='p-4'
@@ -40,7 +46,8 @@
       == this.include('elements/button/button--simple.slm');
 
     h3 class='h5' = 'Markup'
-    pre class='p-4'
+    = mixin('copy', 'copy-button--simple')
+    pre class='mt-0' data-content='copy-button--simple'
       = this.include('elements/button/button--simple.slm');
   
   section class='p-4'
@@ -53,8 +60,9 @@
       == this.include('elements/button/button--full-width.slm');
 
     h3 class='h5' = 'Markup'
-    pre class='p-4'
-      = this.include('elements/button/button--simple.slm');
+    = mixin('copy', 'copy-button--full-width')
+    pre class='mt-0' data-content='copy-button--full-width'
+      = this.include('elements/button/button--full-width.slm');
 
   section class='p-4'
     h2 class='h4' = 'Button Text'
@@ -67,5 +75,6 @@
 
 
     h3 class='h5' = 'Markup'
-    pre class='p-4'
-      = this.include('elements/button/button--simple.slm');
+    = mixin('copy', 'copy-button--text')
+    pre class='mt-0' data-content='copy-button--text'
+      = this.include('elements/button/button--text.slm');

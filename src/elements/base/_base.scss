@@ -5,6 +5,7 @@
 // Dependencies
 @import 'config/tokens';
 @import 'config/fonts';
+@import 'config/colors';
 
 // Declarations
 html,
@@ -39,4 +40,10 @@ section {
   &:focus {
     outline: none;
   }
+}
+
+pre {
+  overflow: auto;
+  background: $color-gray-light;
+  padding: 1rem;
 }

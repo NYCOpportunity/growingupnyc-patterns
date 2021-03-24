@@ -14,6 +14,7 @@ import Newsletter from '../objects/newsletter/Newsletter';
 import StaticColumn from '../objects/static-column/staticColumn';
 
 import Animations from '../utilities/animations/Animations';
+import Copy from '../utilities/copy/Copy';
 import Sticky from '../utilities/sticky/Sticky';
 import FormEffect from '../utilities/form-effects/FormEffects';
 import Reveal from '../utilities/reveal/Reveal';
@@ -68,6 +69,10 @@ class Default {
 
   animations() {
     return new Animations();
+  }
+
+  copy() {
+    return new Copy();
   }
 
   formEffect(settings = false) {
