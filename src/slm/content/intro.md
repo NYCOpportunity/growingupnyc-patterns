@@ -3,5 +3,5 @@ The Patterns Libray of Growing Up NYC contains a shared vocabulary between the c
 Growing Up NYC supports the cognitive, social, emotional, and physical development of all New York City children by shaping City policies, agency practices, and program development.
 
 <p class="text-center pt-4">
-  <button class="button--primary js-offcanvas" data-js='patterns-nav' aria-controls='toggle-patterns-nav'/>Browse the Patterns</button>
+  <button class="button--primary" data-js='patterns-nav' aria-controls='toggle-patterns-nav'/>Browse the Patterns</button>
 </p>

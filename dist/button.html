@@ -22,7 +22,7 @@
 </head>
 
 <body>
-  <nav class="o-navigation bg-white sticky top-0">
+  <nav class="o-navigation bg-white w-full">
     <div class="flex items-center justify-between">
       <div class="flex">
         <a class="h-12 tablet:h-16 py-2" href="/">
@@ -37,7 +37,7 @@
       </div>
     </div>
   </nav>
-  <aside aria-hidden="true" class="o-navigation-mobile bg-blue-light text-white py-6 hidden" id="toggle-patterns-nav">
+  <aside aria-hidden="true" class="bg-blue-light text-white py-6 hidden" id="toggle-patterns-nav">
     <div class="grid tablet:grid-cols-4">
       <div class="text-center">
         <h2 class="h6">elements</h2>
@@ -105,6 +105,9 @@
         <a class="text-white block ml-0" href="typography">Typography</a>
       </div>
     </div>
+    <div class="block text-center pt-6">
+      <button aria-controls="toggle-patterns-nav" class="button--primary border-blue bg-blue text-white" data-js="patterns-nav">Close menu</button>
+    </div>
   </aside>
   <main>
     <div class="desktop:w-3/4 m-auto">
@@ -123,16 +126,16 @@
         </div>
       </section>
       <section class="p-4">
-        <h2 class="h4">Button Pill</h2>
+        <h2 class="h4">Tag Button</h2>
         <h3 class="h5">Demonstration</h3>
         <div class="text-center">
-          <button class="button--pill">Child Care</button>
+          <button class="button--tag">Child Care</button>
         </div>
         <h3 class="h5">Markup</h3>
         <div class="text-right">
-          <button class="button--pill bg-blue hover:bg-blue-light text-white" data-js="copy-button--pill">Copy</button>
+          <button class="button--pill bg-blue hover:bg-blue-light text-white" data-js="copy-button--tag">Copy</button>
         </div>
-        <pre class="mt-0" data-content="copy-button--pill">&lt;button class=&quot;button--pill&quot;&gt;Child Care&lt;/button&gt;</pre>
+        <pre class="mt-0" data-content="copy-button--tag">&lt;button class=&quot;button--tag&quot;&gt;Child Care&lt;/button&gt;</pre>
       </section>
       <section class="p-4">
         <h2 class="h4">Button Simple</h2>

@@ -22,7 +22,7 @@
 </head>
 
 <body>
-  <nav class="o-navigation bg-white sticky top-0">
+  <nav class="o-navigation bg-white w-full">
     <div class="flex items-center justify-between">
       <div class="flex">
         <a class="h-12 tablet:h-16 py-2" href="/">
@@ -37,7 +37,7 @@
       </div>
     </div>
   </nav>
-  <aside aria-hidden="true" class="o-navigation-mobile bg-blue-light text-white py-6 hidden" id="toggle-patterns-nav">
+  <aside aria-hidden="true" class="bg-blue-light text-white py-6 hidden" id="toggle-patterns-nav">
     <div class="grid tablet:grid-cols-4">
       <div class="text-center">
         <h2 class="h6">elements</h2>
@@ -104,6 +104,9 @@
         <a class="text-white block ml-0" href="tailwind">Tailwind</a>
         <a class="text-white block ml-0" href="typography">Typography</a>
       </div>
+    </div>
+    <div class="block text-center pt-6">
+      <button aria-controls="toggle-patterns-nav" class="button--primary border-blue bg-blue text-white" data-js="patterns-nav">Close menu</button>
     </div>
   </aside>
   <main>

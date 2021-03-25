@@ -1,22 +1,17 @@
 
-nav class='o-navigation bg-white sticky top-0'
+nav class='o-navigation bg-white w-full'
   div class='flex items-center justify-between'
     div class='flex'
       a href="/" class="h-12 tablet:h-16 py-2"
         span class="o-navigation__logo"
           = 'Growing Up NYC'
-      / a href='/' class='o-navigation-logo h-auto text-blue no-underline'
-      /   span class='sr-only' Growing Up NYC
-
-      /   svg class='icon--logo' aria-hidden='true'
-      /     use xlink:href='#logo-growingupnyc'
     div
       span = `v${this.package.version}`
 
       button class='o-navigation__nav-link mr-4 text-blue' data-js='patterns-nav' aria-controls='toggle-patterns-nav'
-        span class='' Menu
+        span = 'Menu'
 
-aside aria-hidden="true" class='o-navigation-mobile bg-blue-light text-white py-6 hidden' id="toggle-patterns-nav"
+aside aria-hidden="true" class='bg-blue-light text-white py-6 hidden' id="toggle-patterns-nav"
   div class="grid tablet:grid-cols-4"
     - for (var key in this.patterns)
       div class='text-center'
@@ -25,3 +20,6 @@ aside aria-hidden="true" class='o-navigation-mobile bg-blue-light text-white py-
         - let pl = Object.values(this.patterns[key])
         - for (var i=0; i < pk.length; i++)  
           a class='text-white block ml-0' href=pk[i] = pl[i]
+  div class="block text-center pt-6"
+    button class="button--primary border-blue bg-blue text-white" data-js='patterns-nav' aria-controls='toggle-patterns-nav'
+      = 'Close menu'

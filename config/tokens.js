@@ -51,37 +51,99 @@ module.exports = {
     'font-size-xxx-large': '66px',
   },
   'color': {
-    'black': '#000',
-    'white': '#fff',
-    'gray-light': '#eee',
-    'gray': '#999',
-    'gray-mid': '#838a97',
-    'gray-dark': '#6a6a6a',
-    'dark-gray': '#51596b',
-    'dark-gray-mid': '#343e4c',
-    'dark-gray-dark': '#333',
-    'blue-lightest': '#eef3f7',
-    'blue-light': '#2793e0',
-    'blue': '#0055b8',
-    'blue-mid': '#184e9e',
-    'blue-dark': '#00326d',
-    'red': '#fb0000',
-    'pink': '#d8006d',
-    'pink-dark': '#7f1c4e',
-    'green': '#21ad0e',
-    'green-dark': '#1d5d11',
-    'green-light': '#7fe62d',
-    'light-green': '#02A586',
-    'light-green-dark': '#015948',
-    'light-green-light': '#42D1B5',
-    'orange-light': '#ffb900',
-    'orange-mid': '#ff9d00',
-    'orange': '#ff6100',
-    'orange-dark': '#bc3b09',
-    'orange-vroom': '#F6901E',
-    'purple': '#7735b2',
-    'purple-dark': '#3c036f',
+    'black': {
+      DEFAULT: '#000'
+    },
+    'white': {
+      DEFAULT: '#fff'
+    },
+    'gray': {
+      light: '#eee',
+      DEFAULT: '#999',
+      mid: '#838a97',
+      dark: '#6a6a6a',
+    },
+    'dark-gray': {
+      DEFAULT: '#51596b',
+      mid: '#343e4c',
+      dark: '#333',
+    },
+    'blue': {
+      lightest: '#eef3f7',
+      light: '#2793e0',
+      DEFAULT: '#0055b8',
+      mid: '#184e9e',
+      dark: '#00326d',
+    },
+    'red': {
+      DEFAULT: '#fb0000'
+    },
+    'pink': {
+      DEFAULT: '#d8006d',
+      dark: '#7f1c4e',
+    },
+    'green': {
+      light: '#7fe62d',
+      DEFAULT: '#21ad0e',
+      dark: '#1d5d11',
+    },
+    'light-green': {
+      light: '#42D1B5',
+      DEFAULT: '#02A586',
+      dark: '#015948'
+    },
+    'orange': {
+      light: '#ffb900',
+      DEFAULT: '#ff6100',
+      mid: '#ff9d00',
+      dark: '#bc3b09',
+      vroom: '#F6901E',
+    },
+    'purple': {
+      DEFAULT: '#7735b2',
+      dark: '#3c036f'
+    },
     'shadow': 'rgba(0, 0, 0, .2)',
+  },
+  'milestones': {
+    'baby': {
+      color: 'pink',
+      primary: 'DEFAULT',
+      secondary: 'dark'
+    },
+    'toddler': {
+      color: 'orange',
+      primary: 'DEFAULT',
+      secondary: 'dark',
+      tertiary: 'light'
+    },
+    'pre-schooler': {
+      color: 'green',
+      primary: 'DEFAULT',
+      secondary: 'dark',
+      tertiary: 'light'
+    },
+    'grade-schooler': {
+      color: 'light-green',
+      primary: 'DEFAULT',
+      secondary: 'dark',
+      tertiary: 'light'
+    },
+    'pre-teen': {
+      color: 'blue',
+      primary: 'DEFAULT',
+      secondary: 'dark'
+    },
+    'teen': {
+      color: 'purple',
+      primary: 'DEFAULT',
+      secondary: 'dark'
+    },
+    'young-adult': {
+      color: 'dark-gray',
+      primary: 'DEFAULT',
+      secondary: 'mid'
+    },
   },
   'colors-default': {
     'color-primary': 'color-blue-light',
@@ -94,37 +156,6 @@ module.exports = {
     'color-text-link': 'color-blue-light',
     'color-background-footer': 'color-blue',
     'color-error': 'color-pink',
-  },
-  'colors-baby': {
-    'primary': 'color-pink',
-    'secondary': 'color-pink-dark',
-  },
-  'colors-toddler': {
-    'primary': 'color-orange',
-    'secondary': 'color-orange-dark',
-    'tertiary': 'color-orange-light',
-  },
-  'colors-pre-schooler': {
-    'primary': 'color-green',
-    'secondary': 'color-green-dark',
-    'tertiary': 'color-green-light',
-  },
-  'colors-grade-schooler': {
-    'primary': 'color-light-green',
-    'secondary': 'color-light-green-dark',
-    'tertiary': 'color-light-green-light',
-  },
-  'colors-pre-teen': {
-    'primary': 'color-blue',
-    'secondary': 'color-blue-dark',
-  },
-  'colors-teen': {
-    'primary': 'color-purple',
-    'secondary': 'color-purple-dark',
-  },
-  'colors-young-adult': {
-    'primary': 'color-dark-gray',
-    'secondary': 'color-dark-gray-mid',
   },
   'icons': [
     'icon-afterschool-guide',
