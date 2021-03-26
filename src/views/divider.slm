@@ -1,7 +1,0 @@
-= extend('/slm/layouts/default')
-
-- title = 'Divider'
-
-= content('main')
-  == this.include('elements/divider/divider.slm');
-  == this.include('elements/divider/divider-light.slm');

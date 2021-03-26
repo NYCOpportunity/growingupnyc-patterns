@@ -17,6 +17,9 @@
   z-index: -1;
 }
 
+/**
+* Checkbox indicator
+*/
 .checkbox__indicator {
   background: $color-white;
   border-radius: 3px;
@@ -38,6 +41,7 @@
     width: rem-calc(20);
   }
 }
+
 
 .checkbox__field:checked + .checkbox__indicator {
   color: $color-secondary;
