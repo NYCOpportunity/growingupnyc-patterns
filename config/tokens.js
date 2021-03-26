@@ -109,7 +109,8 @@ module.exports = {
     'baby': {
       color: 'pink',
       primary: 'DEFAULT',
-      secondary: 'dark'
+      secondary: 'dark',
+      tertiary: 'DEFAULT'
     },
     'toddler': {
       color: 'orange',
@@ -132,30 +133,35 @@ module.exports = {
     'pre-teen': {
       color: 'blue',
       primary: 'DEFAULT',
-      secondary: 'dark'
+      secondary: 'dark',
+      tertiary: 'DEFAULT'
     },
     'teen': {
       color: 'purple',
       primary: 'DEFAULT',
-      secondary: 'dark'
+      secondary: 'dark',
+      tertiary: 'DEFAULT'
     },
     'young-adult': {
       color: 'dark-gray',
       primary: 'DEFAULT',
-      secondary: 'mid'
+      secondary: 'mid',
+      tertiary: 'DEFAULT'
     },
   },
-  'colors-default': {
-    'color-primary': 'color-blue-light',
-    'color-secondary': 'color-blue',
-    'color-background': 'color-white',
-    'color-background-shade': 'color-gray-light',
-    'color-text': 'color-dark-gray-dark',
-    'color-text-invert': 'color-white',
-    'color-text-weak': 'color-gray',
-    'color-text-link': 'color-blue-light',
-    'color-background-footer': 'color-blue',
-    'color-error': 'color-pink',
+  'types': {
+    'afterschool': {
+      color: 'blue',
+      primary: 'DEFAULT',
+      secondary: 'dark',
+      tertiary: 'DEFAULT'
+    },
+    'summer': {
+      color: 'orange',
+      primary: 'DEFAULT',
+      secondary: 'dark',
+      tertiary: 'light'
+    }
   },
   'icons': [
     'icon-afterschool-guide',

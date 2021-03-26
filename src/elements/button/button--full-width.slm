@@ -1,3 +1,0 @@
-div class="bg-color-pink"
-  button class="button--full-width button--primary text-color-pink"
-    = '2 Months'

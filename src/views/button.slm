@@ -23,6 +23,22 @@
         = this.include('elements/button/button--primary.slm');
 
   section class='p-4'
+    h2 class='h4' = 'Outline Button'
+
+    == this.include('elements/button/buttons.md');
+
+    h3 class='h5' = 'Demonstration'
+    div class='text-center'
+      == this.include('elements/button/button--outline.slm');
+
+    h3 class='h5' = 'Markup'
+    
+    = mixin('copy', 'copy-button--outline')
+    div
+      pre class='mt-0' data-content='copy-button--outline'
+        = this.include('elements/button/button--outline.slm');
+
+  section class='p-4'
     h2 class='h4' = 'Tag Button'
 
     == this.include('elements/button/buttons.md');
@@ -37,44 +53,16 @@
       = this.include('elements/button/button--tag.slm');
 
   section class='p-4'
-    h2 class='h4' = 'Button Simple'
+    h2 class='h4' = 'Icon Button'
 
     == this.include('elements/button/buttons.md');
 
     h3 class='h5' = 'Demonstration'
     div class='text-center'
-      == this.include('elements/button/button--simple.slm');
-
-    h3 class='h5' = 'Markup'
-    = mixin('copy', 'copy-button--simple')
-    pre class='mt-0' data-content='copy-button--simple'
-      = this.include('elements/button/button--simple.slm');
-  
-  section class='p-4'
-    h2 class='h4' = 'Button Full Width'
-
-    == this.include('elements/button/buttons.md');
-
-    h3 class='h5' = 'Demonstration'
-    div class='text-center'
-      == this.include('elements/button/button--full-width.slm');
-
-    h3 class='h5' = 'Markup'
-    = mixin('copy', 'copy-button--full-width')
-    pre class='mt-0' data-content='copy-button--full-width'
-      = this.include('elements/button/button--full-width.slm');
-
-  section class='p-4'
-    h2 class='h4' = 'Button Text'
-
-    == this.include('elements/button/buttons.md');
-
-    h3 class='h5' = 'Demonstration'
-    div class='text-center'
-      == this.include('elements/button/button--text.slm');
+      == this.include('elements/button/button--icon.slm');
 
 
     h3 class='h5' = 'Markup'
     = mixin('copy', 'copy-button--text')
-    pre class='mt-0' data-content='copy-button--text'
-      = this.include('elements/button/button--text.slm');
+    pre class='mt-0' data-content='copy-button--icon'
+      = this.include('elements/button/button--icon.slm');

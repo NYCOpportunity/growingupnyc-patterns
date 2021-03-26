@@ -2,10 +2,6 @@ $milestones: map-get($tokens, 'milestones');
 $ages: 'baby', 'toddler', 'pre-schooler', 'grade-schooler', 'pre-teen', 'teen', 'young-adult';
 $age-types: 'primary', 'secondary';
 
-
-// @function color-milestones($key, $token) {
-//   @return map-get(map-get($milestones, $key), $token);
-// }
 @function color-milestones($mc, $token) {
   @return map-get($mc, $token);
 }

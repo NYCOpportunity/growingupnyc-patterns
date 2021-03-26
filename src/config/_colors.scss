@@ -38,16 +38,19 @@ $color-purple-dark: #{color-retrieval(purple, dark)};
 
 $color-shadow: map-get($colors, 'shadow');
 
-$color-primary: map-get($colors, map-get($colors-default, 'primary'));
-$color-secondary: map-get($colors, map-get($colors-default, 'secondary'));
-$color-background: map-get($colors, map-get($colors-default, 'background'));
-$color-background-shade: map-get($colors, map-get($colors-default, 'background-shade'));
-$color-background-footer: map-get($colors, map-get($colors-default, 'background-footer'));
-$color-text: map-get($colors, map-get($colors-default, 'text'));
-$color-text-invert: map-get($colors, map-get($colors-default, 'text-invert'));
-$color-text-link: map-get($colors, map-get($colors-default, 'text-link'));
-$color-text-weak: map-get($colors, map-get($colors-default, 'text-weak'));
-$color-error: map-get($colors, map-get($colors-default, 'error'));
+/**
+* Default Colors
+*/
+$color-primary: $color-blue-light;
+$color-secondary: $color-blue;
+$color-background: $color-white;
+$color-background-shade: $color-gray-light;
+$color-background-footer: $color-blue;
+$color-text: $color-dark-gray-dark;
+$color-text-invert: $color-white;
+$color-text-link: $color-blue-light;
+$color-text-weak: $color-gray;
+$color-error: $color-pink;
 
 // Milestones
 // $colors-baby: map-get($tokens, 'colors-baby');

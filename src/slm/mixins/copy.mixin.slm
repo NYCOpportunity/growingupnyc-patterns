@@ -1,4 +1,4 @@
 = mixin('copy', 'name')
   div class='text-right'
-    button class="button--pill bg-blue hover:bg-blue-light text-white" data-js='${this.name}'
+    button class="button--tag bg-blue hover:bg-blue-light text-white" data-js='${this.name}'
       = "Copy"
