@@ -109,13 +109,36 @@
   </aside>
   <main>
     <div class="desktop:w-3/4 m-auto">
-      <div>
-        <div class="sticker">
-          <svg aria-hidden="true" class="icon--large" role="img">
-            <use xlink:href="#icon-cash-expenses"></use>
-          </svg>
+      <section class="bg-white p-4">
+        <h1 class="h4 mb-0">Sticker</h1>
+      </section>
+      <section class="p-4">
+        <h2 class="h4">Sticker</h2>
+        <p>The sticker element is a circular decorator that is used to display an icon representing the category or brand of the current page.</p>
+        <h3 class="h5">Demonstration</h3>
+        <div>
+          <div class="flex justify-center">
+            <div class="sticker">
+              <svg aria-hidden="true" class="icon--large" role="img">
+                <use xlink:href="#icon-cash-expenses"></use>
+              </svg>
+            </div>
+          </div>
         </div>
-      </div>
+        <h3 class="h5">Markup</h3>
+        <div class="text-right">
+          <button class="button--tag bg-blue hover:bg-blue-light text-white" data-js="copy-sticker">Copy</button>
+        </div>
+        <div>
+          <pre class="mt-0" data-content="copy-sticker">&lt;div class=&quot;flex justify-center&quot;&gt;
+  &lt;div class=&quot;sticker&quot;&gt;
+    &lt;svg aria-hidden=&quot;true&quot; class=&quot;icon--large&quot; role=&quot;img&quot;&gt;
+      &lt;use xlink:href=&quot;#icon-cash-expenses&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+      </section>
     </div>
     <footer class="o-footer bg-blue text-white">
       <div class="m-4">

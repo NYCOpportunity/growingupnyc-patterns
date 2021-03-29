@@ -1,8 +1,25 @@
 = extend('/slm/layouts/default')
+= partial('/slm/mixins/copy.mixin.slm');
+
 
 - title = 'Table'
 
 = content('main')
-  div
-    == this.include('elements/table/table.slm');
+  section class='bg-white p-4'
+    h1 class='h4 mb-0' 
+      = title
+  section class='p-4'
+    / h2 class='h4' = 'Table'
 
+    == this.include('elements/table/table.md');
+
+    h3 class='h5' = 'Demonstration'
+    div
+      == this.include('elements/table/table.slm');
+
+    h3 class='h5' = 'Markup'
+    
+    = mixin('copy', 'copy-table')
+    div
+      pre class='mt-0' data-content='copy-table'
+        = this.include('elements/table/table.slm');
