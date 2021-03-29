@@ -1,10 +1,57 @@
 = extend('/slm/layouts/default')
+= partial('/slm/mixins/copy.mixin.slm');
+
 
 - title = 'Lists'
 
 = content('main')
-  div
-    == this.include('elements/lists/lists.slm');
-    == this.include('elements/lists/lists-unordered--check.slm');
-    == this.include('elements/lists/lists-ordered.slm');
+  section class='bg-white p-4'
+    h1 class='h4 mb-0' 
+      = title
+  section class='p-4'
+    h2 class='h4' = 'Ordered List'
 
+    == this.include('elements/lists/lists.md');
+
+    h3 class='h5' = 'Demonstration'
+    div
+      == this.include('elements/lists/lists-ordered.slm');
+
+    h3 class='h5' = 'Markup'
+    
+    = mixin('copy', 'copy-lists-ordered')
+    div
+      pre class='mt-0' data-content='copy-lists-ordered'
+        = this.include('elements/lists/lists-ordered.slm');
+
+  section class='p-4'
+    h2 class='h4' = 'Unordered List'
+
+    == this.include('elements/lists/lists.md');
+
+    h3 class='h5' = 'Demonstration'
+    div
+      == this.include('elements/lists/lists-unordered.slm');
+
+    h3 class='h5' = 'Markup'
+    
+    = mixin('copy', 'copy-lists-unordered')
+    div
+      pre class='mt-0' data-content='copy-lists-unordered'
+        = this.include('elements/lists/lists-unordered.slm');
+
+  section class='p-4'
+    h2 class='h4' = 'Unordered List, Check'
+
+    == this.include('elements/lists/lists.md');
+
+    h3 class='h5' = 'Demonstration'
+    div
+      == this.include('elements/lists/lists-unordered--check.slm');
+
+    h3 class='h5' = 'Markup'
+    
+    = mixin('copy', 'copy-lists-unordered--check')
+    div
+      pre class='mt-0' data-content='copy-lists-unordered--check'
+        = this.include('elements/lists/lists-unordered--check.slm');

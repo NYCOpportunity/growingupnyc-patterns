@@ -2,49 +2,58 @@
  * Lists
  */
 
-// Declarations
-.list-order-no-style {
+@import 'scss/functions/rem-calc';
+@import 'config/colors';
+
+@mixin list-bullet($before: none) {
+  content: $before;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: rem-calc(8.8);
+  margin-top: rem-calc(2);
+  opacity: .2;
+  vertical-align: inherit;
+  text-align: center;
+}
+
+/**
+* Unordered
+*/
+.ul--no-style {
   list-style: none;
 }
 
-.list-unordered--check {
+.ul {
+  list-style: none;
 
-  ol {
-    padding-left: rem-calc(30);
-
-    @media screen and (min-width: $screen-desktop) {
-      padding-left: rem-calc(50);
-    }
-  }
-
-  ol li {
-    padding: rem-calc(10 0);
-  }
-
-  ol,
-  ul {
-    margin-top: rem-calc(15);
-  }
-
-  ul {
-    list-style: none;
-    padding-left: rem-calc(10);
-
-    @media screen and (min-width: $screen-desktop) {
-      padding-left: rem-calc(30);
-    }
-  }
-
-  ul li {
-    padding: rem-calc(15 0 15 27);
-    text-indent: rem-calc(-19);
-
+  li {
     &:before {
-      content: url(../images/check.svg);
+      @include list-bullet('\2022');
+    }
+  }
+}
+
+.ul--check {
+  list-style: none;
+
+  li {
+    &:before {
+      @include list-bullet(url("../svg/icon-check.svg"));
+    }
+  }
+}
+
+/**
+* Ordered
+*/
+.ol {
+  li {
+    margin-left: 1.25rem;
+    padding-left: .25rem;
+    &::marker {
+      color: $color-gray;
       margin-right: rem-calc(8.8);
-      margin-top: rem-calc(2);
-      opacity: .2;
-      vertical-align: middle;
     }
   }
 }
