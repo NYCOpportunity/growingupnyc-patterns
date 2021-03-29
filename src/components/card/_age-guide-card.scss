@@ -48,11 +48,17 @@
 .age-guide-card__link {
   color: $color-black;
   font-weight: 900;
-  display: block;
+  display: flex;
+  align-items: center;
   margin: rem-calc(16 0 0);
 
   &:hover {
     color: $color-blue;
   }
 
+  svg {
+    width: .75rem;
+    height: .75rem;
+    margin-top: 3px;
+  }
 }

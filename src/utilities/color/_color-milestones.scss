@@ -3,7 +3,31 @@
  */
 
 @import 'config/colors';
+@import 'config/milestones';
 @import 'config/cdn';
+
+/*
+* Border
+*/
+@each $age in $ages {
+  $c: map-get($milestones, $age);
+  $c-name: map-get($c, color);
+  $c-prim: map-get($c, primary);
+
+  .bg-#{$age} {
+    background: #{color-retrieval($c-name, $c-prim)};
+  }
+
+  .text-#{$age} {
+    color: #{color-retrieval($c-name, $c-prim)};
+  }
+
+  .border-#{$age} {
+    border-style: solid;
+    border-color: #{color-retrieval($c-name, $c-prim)};
+    border-width: 2px;
+  }
+}
 
 // Baby
 // .bg-baby--primary,

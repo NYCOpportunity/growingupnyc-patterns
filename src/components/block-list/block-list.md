@@ -1,1 +1,0 @@
-The Block List component is a wrapper for stacked content. On Growing Up NYC, this component is used to display a collection of cards on the Programs page.
