@@ -1,11 +1,6 @@
 @import 'config/spinner';
 @import 'config/colors';
 
-// The spinner mizin takes the spinner color, the spinner diameter and the spinner tickness parameters
-.spinner-loader--primary {
-  @include spinner($color-primary, 120px, 16px);
-}
-
-.spinner-loader--secondary {
-  @include spinner($color-secondary, 120px, 16px);
+.spinner {
+  @include spinner(120px, 16px);
 }

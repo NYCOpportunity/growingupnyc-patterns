@@ -109,12 +109,28 @@
   </aside>
   <main>
     <div class="desktop:w-3/4 m-auto">
-      <div>
-        <div class="flex flex:column">
-          <div class="spinner-loader--primary mr-10"></div>
-          <div class="spinner-loader--secondary"></div>
+      <section class="bg-white p-4">
+        <h1 class="h4 mb-0">Spinner</h1>
+      </section>
+      <section class="p-4">
+        <h2 class="h4">Spinner</h2>
+        <p>The spinner is used to indicate loading in the share form in generatin nyc. To implement the spinner an empty div with the classnme “spinner-loader” should be declared in HTML and the mixing “spinner” also need to be called in the stylesheet. The mixin takes three arguments; diameter, thickness and color. The arguments can be passed while the mixin is being called in the style-sheet using the keyword @include.</p>
+        <h3 class="h5">Demonstration</h3>
+        <div>
+          <div class="flex justify-center text-blue">
+            <div class="spinner"></div>
+          </div>
         </div>
-      </div>
+        <h3 class="h5">Markup</h3>
+        <div class="text-right">
+          <button class="button--tag bg-blue hover:bg-blue-light text-white" data-js="copy-spinner">Copy</button>
+        </div>
+        <div>
+          <pre class="mt-0" data-content="copy-spinner">&lt;div class=&quot;flex justify-center text-blue&quot;&gt;
+  &lt;div class=&quot;spinner&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+      </section>
     </div>
     <footer class="o-footer bg-blue text-white">
       <div class="m-4">

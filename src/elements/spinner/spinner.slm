@@ -1,5 +1,2 @@
-/
-/ Spinner
-div class="flex flex:column"
- div class="spinner-loader--primary mr-10"
- div class="spinner-loader--secondary"
+div class='flex justify-center text-blue'
+ div class="spinner"
