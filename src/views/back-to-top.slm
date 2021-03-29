@@ -1,14 +1,28 @@
 = extend('/slm/layouts/default')
+= partial('/slm/mixins/copy.mixin.slm');
+
 
 - title = 'Back To Top'
 
 
 = content('main')
+  
   section class='bg-white p-4'
-    h1 
+    h1 class='h4 mb-0' 
       = title
+  section class='p-4'
+    == this.include('components/back-to-top/back-to-top.md');
+
+    h3 class='h5' = 'Demonstration'
     div
-      == this.include('components/back-to-top/back-to-top');
+      == this.include('components/back-to-top/back-to-top.slm');
+
+    h3 class='h5' = 'Markup'
+    
+    = mixin('copy', 'copy-back-to-top')
+    div
+      pre class='mt-0' data-content='copy-back-to-top'
+        = this.include('components/back-to-top/back-to-top.slm');
 
 = content('scripts')
   javascript:

@@ -1,24 +1,24 @@
-.back-to-top {
-  display: none;
+/**
+ * Back-to-top
+ */
+@import 'config/colors';
+
+.c-back-to-top {
   position: fixed;
-  bottom: 20px;
-  z-index: 99;
-  font-size: 14px;
-  border: none;
-  outline: none;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 4px;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  margin: 10px 10px;
+  text-align: center;
+  padding: .5rem;
 
   @if ($language=='ar') or ($language=='ur') {
-    left: 30px;
-  } @else {
-    right: 30px;
+    left: 0;
+    right: auto;
   }
 
-  @media screen and (min-width: $screen-tablet) {
-    @include font-size-regular;
-    padding: 15px;
+  a {
+    text-decoration: none;
+    color: $color-white;
   }
 }

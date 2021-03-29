@@ -1,11 +1,26 @@
 = extend('/slm/layouts/default')
+= partial('/slm/mixins/copy.mixin.slm');
+
 
 - title = 'Arrow Pager'
 
 = content('main')
   section class='bg-white p-4'
-    h1 
+    h1 class='h4 mb-0' 
       = title
+  section class='p-4'
+    h2 class='h4' = 'Arrow Pager'
+
+    == this.include('components/arrow-pager/arrow-pager.md');
+
+    h3 class='h5' = 'Demonstration'
     div
       == this.include('components/arrow-pager/arrow-pager.slm');
+
+    h3 class='h5' = 'Markup'
+    
+    = mixin('copy', 'copy-arrow-pager')
+    div
+      pre class='mt-0' data-content='copy-arrow-pager'
+        = this.include('components/arrow-pager/arrow-pager.slm');
 

@@ -110,21 +110,53 @@
   <main>
     <div class="desktop:w-3/4 m-auto">
       <section class="bg-white p-4">
-        <h1>Arrow Pager</h1>
+        <h1 class="h4 mb-0">Arrow Pager</h1>
+      </section>
+      <section class="p-4">
+        <h2 class="h4">Arrow Pager</h2>
+        <p>The Arrow Pager component allows for simple navigation wrapped around a string.</p>
+        <h3 class="h5">Demonstration</h3>
         <div>
-          <div class="c-arrow-pager">
-            <a class="c-arrow-pager__arrow arrow-pager__arrow--left" href="#" rel="prev">
-              <svg class="icon--caret" role="img">
-                <title>Previous Month</title>
-                <use xlink:href="#icon-caret-left"></use>
-              </svg>
-            </a>July<a class="c-arrow-pager__arrow arrow-pager__arrow--right" href="#" rel="next">
-              <svg class="icon--caret" role="img">
-                <title>Next Month</title>
-                <use xlink:href="#icon-caret-right"></use>
-              </svg>
-            </a>
+          <div class="text-center">
+            <div class="c-arrow-pager">
+              <a class="c-arrow-pager--arrow" href="#" rel="prev">
+                <svg class="icon--small" role="img">
+                  <title>Previous Month</title>
+                  <use xlink:href="#icon-caret-left"></use>
+                </svg>
+              </a>
+              <span>July</span>
+              <a class="c-arrow-pager--arrow" href="#" rel="next">
+                <svg class="icon--small" role="img">
+                  <title>Next Month</title>
+                  <use xlink:href="#icon-caret-right"></use>
+                </svg>
+              </a>
+            </div>
           </div>
+        </div>
+        <h3 class="h5">Markup</h3>
+        <div class="text-right">
+          <button class="button--tag bg-blue hover:bg-blue-light text-white" data-js="copy-arrow-pager">Copy</button>
+        </div>
+        <div>
+          <pre class="mt-0" data-content="copy-arrow-pager">&lt;div class=&quot;text-center&quot;&gt;
+  &lt;div class=&quot;c-arrow-pager&quot;&gt;
+    &lt;a class=&quot;c-arrow-pager--arrow&quot; href=&quot;#&quot; rel=&quot;prev&quot;&gt;
+      &lt;svg class=&quot;icon--small&quot; role=&quot;img&quot;&gt;
+        &lt;title&gt;Previous Month&lt;/title&gt;
+        &lt;use xlink:href=&quot;#icon-caret-left&quot;&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+    &lt;/a&gt;
+    &lt;span&gt;July&lt;/span&gt;
+    &lt;a class=&quot;c-arrow-pager--arrow&quot; href=&quot;#&quot; rel=&quot;next&quot;&gt;
+      &lt;svg class=&quot;icon--small&quot; role=&quot;img&quot;&gt;
+        &lt;title&gt;Next Month&lt;/title&gt;
+        &lt;use xlink:href=&quot;#icon-caret-right&quot;&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
         </div>
       </section>
     </div>

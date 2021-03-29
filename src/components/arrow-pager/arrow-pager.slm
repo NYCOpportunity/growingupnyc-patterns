@@ -1,16 +1,14 @@
-/
-/ Arrow-pager
-
-div class="c-arrow-pager" 
-  a class="c-arrow-pager__arrow arrow-pager__arrow--left" href="#" rel="prev"
-    svg role="img" class="icon--caret"
-      title
-        = 'Previous Month'
-      use xlink:href="#icon-caret-left"
-  = 'July'
-  a class="c-arrow-pager__arrow arrow-pager__arrow--right" href="#" rel="next"
-    svg role="img" class="icon--caret"
-      title
-        = 'Next Month'
-      use xlink:href="#icon-caret-right"
+div class="text-center"
+  div class="c-arrow-pager" 
+    a class="c-arrow-pager--arrow" href="#" rel="prev"
+      svg role="img" class="icon--small"
+        title
+          = 'Previous Month'
+        use xlink:href="#icon-caret-left"
+    span = 'July'
+    a class="c-arrow-pager--arrow" href="#" rel="next"
+      svg role="img" class="icon--small"
+        title
+          = 'Next Month'
+        use xlink:href="#icon-caret-right"
 

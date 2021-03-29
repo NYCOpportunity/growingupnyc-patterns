@@ -2,65 +2,44 @@
 
 class BackToTop {
   constructor() {
-    this._settings = {
+    this.settings = {
       selector: BackToTop.selector,
-      footer: BackToTop.footer,
+      stop: BackToTop.stop,
     }
 
-    //check if the button existes
-    if (!document.querySelector(this._settings.selector)) return;
+    //check if the button exists
+    if (!document.querySelector(this.settings.selector)) return;
 
-    //Get the button
-    const button = document.querySelector(this._settings.selector);
-    const footer = document.querySelector(`.${this._settings.footer}`);
+    const button = document.querySelector(this.settings.selector);
+    const stop = document.querySelector(this.settings.stop);
 
-    window.addEventListener('scroll', function(e) {
-      BackToTop.revealButton(button)
+    window.addEventListener('scroll', function () {
+      (document.documentElement.scrollTop == 0) ? button.classList.add('hidden') : button.classList.remove('hidden')
 
-      if (BackToTop.isInViewport(footer)) {
-        button.style.position = "absolute";
-      } else {
-        button.style.position = "fixed";
-      }
+      button.style.bottom = `${BackToTop.calcBottom(stop)}px`
+
     });
-
-    button.addEventListener('click', function(e) {
-      BackToTop.scrollTop()
-    });
-
-
   }
 }
 
-// When the user scrolls down 20px from the top of the document, show the button
-BackToTop.scrollTop = function () {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+/**
+ * 
+ * Calculate the bottom value for selector
+ */
+BackToTop.calcBottom = function (element) {
+  const eh = element.offsetHeight;
+  const wh = window.innerHeight;
+  let er = element.getBoundingClientRect();
+  let et = er.top;
+  let eb = er.bottom;
 
-// When the user clicks on the button, scroll to the top of the document
-BackToTop.revealButton = function (ele) {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    ele.style.display = "block";
-  } else {
-    ele.style.display = "none";
-  }
-}
-
-
-
-BackToTop.isInViewport = function (ele) {
-  const { top, bottom } = ele.getBoundingClientRect();
-  const vHeight = (window.innerHeight || document.documentElement.clientHeight);
-
-  return (
-    (top > 0 || bottom > 0) &&
-    top < vHeight
-  );
+  return Math.max(0, et > 0 ? Math.min(eh, wh - et) : Math.min(eb, wh))
 };
 
-
+/**
+ * Defaults
+ */
 BackToTop.selector = '[data-js="back-to-top"]'
-BackToTop.footer = 'o-footer'
+BackToTop.stop = 'footer'
 
 export default BackToTop;
