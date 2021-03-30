@@ -1,12 +1,10 @@
-/
-/ Side-hero
-
-div class="c-side-hero"
-
-section class="o-static-column o-static-column--left c-side-hero js-static"
-  div class="c-side-hero__image"
-  div class="c-side-hero__content"
-    h1 class="c-side-hero__title"
-      div class="c-side-hero__title__large rotating-text"
-          span class="rotating-text__entry"
+div
+  div class="c-side-hero"
+  section class="o-static-column o-static-column--left c-side-hero"
+    div class="c-side-hero__image"
+    div class="c-side-hero__content"
+      h1 class="c-side-hero__title"
+        = 'Growing Up NYC'
+        div class="c-side-hero__title__large"
+          span
             = "Resources for parents"

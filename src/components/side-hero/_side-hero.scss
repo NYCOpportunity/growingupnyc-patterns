@@ -9,7 +9,7 @@
 
 .c-side-hero__image {
   background: $color-primary center center no-repeat;
-  background-size: cover;
+  background-size: cover !important;
   height: 53.3333333vw;
 
 	@media screen and (min-width: $screen-desktop) {
@@ -48,7 +48,6 @@
 }
 
 @media screen and (min-width: $screen-desktop) {
-  .js {
     .c-side-hero__content {
       position: fixed;
     }
@@ -58,7 +57,6 @@
       position: absolute;
       width: 100%;
     }
-  }
   }
 
 .c-side-hero__title {

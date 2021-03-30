@@ -47,7 +47,6 @@
         <a class="text-white block ml-0" href="checkbox">Checkbox</a>
         <a class="text-white block ml-0" href="icons">Icons</a>
         <a class="text-white block ml-0" href="input">Input</a>
-        <a class="text-white block ml-0" href="layouts">Layouts</a>
         <a class="text-white block ml-0" href="lists">Lists</a>
         <a class="text-white block ml-0" href="spinner">Spinner</a>
         <a class="text-white block ml-0" href="sticker">Sticker</a>
@@ -109,19 +108,47 @@
   </aside>
   <main>
     <div class="desktop:w-3/4 m-auto">
-      <div>
-        <div class="c-side-hero"></div>
-        <section class="o-static-column o-static-column--left c-side-hero js-static">
-          <div class="c-side-hero__image"></div>
-          <div class="c-side-hero__content">
-            <h1 class="c-side-hero__title">
-              <div class="c-side-hero__title__large rotating-text">
-                <span class="rotating-text__entry">Resources for parents</span>
+      <section class="bg-white p-4">
+        <h1 class="h4 mb-0">Side Hero</h1>
+      </section>
+      <section class="p-4">
+        <h2 class="h4">side-hero</h2>
+        <p>Side hero is a static container in the front page that contains rotating text and CTA button. <a href="demos/side-hero-demo">Click here for a demo page.</a>
+        </p>
+        <h3 class="h5">Demonstration</h3>
+        <div>
+          <div>
+            <div class="c-side-hero"></div>
+            <section class="o-static-column o-static-column--left c-side-hero">
+              <div class="c-side-hero__image"></div>
+              <div class="c-side-hero__content">
+                <h1 class="c-side-hero__title">Growing Up NYC<div class="c-side-hero__title__large">
+                    <span>Resources for parents</span>
+                  </div>
+                </h1>
               </div>
-            </h1>
+            </section>
           </div>
-        </section>
-      </div>
+        </div>
+        <h3 class="h5">Markup</h3>
+        <div class="text-right">
+          <button class="button--tag bg-blue hover:bg-blue-light text-white" data-js="copy-side-hero">Copy</button>
+        </div>
+        <div>
+          <pre class="mt-0" data-content="copy-side-hero">&lt;div&gt;
+  &lt;div class=&quot;c-side-hero&quot;&gt;&lt;/div&gt;
+  &lt;section class=&quot;o-static-column o-static-column--left c-side-hero&quot;&gt;
+    &lt;div class=&quot;c-side-hero__image&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;c-side-hero__content&quot;&gt;
+      &lt;h1 class=&quot;c-side-hero__title&quot;&gt;Growing Up NYC&lt;div class=&quot;c-side-hero__title__large&quot;&gt;
+          &lt;span&gt;Resources for parents&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/h1&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/div&gt;</pre>
+        </div>
+      </section>
     </div>
     <footer class="o-footer bg-blue text-white">
       <div class="m-4">
@@ -145,6 +172,10 @@
       selector: '[data-js*="patterns-nav"]',
       sideSelector: 'down'
     });
+  </script>
+  <script type="text/javascript">
+    let url = document.location.href;
+    document.querySelector('.c-side-hero__image').style.background = 'url(' + url.substring(0, url.lastIndexOf('/')) + '/images/hero-demo.jpg)';
   </script>
   <script src="/reload/reload.js"></script>
 </body>

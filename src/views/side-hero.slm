@@ -1,8 +1,29 @@
 = extend('/slm/layouts/default')
+= partial('/slm/mixins/copy.mixin.slm');
 
 - title = 'Side Hero'
 
 = content('main')
-  div
-    == this.include('components/side-hero/side-hero.slm');
+  section class='bg-white p-4'
+    h1 class='h4 mb-0' 
+      = title
+  section class='p-4'
+    h2 class='h4' = 'side-hero'
 
+    == this.include('components/side-hero/side-hero.md');
+
+    h3 class='h5' = 'Demonstration'
+    div
+      == this.include('components/side-hero/side-hero.slm');
+
+    h3 class='h5' = 'Markup'
+    
+    = mixin('copy', 'copy-side-hero')
+    div
+      pre class='mt-0' data-content='copy-side-hero'
+        = this.include('components/side-hero/side-hero.slm');
+
+= content('scripts')
+  javascript:
+    let url = document.location.href;
+    document.querySelector('.c-side-hero__image').style.background = 'url(' + url.substring(0, url.lastIndexOf('/')) + '/images/hero-demo.jpg)';
