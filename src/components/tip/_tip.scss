@@ -8,11 +8,10 @@
 @import 'scss/functions/rem-calc';
 
 .c-tip {
-  // @include row;
-  background: $color-primary;
-  color: $color-text-invert;
-  padding-top: rem-calc($sticker-size-mobile / 2);
   position: relative;
+  background: $color-primary;
+  color: $color-white;
+  padding-top: rem-calc($sticker-size-mobile / 2);
   margin-top: rem-calc(($sticker-size-mobile / 2) + $horizontal-gutter);
 
 	@media screen and (min-width: $screen-desktop) {
@@ -29,7 +28,6 @@
   }
 }
 
-// Tip Sticker
 .c-tip__sticker {
   margin-left: rem-calc($sticker-size-mobile / -2);
   position: absolute;
@@ -42,12 +40,11 @@
   }
 }
 
-// Tip Content
 .c-tip__content {
   font-family: $font-family-display;
+  padding: 0 2rem 1rem;
 }
 
-// Tip Footer
 .c-tip__footer {
   @include font-size-small;
   margin-top: 1em;
@@ -57,9 +54,9 @@
   }
 }
 
-// Tip Link
 .c-tip__link {
-  &:focus {
+  &:focus,
+  &:hover {
     color: $color-gray-light;
   }
 }

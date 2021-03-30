@@ -47,7 +47,6 @@
         <a class="text-white block ml-0" href="checkbox">Checkbox</a>
         <a class="text-white block ml-0" href="icons">Icons</a>
         <a class="text-white block ml-0" href="input">Input</a>
-        <a class="text-white block ml-0" href="layouts">Layouts</a>
         <a class="text-white block ml-0" href="lists">Lists</a>
         <a class="text-white block ml-0" href="spinner">Spinner</a>
         <a class="text-white block ml-0" href="sticker">Sticker</a>
@@ -109,22 +108,57 @@
   </aside>
   <main>
     <div class="desktop:w-3/4 m-auto">
-      <div>
-        <aside class="c-tip o-content-container">
-          <div aria-hidden="true" class="c-tip__sticker sticker">
-            <svg class="icon--large">
-              <use xlink:href="#icon-lightbulb"></use>
-            </svg>
+      <section class="bg-white p-4">
+        <h1 class="h4 mb-0">Tip</h1>
+      </section>
+      <section class="p-4">
+        <p>Tip component providers short tips and information on a single age page guide.</p>
+        <h3 class="h5">Demonstration</h3>
+        <div>
+          <div>
+            <aside class="c-tip">
+              <div aria-hidden="true" class="c-tip__sticker sticker bg-blue-light">
+                <svg class="icon--large">
+                  <use xlink:href="#icon-lightbulb"></use>
+                </svg>
+              </div>
+              <div class="c-tip__content">
+                <p class="mt-0">Be sure your baby has simple and soft toys to stimulate his sense of sight, sound and touch. Naming the toys helps to develop his language skills.</p>
+                <div class="c-tip__footer">
+                  <p>For more information, you can check out these resources:</p>
+                  <p>
+                    <a class="c-tip__link" href="#">Resource Link</a>
+                  </p>
+                </div>
+              </div>
+            </aside>
           </div>
-          <p class="c-tip__content">Be sure your baby has simple and soft toys to stimulate his sense of sight, sound and touch. Naming the toys helps to develop his language skills.</p>
-          <footer class="c-tip__footer">
-            <p>For more information, you can check out these resources:</p>
-            <p>
-              <a class="c-tip__link" href="#">Resource Link</a>
-            </p>
-          </footer>
-        </aside>
-      </div>
+        </div>
+        <h3 class="h5">Markup</h3>
+        <div class="text-right">
+          <button class="button--tag bg-blue hover:bg-blue-light text-white" data-js="copy-tip">Copy</button>
+        </div>
+        <div>
+          <pre class="mt-0" data-content="copy-tip">&lt;div&gt;
+  &lt;aside class=&quot;c-tip&quot;&gt;
+    &lt;div aria-hidden=&quot;true&quot; class=&quot;c-tip__sticker sticker bg-blue-light&quot;&gt;
+      &lt;svg class=&quot;icon--large&quot;&gt;
+        &lt;use xlink:href=&quot;#icon-lightbulb&quot;&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;c-tip__content&quot;&gt;
+      &lt;p class=&quot;mt-0&quot;&gt;Be sure your baby has simple and soft toys to stimulate his sense of sight, sound and touch. Naming the toys helps to develop his language skills.&lt;/p&gt;
+      &lt;div class=&quot;c-tip__footer&quot;&gt;
+        &lt;p&gt;For more information, you can check out these resources:&lt;/p&gt;
+        &lt;p&gt;
+          &lt;a class=&quot;c-tip__link&quot; href=&quot;#&quot;&gt;Resource Link&lt;/a&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/aside&gt;
+&lt;/div&gt;</pre>
+        </div>
+      </section>
     </div>
     <footer class="o-footer bg-blue text-white">
       <div class="m-4">

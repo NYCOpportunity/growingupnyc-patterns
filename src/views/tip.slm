@@ -1,8 +1,24 @@
 = extend('/slm/layouts/default')
+= partial('/slm/mixins/copy.mixin.slm');
 
 - title = 'Tip'
 
 = content('main')
-  div
-    == this.include('components/tip/tip.slm');
+  section class='bg-white p-4'
+    h1 class='h4 mb-0' 
+      = title
+  section class='p-4'
+
+    == this.include('components/tip/tip.md');
+
+    h3 class='h5' = 'Demonstration'
+    div
+      == this.include('components/tip/tip.slm');
+
+    h3 class='h5' = 'Markup'
+    
+    = mixin('copy', 'copy-tip')
+    div
+      pre class='mt-0' data-content='copy-tip'
+        = this.include('components/tip/tip.slm');
 
