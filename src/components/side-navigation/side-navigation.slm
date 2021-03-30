@@ -1,14 +1,22 @@
-/
-/ Nav-list
+div class="block tablet:grid grid-cols-2"
+  div
+    ol class="c-nav-list js-sticky js-section-set o-sticky-nav sticky top-0"
+      li class="c-nav-list__item"
+        a class="js-section c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue" href="#section-details" data-section="section-details"
+          = "Details"
+          svg aria-hidden="true" class="icon--caret"
+            use xlink:href="#icon-caret-right"
+      li class="c-nav-list__item"
+        a class="js-section c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue" href="#section-how-to-apply" data-section="section-how-to-apply"
+          = "How to Apply"
+          svg aria-hidden="true" class="icon--caret"
+            use xlink:href="#icon-caret-right"
 
-ol class="c-nav-list js-sticky js-section-set o-sticky-nav"
-  li class="c-nav-list__item"
-    a class="js-section c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue" href="#section-details" data-section="section-details"
-      = "Details"
-      svg aria-hidden="true" class="icon--caret"
-        use xlink:href="#icon-caret-right"
-  li class="c-nav-list__item"
-    a class="js-section c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue" href="#section-how-to-apple" data-section="section-how-to-apple"
-      = "How to Apply"
-      svg aria-hidden="true" class="icon--caret"
-        use xlink:href="#icon-caret-right"
+  div class="tablet:ml-6"
+    div id='section-details'
+      p
+        = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam id leo in vitae turpis. Bibendum enim facilisis gravida neque convallis a. Urna duis convallis convallis tellus id interdum velit. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Amet nisl suscipit adipiscing bibendum est ultricies integer quis."
+    div id='section-how-to-apply'
+      h2 = 'How to Apply'
+      p
+        = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam id leo in vitae turpis. Bibendum enim facilisis gravida neque convallis a. Urna duis convallis convallis tellus id interdum velit. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Dignissim convallis aenean et tortor at. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Risus feugiat in ante metus dictum at tempor. Sit amet nisl purus in mollis. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Ornare arcu odio ut sem nulla pharetra diam. Consequat interdum varius sit amet mattis. Netus et malesuada fames ac turpis egestas."

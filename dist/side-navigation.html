@@ -47,7 +47,6 @@
         <a class="text-white block ml-0" href="checkbox">Checkbox</a>
         <a class="text-white block ml-0" href="icons">Icons</a>
         <a class="text-white block ml-0" href="input">Input</a>
-        <a class="text-white block ml-0" href="layouts">Layouts</a>
         <a class="text-white block ml-0" href="lists">Lists</a>
         <a class="text-white block ml-0" href="spinner">Spinner</a>
         <a class="text-white block ml-0" href="sticker">Sticker</a>
@@ -109,22 +108,73 @@
   </aside>
   <main>
     <div class="desktop:w-3/4 m-auto">
-      <div>
-        <ol class="c-nav-list js-sticky js-section-set o-sticky-nav">
-          <li class="c-nav-list__item">
-            <a class="js-section c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue" data-section="section-details" href="#section-details">Details<svg aria-hidden="true" class="icon--caret">
-                <use xlink:href="#icon-caret-right"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="c-nav-list__item">
-            <a class="js-section c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue" data-section="section-how-to-apple" href="#section-how-to-apple">How to Apply<svg aria-hidden="true" class="icon--caret">
-                <use xlink:href="#icon-caret-right"></use>
-              </svg>
-            </a>
-          </li>
-        </ol>
-      </div>
+      <section class="bg-white p-4">
+        <h1 class="h4 mb-0">Side Navigation</h1>
+      </section>
+      <section class="p-4">
+        <p>The Side Navigation component is left-side navigation on a single page guide page, that allows the user to jump to specific sections in the content. This component is typically used together with the Sticky Utility. <a href="side-navigation-demo">Click here to see a demo.</a>
+        </p>
+        <h3 class="h5">Demonstration</h3>
+        <div>
+          <div class="block tablet:grid grid-cols-2">
+            <div>
+              <ol class="c-nav-list js-sticky js-section-set o-sticky-nav sticky top-0">
+                <li class="c-nav-list__item">
+                  <a class="js-section c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue" data-section="section-details" href="#section-details">Details<svg aria-hidden="true" class="icon--caret">
+                      <use xlink:href="#icon-caret-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="c-nav-list__item">
+                  <a class="js-section c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue" data-section="section-how-to-apply" href="#section-how-to-apply">How to Apply<svg aria-hidden="true" class="icon--caret">
+                      <use xlink:href="#icon-caret-right"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ol>
+            </div>
+            <div class="tablet:ml-6">
+              <div id="section-details">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam id leo in vitae turpis. Bibendum enim facilisis gravida neque convallis a. Urna duis convallis convallis tellus id interdum velit. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Amet nisl suscipit adipiscing bibendum est ultricies integer quis.</p>
+              </div>
+              <div id="section-how-to-apply">
+                <h2>How to Apply</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam id leo in vitae turpis. Bibendum enim facilisis gravida neque convallis a. Urna duis convallis convallis tellus id interdum velit. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Dignissim convallis aenean et tortor at. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Risus feugiat in ante metus dictum at tempor. Sit amet nisl purus in mollis. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Ornare arcu odio ut sem nulla pharetra diam. Consequat interdum varius sit amet mattis. Netus et malesuada fames ac turpis egestas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="h5">Markup</h3>
+        <div>
+          <pre class="mt-0" data-content="copy-side-navigation">&lt;div class=&quot;block tablet:grid grid-cols-2&quot;&gt;
+  &lt;div&gt;
+    &lt;ol class=&quot;c-nav-list js-sticky js-section-set o-sticky-nav sticky top-0&quot;&gt;
+      &lt;li class=&quot;c-nav-list__item&quot;&gt;
+        &lt;a class=&quot;js-section c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue&quot; data-section=&quot;section-details&quot; href=&quot;#section-details&quot;&gt;Details&lt;svg aria-hidden=&quot;true&quot; class=&quot;icon--caret&quot;&gt;
+            &lt;use xlink:href=&quot;#icon-caret-right&quot;&gt;&lt;/use&gt;
+          &lt;/svg&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;c-nav-list__item&quot;&gt;
+        &lt;a class=&quot;js-section c-nav-list__link bg-very-dark-blue border-very-dark-blue hover:border-strong-blue hover:bg-strong-blue&quot; data-section=&quot;section-how-to-apply&quot; href=&quot;#section-how-to-apply&quot;&gt;How to Apply&lt;svg aria-hidden=&quot;true&quot; class=&quot;icon--caret&quot;&gt;
+            &lt;use xlink:href=&quot;#icon-caret-right&quot;&gt;&lt;/use&gt;
+          &lt;/svg&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tablet:ml-6&quot;&gt;
+    &lt;div id=&quot;section-details&quot;&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam id leo in vitae turpis. Bibendum enim facilisis gravida neque convallis a. Urna duis convallis convallis tellus id interdum velit. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Amet nisl suscipit adipiscing bibendum est ultricies integer quis.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;section-how-to-apply&quot;&gt;
+      &lt;h2&gt;How to Apply&lt;/h2&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam id leo in vitae turpis. Bibendum enim facilisis gravida neque convallis a. Urna duis convallis convallis tellus id interdum velit. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Dignissim convallis aenean et tortor at. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Risus feugiat in ante metus dictum at tempor. Sit amet nisl purus in mollis. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Ornare arcu odio ut sem nulla pharetra diam. Consequat interdum varius sit amet mattis. Netus et malesuada fames ac turpis egestas.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+      </section>
     </div>
     <footer class="o-footer bg-blue text-white">
       <div class="m-4">

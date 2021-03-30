@@ -3,6 +3,20 @@
 - title = 'Side Navigation'
 
 = content('main')
-  div
-    == this.include('components/side-navigation/side-navigation.slm');
+  section class='bg-white p-4'
+    h1 class='h4 mb-0' 
+      = title
+  section class='p-4'
+    == this.include('components/side-navigation/side-navigation.md');
+
+    h3 class='h5' = 'Demonstration'
+    div
+      == this.include('components/side-navigation/side-navigation.slm');
+
+    h3 class='h5' = 'Markup'
+    
+    = mixin('copy', 'copy-side-navigation')
+    div
+      pre class='mt-0' data-content='copy-side-navigation'
+        = this.include('components/side-navigation/side-navigation.slm');
 

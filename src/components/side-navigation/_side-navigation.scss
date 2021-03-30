@@ -7,11 +7,9 @@
 @import 'scss/functions/font-size';
 
 $indicator-size: 10px;
-
 .c-nav-list {
-  display: block;
+  padding: 0;
 }
-
 // Navigation List Item
 .c-nav-list__item {
   display: block;
