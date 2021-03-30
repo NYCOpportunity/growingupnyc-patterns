@@ -1,10 +1,26 @@
 = extend('/slm/layouts/default')
+= partial('/slm/mixins/copy.mixin.slm');
 
 - title = 'Language Switcher'
 
 = content('main')
-  == this.include('components/language-switcher/language-switcher.slm');
+  section class='bg-white p-4'
+    h1 class='h4 mb-0' 
+      = title
+  section class='p-4'
 
+    == this.include('components/language-switcher/language-switcher.md');
+
+    h3 class='h5' = 'Demonstration'
+    div
+      == this.include('components/language-switcher/language-switcher.slm');
+
+    h3 class='h5' = 'Markup'
+    
+    = mixin('copy', 'copy-language-switcher')
+    div
+      pre class='mt-0' data-content='copy-language-switcher'
+        = this.include('components/language-switcher/language-switcher.slm');
 
 = content('script')
   javascript:

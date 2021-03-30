@@ -1,18 +1,15 @@
-/
-/ Language-switcher
-
 div class="c-language-switcher"
   div class="c-language-switcher__content" data-js="ls-options"
 
     div class="c-language-switcher-controller inline-block flex justify-between pt-6 pb-6"
       span class="text-left"
         = "Pick a language"
-      button class="button--text close-language-switcher" data-js='close-language-menu'
+      button class="button--icon close-language-switcher" data-js='close-language-menu'
           svg class="icon--small" role="img"
             title = 'Close'
             use xlink:href="#icon-close"
     div class="wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-legacy-list-horizontal"
-      ul
+      ul class="m-0"
         li class="language-option-en"
           a href="" title="English"
             span = 'English'
@@ -53,6 +50,6 @@ div class="c-language-switcher"
     span class="desktop:self-end"
       = "Translate"
 span class="c-language-switcher-logo mb-5"
-    svg class="icon--google" role="img"
+    svg class="icon--google text-gray" role="img"
       title = "Close Resources by Age"
       use xlink:href="#icon-google-translate"
