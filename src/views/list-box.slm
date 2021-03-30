@@ -1,6 +1,0 @@
-= extend('/slm/layouts/default')
-
-- title = 'List Box'
-
-= content('main')
-  == this.include('components/list-box/list-box.slm');

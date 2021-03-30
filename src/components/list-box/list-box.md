@@ -1,1 +1,0 @@
-List styled as colorful boxes. Often used with the accordion pattern.
