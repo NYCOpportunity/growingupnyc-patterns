@@ -3,6 +3,19 @@
 - title = 'Tout'
 
 = content('main')
-  div
-    == this.include('components/tout/tout.slm');
+  section class='bg-white p-4'
+    h1 class='h4 mb-0' 
+      = title
+  section class='p-4'
+    == this.include('components/tout/tout.md');
 
+    h3 class='h5' = 'Demonstration'
+    div
+      == this.include('components/tout/tout.slm');
+
+    h3 class='h5' = 'Markup'
+    
+    = mixin('copy', 'copy-tout')
+    div
+      pre class='mt-0' data-content='copy-tout'
+        = this.include('components/tout/tout.slm');

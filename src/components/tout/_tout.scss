@@ -1,8 +1,12 @@
 /**
  * Tout
  */
+@import 'config/colors';
+@import 'config/fonts';
+@import 'config/media';
+
 .tout {
-  color: $color-text-weak;
+  color: $color-gray;
   @include font-size-small;
 }
 
@@ -39,16 +43,5 @@
 		@media screen and (min-width: $screen-mobile) {
 			top: 3px;
 		}
-  }
-}
-
-.tout__link {
-  @include font-size(14);
-  text-decoration: underline;
-
-  a {
-    &:focus {
-      color: $color-text;
-    }
   }
 }

@@ -1,10 +1,7 @@
-/
-/ Tout
-
 div class="tout"
   a class="tout__title"
    = 'Post Title'
   p class="tout__subtitle"
    = 'Subtitle'
-  a class="tout__link"
+  a href='/'
    = 'Link'
