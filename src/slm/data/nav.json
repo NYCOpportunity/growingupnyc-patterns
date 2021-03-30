@@ -13,19 +13,15 @@
   },
   "components": {
     "arrow-pager": "Arrow pager",
-    "block-list": "Block List",
     "card": "Card",
     "details-list": "Details List",
     "footer": "Footer",
     "form": "Form",
     "hero": "Hero",
     "language-switcher": "Language switcher",
-    "list-box": "List Box",
-    "share": "Share",
     "side-hero": "Side hero",
     "side-navigation": "Side Navigation",
     "tip": "Tip",
-    "tip-card": "Tip Card",
     "tout": "Tout"
   },
   "objects": {

@@ -3,5 +3,19 @@
 - title = 'Alert'
 
 = content('main')
-  div
-    == this.include('elements/alert/alert.slm');
+  section class='bg-white p-4'
+    h1 class='h4 mb-0' 
+      = title
+  section class='p-4'
+    == this.include('elements/alert/alert.md');
+
+    h3 class='h5' = 'Demonstration'
+    div
+      == this.include('elements/alert/alert.slm');
+
+    h3 class='h5' = 'Markup'
+    
+    = mixin('copy', 'copy-alert')
+    div
+      pre class='mt-0' data-content='copy-alert'
+        = this.include('elements/alert/alert.slm');

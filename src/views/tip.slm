@@ -1,4 +1,5 @@
 = extend('/slm/layouts/default')
+
 = partial('/slm/mixins/copy.mixin.slm');
 
 - title = 'Tip'
