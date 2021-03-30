@@ -1,16 +1,18 @@
-/
-/ Details-list
-
 dl class="c-details-list"
-  dt class="c-details-list__term"
+  dt class="c-details-list__item"
    = 'Date'
-  dd class="c-details-list__descr"
+  dd class="c-details-list__desc"
    = 'August 20, 2020'
-  dt class="c-details-list__term"
+  dt class="c-details-list__item"
    = 'Location'
-  dd class="c-details-list__descr"
+  dd class="c-details-list__desc"
    = 'Brooklyn, NY'
-  dt class="c-details-list__term"
+  dt class="c-details-list__item"
    = 'Cost'
-  dd class="c-details-list__descr"
+  dd class="c-details-list__desc"
    = 'Free'
+  dt class="c-details-list__item"
+   = 'URL'
+  dd class="c-details-list__desc"
+    a href='https://growingupnyc.cityofnewyork.us'
+      = 'https://growingupnyc.cityofnewyork.us'

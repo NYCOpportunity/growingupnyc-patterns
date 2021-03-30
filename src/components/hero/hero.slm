@@ -1,7 +1,5 @@
-/ Hero
-
-div class="c-hero bg-color-blue-light"
-  div class="o-container"
+div class='bg-blue-light'
+  div class="c-hero"
     h1 class="c-hero__title" 
       = 'Programs'
     p class="c-hero__tagline"

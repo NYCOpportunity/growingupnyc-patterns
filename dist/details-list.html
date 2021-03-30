@@ -109,14 +109,49 @@
   </aside>
   <main>
     <div class="desktop:w-3/4 m-auto">
-      <dl class="c-details-list">
-        <dt class="c-details-list__term">Date</dt>
-        <dd class="c-details-list__descr">August 20, 2020</dd>
-        <dt class="c-details-list__term">Location</dt>
-        <dd class="c-details-list__descr">Brooklyn, NY</dd>
-        <dt class="c-details-list__term">Cost</dt>
-        <dd class="c-details-list__descr">Free</dd>
-      </dl>
+      <section class="bg-white p-4">
+        <h1 class="h4 mb-0">Details List</h1>
+      </section>
+      <section class="p-4">
+        <p>The Details List component is used to present information about a program and event. On Growing Up NYC, this component is being used on Seasonal Guides (Afterschool and Summer) as well as Events. This component includes the following elements:</p>
+        <ul>
+          <li>Date</li>
+          <li>Time</li>
+          <li>Location</li>
+          <li>Cost</li>
+          <li>Link to additional information</li>
+        </ul>
+        <h3 class="h5">Demonstration</h3>
+        <div>
+          <dl class="c-details-list">
+            <dt class="c-details-list__item">Date</dt>
+            <dd class="c-details-list__desc">August 20, 2020</dd>
+            <dt class="c-details-list__item">Location</dt>
+            <dd class="c-details-list__desc">Brooklyn, NY</dd>
+            <dt class="c-details-list__item">Cost</dt>
+            <dd class="c-details-list__desc">Free</dd>
+            <dt class="c-details-list__item">URL</dt>
+            <dd class="c-details-list__desc">
+              <a href="https://growingupnyc.cityofnewyork.us">https://growingupnyc.cityofnewyork.us</a>
+            </dd>
+          </dl>
+        </div>
+        <h3 class="h5">Markup</h3>
+        <div>
+          <pre class="mt-0" data-content="copy-details-list">&lt;dl class=&quot;c-details-list&quot;&gt;
+  &lt;dt class=&quot;c-details-list__item&quot;&gt;Date&lt;/dt&gt;
+  &lt;dd class=&quot;c-details-list__desc&quot;&gt;August 20, 2020&lt;/dd&gt;
+  &lt;dt class=&quot;c-details-list__item&quot;&gt;Location&lt;/dt&gt;
+  &lt;dd class=&quot;c-details-list__desc&quot;&gt;Brooklyn, NY&lt;/dd&gt;
+  &lt;dt class=&quot;c-details-list__item&quot;&gt;Cost&lt;/dt&gt;
+  &lt;dd class=&quot;c-details-list__desc&quot;&gt;Free&lt;/dd&gt;
+  &lt;dt class=&quot;c-details-list__item&quot;&gt;URL&lt;/dt&gt;
+  &lt;dd class=&quot;c-details-list__desc&quot;&gt;
+    &lt;a href=&quot;https://growingupnyc.cityofnewyork.us&quot;&gt;https://growingupnyc.cityofnewyork.us&lt;/a&gt;
+  &lt;/dd&gt;
+&lt;/dl&gt;</pre>
+        </div>
+      </section>
     </div>
     <footer class="o-footer bg-blue text-white">
       <div class="m-4">

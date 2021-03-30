@@ -11,6 +11,7 @@ const tokens = require('./tokens');
 
 module.exports = {
   theme: {
+    important: true,
     colors: tokens.color,
     textColor: tokens.color,
     backgroundColor: tokens.color,

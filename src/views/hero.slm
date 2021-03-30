@@ -3,9 +3,24 @@
 - title = 'Hero'
 
 = content('main')
-  div
-    == this.include('components/hero/hero.slm');
-    == this.include('components/hero/hero-light.slm');
+  section class='bg-white p-4'
+    h1 class='h4 mb-0' 
+      = title
+  section class='p-4'
+    h2 class='h4' = 'Hero'
+
+    == this.include('components/hero/hero.md');
+
+    h3 class='h5' = 'Demonstration'
+    div
+      == this.include('components/hero/hero.slm');
+
+    h3 class='h5' = 'Markup'
+    
+    = mixin('copy', 'copy-hero')
+    div
+      pre class='mt-0' data-content='copy-hero'
+        = this.include('components/hero/hero.slm');
   
 = content('scripts')
   javascript:

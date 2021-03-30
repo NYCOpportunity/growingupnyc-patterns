@@ -47,7 +47,6 @@
         <a class="text-white block ml-0" href="checkbox">Checkbox</a>
         <a class="text-white block ml-0" href="icons">Icons</a>
         <a class="text-white block ml-0" href="input">Input</a>
-        <a class="text-white block ml-0" href="layouts">Layouts</a>
         <a class="text-white block ml-0" href="lists">Lists</a>
         <a class="text-white block ml-0" href="spinner">Spinner</a>
         <a class="text-white block ml-0" href="sticker">Sticker</a>
@@ -109,19 +108,31 @@
   </aside>
   <main>
     <div class="desktop:w-3/4 m-auto">
-      <div>
-        <div class="c-hero bg-color-blue-light">
-          <div class="o-container">
-            <h1 class="c-hero__title">Programs</h1>
-            <p class="c-hero__tagline">Discover over 70 easy-to-read education, health, and recreation programs, benefits, and resources in NYC.</p>
+      <section class="bg-white p-4">
+        <h1 class="h4 mb-0">Hero</h1>
+      </section>
+      <section class="p-4">
+        <h2 class="h4">Hero</h2>
+        <p>The hero component can be used to set an introductory image at the top of the page. The user is able to set an image, a heading, and subheading. To set the background image, the user will need to add <code>.c-hero { background: url(&lt;path to image&gt;);}</code> to the head of the page.</p>
+        <h3 class="h5">Demonstration</h3>
+        <div>
+          <div class="bg-blue-light">
+            <div class="c-hero">
+              <h1 class="c-hero__title">Programs</h1>
+              <p class="c-hero__tagline">Discover over 70 easy-to-read education, health, and recreation programs, benefits, and resources in NYC.</p>
+            </div>
           </div>
         </div>
-        <div class="c-hero--light">
-          <div class="o-container">
-            <h1 class="c-hero__title">Study Hour</h1>
-          </div>
+        <h3 class="h5">Markup</h3>
+        <div>
+          <pre class="mt-0" data-content="copy-hero">&lt;div class=&quot;bg-blue-light&quot;&gt;
+  &lt;div class=&quot;c-hero&quot;&gt;
+    &lt;h1 class=&quot;c-hero__title&quot;&gt;Programs&lt;/h1&gt;
+    &lt;p class=&quot;c-hero__tagline&quot;&gt;Discover over 70 easy-to-read education, health, and recreation programs, benefits, and resources in NYC.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
         </div>
-      </div>
+      </section>
     </div>
     <footer class="o-footer bg-blue text-white">
       <div class="m-4">

@@ -1,6 +1,5 @@
 /**
  * Hero
- * Traditional, top-of-the-page hero
  */
 
 @import 'config/dimensions';
@@ -11,9 +10,9 @@
 @import 'scss/functions/strip-unit';
 
 .c-hero {
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
   color: $color-text-invert;
   overflow: hidden;
   padding-bottom: rem-calc(15);
@@ -21,13 +20,12 @@
   text-align: center;
 
   @media screen and (min-width: $screen-tablet) {
-    background-size: cover;
     text-align: left;
     padding: rem-calc(92 40 80);
   }
 
-  @media screen and (max-width: $screen-mobile) {
-      background-size: cover;
+  @media screen and (min-width: $screen-desktop-large) {
+    padding: rem-calc(113 80 60);
   }
 }
 
@@ -54,11 +52,7 @@
   }
 }
 
-.c-hero {
-  @media screen and (min-width: $screen-desktop-large) {
-    padding: rem-calc(113 80 60);
-  }
-}
+
 
 .c-hero--light {
   padding: rem-calc(50 0 60);

@@ -3,4 +3,19 @@
 - title = 'Details List'
 
 = content('main')
-  == this.include('components/details-list/details-list');
+  section class='bg-white p-4'
+    h1 class='h4 mb-0' 
+      = title
+  section class='p-4'
+    == this.include('components/details-list/details-list.md');
+
+    h3 class='h5' = 'Demonstration'
+    div
+      == this.include('components/details-list/details-list.slm');
+
+    h3 class='h5' = 'Markup'
+    
+    = mixin('copy', 'copy-details-list')
+    div
+      pre class='mt-0' data-content='copy-details-list'
+        = this.include('components/details-list/details-list.slm');
