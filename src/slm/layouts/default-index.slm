@@ -40,7 +40,7 @@ html lang='en'
       / br
 
     main
-      div class='desktop:w-2/4 m-auto'
+      div class='desktop:w-full m-auto'
         = content('main')
 
       = partial('/slm/partials/footer.slm');

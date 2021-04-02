@@ -1,28 +1,34 @@
-= extend('/slm/layouts/default')
+= extend('/slm/layouts/default-index')
 
 = content('main')
-  div class="py-6"
+  div class="pb-6"
+    header class="c-hero c-hero--large bg-blue js-parallax-content mb-12"
+      div class="o-container js-parallax-text "
+        h1 class="c-hero__title"
+          = "Growing Up NYC Patterns Library"
+        p class="c-hero__tagline"
+          = "Shared vocabulary between the code, design, and user interface"
+    div class="desktop:w-2/6 m-auto"
+      div class="pb-6"
+        == this.include('/slm/content/intro.md');
 
-    div class="pb-6"
-      == this.include('/slm/content/intro.md');
+      div class="border-solid border-2 border-blue rounded-md my-2"
+        div class="p-4"
+          h3 class=""
+            = "Features"
+          == this.include('/slm/content/features.md');
 
-    div class="border-solid border-2 border-blue rounded-md my-2"
-      div class="p-4"
+      div class="pt-6"
         h3 class=""
-          = "Features"
-        == this.include('/slm/content/features.md');
-
-    div class="pt-6"
-      h3 class=""
-        = "Getting Started"
-      div class=""
-        p = "The Patterns are available as an NPM package and can be installed with the following command:"
-      div 
-        div class="text-right"
-          button id="copy-text" class="button--pill bg-blue hover:bg-blue-light text-white" data-js='copy-npm'
-            = "Copy"
+          = "Getting Started"
+        div class=""
+          p = "The Patterns are available as an NPM package and can be installed with the following command:"
         div
-          pre id="npm-install" class="border-solid border-2 border-blue rounded-md mt-0" data-content='copy-npm'
-            = "npm install @nycopportunity/growingup-patterns"
+          div class="text-right"
+            button id="copy-text" class="button--pill bg-blue hover:bg-blue-light text-white" data-js='copy-npm'
+              = "Copy"
+          div
+            pre id="npm-install" class="border-solid border-2 border-blue rounded-md mt-0" data-content='copy-npm'
+              = "npm install @nycopportunity/growingup-patterns"
 
 = content('scripts')
