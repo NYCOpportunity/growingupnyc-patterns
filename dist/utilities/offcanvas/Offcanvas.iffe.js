@@ -976,8 +976,6 @@ var Offcanvas = (function () {
         */
 
         offCanvasElem.addEventListener('changeOpenState', function (event) {
-          console.log('event:', event);
-
           if (event.detail) {
             if (!/^(?:a|select|input|button|textarea)$/i.test(offCanvasSide.tagName)) {
               offCanvasSide.tabIndex = -1;
@@ -1020,7 +1018,6 @@ var Offcanvas = (function () {
       }
 
       toggleElem.addEventListener('click', function (event) {
-        console.log('click event');
         var toggleEvent;
         var toggleClass = toggleElem.dataset.toggleClass ? toggleElem.dataset.toggleClass : openClass;
         event.preventDefault(); // Toggle the element's active class
@@ -1031,11 +1028,9 @@ var Offcanvas = (function () {
           nav.classList.toggle("o-offcanvas__side-left");
         } else if (openClass === 'is-open-down') {
           nav.classList.toggle("o-offcanvas__side-down");
-          console.log('is-open-down');
           footer.classList.toggle("o-footer-down");
         } else {
           nav.classList.toggle("o-offcanvas__side-right");
-          console.log('reset to 0');
         } // Toggle custom class if it is set
 
 

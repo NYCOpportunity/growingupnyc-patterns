@@ -1,7 +1,7 @@
 /
 / Tip
 
-aside class="c-tip o-content-container"
+aside class="c-tip o-content-container bg-color-blue"
   div class="c-tip__sticker sticker" aria-hidden="true"
     svg class="icon--large"
       use xlink:href="#icon-lightbulb"

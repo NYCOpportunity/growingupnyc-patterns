@@ -8,7 +8,9 @@ header class='o-navigation px-12 py-8'
     nav class='o-navigation__nav'
       ul class='inline-block -mt-8'
         li class='o-inline__item'
-          a class='o-navigation__nav-link js-offcanvas' href='#patterns' data-js="offcanvas-patterns"
+          / a class='o-navigation__nav-link' href='#patterns' data-js="offcanvas-patterns"
+          /   = 'Patterns'
+          a class='o-navigation__nav-link' href='#patterns'
             = 'Patterns'
 
-a class="o-offcanvas__overlay" data-js="offcanvas-patterns" aria-hidden="true"
+/ a class="o-offcanvas__overlay" data-js="offcanvas-patterns" aria-hidden="true"

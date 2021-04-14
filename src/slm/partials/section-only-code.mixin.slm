@@ -3,7 +3,7 @@
 = partial('demo-block-only-code.mixin.slm');
 
 
-= mixin('section', 'title', 'path', 'layout = columns', 'grid = false', 'specs = true', 'code = true');
+= mixin('section-code', 'title', 'path', 'layout = columns', 'grid = false', 'specs = true', 'code = true');
   div class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto"
     div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10"
       h1 class='type-h1 '

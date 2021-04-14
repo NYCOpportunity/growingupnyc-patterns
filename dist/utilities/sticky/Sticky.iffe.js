@@ -1011,7 +1011,6 @@ var Sticky = (function () {
       var position = footer.getBoundingClientRect(); // checking whether fully visible
 
       if (position.top >= 0 && position.bottom <= window.innerHeight) {
-        // console.log('Element is fully visible in screen ');
         forEach_1(stickyContent, function (stickyContentElem) {
           stickyContentElem.classList.add(StickyVanilla.StuckClass);
         });

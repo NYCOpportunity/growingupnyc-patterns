@@ -16,4 +16,3 @@
   = mixin('content-header', title);
   div
     = mixin('section', 'Offcanvas', 'utilities/offcanvas/offcanvas');
-

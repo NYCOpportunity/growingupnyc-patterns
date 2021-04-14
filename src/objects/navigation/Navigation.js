@@ -3,13 +3,7 @@
 import Offcanvas from "../../utilities/offcanvas/Offcanvas";
 
 class Navigation {
-  /**
-   * @param  {object} settings This could be some configuration options.
-   *                           for the pattern module.
-   * @param  {object} data     This could be a set of data that is needed
-   *                           for the pattern module to render.
-   * @constructor
-   */
+  
   constructor(settings) {
     this._offcanvas = new Offcanvas({
       selector: (settings.selector) ? settings.selector : Navigation.selector,

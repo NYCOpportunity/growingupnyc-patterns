@@ -8,7 +8,6 @@ var Polyfills = (function (exports) {
 	var smoothscroll = createCommonjsModule(function (module, exports) {
 	/* smoothscroll v0.4.4 - 2019 - Dustan Kasten, Jeremias Menichelli - MIT License */
 	(function () {
-		console.log("Smooth-scroll Polyfil");
 	  // polyfill
 	  function polyfill() {
 	    // aliases

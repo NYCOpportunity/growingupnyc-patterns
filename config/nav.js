@@ -6,11 +6,9 @@ module.exports = {
   'patterns': [
     {
       'Elements': [
-        { 'base': 'Base' },
         { 'button': 'Button' },
         { 'divider': 'Divider' },
         { 'checkbox': 'Checkbox' },
-        { 'hero': 'Hero' },
         { 'icons': 'Icons' },
         { 'input': 'Input' },
         { 'layouts': 'Layouts' },
@@ -45,15 +43,12 @@ module.exports = {
       'Objects': [
         { 'accordion': 'Accordion' },
         { 'alert-banner': 'Alert banner' },
-        { 'article': 'Article' },
         { 'container': 'Container' },
         { 'content': 'Content' },
         { 'feature-photo': 'Feature photo' },
         { 'flex-embed': 'Flex embed' },
         { 'inline-list': 'Inline List' },
         { 'navigation': 'Navigation' },
-        { 'newsletter': 'Newsletter' },
-        { 'overlay': 'Overlay' },
         { 'search': 'Search' },
         { 'static-column': 'Static column' },
       ]
@@ -66,7 +61,6 @@ module.exports = {
         { 'color': 'Color' },
         { 'fonts': 'Font' },
         { 'form-effects': 'Form Effects' },
-        { 'offcanvas': 'Offcanvas' },
         { 'reveal': 'Reveal' },
         { 'section-highlighter': 'Section Highlighter' },
         { 'sticky': 'Sticky' },
