@@ -1,0 +1,92 @@
+/**
+ * Accordion
+ */
+
+@import 'scss/functions/rem-calc';
+@import 'config/colors';
+
+.c-accordion__toggle {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 0;
+  color: $color-white;
+}
+
+.c-accordion__header { 
+  pointer-events: none;
+  width: 100%;
+  border-radius: .15rem;
+  margin: 0;
+}
+
+.c-accordion__header--primary{
+  text-align: left;
+  // margin-left: 10px;
+  font-weight: 600;
+}
+.c-accordion__header--secondary{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 400;
+}
+
+.c-accordion__toggle-active,
+.c-accordion__toggle-inactive {
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin: 0 10px;
+  }
+}
+
+.c-accordion__toggle-active {
+  pointer-events: none;
+  display: none;
+  visibility: hidden;
+
+  .c-accordion__toggle.active & {
+    display: flex;
+    align-items: center;
+    visibility: visible;
+  }
+}
+
+.c-accordion__toggle-inactive {
+  pointer-events: none;
+  visibility: visible;
+
+  .c-accordion__toggle.active & {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.c-accordion__list {
+  ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  li {
+    // background: color.$white;
+    padding-bottom: .5rem;
+
+    &:last-child {
+      padding-bottom: 0;
+      border: none;
+    }
+
+    a:hover {
+      background-color: transparent;
+      border-color: $color-white;
+      color: $color-white;
+    }
+    // @include media.mq('desktop') {
+    //   padding: 1rem;
+    // }
+  }
+}

@@ -2,6 +2,7 @@
 
 import Icons from '@nycopportunity/pttrn-scripts/src/icons/icons';
 
+import Accordion from '../components/accordion/accordion';
 import BackToTop from '../components/back-to-top/BackToTop';
 import Form from '../components/form/Form';
 import LanguageSwitcher from '../components/language-switcher/LanguageSwitcher';
@@ -34,6 +35,10 @@ class Default {
 
   icons(path) {
     return new Icons(path);
+  }
+  
+  accordion() {
+    return new Accordion();
   }
 
   backToTop() {

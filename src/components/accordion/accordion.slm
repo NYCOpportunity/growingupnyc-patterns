@@ -1,0 +1,68 @@
+/
+/ Accordion
+/
+
+article class='c-accordion w-1/2 m-auto'
+  button data-js='accordion' aria-controls='toggle-baby' aria-expanded='true' class="c-accordion__toggle active"
+    header class='c-accordion__header bg-pink grid grid-cols-3'
+      div class='c-accordion__header--primary col-span-2'
+        h3 class='m-0 px-6 pt-4'
+          = 'Baby'
+        p class="m-0 px-6 pb-4" 
+          = '0-11 months'
+      div class='c-accordion__header--secondary'
+        span class='c-accordion__toggle-active' 
+          = 'hide'
+          svg class='icon--small' aria-hidden='true'
+            use xlink:href='#icon-chevron-up'
+        span class='c-accordion__toggle-inactive' 
+          = 'show'
+          svg class='icon--small' aria-hidden='true'
+            use xlink:href='#icon-chevron-down'
+
+  div id="toggle-baby" role='region' class='c-accordion__body bg-pink-dark active' aria-hidden='false'
+    div class='c-accordion__list'
+      ol
+        li
+          a href="#" class="button--primary bg-white border-white text-pink block"
+            = '0 months'
+        li
+          a href="#" class="button--primary bg-white border-white text-pink block"
+            = '4 months'
+        li
+          a href="#" class="button--primary bg-white border-white text-pink block"
+            = '6 months'
+        li
+          a href="#" class="button--primary bg-white border-white text-pink block"
+            = '9 months'
+
+article class='c-accordion w-1/2 m-auto mt-2'
+  button data-js='accordion' aria-controls='toggle-toddler' aria-expanded='true' class="c-accordion__toggle active"
+    header class='c-accordion__header bg-orange grid grid-cols-3'
+      div class='c-accordion__header--primary col-span-2'
+        h3 class='m-0 px-6 pt-4'
+          = 'Toddler'
+        p class="m-0 px-6 pb-4" 
+          = '1-3 years'
+      div class='c-accordion__header--secondary'
+        span class='c-accordion__toggle-active' 
+          = 'hide'
+          svg class='icon--small' aria-hidden='true'
+            use xlink:href='#icon-chevron-up'
+        span class='c-accordion__toggle-inactive' 
+          = 'show'
+          svg class='icon--small' aria-hidden='true'
+            use xlink:href='#icon-chevron-down'
+
+  div id="toggle-toddler" role='region' class='c-accordion__body bg-orange-dark active' aria-hidden='false'
+    div class='c-accordion__list'
+      ol
+        li
+          a href="#" class="button--primary bg-white border-white text-orange block"
+            = '1 year'
+        li
+          a href="#" class="button--primary bg-white border-white text-orange block"
+            = '2 years'
+        li
+          a href="#" class="button--primary bg-white border-white text-orange block"
+            = '3 years'

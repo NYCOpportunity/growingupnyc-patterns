@@ -1,7 +1,25 @@
 = extend('/slm/layouts/default')
+= partial('/slm/mixins/copy.mixin.slm');
 
 - title = 'Accordion'
 
 = content('main')
-  == this.include('objects/accordion/accordion.slm');
+  section class='bg-white p-4'
+    h1 class='h4 mb-0' 
+      = title
+  section class='p-4'
 
+    h3 class='h5' = 'Demonstration'
+    div
+      == this.include('components/accordion/accordion.slm');
+
+    h3 class='h5' = 'Markup'
+    
+    = mixin('copy', 'copy-accordion')
+    div
+      pre class='mt-0' data-content='copy-accordion'
+        = this.include('components/accordion/accordion.slm');
+
+= content('scripts')
+  javascript:
+    MyPatterns.accordion()

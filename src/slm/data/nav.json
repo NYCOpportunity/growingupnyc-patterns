@@ -12,6 +12,7 @@
     "table": "Table"
   },
   "components": {
+    "accordion": "Accordion",
     "arrow-pager": "Arrow pager",
     "card": "Card",
     "details-list": "Details List",
@@ -25,7 +26,6 @@
     "tout": "Tout"
   },
   "objects": {
-    "accordion": "Accordion",
     "alert-banner": "Alert banner",
     "article": "Article",
     "container": "Container",

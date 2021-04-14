@@ -20,6 +20,7 @@
 /** Elements - end */
 
 /** Components */
+@import 'components/accordion/accordion';
 @import 'components/arrow-pager/arrow-pager';
 @import 'components/back-to-top/back-to-top';
 @import 'components/card/card';
@@ -38,7 +39,6 @@
 /** Components - end */
 
 /** Objects */
-@import 'objects/accordion/accordion';
 @import 'objects/alert-banner/alert-banner';
 @import 'objects/article/article';
 // @import 'objects/content/content';

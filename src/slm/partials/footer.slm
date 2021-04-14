@@ -7,8 +7,8 @@ footer class='o-footer bg-blue text-white'
     a href='https://nyc.gov/opportunity' class='o-navigation-logo h-auto text-white'
       span class='sr-only' NYC Opportunity
 
-      svg class='icon--logo' aria-hidden='true'
-        use xlink:href='#logo-nycopportunity'
+      svg aria-hidden='true'
+        use xlink:href='#pttrn-logo-nycopportunity'
 
     small class='block'
       = `© City of New York, ${date.getFullYear()} All Rights Reserved. NYC is a trademark and service mark of the City of New York.`
