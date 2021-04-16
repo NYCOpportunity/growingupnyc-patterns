@@ -43,14 +43,12 @@ module.exports = {
       'Objects': [
         { 'accordion': 'Accordion' },
         { 'alert-banner': 'Alert banner' },
-        { 'container': 'Container' },
         { 'content': 'Content' },
         { 'feature-photo': 'Feature photo' },
         { 'flex-embed': 'Flex embed' },
         { 'inline-list': 'Inline List' },
         { 'navigation': 'Navigation' },
-        { 'search': 'Search' },
-        { 'static-column': 'Static column' },
+        { 'search': 'Search' }
       ]
     },
     {

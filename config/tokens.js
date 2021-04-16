@@ -234,7 +234,6 @@ module.exports = {
     'icon-lightbulb',
     'icon-map-marker',
     'icon-mealtime',
-    'icon-nyc-logo',
     'icon-on-the-go',
     'icon-people-with-disabilities',
     'icon-playtime',

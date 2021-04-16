@@ -1,10 +1,8 @@
 /
 / Sticky
 
-/ div class="bg-color-blue-light p-8"
-
-header class="c-banner py-24 bg-color-gray-dark"
-  div class=" bg-color-gray-dark"
+header class="c-banner py-24 bg-color-gray-light"
+  p class='px-12' = "Hero Content"
 main id="main" role="main" class=""
   article class="o-container js-sticky-container desktop:flex"
     div class="o-article-sidebar desktop:w-4/12"
@@ -57,4 +55,4 @@ main id="main" role="main" class=""
           p
             = "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”"
 
-footer class="c-footer__reached bg-color-blue-light p-20"
+footer class="o-footer__reached bg-color-gray-light"

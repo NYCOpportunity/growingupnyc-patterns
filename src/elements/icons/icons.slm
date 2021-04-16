@@ -1,9 +1,12 @@
 /
 / Icons
+- url = "https://nycopportunity.github.io/growingupnyc-patterns/"
 
-- if (typeof value !== 'undefined')
-  p
-    = value
-  div class="sticker"
+div class='border-2 border-color-blue p-2 m-2'
+  div class='text-center'
     svg class="icon--large" role="img"
       use xlink:href="#${value}"
+  p class='font-bold pt-2' = value.replace('icon-', '')
+  - dlink = `${url}svg/${value}.svg`
+  small
+    a class='link' href=dlink = 'Download SVG'

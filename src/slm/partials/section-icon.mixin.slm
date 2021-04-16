@@ -4,11 +4,10 @@
 
 = mixin('section', 'title', 'path', 'layout = columns', 'grid = false', 'specs = true', 'code = true');
   div class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto"
-    div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10"
-      h1 class='type-h1 '
-        = this.title
+    h1 class='type-h1 '
+      = this.title
     div class="html-tag my-8"
       = mixin('demo-specs', this.path + '.md');
-    div class="my-8 py-4"  
+    div class='block tablet:grid grid-cols-4'
       - if (this.code === 'true')
         = mixin('demo-block', this.path + '.slm', this.layout, this.grid);

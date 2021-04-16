@@ -1,9 +1,12 @@
+- let date = new Date();
+- let opts = {year: 'numeric', month: 'long', day: 'numeric'};
+
 footer id="patterns" class="o-footer"
   div class="o-container flex flex-wrap mb-10"
     - for (var arr of this.patterns['patterns'])
       - for (var prob in arr)
-        div class="tablet:flex-1 w-full mb-10"
-          h3 = prob
+        div class="tablet:flex-1 w-full mb-10 mr-4 pl-4"
+          h3 class="border-b" = prob
           - var menus = arr[prob]
           - for (var singleMenu of menus)
             - for (var key in singleMenu)
@@ -17,3 +20,5 @@ footer id="patterns" class="o-footer"
         svg class="icon--logo text-color-white"
           title = "Growing Up NYC Logo"
           use xlink:href="#icon-mayors-office-logo"
+    small class='block'
+      = `© City of New York, ${date.getFullYear()} All Rights Reserved. NYC is a trademark and service mark of the City of New York.`

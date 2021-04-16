@@ -1,16 +1,11 @@
 - url = "https://nycopportunity.github.io/growingupnyc-patterns/"
 
-header class='o-navigation px-12 py-8'
+header class='o-navigation'
   div class='o-container'
-    a href="${url}" class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu mt-1 mobile:h-16 desktop:h-20 shadow-none p-1"
+    a href="${url}" class="o-navigation__logo-wrapper o-navigation__logo-wrapper-no-menu"
       span class="o-navigation__logo"
         = 'Growing Up NYC'
     nav class='o-navigation__nav'
-      ul class='inline-block -mt-8'
-        li class='o-inline__item'
-          / a class='o-navigation__nav-link' href='#patterns' data-js="offcanvas-patterns"
-          /   = 'Patterns'
-          a class='o-navigation__nav-link' href='#patterns'
-            = 'Patterns'
-
-/ a class="o-offcanvas__overlay" data-js="offcanvas-patterns" aria-hidden="true"
+      a class='o-navigation__nav-link' href='#patterns'
+        = 'Patterns'
+        small = ` v${this.package.version}`
