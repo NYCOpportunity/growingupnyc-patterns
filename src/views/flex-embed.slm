@@ -4,13 +4,18 @@
 
 / Partials
 = partial('/slm/partials/head.mixin.slm');
-= partial('/slm/partials/content-header.mixin.slm');
-= partial('/slm/partials/section.mixin.slm');
 
 / Content blocks
 = content('head');
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  = mixin('section', 'Flex Embed', 'objects/flex-embed/flex-embed');
+  section
+    h1
+      = title
+
+    == this.include('objects/flex-embed/flex-embed.md');
+
+    == this.include('objects/flex-embed/flex-embed.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('objects/flex-embed/flex-embed.slm');

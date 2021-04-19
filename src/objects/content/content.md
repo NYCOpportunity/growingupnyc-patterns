@@ -1,1 +1,3 @@
-The content object wraps the content in the page with padding.
+**Source:** `src/objects/content/content`
+
+The Content object is a wrapper for a mix of content types

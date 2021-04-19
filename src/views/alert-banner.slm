@@ -13,10 +13,15 @@
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  div
-    = mixin('section', 'Alert Banner', 'objects/alert-banner/alert-banner');
+  section
+    h1
+      = title
 
+    == this.include('objects/alert-banner/alert-banner.md');
+
+    == this.include('objects/alert-banner/alert-banner.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('objects/alert-banner/alert-banner.slm');
 
 = content('script')
   javascript:

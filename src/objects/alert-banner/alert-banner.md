@@ -1,1 +1,3 @@
-The Alert Banner Object is a fixed container that contains a string, notifying the user of temporary information about programs, events, etc. A cookie for the notification is created when a user closes the object. The alert will therefore not expire until the cookie has expired, based on the number of days you set, if you did not specify the number of days through an argument to the ***alertBanner()*** class, the cookie expiration date with be defaulted to  360 days.
+**Source:** `src/objects/alert-banner/alert-banner`
+
+The Alert Banner object is a fixed container that contains time-sensitive information. The object makes use of cookies to hide the information if they close out of the wrapper. The cookie will expire after 360 days or when new alert content takes its place.

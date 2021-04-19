@@ -4,13 +4,18 @@
 
 / Partials
 = partial('/slm/partials/head.mixin.slm');
-= partial('/slm/partials/content-header.mixin.slm');
-= partial('/slm/partials/section.mixin.slm');
 
 / Content blocks
 = content('head');
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  = mixin('section', 'Content', 'objects/content/content');
+  section
+    h1
+      = title
+
+    == this.include('objects/content/content.md');
+
+    == this.include('objects/content/content.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('objects/content/content.slm');

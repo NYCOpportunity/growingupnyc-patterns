@@ -1,1 +1,3 @@
-The navigation object can be used to define the paths to different parts of the user's application. The user also has an option to append an off-canvas navigation which will toggle open from right to left to display additional information.
+**Source:** `src/objects/navigation/navigation`
+
+The Navigation is used to wrap navigational links at the head of a page.

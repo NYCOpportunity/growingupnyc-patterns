@@ -1,1 +1,3 @@
-The accordion is used to toggle the age range buttons withnin an age group. It is currently being used at the front page. 
+**Source:** `src/objects/accordion/accordion`
+
+The Accordion object allows a user to toggle open and close sections of content.

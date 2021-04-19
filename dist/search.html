@@ -33,47 +33,33 @@
   </header>
   <main class="pt-12 tablet:pt-32 pb-8 w-11/12 desktop:w-8/12 m-auto">
     <div>
-      <header></header>
-      <div>
-        <div
-          class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-          <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10">
-            <h1 class="type-h1 ">Search</h1>
-          </div>
-          <div class="html-tag my-8">
-            <div>
-              <p>The search object searches keyword throughout the database and
-                can be found at the top bar.</p>
-            </div>
-          </div>
-          <div class="my-8 py-4">
-            <div>
-              <div>
-                <div class="bg-color-gray-light py-20 px-10">
-                  <form action="/search" class="search-form" method="get"
-                    role="search">
-                    <div class="form-field__icon-container"><input
-                        class="form-field form-field--large form-field--full-width c-hero__input"
-                        data-js="search"
-                        data-js-search-dropdown-class="form-field-dropdown--large"
-                        data-js-search-suggestions="" name="s"
-                        placeholder="Search" type="search" value="" /><input
-                        name="post_type" type="hidden" value="Array" /><button
-                        class="form-field__icon form-field__icon--large"
-                        type="submit"><svg class="icon--small">
-                          <title>Searching</title>
-                          <use xlink:href="#icon-search"></use>
-                        </svg></button><a aria-hidden="true"
-                        class="form-field__icon form-field__icon--large form-field__icon--weak search-clear"
-                        href="#clear" style="display:none;"><svg class="icon">
-                          <title></title>
-                          <use xlink:href="#icon-close"></use>
-                        </svg></a></div>
-                  </form>
-                </div>
-              </div>
-              <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden">
-                <pre>&lt;div class=&quot;bg-color-gray-light py-20 px-10&quot;&gt;
+      <section>
+        <h1>Search</h1>
+        <p><strong>Source:</strong> <code>src/objects/search/search</code></p>
+        <p>The Search object is an input field that allows users to type in
+          terms for content they are looking for.</p>
+        <div class="bg-color-gray-light py-20 px-10">
+          <form action="/search" class="search-form" method="get" role="search">
+            <div class="form-field__icon-container"><input
+                class="form-field form-field--large form-field--full-width c-hero__input"
+                data-js="search"
+                data-js-search-dropdown-class="form-field-dropdown--large"
+                data-js-search-suggestions="" name="s" placeholder="Search"
+                type="search" value="" /><input name="post_type" type="hidden"
+                value="Array" /><button
+                class="form-field__icon form-field__icon--large"
+                type="submit"><svg class="icon--small">
+                  <title>Searching</title>
+                  <use xlink:href="#icon-search"></use>
+                </svg></button><a aria-hidden="true"
+                class="form-field__icon form-field__icon--large form-field__icon--weak search-clear"
+                href="#clear" style="display:none;"><svg class="icon">
+                  <title></title>
+                  <use xlink:href="#icon-close"></use>
+                </svg></a></div>
+          </form>
+        </div>
+        <pre class="bg-color-gray-light p-6 mt-8">&lt;div class=&quot;bg-color-gray-light py-20 px-10&quot;&gt;
   &lt;form action=&quot;/search&quot; class=&quot;search-form&quot; method=&quot;get&quot; role=&quot;search&quot;&gt;
     &lt;div class=&quot;form-field__icon-container&quot;&gt;&lt;input
         class=&quot;form-field form-field--large form-field--full-width c-hero__input&quot;
@@ -93,11 +79,7 @@
         &lt;/svg&gt;&lt;/a&gt;&lt;/div&gt;
   &lt;/form&gt;
 &lt;/div&gt;</pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
   </main>
   <footer class="o-footer" id="patterns">

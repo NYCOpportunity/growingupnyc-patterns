@@ -33,48 +33,32 @@
   </header>
   <main class="pt-12 tablet:pt-32 pb-8 w-11/12 desktop:w-8/12 m-auto">
     <div>
-      <header></header>
-      <div>
-        <div
-          class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-          <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10">
-            <h1 class="type-h1 ">Alert Banner</h1>
-          </div>
-          <div class="html-tag my-8">
-            <div>
-              <p>The Alert Banner Object is a fixed container that contains a
-                string, notifying the user of temporary information about
-                programs, events, etc. A cookie for the notification is created
-                when a user closes the object. The alert will therefore not
-                expire until the cookie has expired, based on the number of days
-                you set, if you did not specify the number of days through an
-                argument to the <strong><em>alertBanner()</em></strong> class,
-                the cookie expiration date with be defaulted to 360 days.</p>
-            </div>
-          </div>
-          <div class="my-8 py-4">
-            <div>
-              <div>
-                <div aria-describedby="dialog-desc-notification"
-                  aria-labelledby="dialog-title-notification"
-                  class="o-alert-banner hidden" data-alert="notification"
-                  data-js="alert-banner-notification" id="banner-notification"
-                  role="dialog">
-                  <div class="show-for-screen-reader"
-                    id="dialog-title-notification">Notification Banner</div>
-                  <div class="o-alert-banner__content"
-                    id="dialog-desc-notification">
-                    <div class="o-container">Alert Content</div>
-                  </div><button aria-label="close" class="o-alert__button"
-                    data-js="alert-controller" data-toggle="banner-notification"
-                    type="button"><svg class="icon--small" role="img">
-                      <title>Close</title>
-                      <use xlink:href="#icon-close"></use>
-                    </svg></button>
-                </div>
-              </div>
-              <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden">
-                <pre>&lt;div aria-describedby=&quot;dialog-desc-notification&quot;
+      <section>
+        <h1>Alert Banner</h1>
+        <p><strong>Source:</strong>
+          <code>src/objects/alert-banner/alert-banner</code>
+        </p>
+        <p>The Alert Banner object is a fixed container that contains
+          time-sensitive information. The object makes use of cookies to hide
+          the information if they close out of the wrapper. The cookie will
+          expire after 360 days or when new alert content takes its place.</p>
+        <div aria-describedby="dialog-desc-notification"
+          aria-labelledby="dialog-title-notification"
+          class="o-alert-banner hidden" data-alert="notification"
+          data-js="alert-banner-notification" id="banner-notification"
+          role="dialog">
+          <div class="show-for-screen-reader" id="dialog-title-notification">
+            Notification Banner</div>
+          <div class="o-alert-banner__content" id="dialog-desc-notification">
+            <div class="o-container">Alert Content</div>
+          </div><button aria-label="close" class="o-alert__button"
+            data-js="alert-controller" data-toggle="banner-notification"
+            type="button"><svg class="icon--small" role="img">
+              <title>Close</title>
+              <use xlink:href="#icon-close"></use>
+            </svg></button>
+        </div>
+        <pre class="bg-color-gray-light p-6 mt-8">&lt;div aria-describedby=&quot;dialog-desc-notification&quot;
   aria-labelledby=&quot;dialog-title-notification&quot; class=&quot;o-alert-banner hidden&quot;
   data-alert=&quot;notification&quot; data-js=&quot;alert-banner-notification&quot;
   id=&quot;banner-notification&quot; role=&quot;dialog&quot;&gt;
@@ -89,11 +73,7 @@
       &lt;use xlink:href=&quot;#icon-close&quot;&gt;&lt;/use&gt;
     &lt;/svg&gt;&lt;/button&gt;
 &lt;/div&gt;</pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
   </main>
   <footer class="o-footer" id="patterns">

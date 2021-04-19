@@ -1,1 +1,3 @@
-The search object searches keyword throughout the database and can be found at the top bar.
+**Source:** `src/objects/search/search`
+
+The Search object is an input field that allows users to type in terms for content they are looking for.

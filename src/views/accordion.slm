@@ -4,15 +4,23 @@
 
 / Partials
 = partial('/slm/partials/head.mixin.slm');
-= partial('/slm/partials/content-header.mixin.slm');
-= partial('/slm/partials/section-2-col.mixin.slm');
-
 
 / Content blocks
 = content('head');
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  = mixin('section-2-col', 'Accordion', 'objects/accordion/accordion');
+  section class="pb-8"
+    h1
+      = title
+
+    div class="grid grid-cols-2 pt-8"
+      div
+        == this.include('objects/accordion/accordion.slm');
+
+      div class="pl-6"
+        == this.include('objects/accordion/accordion.md')
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('objects/accordion/accordion.slm');
+
 

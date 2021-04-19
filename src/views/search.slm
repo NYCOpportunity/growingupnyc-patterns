@@ -1,19 +1,22 @@
 = extend('/slm/layouts/default')
 
-- title = 'Overlay'
+- title = 'Search'
 
 / Partials
 = partial('/slm/partials/head.mixin.slm');
-= partial('/slm/partials/content-header.mixin.slm');
-= partial('/slm/partials/section.mixin.slm');
 
-
-/ Content blocks
 = content('head');
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  div
-    = mixin('section', 'Search', 'objects/search/search');
+  section
+    h1
+      = title
+
+    == this.include('objects/search/search.md');
+
+    == this.include('objects/search/search.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('objects/search/search.slm');
+
 
