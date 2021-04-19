@@ -4,18 +4,32 @@
 
 / Partials
 = partial('/slm/partials/head.mixin.slm');
-= partial('/slm/partials/content-header.mixin.slm');
-= partial('/slm/partials/section.mixin.slm');
-
 
 / Content blocks
 = content('head');
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  div
-    = mixin('section', 'Lists', 'elements/lists/lists');
-    = mixin('section', 'Unordred List', 'elements/lists/lists-unordered--check');
-    = mixin('section', 'Ordred List', 'elements/lists/lists-ordered');
+  section class="pb-8"
+    h1
+      = title
+    == this.include('elements/lists/lists.md')
+
+  section class="pt-8"
+    h3 = 'Demonstration'
+    == this.include('elements/lists/lists.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('elements/lists/lists.slm');
+  section class="pt-8"
+    h2 = 'Unordered check list'
+    h3 = 'Demonstration'
+    == this.include('elements/lists/lists-unordered--check.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('elements/lists/lists-unordered--check.slm');
+  section class="pt-8"
+    h2 = 'Ordered list'
+    h3 = 'Demonstration'
+    == this.include('elements/lists/lists-ordered.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('elements/lists/lists-ordered.slm');
 

@@ -4,16 +4,30 @@
 
 / Partials
 = partial('/slm/partials/head.mixin.slm');
-= partial('/slm/partials/content-header.mixin.slm');
-= partial('/slm/partials/section.mixin.slm');
-
 
 / Content blocks
 = content('head');
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  = mixin('section', 'Input', 'elements/input/input');
-  = mixin('section', 'Input Search', 'elements/input/input-search');
-  = mixin('section', 'Input Share', 'elements/input/input-share');
+  section class="pb-8"
+    h1
+      = title
+
+    == this.include('elements/input/input.md')
+  
+  section class=""
+    h3 = 'Demonstration'
+    == this.include('elements/input/input.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('elements/input/input.slm');
+  section class="pt-8"
+    h2 = 'Search Input'
+    == this.include('elements/input/input-search.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('elements/input/input-search.slm');
+  section class="pt-8"
+    h2 = 'Share Input'
+    == this.include('elements/input/input-share.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('elements/input/input-share.slm');

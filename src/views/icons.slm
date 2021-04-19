@@ -4,15 +4,27 @@
 
 / Partials
 = partial('/slm/partials/head.mixin.slm');
-= partial('/slm/partials/content-header.mixin.slm');
-= partial('/slm/partials/section-icon.mixin.slm');
 
 / Content blocks
 = content('head');
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  div
-    = mixin('section', 'Icons', 'elements/icons/icons', 'gutter', this.tokens['icons']);
-    = mixin('section', 'Logos', 'elements/icons/icons', 'gutter', this.tokens['logos']);
+  section class="pb-8"
+    h1
+      = title
+    == this.include('elements/icons/icons.md')
+
+  section
+    div class='grid tablet:grid-cols-4 text-center'
+      - for (key in this.tokens['icons'])
+        - value = this.tokens['icons'][key];
+          == this.include('elements/icons/icons.slm');
+
+  section
+    h2 class='pt-6'
+      = 'Logos'
+    div class='grid tablet:grid-cols-4 text-center'
+      - for (key in this.tokens['logos'])
+        - value = this.tokens['logos'][key];
+          == this.include('elements/icons/icons.slm');

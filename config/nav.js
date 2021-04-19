@@ -6,9 +6,10 @@ module.exports = {
   'patterns': [
     {
       'Elements': [
+        { 'alert': 'Alert' },
         { 'button': 'Button' },
-        { 'divider': 'Divider' },
         { 'checkbox': 'Checkbox' },
+        { 'divider': 'Divider' },
         { 'icons': 'Icons' },
         { 'input': 'Input' },
         { 'layouts': 'Layouts' },
@@ -16,7 +17,6 @@ module.exports = {
         { 'spinner': 'Spinner' },
         { 'sticker': 'Sticker' },
         { 'table': 'Table' },
-        { 'alert': 'Alert' },
       ]
     },
     {

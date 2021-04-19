@@ -31,56 +31,42 @@
           href="#patterns">Patterns<small> v1.0.0-14</small></a></nav>
     </div>
   </header>
-  <main class="pt-12 mobile:pt-20 tablet:pt-32">
+  <main class="pt-12 tablet:pt-32 pb-8 w-11/12 desktop:w-8/12 m-auto">
     <div>
-      <header></header>
-      <div>
-        <div
-          class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-          <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10">
-            <h1 class="type-h1 ">Sticker</h1>
-          </div>
-          <div class="html-tag my-8">
-            <div>
-              <p>The sticker element is a circular decorator that is used to
-                display an icon representing the category or brand of the
-                current page.</p>
-            </div>
-          </div>
-          <div class="my-8 py-4">
-            <div>
-              <div>
-                <div class="sticker"><svg aria-hidden="true" class="icon--large"
-                    role="img">
-                    <use xlink:href="#icon-cash-expenses"></use>
-                  </svg></div>
-              </div>
-              <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden">
-                <pre>&lt;div class=&quot;sticker&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; class=&quot;icon--large&quot; role=&quot;img&quot;&gt;
+      <section class="pb-8">
+        <h1>Sticker</h1>
+        <p><strong>Source:</strong> <code>src/elements/sticker/sticker</code>
+        </p>
+        <p>The sticker element is a circular decorator with an icon that
+          communicates the category associated with content.</p>
+      </section>
+      <section class="pt-8">
+        <h3>Demonstration</h3>
+        <div class="sticker"><svg aria-hidden="true" class="icon--large"
+            role="img">
+            <use xlink:href="#icon-cash-expenses"></use>
+          </svg></div>
+        <pre class="bg-color-gray-light p-6 mt-8">&lt;div class=&quot;sticker&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; class=&quot;icon--large&quot; role=&quot;img&quot;&gt;
     &lt;use xlink:href=&quot;#icon-cash-expenses&quot;&gt;&lt;/use&gt;
   &lt;/svg&gt;&lt;/div&gt;</pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
   </main>
   <footer class="o-footer" id="patterns">
     <div class="o-container flex flex-wrap mb-10">
       <div class="tablet:flex-1 w-full mb-10 mr-4 pl-4">
         <h3 class="border-b">Elements</h3><a class="block text-color-white"
+          href="alert">Alert</a><a class="block text-color-white"
           href="button">Button</a><a class="block text-color-white"
-          href="divider">Divider</a><a class="block text-color-white"
           href="checkbox">Checkbox</a><a class="block text-color-white"
+          href="divider">Divider</a><a class="block text-color-white"
           href="icons">Icons</a><a class="block text-color-white"
           href="input">Input</a><a class="block text-color-white"
           href="layouts">Layouts</a><a class="block text-color-white"
           href="lists">Lists</a><a class="block text-color-white"
           href="spinner">Spinner</a><a class="block text-color-white"
           href="sticker">Sticker</a><a class="block text-color-white"
-          href="table">Table</a><a class="block text-color-white"
-          href="alert">Alert</a>
+          href="table">Table</a>
       </div>
       <div class="tablet:flex-1 w-full mb-10 mr-4 pl-4">
         <h3 class="border-b">Components</h3><a class="block text-color-white"
@@ -149,6 +135,7 @@
     gunyc.newsletter();
     gunyc.formEffect();
   </script>
+  <script src="/reload/reload.js"></script>
 </body>
 
 </html>

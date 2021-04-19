@@ -9,7 +9,7 @@
   = mixin('head');
 
 = content('main');
-  div class="layout--row desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-full ml-auto mr-auto px-10"
+  div
     h2 class="text-center"
       = "Growing Up NYC Patterns Library"
     div class="my-16"

@@ -31,59 +31,41 @@
           href="#patterns">Patterns<small> v1.0.0-14</small></a></nav>
     </div>
   </header>
-  <main class="pt-12 mobile:pt-20 tablet:pt-32">
+  <main class="pt-12 tablet:pt-32 pb-8 w-11/12 desktop:w-8/12 m-auto">
     <div>
-      <header></header>
-      <div>
-        <div
-          class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-          <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10">
-            <h1 class="type-h1 ">Spinner</h1>
-          </div>
-          <div class="html-tag my-8">
-            <div>
-              <p>The spinner is used to indicate loading in the share form in
-                generatin nyc. To implement the spinner an empty div with the
-                classnme &quot;spinner-loader&quot; should be declared in HTML
-                and the mixing &quot;spinner&quot; also need to be called in the
-                stylesheet. The mixin takes three arguments; diameter, thickness
-                and color. The arguments can be passed while the mixin is being
-                called in the style-sheet using the keyword @include.</p>
-            </div>
-          </div>
-          <div class="my-8 py-4">
-            <div>
-              <div>
-                <div class="flex flex:column">
-                  <div class="spinner-loader--primary mr-10"></div>
-                </div>
-              </div>
-              <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden">
-                <pre>&lt;div class=&quot;flex flex:column&quot;&gt;
+      <section class="pb-8">
+        <h1>Spinner</h1>
+        <p><strong>Source:</strong> <code>src/elements/spinner/spinner</code>
+        </p>
+        <p>The spinner elements communicates that an action is currently being
+          loaded.</p>
+      </section>
+      <section class="pt-8">
+        <h3>Demonstration</h3>
+        <div class="flex flex:column">
+          <div class="spinner-loader--primary mr-10"></div>
+        </div>
+        <pre class="bg-color-gray-light p-6 mt-8">&lt;div class=&quot;flex flex:column&quot;&gt;
   &lt;div class=&quot;spinner-loader--primary mr-10&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;</pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
   </main>
   <footer class="o-footer" id="patterns">
     <div class="o-container flex flex-wrap mb-10">
       <div class="tablet:flex-1 w-full mb-10 mr-4 pl-4">
         <h3 class="border-b">Elements</h3><a class="block text-color-white"
+          href="alert">Alert</a><a class="block text-color-white"
           href="button">Button</a><a class="block text-color-white"
-          href="divider">Divider</a><a class="block text-color-white"
           href="checkbox">Checkbox</a><a class="block text-color-white"
+          href="divider">Divider</a><a class="block text-color-white"
           href="icons">Icons</a><a class="block text-color-white"
           href="input">Input</a><a class="block text-color-white"
           href="layouts">Layouts</a><a class="block text-color-white"
           href="lists">Lists</a><a class="block text-color-white"
           href="spinner">Spinner</a><a class="block text-color-white"
           href="sticker">Sticker</a><a class="block text-color-white"
-          href="table">Table</a><a class="block text-color-white"
-          href="alert">Alert</a>
+          href="table">Table</a>
       </div>
       <div class="tablet:flex-1 w-full mb-10 mr-4 pl-4">
         <h3 class="border-b">Components</h3><a class="block text-color-white"
@@ -152,6 +134,7 @@
     gunyc.newsletter();
     gunyc.formEffect();
   </script>
+  <script src="/reload/reload.js"></script>
 </body>
 
 </html>

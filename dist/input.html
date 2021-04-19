@@ -31,59 +31,38 @@
           href="#patterns">Patterns<small> v1.0.0-14</small></a></nav>
     </div>
   </header>
-  <main class="pt-12 mobile:pt-20 tablet:pt-32">
+  <main class="pt-12 tablet:pt-32 pb-8 w-11/12 desktop:w-8/12 m-auto">
     <div>
-      <header></header>
-      <div
-        class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-        <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10">
-          <h1 class="type-h1 ">Input</h1>
-        </div>
-        <div class="html-tag my-8">
-          <div></div>
-        </div>
-        <div class="my-8 py-4">
-          <div>
-            <div>
-              <div class="input"><label class="input__label" for=""><span
-                    class="c-form__label-content mr-2" data-content=""
-                    title="">Email</span></label><input
-                  class="input border-color-gray" id="mce-EMAIL" name="EMAIL"
-                  type="email" value="" /></div>
-            </div>
-            <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden">
-              <pre>&lt;div class=&quot;input&quot;&gt;&lt;label class=&quot;input__label&quot; for=&quot;&quot;&gt;&lt;span
+      <section class="pb-8">
+        <h1>Input</h1>
+        <p><strong>Source:</strong> <code>src/elements/input/input</code></p>
+        <p>The input element allows users to enter information.</p>
+      </section>
+      <section>
+        <h3>Demonstration</h3>
+        <div class="input"><label class="input__label" for=""><span
+              class="c-form__label-content mr-2" data-content=""
+              title="">Email</span></label><input
+            class="input border-color-gray" id="mce-EMAIL" name="EMAIL"
+            type="email" value="" /></div>
+        <pre
+          class="bg-color-gray-light p-6 mt-8">&lt;div class=&quot;input&quot;&gt;&lt;label class=&quot;input__label&quot; for=&quot;&quot;&gt;&lt;span
       class=&quot;c-form__label-content mr-2&quot; data-content=&quot;&quot;
       title=&quot;&quot;&gt;Email&lt;/span&gt;&lt;/label&gt;&lt;input class=&quot;input border-color-gray&quot;
     id=&quot;mce-EMAIL&quot; name=&quot;EMAIL&quot; type=&quot;email&quot; value=&quot;&quot; /&gt;&lt;/div&gt;</pre>
-            </div>
-          </div>
+      </section>
+      <section class="pt-8">
+        <h2>Search Input</h2>
+        <div class="input input-search">
+          <div class="input__icon-container"><input
+              class="input input--full-width border-color-gray" data-js="search"
+              name="s" placeholder="Search" type="search" value="" /><button
+              class="input__icon" type="submit"><svg class="icon--small">
+                <title>Search</title>
+                <use xlink:href="#icon-search"></use>
+              </svg></button></div>
         </div>
-      </div>
-      <div
-        class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-        <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10">
-          <h1 class="type-h1 ">Input Search</h1>
-        </div>
-        <div class="html-tag my-8">
-          <div></div>
-        </div>
-        <div class="my-8 py-4">
-          <div>
-            <div>
-              <div class="input input-search">
-                <div class="input__icon-container"><input
-                    class="input input--full-width border-color-gray"
-                    data-js="search" name="s" placeholder="Search" type="search"
-                    value="" /><button class="input__icon" type="submit"><svg
-                      class="icon--small">
-                      <title>Search</title>
-                      <use xlink:href="#icon-search"></use>
-                    </svg></button></div>
-              </div>
-            </div>
-            <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden">
-              <pre>&lt;div class=&quot;input input-search&quot;&gt;
+        <pre class="bg-color-gray-light p-6 mt-8">&lt;div class=&quot;input input-search&quot;&gt;
   &lt;div class=&quot;input__icon-container&quot;&gt;&lt;input
       class=&quot;input input--full-width border-color-gray&quot; data-js=&quot;search&quot;
       name=&quot;s&quot; placeholder=&quot;Search&quot; type=&quot;search&quot; value=&quot;&quot; /&gt;&lt;button
@@ -92,37 +71,21 @@
         &lt;use xlink:href=&quot;#icon-search&quot;&gt;&lt;/use&gt;
       &lt;/svg&gt;&lt;/button&gt;&lt;/div&gt;
 &lt;/div&gt;</pre>
-            </div>
+      </section>
+      <section class="pt-8">
+        <h2>Share Input</h2>
+        <div class="bg-color-blue-light py-5 pl-5">
+          <div
+            class="signup-form__input signup-form__input--full sms-form__input--long">
+            <label class="signup-form__label sms-form__label" for="phone"><span
+                class="sms-form__label-content signup-form__label-content"
+                data-content="Phone Number">Phone Number</span></label><input
+              class="signup-form__field form-field input__field bg-color-gray-light js-show-disclaimer"
+              data-scroll-offset="20" id="phone" name="to" placeholder=""
+              required="" type="tel" />
           </div>
         </div>
-      </div>
-      <div
-        class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-        <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10">
-          <h1 class="type-h1 ">Input Share</h1>
-        </div>
-        <div class="html-tag my-8">
-          <div></div>
-        </div>
-        <div class="my-8 py-4">
-          <div>
-            <div>
-              <div class="bg-color-blue-light py-5 pl-5">
-                <div
-                  class="signup-form__input signup-form__input--full sms-form__input--long">
-                  <label class="signup-form__label sms-form__label"
-                    for="phone"><span
-                      class="sms-form__label-content signup-form__label-content"
-                      data-content="Phone Number">Phone
-                      Number</span></label><input
-                    class="signup-form__field form-field input__field bg-color-gray-light js-show-disclaimer"
-                    data-scroll-offset="20" id="phone" name="to" placeholder=""
-                    required="" type="tel" />
-                </div>
-              </div>
-            </div>
-            <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden">
-              <pre>&lt;div class=&quot;bg-color-blue-light py-5 pl-5&quot;&gt;
+        <pre class="bg-color-gray-light p-6 mt-8">&lt;div class=&quot;bg-color-blue-light py-5 pl-5&quot;&gt;
   &lt;div
     class=&quot;signup-form__input signup-form__input--full sms-form__input--long&quot;&gt;
     &lt;label class=&quot;signup-form__label sms-form__label&quot; for=&quot;phone&quot;&gt;&lt;span
@@ -132,27 +95,24 @@
       data-scroll-offset=&quot;20&quot; id=&quot;phone&quot; name=&quot;to&quot; placeholder=&quot;&quot; required=&quot;&quot;
       type=&quot;tel&quot; /&gt;&lt;/div&gt;
 &lt;/div&gt;</pre>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
   </main>
   <footer class="o-footer" id="patterns">
     <div class="o-container flex flex-wrap mb-10">
       <div class="tablet:flex-1 w-full mb-10 mr-4 pl-4">
         <h3 class="border-b">Elements</h3><a class="block text-color-white"
+          href="alert">Alert</a><a class="block text-color-white"
           href="button">Button</a><a class="block text-color-white"
-          href="divider">Divider</a><a class="block text-color-white"
           href="checkbox">Checkbox</a><a class="block text-color-white"
+          href="divider">Divider</a><a class="block text-color-white"
           href="icons">Icons</a><a class="block text-color-white"
           href="input">Input</a><a class="block text-color-white"
           href="layouts">Layouts</a><a class="block text-color-white"
           href="lists">Lists</a><a class="block text-color-white"
           href="spinner">Spinner</a><a class="block text-color-white"
           href="sticker">Sticker</a><a class="block text-color-white"
-          href="table">Table</a><a class="block text-color-white"
-          href="alert">Alert</a>
+          href="table">Table</a>
       </div>
       <div class="tablet:flex-1 w-full mb-10 mr-4 pl-4">
         <h3 class="border-b">Components</h3><a class="block text-color-white"
@@ -221,6 +181,7 @@
     gunyc.newsletter();
     gunyc.formEffect();
   </script>
+  <script src="/reload/reload.js"></script>
 </body>
 
 </html>

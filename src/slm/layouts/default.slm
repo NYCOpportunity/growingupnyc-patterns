@@ -10,8 +10,8 @@ html lang='en'
 
     / div class='o-offcanvas__main js-offcanvas__main'
     = partial('../partials/nav.slm');
-    main class="pt-12 mobile:pt-20 tablet:pt-32"
-      div class=''
+    main class="pt-12 tablet:pt-32 pb-8 w-11/12 desktop:w-8/12 m-auto"
+      div
         = content('main');
 
     = partial('../partials/footer.slm');

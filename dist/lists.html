@@ -31,119 +31,80 @@
           href="#patterns">Patterns<small> v1.0.0-14</small></a></nav>
     </div>
   </header>
-  <main class="pt-12 mobile:pt-20 tablet:pt-32">
+  <main class="pt-12 tablet:pt-32 pb-8 w-11/12 desktop:w-8/12 m-auto">
     <div>
-      <header></header>
-      <div>
-        <div
-          class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-          <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10">
-            <h1 class="type-h1 ">Lists</h1>
-          </div>
-          <div class="html-tag my-8">
-            <div>
-              <p>Basic list elements often used with single program page.</p>
-            </div>
-          </div>
-          <div class="my-8 py-4">
-            <div>
-              <div>
-                <ol class="list-order-no-style">
-                  <li>Baby</li>
-                  <li>Toddler</li>
-                  <li>Pre-Schooler</li>
-                </ol>
-              </div>
-              <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden">
-                <pre>&lt;ol class=&quot;list-order-no-style&quot;&gt;
+      <section class="pb-8">
+        <h1>Lists</h1>
+        <p><strong>Source:</strong> <code>src/elements/lists/lists</code></p>
+        <p>The list elements organizes content in a list with todos or
+          sequential steps.</p>
+      </section>
+      <section class="pt-8">
+        <h3>Demonstration</h3>
+        <ol class="list-order-no-style">
+          <li>Baby</li>
+          <li>Toddler</li>
+          <li>Pre-Schooler</li>
+        </ol>
+        <pre class="bg-color-gray-light p-6 mt-8">&lt;ol class=&quot;list-order-no-style&quot;&gt;
   &lt;li&gt;Baby&lt;/li&gt;
   &lt;li&gt;Toddler&lt;/li&gt;
   &lt;li&gt;Pre-Schooler&lt;/li&gt;
 &lt;/ol&gt;</pre>
-              </div>
-            </div>
-          </div>
+      </section>
+      <section class="pt-8">
+        <h2>Unordered check list</h2>
+        <h3>Demonstration</h3>
+        <div class="list-unordered--check">
+          <ul>
+            <li>Children are 6-weeks to 4-years old</li>
+            <li>Meet income guidelines</li>
+            <li>Working and non-working families may be eligible</li>
+          </ul>
         </div>
-        <div
-          class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-          <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10">
-            <h1 class="type-h1 ">Unordred List</h1>
-          </div>
-          <div class="html-tag my-8">
-            <div></div>
-          </div>
-          <div class="my-8 py-4">
-            <div>
-              <div>
-                <div class="list-unordered--check">
-                  <ul>
-                    <li>Children are 6-weeks to 4-years old</li>
-                    <li>Meet income guidelines</li>
-                    <li>Working and non-working families may be eligible</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden">
-                <pre>&lt;div class=&quot;list-unordered--check&quot;&gt;
+        <pre class="bg-color-gray-light p-6 mt-8">&lt;div class=&quot;list-unordered--check&quot;&gt;
   &lt;ul&gt;
     &lt;li&gt;Children are 6-weeks to 4-years old&lt;/li&gt;
     &lt;li&gt;Meet income guidelines&lt;/li&gt;
     &lt;li&gt;Working and non-working families may be eligible&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;</pre>
-              </div>
-            </div>
-          </div>
+      </section>
+      <section class="pt-8">
+        <h2>Ordered list</h2>
+        <h3>Demonstration</h3>
+        <div class="list-unordered--check">
+          <ol>
+            <li>Children are 6-weeks to 4-years old</li>
+            <li>Meet income guidelines</li>
+            <li>Working and non-working families may be eligible</li>
+          </ol>
         </div>
-        <div
-          class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-          <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10">
-            <h1 class="type-h1 ">Ordred List</h1>
-          </div>
-          <div class="html-tag my-8">
-            <div></div>
-          </div>
-          <div class="my-8 py-4">
-            <div>
-              <div>
-                <div class="list-unordered--check">
-                  <ol>
-                    <li>Children are 6-weeks to 4-years old</li>
-                    <li>Meet income guidelines</li>
-                    <li>Working and non-working families may be eligible</li>
-                  </ol>
-                </div>
-              </div>
-              <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden">
-                <pre>&lt;div class=&quot;list-unordered--check&quot;&gt;
+        <pre class="bg-color-gray-light p-6 mt-8">&lt;div class=&quot;list-unordered--check&quot;&gt;
   &lt;ol&gt;
     &lt;li&gt;Children are 6-weeks to 4-years old&lt;/li&gt;
     &lt;li&gt;Meet income guidelines&lt;/li&gt;
     &lt;li&gt;Working and non-working families may be eligible&lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;</pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
   </main>
   <footer class="o-footer" id="patterns">
     <div class="o-container flex flex-wrap mb-10">
       <div class="tablet:flex-1 w-full mb-10 mr-4 pl-4">
         <h3 class="border-b">Elements</h3><a class="block text-color-white"
+          href="alert">Alert</a><a class="block text-color-white"
           href="button">Button</a><a class="block text-color-white"
-          href="divider">Divider</a><a class="block text-color-white"
           href="checkbox">Checkbox</a><a class="block text-color-white"
+          href="divider">Divider</a><a class="block text-color-white"
           href="icons">Icons</a><a class="block text-color-white"
           href="input">Input</a><a class="block text-color-white"
           href="layouts">Layouts</a><a class="block text-color-white"
           href="lists">Lists</a><a class="block text-color-white"
           href="spinner">Spinner</a><a class="block text-color-white"
           href="sticker">Sticker</a><a class="block text-color-white"
-          href="table">Table</a><a class="block text-color-white"
-          href="alert">Alert</a>
+          href="table">Table</a>
       </div>
       <div class="tablet:flex-1 w-full mb-10 mr-4 pl-4">
         <h3 class="border-b">Components</h3><a class="block text-color-white"
@@ -212,6 +173,7 @@
     gunyc.newsletter();
     gunyc.formEffect();
   </script>
+  <script src="/reload/reload.js"></script>
 </body>
 
 </html>

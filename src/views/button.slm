@@ -4,20 +4,63 @@
 
 / Partials
 = partial('/slm/partials/head.mixin.slm');
-= partial('/slm/partials/content-header.mixin.slm');
-= partial('/slm/partials/section.mixin.slm');
-
 
 / Content blocks
 = content('head');
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  = mixin('section', 'Button Primary', 'elements/button/button--primary');
-  = mixin('section', 'Button Pill', 'elements/button/button--pill');
-  = mixin('section', 'Button Pill, Alternative', 'elements/button/button--pill--alt');
-  = mixin('section', 'Button Pill, Spanish', 'elements/button/button--pill--es');
-  = mixin('section', 'Button Simple', 'elements/button/button--simple');
-  = mixin('section', 'Button, Fully Width', 'elements/button/button--full-width');
-  = mixin('section', 'Button Text', 'elements/button/button--text');
+  section class="pb-8"
+    h1
+      = title
+
+    == this.include('elements/button/button.md')
+
+  section class="pb-2"
+    h2 = 'Primary Button'
+    h3 = 'Demonstration'
+    == this.include('elements/button/button--primary.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('elements/button/button.slm');
+
+  section class="pt-8"
+    h2 = 'Pill Button'
+    h3 = 'Demonstration'
+    == this.include('elements/button/button--pill.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('elements/button/button--pill.slm');
+    
+  section class="pt-8"
+    h2 = 'Button Alternative'
+    h3 = 'Demonstration'
+    == this.include('elements/button/button--pill--alt.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('elements/button/button--pill--alt.slm');
+    
+  section class="pt-8"
+    h2 = 'Button, Spanish'
+    h3 = 'Demonstration'
+    == this.include('elements/button/button--pill--es.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('elements/button/button--pill--es.slm');
+    
+  section class="pt-8"
+    h2 = 'Simple Button'
+    h3 = 'Demonstration'
+    == this.include('elements/button/button--simple.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('elements/button/button--simple.slm');
+    
+  section class="pt-8"
+    h2 = 'Button, Full Width'
+    h3 = 'Demonstration'
+    == this.include('elements/button/button--full-width.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('elements/button/button--full-width.slm');
+    
+  section class="pt-8"
+    h2 = 'Button Text'
+    h3 = 'Demonstration'
+    == this.include('elements/button/button--text.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('elements/button/button--text.slm');
