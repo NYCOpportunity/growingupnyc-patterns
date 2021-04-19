@@ -13,7 +13,15 @@
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  div
-    = mixin('section', 'Arrow Pager', 'components/arrow-pager/arrow-pager');
+  section class="pb-8"
+    h1
+      = title
+
+    == this.include('components/arrow-pager/arrow-pager.md')
+
+  section class="pb-2"
+    h3 = 'Demonstration'
+    == this.include('components/arrow-pager/arrow-pager.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('components/arrow-pager/arrow-pager.slm');
 

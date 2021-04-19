@@ -23,10 +23,10 @@ module.exports = {
       'Components': [
         { 'age-guide-card': 'Age Guide Card' },
         { 'arrow-pager': 'Arrow pager' },
+        { 'back-to-top': 'Back to Top' },
         { 'block-list': 'Block List' },
         { 'card': 'Card' },
         { 'details-list': 'Details List' },
-        { 'footer': 'Footer' },
         { 'form': 'Form' },
         { 'hero': 'Hero' },
         { 'language-switcher': 'Language switcher' },
@@ -46,6 +46,7 @@ module.exports = {
         { 'content': 'Content' },
         { 'feature-photo': 'Feature photo' },
         { 'flex-embed': 'Flex embed' },
+        { 'footer': 'Footer' },
         { 'inline-list': 'Inline List' },
         { 'navigation': 'Navigation' },
         { 'search': 'Search' }

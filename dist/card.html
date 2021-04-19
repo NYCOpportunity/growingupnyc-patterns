@@ -33,46 +33,35 @@
   </header>
   <main class="pt-12 tablet:pt-32 pb-8 w-11/12 desktop:w-8/12 m-auto">
     <div>
-      <header></header>
-      <div
-        class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-        <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10">
-          <h1 class="type-h1 ">Card</h1>
-        </div>
-        <div class="html-tag my-8">
-          <div>
-            <p>The Card Component is a wrapper for a preview of a full page of
-              content.</p>
+      <section class="pb-8">
+        <h1>Card</h1>
+        <p><strong>Source:</strong> <code>src/components/card/card</code></p>
+        <p>The Card Component component provides a preview of content.</p>
+      </section>
+      <section class="pb-2">
+        <h3>Demonstration</h3>
+        <div class="bg-color-gray-light p-10">
+          <div class="c-card"><a href="#">
+              <div aria-hidden="true" class="c-card__sticker sticker"><svg
+                  class="icon--large">
+                  <title>Cash Expenses</title>
+                  <use xlink:href="#icon-child-care"></use>
+                </svg></div>
+            </a>
+            <h3 class="c-card__title"><a href="#" rel="bookmark"
+                title="Child care for babies &amp; toddlers">Child care for
+                babies &amp; toddlers</a></h3>
+            <div class="c-card__subtitle">
+              <p><strong>EarlyLearn NYC Child Care</strong></p>
+              <p>NYC Department of Education</p>
+            </div>
+            <div class="c-card__tags"><a class="button--pill button--pill--alt"
+                href="#">Child Care</a></div>
+            <div class="c-card__body">Early child care and education services
+              for up to 10 hours a day.</div>
           </div>
         </div>
-        <div class="my-8 py-4">
-          <div>
-            <div>
-              <div class="bg-color-gray-light p-10">
-                <div class="c-card"><a href="#">
-                    <div aria-hidden="true" class="c-card__sticker sticker"><svg
-                        class="icon--large">
-                        <title>Cash Expenses</title>
-                        <use xlink:href="#icon-child-care"></use>
-                      </svg></div>
-                  </a>
-                  <h3 class="c-card__title"><a href="#" rel="bookmark"
-                      title="Child care for babies &amp; toddlers">Child care
-                      for babies &amp; toddlers</a></h3>
-                  <div class="c-card__subtitle">
-                    <p><strong>EarlyLearn NYC Child Care</strong></p>
-                    <p>NYC Department of Education</p>
-                  </div>
-                  <div class="c-card__tags"><a
-                      class="button--pill button--pill--alt" href="#">Child
-                      Care</a></div>
-                  <div class="c-card__body">Early child care and education
-                    services for up to 10 hours a day.</div>
-                </div>
-              </div>
-            </div>
-            <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden">
-              <pre>&lt;div class=&quot;bg-color-gray-light p-10&quot;&gt;
+        <pre class="bg-color-gray-light p-6 mt-8">&lt;div class=&quot;bg-color-gray-light p-10&quot;&gt;
   &lt;div class=&quot;c-card&quot;&gt;&lt;a href=&quot;#&quot;&gt;
       &lt;div aria-hidden=&quot;true&quot; class=&quot;c-card__sticker sticker&quot;&gt;&lt;svg
           class=&quot;icon--large&quot;&gt;
@@ -93,49 +82,32 @@
       10 hours a day.&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
+      </section>
+      <section class="pb-2">
+        <h2>Card with Hero</h2>
+        <h3>Demonstration</h3>
+        <div class="bg-color-gray-light p-10">
+          <div class="c-card c-card--hero gradient-baby"><a href="#">
+              <div aria-hidden="true" class="c-card__sticker sticker"><svg
+                  class="icon--large">
+                  <title>Cash Expenses</title>
+                  <use xlink:href="#icon-child-care"></use>
+                </svg></div>
+            </a>
+            <h3 class="c-card__title"><a href="#" rel="bookmark"
+                title="Child care for babies &amp; toddlers">Child care for
+                babies &amp; toddlers</a></h3>
+            <div class="c-card__subtitle">
+              <p><strong>Program Name</strong></p>
+              <p>NYC Department of Education</p>
             </div>
+            <div class="c-card__tags"><a class="button--pill button--pill--alt"
+                href="#">Child Care</a></div>
+            <div class="c-card__body">Early child care and education services
+              for up to 10 hours a day.</div>
           </div>
         </div>
-      </div>
-      <div
-        class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-        <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10">
-          <h1 class="type-h1 ">Card with Hero</h1>
-        </div>
-        <div class="html-tag my-8">
-          <div>
-            <p>The Card Component with a hero prepends an image to highlight the
-              section of cards.</p>
-          </div>
-        </div>
-        <div class="my-8 py-4">
-          <div>
-            <div>
-              <div class="bg-color-gray-light p-10">
-                <div class="c-card c-card--hero gradient-baby"><a href="#">
-                    <div aria-hidden="true" class="c-card__sticker sticker"><svg
-                        class="icon--large">
-                        <title>Cash Expenses</title>
-                        <use xlink:href="#icon-child-care"></use>
-                      </svg></div>
-                  </a>
-                  <h3 class="c-card__title"><a href="#" rel="bookmark"
-                      title="Child care for babies &amp; toddlers">Child care
-                      for babies &amp; toddlers</a></h3>
-                  <div class="c-card__subtitle">
-                    <p><strong>Program Name</strong></p>
-                    <p>NYC Department of Education</p>
-                  </div>
-                  <div class="c-card__tags"><a
-                      class="button--pill button--pill--alt" href="#">Child
-                      Care</a></div>
-                  <div class="c-card__body">Early child care and education
-                    services for up to 10 hours a day.</div>
-                </div>
-              </div>
-            </div>
-            <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden">
-              <pre>&lt;div class=&quot;bg-color-gray-light p-10&quot;&gt;
+        <pre class="bg-color-gray-light p-6 mt-8">&lt;div class=&quot;bg-color-gray-light p-10&quot;&gt;
   &lt;div class=&quot;c-card c-card--hero gradient-baby&quot;&gt;&lt;a href=&quot;#&quot;&gt;
       &lt;div aria-hidden=&quot;true&quot; class=&quot;c-card__sticker sticker&quot;&gt;&lt;svg
           class=&quot;icon--large&quot;&gt;
@@ -156,57 +128,39 @@
       10 hours a day.&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
+      </section>
+      <section class="pb-2">
+        <h2>Event Card</h2>
+        <h3>Demonstration</h3>
+        <div class="bg-color-gray-light p-10">
+          <div class="c-block-list__item">
+            <div class="c-card c-card--subtitle-first"><a href="">
+                <div class="c-card__sticker sticker"><span>Today</span></div>
+              </a>
+              <h3 class="c-card__title"><a role="bookmark"
+                  title="Virtual Storytime">Virtual Storytime</a></h3>
+              <div class="c-card__subtitle"><svg class="icon--xxsmall"
+                  role="img">
+                  <title>Time</title>
+                  <use xlink:href="#icon-clock-o"></use><span
+                    class="nowrap">11:00 AM - </span><span class="nowrap">11:30
+                    AM</span>
+                </svg></div>
+              <div class="c-card__tags order-last"><a class="button--pill">Arts
+                  &amp; Culture</a><a
+                  class="button--pill button--pill--alt">Baby</a><a
+                  class="button--pill button--pill--alt">Toddler</a></div>
+              <div class="c-card__body">Join the library for virtual storytime
+                with books, songs, and tips for early learning.</div>
+              <p class="c-card__link"><svg aria-hidden="true"
+                  class="icon--xxsmall" role="img">
+                  <title>Time</title>
+                  <use xlink:href="#icon-map-marker"></use>
+                </svg><a>Virtual Event</a></p>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-        <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10">
-          <h1 class="type-h1 ">Event Card</h1>
-        </div>
-        <div class="html-tag my-8">
-          <div>
-            <p>The Event Card adds elements of time and location to the Card
-              component.</p>
-          </div>
-        </div>
-        <div class="my-8 py-4">
-          <div>
-            <div>
-              <div class="bg-color-gray-light p-10">
-                <div class="c-block-list__item">
-                  <div class="c-card c-card--subtitle-first"><a href="">
-                      <div class="c-card__sticker sticker"><span>Today</span>
-                      </div>
-                    </a>
-                    <h3 class="c-card__title"><a role="bookmark"
-                        title="Virtual Storytime">Virtual Storytime</a></h3>
-                    <div class="c-card__subtitle"><svg class="icon--xxsmall"
-                        role="img">
-                        <title>Time</title>
-                        <use xlink:href="#icon-clock-o"></use><span
-                          class="nowrap">11:00 AM - </span><span
-                          class="nowrap">11:30 AM</span>
-                      </svg></div>
-                    <div class="c-card__tags order-last"><a
-                        class="button--pill">Arts &amp; Culture</a><a
-                        class="button--pill button--pill--alt">Baby</a><a
-                        class="button--pill button--pill--alt">Toddler</a></div>
-                    <div class="c-card__body">Join the library for virtual
-                      storytime with books, songs, and tips for early learning.
-                    </div>
-                    <p class="c-card__link"><svg aria-hidden="true"
-                        class="icon--xxsmall" role="img">
-                        <title>Time</title>
-                        <use xlink:href="#icon-map-marker"></use>
-                      </svg><a>Virtual Event</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden">
-              <pre>&lt;div class=&quot;bg-color-gray-light p-10&quot;&gt;
+        <pre class="bg-color-gray-light p-6 mt-8">&lt;div class=&quot;bg-color-gray-light p-10&quot;&gt;
   &lt;div class=&quot;c-block-list__item&quot;&gt;
     &lt;div class=&quot;c-card c-card--subtitle-first&quot;&gt;&lt;a href=&quot;&quot;&gt;
         &lt;div class=&quot;c-card__sticker sticker&quot;&gt;&lt;span&gt;Today&lt;/span&gt;&lt;/div&gt;
@@ -231,10 +185,7 @@
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
   </main>
   <footer class="o-footer" id="patterns">
@@ -257,10 +208,10 @@
         <h3 class="border-b">Components</h3><a class="block text-color-white"
           href="age-guide-card">Age Guide Card</a><a
           class="block text-color-white" href="arrow-pager">Arrow pager</a><a
+          class="block text-color-white" href="back-to-top">Back to Top</a><a
           class="block text-color-white" href="block-list">Block List</a><a
           class="block text-color-white" href="card">Card</a><a
           class="block text-color-white" href="details-list">Details List</a><a
-          class="block text-color-white" href="footer">Footer</a><a
           class="block text-color-white" href="form">Form</a><a
           class="block text-color-white" href="hero">Hero</a><a
           class="block text-color-white" href="language-switcher">Language
@@ -279,6 +230,7 @@
           href="content">Content</a><a class="block text-color-white"
           href="feature-photo">Feature photo</a><a
           class="block text-color-white" href="flex-embed">Flex embed</a><a
+          class="block text-color-white" href="footer">Footer</a><a
           class="block text-color-white" href="inline-list">Inline List</a><a
           class="block text-color-white" href="navigation">Navigation</a><a
           class="block text-color-white" href="search">Search</a>

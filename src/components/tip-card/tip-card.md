@@ -1,1 +1,3 @@
-Brain buiding card found on sigle age guide page.
+**Source:** `src/components/tip-card/tip-card`
+
+The Tip Card component is a wrapper for static informational content.

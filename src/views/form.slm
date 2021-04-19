@@ -4,20 +4,33 @@
 
 / Partials
 = partial('/slm/partials/head.mixin.slm');
-= partial('/slm/partials/content-header.mixin.slm');
-= partial('/slm/partials/section.mixin.slm');
-
 
 / Content blocks
 = content('head');
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  div
-    = mixin('section', 'Form', 'components/form/form');
-    = mixin('section', 'Contact Form', 'components/form/form-contact');
 
+  section class="pb-8"
+    h1
+      = title
+
+    == this.include('components/form/form.md')
+
+  section class="pb-2"
+    h3 = 'Demonstration'
+    == this.include('components/form/form.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('components/form/form.slm');
+
+  section class="pb-2"
+    h2 = 'Contact Form'
+    h3 = 'Demonstration'
+    == this.include('components/form/form-contact.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('components/form/form-contact.slm');
+
+  
 = content('script')
   javascript:
     gunyc.form();

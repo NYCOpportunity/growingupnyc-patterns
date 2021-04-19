@@ -1,1 +1,3 @@
-The share component lets visitors share a specific page they are browsing. The sharing happens by texting the page's link to the phone number provided.
+**Source:** `src/components/share/share`
+
+The Share component is a wrapper for a form that allows users to enter some information to share content on the page.

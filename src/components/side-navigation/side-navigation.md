@@ -1,1 +1,3 @@
-The Side Navigation component is left-side navigation on a single page guide page, that allows the user to jump to specific sections in the content. This component is typically used together with the Sticky Utility. [Click here to see a demo.](side-navigation-demo)
+**Source:** `src/components/side-navigation/side-navigation`
+
+The Side Navigation component is a sticky side menu that allows the users to jump to specific sections of content based on section titles.

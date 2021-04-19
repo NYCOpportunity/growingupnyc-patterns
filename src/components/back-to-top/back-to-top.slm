@@ -18,6 +18,3 @@ div class='c-back-to-top'
     = "Back To Top"
 
 
-= content('script')
-  javascript:
-    var backToTop = gunyc.backToTop();

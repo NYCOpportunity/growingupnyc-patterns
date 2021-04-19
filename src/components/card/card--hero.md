@@ -1,1 +1,1 @@
-The Card Component with a hero prepends an image to highlight the section of cards.
+The Card Component component provides a preview of content with a leading image or graphic.

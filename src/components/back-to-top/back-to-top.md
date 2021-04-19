@@ -1,3 +1,3 @@
 **Source:** `src/components/back-to-top/back-to-top`
 
-When the user clicks on the button, scroll to the top of the document.
+The Back to Top component provides a way for a user to jump to the top of the content container.

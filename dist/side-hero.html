@@ -33,55 +33,43 @@
   </header>
   <main class="pt-12 tablet:pt-32 pb-8 w-11/12 desktop:w-8/12 m-auto">
     <div>
-      <header></header>
-      <div>
-        <div
-          class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-          <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10">
-            <h1 class="type-h1 ">Side Hero</h1>
-          </div>
-          <div class="html-tag my-8">
-            <div>
-              <p>Side hero is a static container in the front page that contains
-                rotating text and CTA button. <a
-                  href="demos/side-hero-demo">Click here for a demo page.</a>
-              </p>
-            </div>
-          </div>
-          <div class="my-8 py-4">
-            <div>
-              <div>
-                <div class="c-side-hero">
-                  <section
-                    class="o-static-column o-static-column--left c-side-hero js-static">
-                    <div class="c-side-hero__image"></div>
-                    <div class="c-side-hero__content">
-                      <h1 class="c-side-hero__title">
-                        <p>The official<svg aria-hidden="true"
-                            class="icon--nyc">
-                            <use xlink:href="#icon-nyc-logo"></use>
-                          </svg>resources for</p>
-                        <div class="c-side-hero__title__large rotating-text">
-                          <div class="rotating-text"><span
-                              class="rotating-text__entry"
-                              data-js="rotate-text">Learning</span><span
-                              class="rotating-text__entry"
-                              data-js="rotate-text">Playing</span><span
-                              class="rotating-text__entry"
-                              data-js="rotate-text">Making</span><span
-                              class="rotating-text__entry"
-                              data-js="rotate-text">Growing</span><span
-                              class="animated" data-js="rotate-controller"
-                              id="rotate"></span></div>
-                        </div>
-                      </h1><a class="button--outline button--outline--white"
-                        href="#">Check out these tips</a>
-                    </div>
-                  </section>
+      <section class="pb-8">
+        <h1>Side side-hero</h1>
+        <p><strong>Source:</strong>
+          <code>src/components/side-hero/side-hero</code>
+        </p>
+        <p>The Side Hero component is a static container that features a image
+          of graphic. It retains its stickiness as a users scrolls through the
+          content.</p>
+      </section>
+      <section class="pb-2">
+        <h3>Demonstration</h3>
+        <div class="c-side-hero">
+          <section
+            class="o-static-column o-static-column--left c-side-hero js-static">
+            <div class="c-side-hero__image"></div>
+            <div class="c-side-hero__content">
+              <h1 class="c-side-hero__title">
+                <p>The official<svg aria-hidden="true" class="icon--nyc">
+                    <use xlink:href="#icon-nyc-logo"></use>
+                  </svg>resources for</p>
+                <div class="c-side-hero__title__large rotating-text">
+                  <div class="rotating-text"><span class="rotating-text__entry"
+                      data-js="rotate-text">Learning</span><span
+                      class="rotating-text__entry"
+                      data-js="rotate-text">Playing</span><span
+                      class="rotating-text__entry"
+                      data-js="rotate-text">Making</span><span
+                      class="rotating-text__entry"
+                      data-js="rotate-text">Growing</span><span class="animated"
+                      data-js="rotate-controller" id="rotate"></span></div>
                 </div>
-              </div>
-              <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden">
-                <pre>&lt;div class=&quot;c-side-hero&quot;&gt;
+              </h1><a class="button--outline button--outline--white"
+                href="#">Check out these tips</a>
+            </div>
+          </section>
+        </div>
+        <pre class="bg-color-gray-light p-6 mt-8">&lt;div class=&quot;c-side-hero&quot;&gt;
   &lt;section class=&quot;o-static-column o-static-column--left c-side-hero js-static&quot;&gt;
     &lt;div class=&quot;c-side-hero__image&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;c-side-hero__content&quot;&gt;
@@ -105,11 +93,7 @@
     &lt;/div&gt;
   &lt;/section&gt;
 &lt;/div&gt;</pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
   </main>
   <footer class="o-footer" id="patterns">
@@ -132,10 +116,10 @@
         <h3 class="border-b">Components</h3><a class="block text-color-white"
           href="age-guide-card">Age Guide Card</a><a
           class="block text-color-white" href="arrow-pager">Arrow pager</a><a
+          class="block text-color-white" href="back-to-top">Back to Top</a><a
           class="block text-color-white" href="block-list">Block List</a><a
           class="block text-color-white" href="card">Card</a><a
           class="block text-color-white" href="details-list">Details List</a><a
-          class="block text-color-white" href="footer">Footer</a><a
           class="block text-color-white" href="form">Form</a><a
           class="block text-color-white" href="hero">Hero</a><a
           class="block text-color-white" href="language-switcher">Language
@@ -154,6 +138,7 @@
           href="content">Content</a><a class="block text-color-white"
           href="feature-photo">Feature photo</a><a
           class="block text-color-white" href="flex-embed">Flex embed</a><a
+          class="block text-color-white" href="footer">Footer</a><a
           class="block text-color-white" href="inline-list">Inline List</a><a
           class="block text-color-white" href="navigation">Navigation</a><a
           class="block text-color-white" href="search">Search</a>

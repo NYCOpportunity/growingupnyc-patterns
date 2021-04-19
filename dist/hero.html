@@ -33,78 +33,47 @@
   </header>
   <main class="pt-12 tablet:pt-32 pb-8 w-11/12 desktop:w-8/12 m-auto">
     <div>
-      <header></header>
-      <div>
-        <div
-          class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-          <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10">
-            <h1 class="type-h1 ">Hero</h1>
+      <section class="pb-8">
+        <h1>Hero</h1>
+        <p><strong>Source:</strong> <code>src/components/hero/hero</code></p>
+        <p>The Hero component is the introductory image or graphic to support
+          the content displayed.</p>
+      </section>
+      <section class="pb-2">
+        <h3>Demonstration</h3>
+        <div class="c-hero bg-color-blue-light">
+          <div class="o-container">
+            <h1 class="c-hero__title">Programs</h1>
+            <p class="c-hero__tagline">Discover over 70 easy-to-read education,
+              health, and recreation programs, benefits, and resources in NYC.
+            </p>
           </div>
-          <div class="html-tag my-8">
-            <div>
-              <p>The hero component can be used to set an introductory image at
-                the top of the page. The user is able to set an image, a
-                heading, and subheading. To set the background image, the user
-                will need to add <code>.c-hero { background: url(&lt;path to
-                  image&gt;);}</code> to the head of the page.</p>
-            </div>
-          </div>
-          <div class="my-8 py-4">
-            <div>
-              <div>
-                <div class="c-hero bg-color-blue-light">
-                  <div class="o-container">
-                    <h1 class="c-hero__title">Programs</h1>
-                    <p class="c-hero__tagline">Discover over 70 easy-to-read
-                      education, health, and recreation programs, benefits, and
-                      resources in NYC.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden">
-                <pre>&lt;div class=&quot;c-hero bg-color-blue-light&quot;&gt;
+        </div>
+        <pre class="bg-color-gray-light p-6 mt-8">&lt;div class=&quot;c-hero bg-color-blue-light&quot;&gt;
   &lt;div class=&quot;o-container&quot;&gt;
     &lt;h1 class=&quot;c-hero__title&quot;&gt;Programs&lt;/h1&gt;
     &lt;p class=&quot;c-hero__tagline&quot;&gt;Discover over 70 easy-to-read education, health,
       and recreation programs, benefits, and resources in NYC.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
-              </div>
-            </div>
+      </section>
+      <section class="pb-2">
+        <h2>Light</h2>
+        <p><strong>Source:</strong> <code>src/components/hero/hero</code></p>
+        <p>The Hero Light component is an introductory header with a blank
+          background. </p>
+        <h3>Demonstration</h3>
+        <div class="c-hero--light">
+          <div class="o-container">
+            <h1 class="c-hero__title">Study Hour</h1>
           </div>
         </div>
-        <div
-          class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-          <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10">
-            <h1 class="type-h1 ">Hero Light</h1>
-          </div>
-          <div class="html-tag my-8">
-            <div>
-              <p>The Hero Light component is an introductory header with a blank
-                background. On Growing Up NYC, this component is used on the
-                Events Detail Page.</p>
-            </div>
-          </div>
-          <div class="my-8 py-4">
-            <div>
-              <div>
-                <div class="c-hero--light">
-                  <div class="o-container">
-                    <h1 class="c-hero__title">Study Hour</h1>
-                  </div>
-                </div>
-              </div>
-              <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden">
-                <pre>&lt;div class=&quot;c-hero--light&quot;&gt;
+        <pre class="bg-color-gray-light p-6 mt-8">&lt;div class=&quot;c-hero--light&quot;&gt;
   &lt;div class=&quot;o-container&quot;&gt;
     &lt;h1 class=&quot;c-hero__title&quot;&gt;Study Hour&lt;/h1&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
       <script type="text/javascript">
         let url = document.location.href;
         document.querySelector('.c-hero').style.background = 'url(' + url
@@ -132,10 +101,10 @@
         <h3 class="border-b">Components</h3><a class="block text-color-white"
           href="age-guide-card">Age Guide Card</a><a
           class="block text-color-white" href="arrow-pager">Arrow pager</a><a
+          class="block text-color-white" href="back-to-top">Back to Top</a><a
           class="block text-color-white" href="block-list">Block List</a><a
           class="block text-color-white" href="card">Card</a><a
           class="block text-color-white" href="details-list">Details List</a><a
-          class="block text-color-white" href="footer">Footer</a><a
           class="block text-color-white" href="form">Form</a><a
           class="block text-color-white" href="hero">Hero</a><a
           class="block text-color-white" href="language-switcher">Language
@@ -154,6 +123,7 @@
           href="content">Content</a><a class="block text-color-white"
           href="feature-photo">Feature photo</a><a
           class="block text-color-white" href="flex-embed">Flex embed</a><a
+          class="block text-color-white" href="footer">Footer</a><a
           class="block text-color-white" href="inline-list">Inline List</a><a
           class="block text-color-white" href="navigation">Navigation</a><a
           class="block text-color-white" href="search">Search</a>

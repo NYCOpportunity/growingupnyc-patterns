@@ -4,18 +4,33 @@
 
 / Partials
 = partial('/slm/partials/head.mixin.slm');
-= partial('/slm/partials/content-header.mixin.slm');
-= partial('/slm/partials/section.mixin.slm');
 
 / Content blocks
 = content('head');
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  div
-    = mixin('section', 'Hero', 'components/hero/hero');
-    = mixin('section', 'Hero Light', 'components/hero/hero-light');
+
+  section class="pb-8"
+    h1
+      = title
+
+    == this.include('components/hero/hero.md')
+
+  section class="pb-2"
+    h3 = 'Demonstration'
+    == this.include('components/hero/hero.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('components/hero/hero.slm');
+
+  section class="pb-2"
+    h2 = 'Light'
+    == this.include('components/hero/hero-light.md')
+    h3 = 'Demonstration'
+    == this.include('components/hero/hero-light.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('components/hero/hero-light.slm');
+
   
   javascript:
     let url = document.location.href;

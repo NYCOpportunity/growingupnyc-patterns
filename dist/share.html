@@ -33,76 +33,61 @@
   </header>
   <main class="pt-12 tablet:pt-32 pb-8 w-11/12 desktop:w-8/12 m-auto">
     <div>
-      <header></header>
-      <div>
-        <div
-          class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-          <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10">
-            <h1 class="type-h1 ">Share</h1>
-          </div>
-          <div class="html-tag my-8">
-            <div>
-              <p>The share component lets visitors share a specific page they
-                are browsing. The sharing happens by texting the page&#39;s link
-                to the phone number provided.</p>
-            </div>
-          </div>
-          <div class="my-8 py-4">
-            <div>
-              <div>
-                <aside
-                  class="c-tip c-tip--sms c-tip-ms__topics u-lg-gutter o-content-container success-js bg-color-blue-light desktop:flex desktop:flex-col desktop:items-center">
-                  <div class="c-tip__sticker sticker bg-color-blue-light"><svg
-                      class="icon--large">
-                      <title>Tip</title>
-                      <use xlink:href="#icon-check-outlined"></use>
-                    </svg></div>
-                  <p class="c-tip__content text-center">Read it later! Text
-                    yourself the link to this page.</p>
-                  <div class="sms-form-wrapper share-form" id="share-by-text">
-                    <form action=""
-                      class="js-share-form js-needs-disclaimer is-active"
-                      method="post" novalidate=""><input name="action"
-                        type="hidden" value="sms_gunyc_send" /><input
-                        name="sharetext" type="hidden"
-                        value="sharetext" /><input name="postid" type="hidden"
-                        value="20313" /><input name="template" type="hidden"
-                        value="growingupnyc-brain-building-tip" /><input
-                        name="lang" type="hidden" value="en" /><input name="url"
-                        type="hidden"
-                        value="https://growingupnyc.cityofnewyork.us/brainbuilding/beat-and-repeat/" /><input
-                        name="hash" type="hidden" value="594a7f0585" />
-                      <div class="form-container">
-                        <div
-                          class="signup-form__input signup-form__input--full sms-form__input--long">
-                          <label class="signup-form__label sms-form__label"
-                            for="phone"><span
-                              class="sms-form__label-content signup-form__label-content"
-                              data-content="Phone Number">Phone
-                              Number</span></label><input
-                            class="signup-form__field form-field input__field bg-color-gray-light js-show-disclaimer"
-                            data-scroll-offset="20" id="phone" name="to"
-                            placeholder="" required="" type="tel" /><svg
-                            class="sms-form__spinner js-spinner"></svg>
-                        </div>
-                        <button
-                          class="button--primary button--primary__curved sms-form__submit button--primary__purple button--simple button--simple--alt"
-                          id="smsbutton" type="submit"><span
-                            class="send">Send</span><span
-                            class="send__success hidden">Send
-                            Another</span></button>
-                      </div>
-                      <div class="c-validation" id="sms-form-msg"></div>
-                      <div class="send_placeholder hidden">Message Sent</div>
-                      <div clas="g-recaptcha" id="screener-recaptcha"></div>
-                      <div aria-hidden="true" class="c-disclaimer-text"
-                        id="js-disclaimer"></div>
-                    </form>
-                  </div>
-                </aside>
+      <section class="pb-8">
+        <h1>Share</h1>
+        <p><strong>Source:</strong> <code>src/components/share/share</code></p>
+        <p>The Share component is a wrapper for a form that allows users to
+          enter some information to share content on the page.</p>
+      </section>
+      <section class="pb-2">
+        <h3>Demonstration</h3>
+        <aside
+          class="c-tip c-tip--sms c-tip-ms__topics u-lg-gutter o-content-container success-js bg-color-blue-light desktop:flex desktop:flex-col desktop:items-center">
+          <div class="c-tip__sticker sticker bg-color-blue-light"><svg
+              class="icon--large">
+              <title>Tip</title>
+              <use xlink:href="#icon-check-outlined"></use>
+            </svg></div>
+          <p class="c-tip__content text-center">Read it later! Text yourself the
+            link to this page.</p>
+          <div class="sms-form-wrapper share-form" id="share-by-text">
+            <form action="" class="js-share-form js-needs-disclaimer is-active"
+              method="post" novalidate=""><input name="action" type="hidden"
+                value="sms_gunyc_send" /><input name="sharetext" type="hidden"
+                value="sharetext" /><input name="postid" type="hidden"
+                value="20313" /><input name="template" type="hidden"
+                value="growingupnyc-brain-building-tip" /><input name="lang"
+                type="hidden" value="en" /><input name="url" type="hidden"
+                value="https://growingupnyc.cityofnewyork.us/brainbuilding/beat-and-repeat/" /><input
+                name="hash" type="hidden" value="594a7f0585" />
+              <div class="form-container">
+                <div
+                  class="signup-form__input signup-form__input--full sms-form__input--long">
+                  <label class="signup-form__label sms-form__label"
+                    for="phone"><span
+                      class="sms-form__label-content signup-form__label-content"
+                      data-content="Phone Number">Phone
+                      Number</span></label><input
+                    class="signup-form__field form-field input__field bg-color-gray-light js-show-disclaimer"
+                    data-scroll-offset="20" id="phone" name="to" placeholder=""
+                    required="" type="tel" /><svg
+                    class="sms-form__spinner js-spinner"></svg>
+                </div><button
+                  class="button--primary button--primary__curved sms-form__submit button--primary__purple button--simple button--simple--alt"
+                  id="smsbutton" type="submit"><span
+                    class="send">Send</span><span
+                    class="send__success hidden">Send Another</span></button>
               </div>
-              <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden">
-                <pre>&lt;aside
+              <div class="c-validation" id="sms-form-msg"></div>
+              <div class="send_placeholder hidden">Message Sent</div>
+              <div clas="g-recaptcha" id="screener-recaptcha"></div>
+              <div aria-hidden="true" class="c-disclaimer-text"
+                id="js-disclaimer">
+              </div>
+            </form>
+          </div>
+        </aside>
+        <pre class="bg-color-gray-light p-6 mt-8">&lt;aside
   class=&quot;c-tip c-tip--sms c-tip-ms__topics u-lg-gutter o-content-container success-js bg-color-blue-light desktop:flex desktop:flex-col desktop:items-center&quot;&gt;
   &lt;div class=&quot;c-tip__sticker sticker bg-color-blue-light&quot;&gt;&lt;svg
       class=&quot;icon--large&quot;&gt;
@@ -143,11 +128,7 @@
     &lt;/form&gt;
   &lt;/div&gt;
 &lt;/aside&gt;</pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
   </main>
   <footer class="o-footer" id="patterns">
@@ -170,10 +151,10 @@
         <h3 class="border-b">Components</h3><a class="block text-color-white"
           href="age-guide-card">Age Guide Card</a><a
           class="block text-color-white" href="arrow-pager">Arrow pager</a><a
+          class="block text-color-white" href="back-to-top">Back to Top</a><a
           class="block text-color-white" href="block-list">Block List</a><a
           class="block text-color-white" href="card">Card</a><a
           class="block text-color-white" href="details-list">Details List</a><a
-          class="block text-color-white" href="footer">Footer</a><a
           class="block text-color-white" href="form">Form</a><a
           class="block text-color-white" href="hero">Hero</a><a
           class="block text-color-white" href="language-switcher">Language
@@ -192,6 +173,7 @@
           href="content">Content</a><a class="block text-color-white"
           href="feature-photo">Feature photo</a><a
           class="block text-color-white" href="flex-embed">Flex embed</a><a
+          class="block text-color-white" href="footer">Footer</a><a
           class="block text-color-white" href="inline-list">Inline List</a><a
           class="block text-color-white" href="navigation">Navigation</a><a
           class="block text-color-white" href="search">Search</a>

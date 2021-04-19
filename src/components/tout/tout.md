@@ -1,1 +1,3 @@
-The Tout component is a block of content that consists of a title, subtitle and link.
+**Source:** `src/components/tout/tout`
+
+The Tout component is a wrapper for minimal information that encourages a user to navigate further.

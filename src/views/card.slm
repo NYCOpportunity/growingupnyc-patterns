@@ -4,8 +4,6 @@
 
 / Partials
 = partial('/slm/partials/head.mixin.slm');
-= partial('/slm/partials/content-header.mixin.slm');
-= partial('/slm/partials/section.mixin.slm');
 
 
 / Content blocks
@@ -13,7 +11,29 @@
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  = mixin('section', 'Card', 'components/card/card');
-  = mixin('section', 'Card with Hero', 'components/card/card--hero');
-  = mixin('section', 'Event Card', 'components/card/card--event');
+  section class="pb-8"
+    h1
+      = title
+
+    == this.include('components/card/card.md')
+
+  section class="pb-2"
+    h3 = 'Demonstration'
+    == this.include('components/card/card.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('components/card/card.slm');
+
+  section class="pb-2"
+    h2 = 'Card with Hero'
+    h3 = 'Demonstration'
+    == this.include('components/card/card--hero.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('components/card/card--hero.slm');
+
+  section class="pb-2"
+    h2 = 'Event Card'
+    h3 = 'Demonstration'
+    == this.include('components/card/card--event.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('components/card/card--event.slm');
+  

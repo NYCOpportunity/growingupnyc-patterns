@@ -4,13 +4,21 @@
 
 / Partials
 = partial('/slm/partials/head.mixin.slm');
-= partial('/slm/partials/content-header.mixin.slm');
-= partial('/slm/partials/section-2-col.mixin.slm');
 
 / Content blocks
 = content('head');
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  = mixin('section-2-col', 'Details List', 'components/details-list/details-list');
+  section class="pb-8"
+    h1
+      = title
+
+    div class="grid grid-cols-2 pt-8"
+      div
+        == this.include('components/details-list/details-list.md')
+
+      div
+        == this.include('components/details-list/details-list.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('components/details-list/details-list.slm');

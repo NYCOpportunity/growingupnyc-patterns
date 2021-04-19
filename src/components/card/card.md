@@ -1,1 +1,3 @@
-The Card Component is a wrapper for a preview of a full page of content.
+**Source:** `src/components/card/card`
+
+The Card Component component provides a preview of content.

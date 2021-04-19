@@ -4,8 +4,6 @@
 
 / Partials
 = partial('/slm/partials/head.mixin.slm');
-= partial('/slm/partials/content-header.mixin.slm');
-= partial('/slm/partials/section.mixin.slm');
 
 
 / Content blocks
@@ -13,9 +11,17 @@
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  = mixin('section', 'Language Switcher', 'components/language-switcher/language-switcher');
+  section class="pb-8"
+    h1
+      = title
 
+    == this.include('components/language-switcher/language-switcher.md')
+
+  section class="pb-2"
+    h3 = 'Demonstration'
+    == this.include('components/language-switcher/language-switcher.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('components/language-switcher/language-switcher.slm');
 
 = content('script')
   javascript:

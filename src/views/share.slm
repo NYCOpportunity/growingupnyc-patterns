@@ -4,18 +4,23 @@
 
 / Partials
 = partial('/slm/partials/head.mixin.slm');
-= partial('/slm/partials/content-header.mixin.slm');
-= partial('/slm/partials/section.mixin.slm');
-
 
 / Content blocks
 = content('head');
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  div
-    = mixin('section', "Share", 'components/share/share');
+  section class="pb-8"
+    h1
+      = title
+
+    == this.include('components/share/share.md')
+
+  section class="pb-2"
+    h3 = 'Demonstration'
+    == this.include('components/share/share.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('components/share/share.slm');
 
 
 / = content('script')

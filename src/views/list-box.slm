@@ -4,14 +4,21 @@
 
 / Partials
 = partial('/slm/partials/head.mixin.slm');
-= partial('/slm/partials/content-header.mixin.slm');
-= partial('/slm/partials/section.mixin.slm');
-
 
 / Content blocks
 = content('head');
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  = mixin('section', title, 'components/list-box/list-box');
+  section class="pb-8"
+    h1
+      = title
+
+    == this.include('components/list-box/list-box.md')
+
+  section class="pb-2"
+    h3 = 'Demonstration'
+    == this.include('components/list-box/list-box.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('components/list-box/list-box.slm');
+  

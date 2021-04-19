@@ -13,5 +13,15 @@
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  = mixin('section', 'Block List', 'components/block-list/block-list');
+
+  section class="pb-8"
+    h1
+      = title
+
+    == this.include('components/block-list/block-list.md')
+
+  section class="pb-2"
+    h3 = 'Demonstration'
+    == this.include('components/block-list/block-list.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('components/block-list/block-list.slm');

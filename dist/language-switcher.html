@@ -33,76 +33,66 @@
   </header>
   <main class="pt-12 tablet:pt-32 pb-8 w-11/12 desktop:w-8/12 m-auto">
     <div>
-      <header></header>
-      <div
-        class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-        <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10">
-          <h1 class="type-h1 ">Language Switcher</h1>
-        </div>
-        <div class="html-tag my-8">
-          <div>
-            <p>The Language Switcher component allows visitors to choose the
-              language in which they navigate the application. On Growing Up
-              NYC, the list of available languages are defined by using the
-              WordPress plugin, WPML.</p>
-          </div>
-        </div>
-        <div class="my-8 py-4">
-          <div>
-            <div>
-              <div class="c-language-switcher">
-                <div class="c-language-switcher__content" data-js="ls-options">
-                  <div
-                    class="c-language-switcher-controller inline-block flex justify-between pt-6 pb-6">
-                    <span class="text-left">Pick a language</span><button
-                      class="button--text close-language-switcher"
-                      data-js="close-language-menu"><svg class="icon--small"
-                        role="img">
-                        <title>Close</title>
-                        <use xlink:href="#icon-close"></use>
-                      </svg></button>
-                  </div>
-                  <div
-                    class="wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-legacy-list-horizontal">
-                    <ul>
-                      <li class="language-option-en"><a href=""
-                          title="English"><span>English</span></a></li>
-                      <li class="language-option-es"><a href=""
-                          title="Spanish"><span>Spanish</span></a></li>
-                      <li class="language-option-ar"><a href=""
-                          title="Arabic"><span>العربية</span></a></li>
-                      <li class="language-option-zh-hant"><a href=""
-                          title="Traditional Chinese"><span>繁體中文</span></a></li>
-                      <li class="language-option-fr"><a href=""
-                          title="French"><span>Français</span></a></li>
-                      <li class="language-option-ko"><a href=""
-                          title="Korean"><span>한국어</span></a></li>
-                      <li class="language-option-pl"><a href=""
-                          title="Polski"><span>polski</span></a></li>
-                      <li class="language-option-ru"><a href=""
-                          title="Russian"><span>Русский</span></a></li>
-                      <li class="language-option-ur"><a href=""
-                          title="Urdu"><span>اردو </span></a></li>
-                      <li class="language-option-bn"><a href=""
-                          title="Bangla"><span>Bangla</span></a></li>
-                      <li class="language-option-ht"><a href=""
-                          title="Haitian Creole"><span>Haitian Creole</span></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div><a class="c-language-switcher__translate"
-                  data-js="translate"><svg role="img">
-                    <title>Google Translate</title>
-                    <use xlink:href="#icon-translate"></use>
-                  </svg><span class="desktop:self-end">Translate</span></a>
-              </div><span class="c-language-switcher-logo mb-5"><svg
-                  class="icon--google text-color-gray" role="img">
-                  <title>Close Resources by Age</title>
-                  <use xlink:href="#icon-google-translate"></use>
-                </svg></span>
+      <section class="pb-8">
+        <h1>Language Switcher</h1>
+        <p><strong>Source:</strong>
+          <code>src/components/language-switcher/language-switcher</code>
+        </p>
+        <p>The Language Switcher component allows users to toggle the language
+          of the page.</p>
+      </section>
+      <section class="pb-2">
+        <h3>Demonstration</h3>
+        <div class="c-language-switcher">
+          <div class="c-language-switcher__content" data-js="ls-options">
+            <div
+              class="c-language-switcher-controller inline-block flex justify-between pt-6 pb-6">
+              <span class="text-left">Pick a language</span><button
+                class="button--text close-language-switcher"
+                data-js="close-language-menu"><svg class="icon--small"
+                  role="img">
+                  <title>Close</title>
+                  <use xlink:href="#icon-close"></use>
+                </svg></button>
             </div>
-            <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden">
-              <pre>&lt;div class=&quot;c-language-switcher&quot;&gt;
+            <div
+              class="wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-legacy-list-horizontal">
+              <ul>
+                <li class="language-option-en"><a href=""
+                    title="English"><span>English</span></a></li>
+                <li class="language-option-es"><a href=""
+                    title="Spanish"><span>Spanish</span></a></li>
+                <li class="language-option-ar"><a href=""
+                    title="Arabic"><span>العربية</span></a></li>
+                <li class="language-option-zh-hant"><a href=""
+                    title="Traditional Chinese"><span>繁體中文</span></a></li>
+                <li class="language-option-fr"><a href=""
+                    title="French"><span>Français</span></a></li>
+                <li class="language-option-ko"><a href=""
+                    title="Korean"><span>한국어</span></a></li>
+                <li class="language-option-pl"><a href=""
+                    title="Polski"><span>polski</span></a></li>
+                <li class="language-option-ru"><a href=""
+                    title="Russian"><span>Русский</span></a></li>
+                <li class="language-option-ur"><a href=""
+                    title="Urdu"><span>اردو </span></a></li>
+                <li class="language-option-bn"><a href=""
+                    title="Bangla"><span>Bangla</span></a></li>
+                <li class="language-option-ht"><a href=""
+                    title="Haitian Creole"><span>Haitian Creole</span></a></li>
+              </ul>
+            </div>
+          </div><a class="c-language-switcher__translate"
+            data-js="translate"><svg role="img">
+              <title>Google Translate</title>
+              <use xlink:href="#icon-translate"></use>
+            </svg><span class="desktop:self-end">Translate</span></a>
+        </div><span class="c-language-switcher-logo mb-5"><svg
+            class="icon--google text-color-gray" role="img">
+            <title>Close Resources by Age</title>
+            <use xlink:href="#icon-google-translate"></use>
+          </svg></span>
+        <pre class="bg-color-gray-light p-6 mt-8">&lt;div class=&quot;c-language-switcher&quot;&gt;
   &lt;div class=&quot;c-language-switcher__content&quot; data-js=&quot;ls-options&quot;&gt;
     &lt;div
       class=&quot;c-language-switcher-controller inline-block flex justify-between pt-6 pb-6&quot;&gt;
@@ -149,10 +139,7 @@
     &lt;title&gt;Close Resources by Age&lt;/title&gt;
     &lt;use xlink:href=&quot;#icon-google-translate&quot;&gt;&lt;/use&gt;
   &lt;/svg&gt;&lt;/span&gt;</pre>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
   </main>
   <footer class="o-footer" id="patterns">
@@ -175,10 +162,10 @@
         <h3 class="border-b">Components</h3><a class="block text-color-white"
           href="age-guide-card">Age Guide Card</a><a
           class="block text-color-white" href="arrow-pager">Arrow pager</a><a
+          class="block text-color-white" href="back-to-top">Back to Top</a><a
           class="block text-color-white" href="block-list">Block List</a><a
           class="block text-color-white" href="card">Card</a><a
           class="block text-color-white" href="details-list">Details List</a><a
-          class="block text-color-white" href="footer">Footer</a><a
           class="block text-color-white" href="form">Form</a><a
           class="block text-color-white" href="hero">Hero</a><a
           class="block text-color-white" href="language-switcher">Language
@@ -197,6 +184,7 @@
           href="content">Content</a><a class="block text-color-white"
           href="feature-photo">Feature photo</a><a
           class="block text-color-white" href="flex-embed">Flex embed</a><a
+          class="block text-color-white" href="footer">Footer</a><a
           class="block text-color-white" href="inline-list">Inline List</a><a
           class="block text-color-white" href="navigation">Navigation</a><a
           class="block text-color-white" href="search">Search</a>

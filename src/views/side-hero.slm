@@ -1,6 +1,6 @@
 = extend('/slm/layouts/default')
 
-- title = 'Side Hero'
+- title = 'Side side-hero'
 
 / Partials
 = partial('/slm/partials/head.mixin.slm');
@@ -12,7 +12,14 @@
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  div
-    = mixin('section', 'Side Hero', 'components/side-hero/side-hero');
+  section class="pb-8"
+    h1
+      = title
 
+    == this.include('components/side-hero/side-hero.md')
+
+  section class="pb-2"
+    h3 = 'Demonstration'
+    == this.include('components/side-hero/side-hero.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('components/side-hero/side-hero.slm');

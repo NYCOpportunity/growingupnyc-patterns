@@ -33,51 +33,28 @@
   </header>
   <main class="pt-12 tablet:pt-32 pb-8 w-11/12 desktop:w-8/12 m-auto">
     <div>
-      <header></header>
-      <div
-        class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-        <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10 w-full">
-          <h1 class="type-h1 w-full ">Details List</h1>
-        </div>
-        <div
-          class="flex desktop:flex-row-reverse desktop-lg:flex-row-reverse desktop:mb-10 flex-wrap desktop-lg:-mx-2 desktop:-mx-2">
-          <div
-            class="html-tag mt-8 mb-2 desktop:px-2 desktop-lg:w-3/6 desktop-lg:px-2 desktop:w-2/4 w-full">
-            <div>
-              <p>The Details List component is used to present information about
-                a program and event. On Growing Up NYC, this component is being
-                used on Seasonal Guides (Afterschool and Summer) as well as
-                Events. This component includes the following elements:</p>
-              <ul>
-                <li>Date</li>
-                <li>Time</li>
-                <li>Location</li>
-                <li>Cost</li>
-                <li>Link to additional information</li>
-              </ul>
-            </div>
+      <section class="pb-8">
+        <h1>Details List</h1>
+        <div class="grid grid-cols-2 pt-8">
+          <div>
+            <p><strong>Source:</strong>
+              <code>src/components/details-list/details-list</code>
+            </p>
+            <p>The Details List component presents different pieces of
+              information as a separated list.</p>
           </div>
-          <div
-            class="mt-8 mb-2 py-4  overflow-hidden desktop-lg:w-3/6 desktop-lg:px-2 desktop-lg:py-0 desktop:w-2/4 desktop:px-2 desktop:py-0 w-full ">
-            <div>
-              <div>
-                <dl class="c-details-list">
-                  <dt class="c-details-list__term">Date</dt>
-                  <dd class="c-details-list__descr">August 20, 2020</dd>
-                  <dt class="c-details-list__term">Location</dt>
-                  <dd class="c-details-list__descr">Brooklyn, NY</dd>
-                  <dt class="c-details-list__term">Cost</dt>
-                  <dd class="c-details-list__descr">Free</dd>
-                </dl>
-              </div>
-            </div>
+          <div>
+            <dl class="c-details-list">
+              <dt class="c-details-list__term">Date</dt>
+              <dd class="c-details-list__descr">August 20, 2020</dd>
+              <dt class="c-details-list__term">Location</dt>
+              <dd class="c-details-list__descr">Brooklyn, NY</dd>
+              <dt class="c-details-list__term">Cost</dt>
+              <dd class="c-details-list__descr">Free</dd>
+            </dl>
           </div>
         </div>
-        <div class="flex flex-wrap">
-          <div class="py-4 overflow-hidden w-full mb-10">
-            <div>
-              <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden">
-                <pre>&lt;dl class=&quot;c-details-list&quot;&gt;
+        <pre class="bg-color-gray-light p-6 mt-8">&lt;dl class=&quot;c-details-list&quot;&gt;
   &lt;dt class=&quot;c-details-list__term&quot;&gt;Date&lt;/dt&gt;
   &lt;dd class=&quot;c-details-list__descr&quot;&gt;August 20, 2020&lt;/dd&gt;
   &lt;dt class=&quot;c-details-list__term&quot;&gt;Location&lt;/dt&gt;
@@ -85,11 +62,7 @@
   &lt;dt class=&quot;c-details-list__term&quot;&gt;Cost&lt;/dt&gt;
   &lt;dd class=&quot;c-details-list__descr&quot;&gt;Free&lt;/dd&gt;
 &lt;/dl&gt;</pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
   </main>
   <footer class="o-footer" id="patterns">
@@ -112,10 +85,10 @@
         <h3 class="border-b">Components</h3><a class="block text-color-white"
           href="age-guide-card">Age Guide Card</a><a
           class="block text-color-white" href="arrow-pager">Arrow pager</a><a
+          class="block text-color-white" href="back-to-top">Back to Top</a><a
           class="block text-color-white" href="block-list">Block List</a><a
           class="block text-color-white" href="card">Card</a><a
           class="block text-color-white" href="details-list">Details List</a><a
-          class="block text-color-white" href="footer">Footer</a><a
           class="block text-color-white" href="form">Form</a><a
           class="block text-color-white" href="hero">Hero</a><a
           class="block text-color-white" href="language-switcher">Language
@@ -134,6 +107,7 @@
           href="content">Content</a><a class="block text-color-white"
           href="feature-photo">Feature photo</a><a
           class="block text-color-white" href="flex-embed">Flex embed</a><a
+          class="block text-color-white" href="footer">Footer</a><a
           class="block text-color-white" href="inline-list">Inline List</a><a
           class="block text-color-white" href="navigation">Navigation</a><a
           class="block text-color-white" href="search">Search</a>

@@ -1,1 +1,3 @@
-Tip component providers short tips and information on a single age page guide.
+**Source:** `src/components/tip/tip`
+
+The Tip component provides short snippets of information.
