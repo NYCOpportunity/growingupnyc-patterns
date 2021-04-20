@@ -1,22 +1,30 @@
 = extend('/slm/layouts/default')
 
-- title = 'Reveal'
+- title = 'Section Highlighter'
 
 / Partials
 = partial('/slm/partials/head.mixin.slm');
-= partial('/slm/partials/content-header.mixin.slm');
-= partial('/slm/partials/section.mixin.slm');
-
 
 / Content blocks
 = content('head');
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  div
-    = mixin('section', 'Section Highlighter', 'utilities/section-highlighter/section-highlighter');
+  
+  section class="pb-8"
+    h1
+      = title
 
+    == this.include('utilities/section-highlighter/section-highlighter.md')
+
+    h2 class='pt-6' 
+      = "Demonstration"
+
+    
+    == this.include('utilities/section-highlighter/section-highlighter.slm');
+
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('utilities/section-highlighter/section-highlighter.slm');
 
 = content('script')
   javascript:

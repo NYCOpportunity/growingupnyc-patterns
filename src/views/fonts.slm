@@ -4,20 +4,28 @@
 
 / Partials
 = partial('/slm/partials/head.mixin.slm');
-= partial('/slm/partials/content-header.mixin.slm');
-= partial('/slm/partials/section.mixin.slm');
 
 / Content blocks
 = content('head');
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  div
-    = mixin('section', 'Font Sans, Primary', 'utilities/font/font-sans--primary');
-    = mixin('section', 'Font Sans, Secondary', 'utilities/font/font-sans--secondary');
-    = mixin('section', 'Default', 'elements/fonts/fonts');
-    = mixin('section', 'Arabic', 'elements/fonts/fonts-ar');
-    = mixin('section', 'Russian', 'elements/fonts/fonts-ru');
-    = mixin('section', 'Traditional Chinese', 'elements/fonts/fonts-zh-hant');
-    = mixin('section', 'Urdu', 'elements/fonts/fonts-ur');
+  section class="pb-8"
+    h1
+      = title
+
+    == this.include('utilities/font/font.md')
+
+  section
+    h2 = "Primary"
+    h3 = "Demonstration"
+    == this.include('utilities/font/font-sans--primary.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('utilities/font/font-sans--primary.slm');
+
+  section
+    h2 = "Secondary"
+    h3 = "Demonstration"
+    == this.include('utilities/font/font-sans--secondary.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('utilities/font/font-sans--secondary.slm');

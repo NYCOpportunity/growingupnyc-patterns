@@ -4,18 +4,24 @@
 
 / Partials
 = partial('/slm/partials/head.mixin.slm');
-= partial('/slm/partials/content-header.mixin.slm');
-= partial('/slm/partials/section.mixin.slm');
-
 
 / Content blocks
 = content('head');
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  div
-    = mixin('section', 'Reveal', 'utilities/reveal/reveal');
+  section class="pb-8"
+    h1
+      = title
+
+    == this.include('utilities/reveal/reveal.md')
+
+  section
+    h2 = "Primary"
+    h3 = "Demonstration"
+    == this.include('utilities/reveal/reveal.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('utilities/reveal/reveal.slm');
 
 
 = content('script')

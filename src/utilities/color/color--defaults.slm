@@ -1,0 +1,34 @@
+section
+  h2 = "Defaults"
+  div
+    h3 = "Primary"
+    div class="text-center tablet:grid grid-cols-3"
+      div class="bg--primary py-6 text-color-white"
+        p = 'Primary Background'
+        p
+          code = '.bg--primary'
+      div class="border border--primary py-6 my-2 tablet:my-0 tablet:mx-2"
+        p = 'Border'
+        p
+          code = '.border--primary'
+      div class="py-6"
+        p = 'Text'
+        p
+          code class="text--primary" = '.text--primary'
+  div class='pt-4'
+    h3 = "Secondary"
+    div class="text-center tablet:grid grid-cols-3"
+      div class="bg--secondary py-6 text-color-white"
+        p = 'Secondary Background'
+        p
+          code = '.bg--secondary'
+      div class="border border--secondary py-6 my-2 tablet:my-0 tablet:mx-2"
+        p = 'Border'
+        p
+          code = '.border--secondary'
+      div class="py-6"
+        p = 'Text'
+        p
+          code class="text--secondary" = '.text--secondary'
+
+

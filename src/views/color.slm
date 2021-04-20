@@ -4,22 +4,27 @@
 
 / Partials
 = partial('/slm/partials/head.mixin.slm');
-= partial('/slm/partials/content-header.mixin.slm');
-= partial('/slm/partials/section.mixin.slm');
-
 
 / Content blocks
 = content('head');
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
+  section class="pb-8"
+    h1
+      = title
 
-  div class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto mb-8"
+    == this.include('utilities/color/color.md')
+
+  section
     div class="block tablet:grid grid-cols-4"
       - for (key in this.tokens['colors'])
         - value = this.tokens['colors'][key]
         == this.include('utilities/color/color.slm');
+  section class='pt-6'
+    == this.include('utilities/color/color--defaults.slm');
 
-  = mixin('section', 'Color Milestones', 'utilities/color/color--milestones', false);
+  section class='pt-6'
+    h2 = "Age Milestones"
+    == this.include('utilities/color/color--milestones.slm');
   

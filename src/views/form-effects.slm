@@ -1,17 +1,23 @@
 = extend('/slm/layouts/default')
 
-- title = 'Footer'
+- title = 'Form Effects'
 
 / Partials
 = partial('/slm/partials/head.mixin.slm');
-= partial('/slm/partials/content-header.mixin.slm');
-= partial('/slm/partials/section-2-col.mixin.slm');
 
 / Content blocks
 = content('head');
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  div
-    = mixin('section-2-col', 'Form Effects', 'utilities/form-effects/form-effects');
+  section class="pb-8"
+    h1
+      = title
+
+    == this.include('utilities/form-effects/form-effects.md')
+
+  section
+    h3 = "Demonstration"
+    == this.include('utilities/form-effects/form-effects.slm');
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('utilities/form-effects/form-effects.slm');

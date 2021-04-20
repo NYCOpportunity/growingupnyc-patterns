@@ -1,9 +1,6 @@
-/
-/ Sticky
-
-header class="c-banner py-24 bg-color-gray-light"
+header class="c-banner py-12 bg-color-gray-light"
   p class='px-12' = "Hero Content"
-main id="main" role="main" class=""
+div
   article class="o-container js-sticky-container desktop:flex"
     div class="o-article-sidebar desktop:w-4/12"
       div class="o-content-container--compact u-shift-up"
@@ -25,34 +22,20 @@ main id="main" role="main" class=""
                 use xlink:href="#icon-caret-right"
 
     div class="o-article js-sticky-article desktop:w-8/12"
-      section class="c-block-list o-content-container pt-12" id="section-events"
+      section class="c-block-list o-content-container" id="section-events"
         h2 = "Events"
         div
-          p
-            = "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”"
-          p
-            = "The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin."
-          p
-            = "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”"
+          p = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in facilisis ipsum. Mauris quis elit ac metus gravida pharetra eu a augue. Praesent eleifend ultrices tristique. In et convallis nibh, iaculis dapibus diam. Pellentesque cursus mollis ligula, eget tincidunt ante ullamcorper quis. Cras eu quam nunc. Phasellus bibendum sit amet urna et porta. Proin vehicula sollicitudin augue eget aliquam."
 
-      section class="c-block-list o-content-container pt-12" id="section-programs"
+      section class="c-block-list o-content-container pt-0" id="section-programs"
         h2 = "Programs"
         div
-          p
-            = "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”"
-          p
-            = "The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin."
-          p
-            = "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”"
+          p = "Aenean in augue ac lacus laoreet condimentum faucibus eget mauris. Donec facilisis non nunc quis ultrices. Vivamus eu enim sagittis, pharetra purus sit amet, dignissim tortor. Donec ac pretium turpis. Fusce id lacinia nulla. Vestibulum eu tortor nec mauris ornare commodo. Vivamus ac ipsum eget massa mattis suscipit. Nam sodales in purus a interdum. Quisque vitae ante luctus odio luctus efficitur maximus id orci. Cras eleifend nunc at ultrices ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac maximus sem, et vestibulum risus. Nullam suscipit tincidunt odio. Aliquam consectetur purus pretium, imperdiet arcu quis, sollicitudin nibh."
 
-      section class="c-block-list o-content-container pt-12" id="section-milestones"
+      section class="c-block-list o-content-container pt-0" id="section-milestones"
         h2 = "Milestones"
         div
-          p
-            = "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”"
-          p
-            = "The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin."
-          p
-            = "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”"
+          p = "Donec euismod interdum dolor, ac elementum augue lobortis sed. Praesent at libero dapibus, suscipit lectus et, pulvinar enim. Proin porta turpis vestibulum, pretium nisl vitae, lobortis enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla nibh tellus, pellentesque ac venenatis at, pellentesque et dui. Mauris blandit diam nec rhoncus viverra. Curabitur a tincidunt nulla. Aliquam sagittis enim id nulla rutrum, eget interdum nisi varius. Quisque mi enim, maximus maximus nisl sit amet, iaculis finibus diam. Proin at iaculis urna."
 
-footer class="o-footer__reached bg-color-gray-light"
+footer class="o-footer__reached bg-color-gray-light p-12"
+  p = "Footer Content"

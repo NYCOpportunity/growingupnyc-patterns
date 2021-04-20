@@ -1,1 +1,3 @@
-Animation utility rotates text at the Growing Up NYC front page.
+**Source:** `src/utilities/animations/animations`
+
+The Animation utility features the rotation of snippets of text.

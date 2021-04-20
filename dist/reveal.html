@@ -33,122 +33,95 @@
   </header>
   <main class="pt-12 tablet:pt-32 pb-8 w-11/12 desktop:w-8/12 m-auto">
     <div>
-      <header></header>
-      <div>
-        <div
-          class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-          <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10">
-            <h1 class="type-h1 ">Reveal</h1>
-          </div>
-          <div class="html-tag my-8">
-            <div>
-              <p>The Reveal Utility allows the user to limit the number of
-                common elements on a page with the use of a button as a trigger.
-                The user can specify the number of elements in a container to
-                show. The rest of the elements will remain hidden until the
-                trigger has been activated.</p>
-            </div>
-          </div>
-          <div class="my-8 py-4">
-            <div>
-              <div>
-                <div class="c-block-list">
-                  <div class="c-block-list__inner--m-0"
-                    data-js="reveal-content-all-age-guides"
-                    id="all-content-container">
-                    <div class="c-block-list__item">
-                      <div
-                        class="age-guide-card border-baby--primary tablet:flex">
-                        <h3
-                          class="age-guide-card__title bg-baby--primary tablet:w-2/12">
-                          <a class="age-guide-card__title-link" href=""
-                            title="">2 Months</a>
-                        </h3>
-                        <div class="age-guide-card__body tablet:w-10/12">
-                          Discover how your baby is learning, and find events,
-                          programs, and tips to help support their growth.<div>
-                            <a class="age-guide-card__link" href=""
-                              title="Read the age guide for: 2 Months">Read
-                              more<svg class="icon--caret--small">
-                                <use xlink:href="#icon-caret-line-right"></use>
-                              </svg></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="c-block-list__item">
-                      <div
-                        class="age-guide-card border-baby--primary tablet:flex">
-                        <h3
-                          class="age-guide-card__title bg-baby--primary tablet:w-2/12">
-                          <a class="age-guide-card__title-link" href=""
-                            title="">4 Months</a>
-                        </h3>
-                        <div class="age-guide-card__body tablet:w-10/12">
-                          Discover how your baby is learning, and find events,
-                          programs, and tips to help support their growth.
-                          Discover how your baby is learning, and find events,
-                          programs, and tips to help support their growth.<div>
-                            <a class="age-guide-card__link" href=""
-                              title="Read the age guide for: 2 Months">Read
-                              more<svg class="icon--caret--small">
-                                <use xlink:href="#icon-caret-line-right"></use>
-                              </svg></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="c-block-list__item">
-                      <div
-                        class="age-guide-card border-baby--primary tablet:flex">
-                        <h3
-                          class="age-guide-card__title bg-baby--primary tablet:w-2/12">
-                          <a class="age-guide-card__title-link" href=""
-                            title="">6 Months</a>
-                        </h3>
-                        <div class="age-guide-card__body tablet:w-10/12">
-                          Discover how your baby is learning, and find events,
-                          programs, and tips to help support their growth.<div>
-                            <a class="age-guide-card__link" href=""
-                              title="Read the age guide for: 2 Months">Read
-                              more<svg class="icon--caret--small">
-                                <use xlink:href="#icon-caret-line-right"></use>
-                              </svg></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="c-block-list__item">
-                      <div
-                        class="age-guide-card border-baby--primary tablet:flex">
-                        <h3
-                          class="age-guide-card__title bg-baby--primary tablet:w-2/12">
-                          <a class="age-guide-card__title-link" href=""
-                            title="">9 Months</a>
-                        </h3>
-                        <div class="age-guide-card__body tablet:w-10/12">
-                          Discover how your baby is learning, and find events,
-                          programs, and tips to help support their growth.<div>
-                            <a class="age-guide-card__link" href=""
-                              title="Read the age guide for: 2 Months">Read
-                              more<svg class="icon--caret--small">
-                                <use xlink:href="#icon-caret-line-right"></use>
-                              </svg></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="u-top-spacing-small text-center"><button
-                      aria-hidden="true"
-                      class="button--outline button--outline--gray"
-                      data-js="reveal-trigger-all-age-guides"
-                      id="show-all-content" tabindex="-1">See more age
-                      guides</button></div>
+      <section class="pb-8">
+        <h1>Reveal</h1>
+        <p><strong>Source:</strong> <code>src/utilities/reveal/reveal</code></p>
+        <p>The Reveal utility will show additional content when a button is
+          clicked.</p>
+      </section>
+      <section>
+        <h2>Primary</h2>
+        <h3>Demonstration</h3>
+        <div class="c-block-list">
+          <div class="c-block-list__inner--m-0"
+            data-js="reveal-content-all-age-guides" id="all-content-container">
+            <div class="c-block-list__item">
+              <div class="age-guide-card border-baby--primary tablet:flex">
+                <h3
+                  class="age-guide-card__title bg-baby--primary tablet:w-2/12">
+                  <a class="age-guide-card__title-link" href="" title="">2
+                    Months</a>
+                </h3>
+                <div class="age-guide-card__body tablet:w-10/12">Discover how
+                  your baby is learning, and find events, programs, and tips to
+                  help support their growth.<div><a class="age-guide-card__link"
+                      href="" title="Read the age guide for: 2 Months">Read
+                      more<svg class="icon--caret--small">
+                        <use xlink:href="#icon-caret-line-right"></use>
+                      </svg></a></div>
                 </div>
               </div>
-              <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden">
-                <pre>&lt;div class=&quot;c-block-list&quot;&gt;
+            </div>
+            <div class="c-block-list__item">
+              <div class="age-guide-card border-baby--primary tablet:flex">
+                <h3
+                  class="age-guide-card__title bg-baby--primary tablet:w-2/12">
+                  <a class="age-guide-card__title-link" href="" title="">4
+                    Months</a>
+                </h3>
+                <div class="age-guide-card__body tablet:w-10/12">Discover how
+                  your baby is learning, and find events, programs, and tips to
+                  help support their growth. Discover how your baby is learning,
+                  and find events, programs, and tips to help support their
+                  growth.<div><a class="age-guide-card__link" href=""
+                      title="Read the age guide for: 2 Months">Read more<svg
+                        class="icon--caret--small">
+                        <use xlink:href="#icon-caret-line-right"></use>
+                      </svg></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="c-block-list__item">
+              <div class="age-guide-card border-baby--primary tablet:flex">
+                <h3
+                  class="age-guide-card__title bg-baby--primary tablet:w-2/12">
+                  <a class="age-guide-card__title-link" href="" title="">6
+                    Months</a>
+                </h3>
+                <div class="age-guide-card__body tablet:w-10/12">Discover how
+                  your baby is learning, and find events, programs, and tips to
+                  help support their growth.<div><a class="age-guide-card__link"
+                      href="" title="Read the age guide for: 2 Months">Read
+                      more<svg class="icon--caret--small">
+                        <use xlink:href="#icon-caret-line-right"></use>
+                      </svg></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="c-block-list__item">
+              <div class="age-guide-card border-baby--primary tablet:flex">
+                <h3
+                  class="age-guide-card__title bg-baby--primary tablet:w-2/12">
+                  <a class="age-guide-card__title-link" href="" title="">9
+                    Months</a>
+                </h3>
+                <div class="age-guide-card__body tablet:w-10/12">Discover how
+                  your baby is learning, and find events, programs, and tips to
+                  help support their growth.<div><a class="age-guide-card__link"
+                      href="" title="Read the age guide for: 2 Months">Read
+                      more<svg class="icon--caret--small">
+                        <use xlink:href="#icon-caret-line-right"></use>
+                      </svg></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-top-spacing-small text-center"><button
+              aria-hidden="true" class="button--outline button--outline--gray"
+              data-js="reveal-trigger-all-age-guides" id="show-all-content"
+              tabindex="-1">See more age guides</button></div>
+        </div>
+        <pre class="bg-color-gray-light p-6 mt-8">&lt;div class=&quot;c-block-list&quot;&gt;
   &lt;div class=&quot;c-block-list__inner--m-0&quot; data-js=&quot;reveal-content-all-age-guides&quot;
     id=&quot;all-content-container&quot;&gt;
     &lt;div class=&quot;c-block-list__item&quot;&gt;
@@ -219,11 +192,7 @@
       data-js=&quot;reveal-trigger-all-age-guides&quot; id=&quot;show-all-content&quot;
       tabindex=&quot;-1&quot;&gt;See more age guides&lt;/button&gt;&lt;/div&gt;
 &lt;/div&gt;</pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
   </main>
   <footer class="o-footer" id="patterns">

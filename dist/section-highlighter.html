@@ -33,144 +33,105 @@
   </header>
   <main class="pt-12 tablet:pt-32 pb-8 w-11/12 desktop:w-8/12 m-auto">
     <div>
-      <header></header>
-      <div>
-        <div
-          class="desktop-lg:w-8/12 desktop:w-10/12 tablet:w-10/12 w-11/12 ml-auto mr-auto">
-          <div class="flex flex-wrap desktop-lg:mb-20 desktop:mb-10">
-            <h1 class="type-h1 ">Section Highlighter</h1>
-          </div>
-          <div class="html-tag my-8">
-            <div>
-              <p>Section highlighter measures the position of a section and
-                checks if a section reaches the top of the screen. If a section
-                reaches the top of the screen, a class is added to the
-                corresponding menu item. The class changes the color and adds a
-                pointing icon to the menu item.</p>
-            </div>
-          </div>
-          <div class="my-8 py-4">
-            <div>
-              <div>
-                <header class="c-banner py-24 bg-color-gray-light">
-                  <p class="px-12">Hero Content</p>
-                </header>
-                <main id="main" role="main">
-                  <article class="o-container js-sticky-container desktop:flex">
-                    <div class="o-article-sidebar desktop:w-4/12">
-                      <div class="o-content-container--compact u-shift-up">
-                        <ol
-                          class="c-nav-list js-sticky js-section-set o-sticky-nav"
-                          data-js="sticky">
-                          <li class="c-nav-list__item"><a
-                              class="scroll js-section c-nav-list__link"
-                              data-section="section-events"
-                              href="#section-events">Events<svg
-                                aria-hidden="true" class="icon--caret">
-                                <use xlink:href="#icon-caret-right"></use>
-                              </svg></a></li>
-                          <li class="c-nav-list__item"><a
-                              class="scroll js-section c-nav-list__link"
-                              data-section="section-programs"
-                              href="#section-programs">Programs<svg
-                                aria-hidden="true" class="icon--caret">
-                                <use xlink:href="#icon-caret-right"></use>
-                              </svg></a></li>
-                          <li class="c-nav-list__item"><a
-                              class="scroll js-section c-nav-list__link"
-                              data-section="section-milestones"
-                              href="#section-milestones">Milestones<svg
-                                aria-hidden="true" class="icon--caret">
-                                <use xlink:href="#icon-caret-right"></use>
-                              </svg></a></li>
-                        </ol>
-                      </div>
-                    </div>
-                    <div class="o-article js-sticky-article desktop:w-8/12">
-                      <section class="c-block-list o-content-container pt-12"
-                        id="section-events">
-                        <h2>Events</h2>
-                        <div>
-                          <p>Until recently, the prevailing view assumed lorem
-                            ipsum was born as a nonsense text. “It's not Latin,
-                            though it looks like it, and it actually says
-                            nothing,” Before &amp; After magazine answered a
-                            curious reader, “Its ‘words’ loosely approximate the
-                            frequency with which letters occur in English, which
-                            is why at a glance it looks pretty real.”</p>
-                          <p>The placeholder text, beginning with the line
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit”, looks like Latin because in its youth,
-                            centuries ago, it was Latin.</p>
-                          <p>Until recently, the prevailing view assumed lorem
-                            ipsum was born as a nonsense text. “It's not Latin,
-                            though it looks like it, and it actually says
-                            nothing,” Before &amp; After magazine answered a
-                            curious reader, “Its ‘words’ loosely approximate the
-                            frequency with which letters occur in English, which
-                            is why at a glance it looks pretty real.”</p>
-                        </div>
-                      </section>
-                      <section class="c-block-list o-content-container pt-12"
-                        id="section-programs">
-                        <h2>Programs</h2>
-                        <div>
-                          <p>Until recently, the prevailing view assumed lorem
-                            ipsum was born as a nonsense text. “It's not Latin,
-                            though it looks like it, and it actually says
-                            nothing,” Before &amp; After magazine answered a
-                            curious reader, “Its ‘words’ loosely approximate the
-                            frequency with which letters occur in English, which
-                            is why at a glance it looks pretty real.”</p>
-                          <p>The placeholder text, beginning with the line
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit”, looks like Latin because in its youth,
-                            centuries ago, it was Latin.</p>
-                          <p>Until recently, the prevailing view assumed lorem
-                            ipsum was born as a nonsense text. “It's not Latin,
-                            though it looks like it, and it actually says
-                            nothing,” Before &amp; After magazine answered a
-                            curious reader, “Its ‘words’ loosely approximate the
-                            frequency with which letters occur in English, which
-                            is why at a glance it looks pretty real.”</p>
-                        </div>
-                      </section>
-                      <section class="c-block-list o-content-container pt-12"
-                        id="section-milestones">
-                        <h2>Milestones</h2>
-                        <div>
-                          <p>Until recently, the prevailing view assumed lorem
-                            ipsum was born as a nonsense text. “It's not Latin,
-                            though it looks like it, and it actually says
-                            nothing,” Before &amp; After magazine answered a
-                            curious reader, “Its ‘words’ loosely approximate the
-                            frequency with which letters occur in English, which
-                            is why at a glance it looks pretty real.”</p>
-                          <p>The placeholder text, beginning with the line
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit”, looks like Latin because in its youth,
-                            centuries ago, it was Latin.</p>
-                          <p>Until recently, the prevailing view assumed lorem
-                            ipsum was born as a nonsense text. “It's not Latin,
-                            though it looks like it, and it actually says
-                            nothing,” Before &amp; After magazine answered a
-                            curious reader, “Its ‘words’ loosely approximate the
-                            frequency with which letters occur in English, which
-                            is why at a glance it looks pretty real.”</p>
-                        </div>
-                      </section>
-                    </div>
-                  </article>
-                </main>
-                <footer class="o-footer__reached bg-color-gray-light p-20">
-                  <p>Footer Content</p>
-                </footer>
+      <section class="pb-8">
+        <h1>Section Highlighter</h1>
+        <p><strong>Source:</strong>
+          <code>src/utilities/section-highlighter/section-highlighter</code>
+        </p>
+        <p>The Section Highlighter utility updates the style of the Side
+          Navigation based on a users scroll position in the page.</p>
+        <h2 class="pt-6">Demonstration</h2>
+        <header class="c-banner py-12 bg-color-gray-light">
+          <p class="px-12">Hero Content</p>
+        </header>
+        <div>
+          <article class="o-container js-sticky-container desktop:flex">
+            <div class="o-article-sidebar desktop:w-4/12">
+              <div class="o-content-container--compact u-shift-up">
+                <ol class="c-nav-list js-sticky js-section-set o-sticky-nav"
+                  data-js="sticky">
+                  <li class="c-nav-list__item"><a
+                      class="scroll js-section c-nav-list__link"
+                      data-section="section-events"
+                      href="#section-events">Events<svg aria-hidden="true"
+                        class="icon--caret">
+                        <use xlink:href="#icon-caret-right"></use>
+                      </svg></a></li>
+                  <li class="c-nav-list__item"><a
+                      class="scroll js-section c-nav-list__link"
+                      data-section="section-programs"
+                      href="#section-programs">Programs<svg aria-hidden="true"
+                        class="icon--caret">
+                        <use xlink:href="#icon-caret-right"></use>
+                      </svg></a></li>
+                  <li class="c-nav-list__item"><a
+                      class="scroll js-section c-nav-list__link"
+                      data-section="section-milestones"
+                      href="#section-milestones">Milestones<svg
+                        aria-hidden="true" class="icon--caret">
+                        <use xlink:href="#icon-caret-right"></use>
+                      </svg></a></li>
+                </ol>
               </div>
-              <div class="mt-6 bg-color-gray-light py-8 px-4 overflow-hidden">
-                <pre>&lt;header class=&quot;c-banner py-24 bg-color-gray-light&quot;&gt;
+            </div>
+            <div class="o-article js-sticky-article desktop:w-8/12">
+              <section class="c-block-list o-content-container"
+                id="section-events">
+                <h2>Events</h2>
+                <div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nulla in facilisis ipsum. Mauris quis elit ac metus gravida
+                    pharetra eu a augue. Praesent eleifend ultrices tristique.
+                    In et convallis nibh, iaculis dapibus diam. Pellentesque
+                    cursus mollis ligula, eget tincidunt ante ullamcorper quis.
+                    Cras eu quam nunc. Phasellus bibendum sit amet urna et
+                    porta. Proin vehicula sollicitudin augue eget aliquam.</p>
+                </div>
+              </section>
+              <section class="c-block-list o-content-container pt-0"
+                id="section-programs">
+                <h2>Programs</h2>
+                <div>
+                  <p>Aenean in augue ac lacus laoreet condimentum faucibus eget
+                    mauris. Donec facilisis non nunc quis ultrices. Vivamus eu
+                    enim sagittis, pharetra purus sit amet, dignissim tortor.
+                    Donec ac pretium turpis. Fusce id lacinia nulla. Vestibulum
+                    eu tortor nec mauris ornare commodo. Vivamus ac ipsum eget
+                    massa mattis suscipit. Nam sodales in purus a interdum.
+                    Quisque vitae ante luctus odio luctus efficitur maximus id
+                    orci. Cras eleifend nunc at ultrices ultrices. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Aliquam ac
+                    maximus sem, et vestibulum risus. Nullam suscipit tincidunt
+                    odio. Aliquam consectetur purus pretium, imperdiet arcu
+                    quis, sollicitudin nibh.</p>
+                </div>
+              </section>
+              <section class="c-block-list o-content-container pt-0"
+                id="section-milestones">
+                <h2>Milestones</h2>
+                <div>
+                  <p>Donec euismod interdum dolor, ac elementum augue lobortis
+                    sed. Praesent at libero dapibus, suscipit lectus et,
+                    pulvinar enim. Proin porta turpis vestibulum, pretium nisl
+                    vitae, lobortis enim. Interdum et malesuada fames ac ante
+                    ipsum primis in faucibus. Nulla nibh tellus, pellentesque ac
+                    venenatis at, pellentesque et dui. Mauris blandit diam nec
+                    rhoncus viverra. Curabitur a tincidunt nulla. Aliquam
+                    sagittis enim id nulla rutrum, eget interdum nisi varius.
+                    Quisque mi enim, maximus maximus nisl sit amet, iaculis
+                    finibus diam. Proin at iaculis urna.</p>
+                </div>
+              </section>
+            </div>
+          </article>
+        </div>
+        <footer class="o-footer__reached bg-color-gray-light p-12">
+          <p>Footer Content</p>
+        </footer>
+        <pre class="bg-color-gray-light p-6 mt-8">&lt;header class=&quot;c-banner py-12 bg-color-gray-light&quot;&gt;
   &lt;p class=&quot;px-12&quot;&gt;Hero Content&lt;/p&gt;
 &lt;/header&gt;
-&lt;main id=&quot;main&quot; role=&quot;main&quot;&gt;
+&lt;div&gt;
   &lt;article class=&quot;o-container js-sticky-container desktop:flex&quot;&gt;
     &lt;div class=&quot;o-article-sidebar desktop:w-4/12&quot;&gt;
       &lt;div class=&quot;o-content-container--compact u-shift-up&quot;&gt;
@@ -200,80 +161,57 @@
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;o-article js-sticky-article desktop:w-8/12&quot;&gt;
-      &lt;section class=&quot;c-block-list o-content-container pt-12&quot;
-        id=&quot;section-events&quot;&gt;
+      &lt;section class=&quot;c-block-list o-content-container&quot; id=&quot;section-events&quot;&gt;
         &lt;h2&gt;Events&lt;/h2&gt;
         &lt;div&gt;
-          &lt;p&gt;Until recently, the prevailing view assumed lorem ipsum was born as
-            a nonsense text. “It's not Latin, though it looks like it, and it
-            actually says nothing,” Before &amp;amp; After magazine answered a
-            curious reader, “Its ‘words’ loosely approximate the frequency with
-            which letters occur in English, which is why at a glance it looks
-            pretty real.”&lt;/p&gt;
-          &lt;p&gt;The placeholder text, beginning with the line “Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit”, looks like Latin because in
-            its youth, centuries ago, it was Latin.&lt;/p&gt;
-          &lt;p&gt;Until recently, the prevailing view assumed lorem ipsum was born as
-            a nonsense text. “It's not Latin, though it looks like it, and it
-            actually says nothing,” Before &amp;amp; After magazine answered a
-            curious reader, “Its ‘words’ loosely approximate the frequency with
-            which letters occur in English, which is why at a glance it looks
-            pretty real.”&lt;/p&gt;
+          &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in
+            facilisis ipsum. Mauris quis elit ac metus gravida pharetra eu a
+            augue. Praesent eleifend ultrices tristique. In et convallis nibh,
+            iaculis dapibus diam. Pellentesque cursus mollis ligula, eget
+            tincidunt ante ullamcorper quis. Cras eu quam nunc. Phasellus
+            bibendum sit amet urna et porta. Proin vehicula sollicitudin augue
+            eget aliquam.&lt;/p&gt;
         &lt;/div&gt;
       &lt;/section&gt;
-      &lt;section class=&quot;c-block-list o-content-container pt-12&quot;
+      &lt;section class=&quot;c-block-list o-content-container pt-0&quot;
         id=&quot;section-programs&quot;&gt;
         &lt;h2&gt;Programs&lt;/h2&gt;
         &lt;div&gt;
-          &lt;p&gt;Until recently, the prevailing view assumed lorem ipsum was born as
-            a nonsense text. “It's not Latin, though it looks like it, and it
-            actually says nothing,” Before &amp;amp; After magazine answered a
-            curious reader, “Its ‘words’ loosely approximate the frequency with
-            which letters occur in English, which is why at a glance it looks
-            pretty real.”&lt;/p&gt;
-          &lt;p&gt;The placeholder text, beginning with the line “Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit”, looks like Latin because in
-            its youth, centuries ago, it was Latin.&lt;/p&gt;
-          &lt;p&gt;Until recently, the prevailing view assumed lorem ipsum was born as
-            a nonsense text. “It's not Latin, though it looks like it, and it
-            actually says nothing,” Before &amp;amp; After magazine answered a
-            curious reader, “Its ‘words’ loosely approximate the frequency with
-            which letters occur in English, which is why at a glance it looks
-            pretty real.”&lt;/p&gt;
+          &lt;p&gt;Aenean in augue ac lacus laoreet condimentum faucibus eget mauris.
+            Donec facilisis non nunc quis ultrices. Vivamus eu enim sagittis,
+            pharetra purus sit amet, dignissim tortor. Donec ac pretium turpis.
+            Fusce id lacinia nulla. Vestibulum eu tortor nec mauris ornare
+            commodo. Vivamus ac ipsum eget massa mattis suscipit. Nam sodales in
+            purus a interdum. Quisque vitae ante luctus odio luctus efficitur
+            maximus id orci. Cras eleifend nunc at ultrices ultrices. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac
+            maximus sem, et vestibulum risus. Nullam suscipit tincidunt odio.
+            Aliquam consectetur purus pretium, imperdiet arcu quis, sollicitudin
+            nibh.&lt;/p&gt;
         &lt;/div&gt;
       &lt;/section&gt;
-      &lt;section class=&quot;c-block-list o-content-container pt-12&quot;
+      &lt;section class=&quot;c-block-list o-content-container pt-0&quot;
         id=&quot;section-milestones&quot;&gt;
         &lt;h2&gt;Milestones&lt;/h2&gt;
         &lt;div&gt;
-          &lt;p&gt;Until recently, the prevailing view assumed lorem ipsum was born as
-            a nonsense text. “It's not Latin, though it looks like it, and it
-            actually says nothing,” Before &amp;amp; After magazine answered a
-            curious reader, “Its ‘words’ loosely approximate the frequency with
-            which letters occur in English, which is why at a glance it looks
-            pretty real.”&lt;/p&gt;
-          &lt;p&gt;The placeholder text, beginning with the line “Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit”, looks like Latin because in
-            its youth, centuries ago, it was Latin.&lt;/p&gt;
-          &lt;p&gt;Until recently, the prevailing view assumed lorem ipsum was born as
-            a nonsense text. “It's not Latin, though it looks like it, and it
-            actually says nothing,” Before &amp;amp; After magazine answered a
-            curious reader, “Its ‘words’ loosely approximate the frequency with
-            which letters occur in English, which is why at a glance it looks
-            pretty real.”&lt;/p&gt;
+          &lt;p&gt;Donec euismod interdum dolor, ac elementum augue lobortis sed.
+            Praesent at libero dapibus, suscipit lectus et, pulvinar enim. Proin
+            porta turpis vestibulum, pretium nisl vitae, lobortis enim. Interdum
+            et malesuada fames ac ante ipsum primis in faucibus. Nulla nibh
+            tellus, pellentesque ac venenatis at, pellentesque et dui. Mauris
+            blandit diam nec rhoncus viverra. Curabitur a tincidunt nulla.
+            Aliquam sagittis enim id nulla rutrum, eget interdum nisi varius.
+            Quisque mi enim, maximus maximus nisl sit amet, iaculis finibus
+            diam. Proin at iaculis urna.&lt;/p&gt;
         &lt;/div&gt;
       &lt;/section&gt;
     &lt;/div&gt;
   &lt;/article&gt;
-&lt;/main&gt;
-&lt;footer class=&quot;o-footer__reached bg-color-gray-light p-20&quot;&gt;
+&lt;/div&gt;
+&lt;footer class=&quot;o-footer__reached bg-color-gray-light p-12&quot;&gt;
   &lt;p&gt;Footer Content&lt;/p&gt;
 &lt;/footer&gt;</pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
   </main>
   <footer class="o-footer" id="patterns">

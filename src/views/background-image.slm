@@ -4,16 +4,29 @@
 
 / Partials
 = partial('/slm/partials/head.mixin.slm');
-= partial('/slm/partials/content-header.mixin.slm');
-= partial('/slm/partials/section.mixin.slm');
-
 
 / Content blocks
 = content('head');
   = mixin('head');
 
 = content('main')
-  = mixin('content-header', title);
-  = mixin('section', 'Background Gradients', 'utilities/background-image/background-image--gradient');
-  = mixin('section', 'Background Splatter', 'utilities/background-image/background-image--splatter');
-  
+  section class="pb-8"
+    h1
+      = title
+
+    == this.include('utilities/background-image/background-image.md')
+
+  section
+    h2 = "Gradient"
+    h3 = "Demonstration"
+    == this.include('utilities/background-image/background-image--gradient.slm');
+
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('utilities/background-image/background-image--gradient.slm');
+  section
+    h2 = "Splatter"
+    h3 = "Demonstration"
+    == this.include('utilities/background-image/background-image--splatter.slm');
+
+    pre class="bg-color-gray-light p-6 mt-8"
+      = this.include('utilities/background-image/background-image--splatter.slm');

@@ -1,1 +1,3 @@
-The Accessibility utility is to highlight elements that contain information that should be read by a screen reader and well as a keyboard short cut that can be used to skip to different areas of content.
+**Source:** `src/utilities/accessibility/accessibility`
+
+The Accessibility utility indicates sections of content that should be read by screen readers or accessible via keyboard shortcuts, allowing quick navigation to different sections of the content.

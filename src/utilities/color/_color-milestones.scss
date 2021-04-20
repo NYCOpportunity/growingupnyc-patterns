@@ -105,6 +105,10 @@ a.bg-toddler--primary {
   border-color: $color-toddler-secondary !important;
 }
 
+.text-toddler--secondary {
+  color: $color-toddler-secondary;
+}
+
 button.bg-toddler--secondary,
 a.bg-toddler--secondary {
 	&:hover,
@@ -118,6 +122,10 @@ a.bg-toddler--secondary {
 
 .bg-toddler--tertiary {
   background-color: $color-toddler-tertiary !important;
+}
+
+.border-toddler--tertiary {
+  border-color: $color-toddler-tertiary !important;
 }
 
 .text-toddler--tertiary {
