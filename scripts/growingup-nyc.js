@@ -12,8 +12,7 @@ var GUNYC = (function () {
 	  var smoothscroll = createCommonjsModule(function (module, exports) {
 	    /* smoothscroll v0.4.4 - 2019 - Dustan Kasten, Jeremias Menichelli - MIT License */
 	    (function () {
-	      console.log("Smooth-scroll Polyfil"); // polyfill
-
+	      // polyfill
 	      function polyfill() {
 	        // aliases
 	        var w = window;
@@ -1346,8 +1345,6 @@ var GUNYC = (function () {
 	      */
 
 	      offCanvasElem.addEventListener('changeOpenState', function (event) {
-	        console.log('event:', event);
-
 	        if (event.detail) {
 	          if (!/^(?:a|select|input|button|textarea)$/i.test(offCanvasSide.tagName)) {
 	            offCanvasSide.tabIndex = -1;
@@ -1390,7 +1387,6 @@ var GUNYC = (function () {
 	    }
 
 	    toggleElem.addEventListener('click', function (event) {
-	      console.log('click event');
 	      var toggleEvent;
 	      var toggleClass = toggleElem.dataset.toggleClass ? toggleElem.dataset.toggleClass : openClass;
 	      event.preventDefault(); // Toggle the element's active class
@@ -1401,11 +1397,9 @@ var GUNYC = (function () {
 	        nav.classList.toggle("o-offcanvas__side-left");
 	      } else if (openClass === 'is-open-down') {
 	        nav.classList.toggle("o-offcanvas__side-down");
-	        console.log('is-open-down');
 	        footer.classList.toggle("o-footer-down");
 	      } else {
 	        nav.classList.toggle("o-offcanvas__side-right");
-	        console.log('reset to 0');
 	      } // Toggle custom class if it is set
 
 
@@ -13350,7 +13344,6 @@ var GUNYC = (function () {
 	    var position = footer.getBoundingClientRect(); // checking whether fully visible
 
 	    if (position.top >= 0 && position.bottom <= window.innerHeight) {
-	      // console.log('Element is fully visible in screen ');
 	      forEach_1(stickyContent, function (stickyContentElem) {
 	        stickyContentElem.classList.add(StickyVanilla.StuckClass);
 	      });
@@ -13891,7 +13884,6 @@ var GUNYC = (function () {
 
 	  var selected = this._el.querySelector('input[type="tel"]');
 
-	  console.log(selected);
 	  jquery("." + ShareForm.CssClass.SHOW_DISCLAIMER).on('focus', function () {
 	    this$1._disclaimer(true);
 	  });
