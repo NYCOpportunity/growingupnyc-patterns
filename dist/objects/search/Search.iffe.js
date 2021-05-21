@@ -278,7 +278,7 @@ var Search = (function () {
 	Search.COOKIE_NAME = 'searchresultVisits';
 	Search.RECAPTCHA_MESSAGE = 'Please verify you are Human.';
 	Search.RECAPTCHA_CONTAINER_ID = 'search-recaptcha';
-	Search.SITE_KEY = '6LeJddoaAAAAABk7Ot0eXAKiqLQDk0v6IW8cpG9o';
+	Search.SITE_KEY = '6LekICYUAAAAAOR2uZ0ajyWt9XxDuspHPUAkRzAB';
 	Search.VIEW_COUNT = 5;
 
 	return Search;
