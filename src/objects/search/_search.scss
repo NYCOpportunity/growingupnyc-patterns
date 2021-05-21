@@ -2,3 +2,15 @@
  * Search
  */
 
+  @import 'config/tokens';
+  @import 'config/layouts';
+
+
+.o-search-recaptcha-container {
+  padding-left: rem-calc($outer-gutter-small);
+  padding-right: rem-calc($outer-gutter-small);
+
+  @media screen and (min-width: $screen-tablet) {
+    padding: 0;
+  }
+}
