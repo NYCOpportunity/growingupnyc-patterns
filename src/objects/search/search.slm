@@ -14,3 +14,5 @@ div class="bg-color-gray-light py-20 px-10"
         svg class="icon"
           title
           use xlink:href="#icon-close"
+
+div class="o-search-recaptcha-container"
