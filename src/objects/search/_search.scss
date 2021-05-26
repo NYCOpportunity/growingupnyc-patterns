@@ -10,7 +10,7 @@
   padding-left: rem-calc($outer-gutter-small);
   padding-right: rem-calc($outer-gutter-small);
 
-  @media screen and (min-width: $screen-tablet) {
+  @media screen and (min-width: $screen-desktop) {
     padding: 0;
   }
 }
